@@ -99,7 +99,7 @@ class AlertRules
             } else {
                 // update existing alert
                 Log::info('Status: %bNOCHG%n', ['color' => true]);
-                $alert = AlertUtil::loadAlerts('device_id = ? && rule_id = ?', [$device_id, $rule['id']]);
+                $alert = AlertUtil::loadAlerts('device_id = ? AND rule_id = ?', [$device_id, $rule['id']]);
                 // do we need to handle disabled rules here?
                 AlertUtil::updateAlert($alert[0], $rule_result);
 
