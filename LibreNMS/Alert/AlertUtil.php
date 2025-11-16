@@ -368,7 +368,7 @@ class AlertUtil
 
         $alert['details']['rule'] ??= []; // if details.rule is missing, set it to an empty array
         $ret = 'Alert #' . $alert['id'];
-        $state = AlertState::CLEAR;
+        $state = AlertState::ACTIVE;
 
         // Get the added and resolved items
         [$added_diff, $resolved_diff] = AlertUtil::diffBetweenFaults($alert['details']['rule'], $rule_result);
