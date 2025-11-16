@@ -429,8 +429,8 @@ class AlertUtil
             if ($alert["state"] == AlertState::CLEAR) {
                     Log::info('Status: %bNOCHG%n', ['color' => true]);
             } else {
-                if (dbInsert(['state' => AlertState::CLEAR, 'device_id' => $device_id, 'rule_id' => $rule['id']], 'alert_log')) {
-                    dbUpdate(['state' => AlertState::CLEAR, 'open' => 1, 'note' => '', 'timestamp' => Carbon::now()], 'alerts', 'device_id = ? && rule_id = ?', [$device_id, $rule['id']]);
+                if (dbInsert(['state' => AlertState::CLEAR, 'device_id' => $alert['device_id'], 'rule_id' => $alert['rule_id']], 'alert_log')) {
+                    dbUpdate(['state' => AlertState::CLEAR, 'open' => 1, 'note' => '', 'timestamp' => Carbon::now()], 'alerts', 'device_id = ? && rule_id = ?', [$alert['device_id'], $alert['rule_id']]);
                     
                     Log::info(PHP_EOL . 'Status: %gOK%n', ['color' => true]);
                 }

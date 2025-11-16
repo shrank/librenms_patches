@@ -283,7 +283,7 @@ class RunAlerts
 
             if(is_null($rule_result)) continue;
 
-            AlertUtil::updateAlert($alert);
+            AlertUtil::updateAlert($alert, $rule_result);
         }
     }
 
