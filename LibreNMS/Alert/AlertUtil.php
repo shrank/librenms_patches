@@ -407,9 +407,9 @@ class AlertUtil
             $state = AlertState::ACTIVE;
         }
 
-        if($state in [AlertState::ACTIVE, AlertState::CLEAR] and $state == $alert["state"]) {
+        if(in_array($state, [AlertState::ACTIVE, AlertState::CLEAR]) and $state == $alert["state"]) {
           Log::info('Status: %bNOCHG%n', ['color' => true]);
-          return
+          return;
         }
 
         if ($state != AlertState::CLEAR && $alert['state'] == AlertState::ACKNOWLEDGED && ($alert['info']['until_clear'] === true)) {
@@ -425,8 +425,8 @@ class AlertUtil
             'rule_id' => $alert['rule_id'],
             'details' => gzcompress(json_encode($alert['details']), 9),
         ], 'alert_log')) {
-            $update = ['state' => $state, 'open' => 1, 'alerted' => 1]
-            if($state === AlertState::CLEAR) $update["timestamp"] = Carbon::now()
+            $update = ['state' => $state, 'open' => 1, 'alerted' => 1];
+            if($state === AlertState::CLEAR) $update["timestamp"] = Carbon::now();
             dbUpdate($update, 'alerts', 'rule_id = ? && device_id = ?', [$alert['rule_id'], $alert['device_id']]);
         }
         echo $ret . ' (' . $previous_alert_count . '/' . $current_alert_count . ")\r\n";
