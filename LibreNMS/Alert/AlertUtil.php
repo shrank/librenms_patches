@@ -373,40 +373,45 @@ class AlertUtil
         // Get the added and resolved items
         [$added_diff, $resolved_diff] = AlertUtil::diffBetweenFaults($alert['details']['rule'], $rule_result);
         $previous_alert_count = count($alert['details']['rule']);
+    
 
         if( $current_alert_count >0 && $alert["state"] == AlertState::CLEAR) {
             $ret .= ' Active';
             $state = AlertState::ACTIVE;
-            //new alert
+            $alert['details'] = [];
         } elseif (! empty($added_diff) && ! empty($resolved_diff)) {
             $ret .= ' Changed';
             $state = AlertState::CHANGED;
-            $alert['details']['diff'] = ['added' => $added_diff, 'resolved' => $resolved_diff];
+            $alert['details'] = ['diff'=> ['added' => $added_diff, 'resolved' => $resolved_diff]];
         } elseif (! empty($added_diff)) {
             $ret .= ' Worse';
             $state = AlertState::WORSE;
-            $alert['details']['diff'] = ['added' => $added_diff];
+            $alert['details'] = ['diff'=> ['added' => $added_diff]];
         } elseif (! empty($resolved_diff)) {
             $ret .= ' Better';
             $state = AlertState::BETTER;
-            $alert['details']['diff'] = ['resolved' => $resolved_diff];
+            $alert['details'] = ['diff'=> ['resolved' => $resolved_diff]];
             // Failsafe if the diff didn't return any results
         } elseif ($current_alert_count > $previous_alert_count) {
             $ret .= ' Worse';
             $state = AlertState::WORSE;
+            $alert['details'] = [];
             Eventlog::log('Alert got worse but the diff was not, ensure that a "id" or "_id" field is available for rule ' . $alert['name'], $alert['device_id'], 'alert', Severity::Warning);
             // Failsafe if the diff didn't return any results
         } elseif ($current_alert_count < $previous_alert_count) {
             $ret .= ' Better';
             $state = AlertState::BETTER;
+            $alert['details'] = [];
             Eventlog::log('Alert got better but the diff was not, ensure that a "id" or "_id" field is available for rule ' . $alert['name'], $alert['device_id'], 'alert', Severity::Warning);
         }
 
 
         if ($current_alert_count == 0 && $inv === false) {
             $state = AlertState::CLEAR;
+            $alert['details'] = [];
         } elseif ($current_alert_count > 0 && $inv === true) {
             $state = AlertState::CLEAR;
+            $alert['details'] = [];
         } elseif ($current_alert_count == 0 && $inv === true) {
             $state = AlertState::ACTIVE;
         }
@@ -421,7 +426,6 @@ class AlertUtil
             $state = AlertState::ACKNOWLEDGED;
         }
 
-        $alert['details'] = [];
         $alert['details']['contacts'] = AlertUtil::getContacts($rule_result);
         $alert['details']['rule'] = $rule_result;
         if (dbInsert([
