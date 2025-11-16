@@ -228,15 +228,6 @@ class RunAlerts
      */
     public function issueAlert($alert)
     {
-        if (LibrenmsConfig::get('alert.fixed-contacts') == false) {
-            if (empty($alert['query'])) {
-                $alert['query'] = QueryBuilderParser::fromJson($alert['builder'])->toSql();
-            }
-            $sql = $alert['query'];
-            $qry = dbFetchRows($sql, [$alert['device_id']]);
-            $alert['details']['contacts'] = AlertUtil::getContacts($qry);
-        }
-
         $obj = $this->describeAlert($alert);
         if (is_array($obj)) {
             echo 'Issuing Alert-UID #' . $alert['id'] . '/' . $alert['state'] . ':' . PHP_EOL;
