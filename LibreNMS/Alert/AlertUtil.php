@@ -421,6 +421,7 @@ class AlertUtil
             $state = AlertState::ACKNOWLEDGED;
         }
 
+        $alert['details'] = []
         $alert['details']['contacts'] = AlertUtil::getContacts($rule_result);
         $alert['details']['rule'] = $rule_result;
         if (dbInsert([
