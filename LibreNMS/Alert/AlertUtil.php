@@ -34,6 +34,7 @@ use DeviceCache;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;
 use LibreNMS\Alerting\QueryBuilderParser;
+use LibreNMS\Enum\AlertState;
 use LibreNMS\Enum\MaintenanceStatus;
 use PHPMailer\PHPMailer\PHPMailer;
 
@@ -282,14 +283,14 @@ class AlertUtil
      * load alerts
      *
      * @param  string  $where   SQL WHERE Statement
-     * @param  array  $vars     Varibales to pass to dbFetchRows
+     * @param  array  $params     Varibales to pass to dbFetchRows
      * @return array
      */
 
-    public static function loadAlerts($where, $vars)
+    public static function loadAlerts($where, $params)
     {
         $alerts = [];
-        foreach (dbFetchRows("SELECT alerts.id, alerts.alerted, alerts.device_id, alerts.rule_id, alerts.state, alerts.note, alerts.info FROM alerts WHERE $where", $vars) as $alert_status) {
+        foreach (dbFetchRows("SELECT alerts.id, alerts.alerted, alerts.device_id, alerts.rule_id, alerts.state, alerts.note, alerts.info FROM alerts WHERE $where", $params) as $alert_status) {
             $alert = dbFetchRow(
                 'SELECT alert_log.id,alert_log.rule_id,alert_log.device_id,alert_log.state,alert_log.details,alert_log.time_logged,alert_rules.severity,alert_rules.extra,alert_rules.name,alert_rules.query,alert_rules.builder,alert_rules.proc FROM alert_log,alert_rules WHERE alert_log.rule_id = alert_rules.id && alert_log.device_id = ? && alert_log.rule_id = ? && alert_rules.disabled = 0 ORDER BY alert_log.id DESC LIMIT 1',
                 [$alert_status['device_id'], $alert_status['rule_id']]
