@@ -32,6 +32,7 @@ use App\Models\User;
 use App\Models\Eventlog;
 use DeviceCache;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Arr;
 use LibreNMS\Alerting\QueryBuilderParser;
 use LibreNMS\Enum\AlertState;
