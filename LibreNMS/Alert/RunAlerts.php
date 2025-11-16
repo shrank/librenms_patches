@@ -278,7 +278,9 @@ class RunAlerts
      */
     public function runFollowUp()
     {
+        return; // disable this for now
         foreach (AlertUtil::loadAlerts('alerts.state > ? && alerts.open = 0', [AlertState::CLEAR]) as $alert) {
+
             $rule_result = AlertUtil::getRuleResult($alert, $alert["device_id"]);
 
             if(is_null($rule_result)) continue;
