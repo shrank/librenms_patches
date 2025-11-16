@@ -19,12 +19,14 @@ if (isset($options['t']) && isset($options['h']) && isset($options['r'])) {
     $device_id = ctype_digit($options['h']) ? $options['h'] : getidbyname($options['h']);
     $rule_id = (int) $options['r'];
 
-    $where = 'alerts.device_id=' . $device_id . ' && alerts.rule_id=' . $rule_id;
+    $where = 'alerts.device_id= ? && alerts.rule_id= ?';
+    $params = [$device_id, $rule_id];
     if (isset($options['s'])) {
-        $where .= ' && alerts.state=' . (int) $options['s'];
+        $where .= ' && alerts.state= ?';
+        $params[] = (int) $options['s'];
     }
 
-    $alerts = $runAlerts->loadAlerts($where);
+    $alerts = $runAlerts->loadAlerts($where, $params);
     if (empty($alerts)) {
         echo "No alert found, make sure to select an active alert.\n";
         exit(2);
