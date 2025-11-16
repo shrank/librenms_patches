@@ -73,7 +73,7 @@ class AlertRules
                 $inv = false;
             }
 
-            $rule_result = AlertUtil::getRuleResult($alert, $alert["device_id"]);
+            $rule_result = AlertUtil::getRuleResult($rule, $device_id);
 
             if(is_null($rule_result)) continue;
 
