@@ -407,35 +407,29 @@ class AlertUtil
             $state = AlertState::ACTIVE;
         }
 
-
-        if ($state > AlertState::CLEAR) {
-
-            if ($alert['state'] == AlertState::ACKNOWLEDGED && ($alert['info']['until_clear'] === true)) {
-                $state = $alert['state'];
-            }
-
-            $alert['details']['contacts'] = AlertUtil::getContacts($rule_result);
-            $alert['details']['rule'] = $rule_result;
-            if (dbInsert([
-                'state' => $state,
-                'device_id' => $alert['device_id'],
-                'rule_id' => $alert['rule_id'],
-                'details' => gzcompress(json_encode($alert['details']), 9),
-            ], 'alert_log')) {
-                dbUpdate(['state' => $state, 'open' => 1, 'alerted' => 1], 'alerts', 'rule_id = ? && device_id = ?', [$alert['rule_id'], $alert['device_id']]);
-            }
-            echo $ret . ' (' . $previous_alert_count . '/' . $current_alert_count . ")\r\n";
-        } else {
-            if ($alert["state"] == AlertState::CLEAR) {
-                    Log::info('Status: %bNOCHG%n', ['color' => true]);
-            } else {
-                if (dbInsert(['state' => AlertState::CLEAR, 'device_id' => $alert['device_id'], 'rule_id' => $alert['rule_id']], 'alert_log')) {
-                    dbUpdate(['state' => AlertState::CLEAR, 'open' => 1, 'note' => '', 'timestamp' => Carbon::now()], 'alerts', 'device_id = ? && rule_id = ?', [$alert['device_id'], $alert['rule_id']]);
-                    
-                    Log::info(PHP_EOL . 'Status: %gOK%n', ['color' => true]);
-                }
-            }
+        if($state in [AlertState::ACTIVE, AlertState::CLEAR] and $state == $alert["state"]) {
+          Log::info('Status: %bNOCHG%n', ['color' => true]);
+          return
         }
+
+        if ($state != AlertState::CLEAR && $alert['state'] == AlertState::ACKNOWLEDGED && ($alert['info']['until_clear'] === true)) {
+            // if we say "until clear" we mean until clear
+            $state = AlertState::ACKNOWLEDGED;
+        }
+
+        $alert['details']['contacts'] = AlertUtil::getContacts($rule_result);
+        $alert['details']['rule'] = $rule_result;
+        if (dbInsert([
+            'state' => $state,
+            'device_id' => $alert['device_id'],
+            'rule_id' => $alert['rule_id'],
+            'details' => gzcompress(json_encode($alert['details']), 9),
+        ], 'alert_log')) {
+            $update = ['state' => $state, 'open' => 1, 'alerted' => 1]
+            if($state === AlertState::CLEAR) $update["timestamp"] = Carbon::now()
+            dbUpdate($update, 'alerts', 'rule_id = ? && device_id = ?', [$alert['rule_id'], $alert['device_id']]);
+        }
+        echo $ret . ' (' . $previous_alert_count . '/' . $current_alert_count . ")\r\n";
     }
 
         /**
