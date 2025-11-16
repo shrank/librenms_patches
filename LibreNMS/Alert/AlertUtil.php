@@ -26,6 +26,7 @@
 
 namespace LibreNMS\Alert;
 
+use Carbon\Carbon;
 use App\Facades\LibrenmsConfig;
 use App\Models\Device;
 use App\Models\User;
