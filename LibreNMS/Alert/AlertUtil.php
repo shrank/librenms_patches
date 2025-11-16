@@ -374,7 +374,11 @@ class AlertUtil
         [$added_diff, $resolved_diff] = AlertUtil::diffBetweenFaults($alert['details']['rule'], $rule_result);
         $previous_alert_count = count($alert['details']['rule']);
 
-        if (! empty($added_diff) && ! empty($resolved_diff)) {
+        if( $current_alert_count >0 && $alert["state"] == AlertState::CLEAR) {
+            $ret .= ' Active';
+            $state = AlertState::ACTIVE;
+            //new alert
+        } elseif (! empty($added_diff) && ! empty($resolved_diff)) {
             $ret .= ' Changed';
             $state = AlertState::CHANGED;
             $alert['details']['diff'] = ['added' => $added_diff, 'resolved' => $resolved_diff];
