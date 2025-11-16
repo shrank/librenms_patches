@@ -29,9 +29,11 @@ namespace LibreNMS\Alert;
 use App\Facades\LibrenmsConfig;
 use App\Models\Device;
 use App\Models\User;
+use App\Models\Eventlog;
 use DeviceCache;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;
+use LibreNMS\Alerting\QueryBuilderParser;
 use LibreNMS\Enum\MaintenanceStatus;
 use PHPMailer\PHPMailer\PHPMailer;
 
