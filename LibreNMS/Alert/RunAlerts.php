@@ -393,7 +393,8 @@ class RunAlerts
 
             if (! $noiss) {
                 $this->issueAlert($alert);
-                dbUpdate(['alerted' => $alert['state']], 'alerts', 'rule_id = ? && device_id = ?', [$alert['rule_id'], $alert['device_id']]);
+                if(in_array($alert['state'], [AlertState::CHANGED, AlertState::BETTER, AlertState::WORSE])) $alert['state'] = AlertState::ACTIVE;
+                dbUpdate(['alerted' => $alert['state'], 'state' => $alert['state']], 'alerts', 'rule_id = ? && device_id = ?', [$alert['rule_id'], $alert['device_id']]);
             }
 
             if (! $noacc) {
