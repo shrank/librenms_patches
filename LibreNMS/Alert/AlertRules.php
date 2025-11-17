@@ -86,23 +86,23 @@ class AlertRules
             }
 
             $current_state = dbFetchCell('SELECT state FROM alerts WHERE rule_id = ? AND device_id = ? ORDER BY id DESC LIMIT 1', [$rule['id'], $device_id]);
-            
-            if(!is_null($current_state)) {
-                // an alert already exists, we need to update this in RunAlerts::runFollowUp
-                // or we risk missing a change notification
-                continue;   
-            }
-            
-            if(!$doalert){
-                // no need to create an alert
-                continue;
-            } 
 
-            // create new alert
-            $extra = gzcompress(json_encode(['contacts' => AlertUtil::getContacts($rule_result), 'rule' => $rule_result]), 9);
-            if (dbInsert(['state' => AlertState::ACTIVE, 'device_id' => $device_id, 'rule_id' => $rule['id'], 'details' => $extra], 'alert_log')) {
-                dbInsert(['state' => AlertState::ACTIVE, 'device_id' => $device_id, 'rule_id' => $rule['id'], 'open' => 1, 'alerted' => 0], 'alerts');
-                Log::info(PHP_EOL . 'Status: %rALERT%n', ['color' => true]);
+            if(is_null($current_state) && !$doalert) continue;
+
+            if(is_null($current_state)) {
+                // create new alert
+                $extra = gzcompress(json_encode(['contacts' => AlertUtil::getContacts($rule_result), 'rule' => $rule_result]), 9);
+                if (dbInsert(['state' => AlertState::ACTIVE, 'device_id' => $device_id, 'rule_id' => $rule['id'], 'details' => $extra], 'alert_log')) {
+                    dbInsert(['state' => AlertState::ACTIVE, 'device_id' => $device_id, 'rule_id' => $rule['id'], 'open' => 1, 'alerted' => 0], 'alerts');
+                    Log::info(PHP_EOL . 'Status: %rALERT%n', ['color' => true]);
+                }
+            } else {
+                // update existing alert
+                Log::info('Status: %bNOCHG%n', ['color' => true]);
+                $alert = AlertUtil::loadAlerts('device_id = ? AND rule_id = ?', [$device_id, $rule['id']]);
+                // do we need to handle disabled rules here?
+                AlertUtil::updateAlert($alert[0], $rule_result);
+
             }
         }
     }
