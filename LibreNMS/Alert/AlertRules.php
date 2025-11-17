@@ -66,6 +66,14 @@ class AlertRules
         //Checks each rule.
         foreach (AlertUtil::getRules($device_id) as $rule) {
             Log::info('Rule %p#' . $rule['id'] . ' (' . $rule['name'] . '):%n ', ['color' => true]);
+
+            $current_state = dbFetchCell('SELECT state FROM alerts WHERE rule_id = ? AND device_id = ? ORDER BY id DESC LIMIT 1', [$rule['id'], $device_id]);
+            if(!is_null($current_state) && $current_state > AlertState::CLEAR) {
+                // an active alert already exists, we need to update this in RunAlerts::runFollowUp
+                // or we risk missing a change notification
+                continue;
+            }
+
             $extra = json_decode($rule['extra'], true);
             if (isset($extra['invert'])) {
                 $inv = (bool) $extra['invert'];
@@ -85,9 +93,10 @@ class AlertRules
                 $doalert = false;
             }
 
-            $current_state = dbFetchCell('SELECT state FROM alerts WHERE rule_id = ? AND device_id = ? ORDER BY id DESC LIMIT 1', [$rule['id'], $device_id]);
-
-            if(is_null($current_state) && !$doalert) continue;
+            if(is_null($current_state) && !$doalert) {
+                // no need to create an alert
+                continue;
+            } 
 
             if(is_null($current_state)) {
                 // create new alert
@@ -97,8 +106,7 @@ class AlertRules
                     Log::info(PHP_EOL . 'Status: %rALERT%n', ['color' => true]);
                 }
             } else {
-                // update existing alert
-                Log::info('Status: %bNOCHG%n', ['color' => true]);
+                // reactivate existing alert
                 $alert = AlertUtil::loadAlerts('device_id = ? AND rule_id = ?', [$device_id, $rule['id']]);
                 // do we need to handle disabled rules here?
                 AlertUtil::updateAlert($alert[0], $rule_result);
