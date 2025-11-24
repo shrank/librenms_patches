@@ -33,15 +33,6 @@ if ($vars['string']) {
     $param[] = '%' . $vars['string'] . '%';
 }
 
-if ($vars['message']) {
-    $where .= ' AND E.message LIKE ?';
-    $param[] = '%' . $vars['message'] . '%';
-}
-
-if (is_numeric($vars['age'])) {
-    $where .= ' AND  datetime > (NOW() - INTERVAL ? HOUR)';
-    $param[] = (int) $vars['age'];
-}
 
 if (Auth::user()->hasGlobalRead()) {
     $sql = " FROM `eventlog` AS E LEFT JOIN `devices` AS `D` ON `E`.`device_id`=`D`.`device_id` WHERE $where";
