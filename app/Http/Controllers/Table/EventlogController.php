@@ -81,7 +81,7 @@ class EventlogController extends TableController
             $query->where('message', 'like', '%'.$request->message.'%');
         }
         if(!empty($request->age)) {
-            $query->where('datetime', '>', Carbon::now()->subHours($request->age)->timestamp);
+            $query->where('datetime', '>', Carbon::now()->subHours((int) $request->age));
         }
         return $query;
     }
