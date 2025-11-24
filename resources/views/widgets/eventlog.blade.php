@@ -22,6 +22,7 @@
             post: function ()
             {
                 return {
+                    @if($filter) string: "{{ $filter }}", @endif
                     device: "{{ $device }}",
                     device_group: "{{ $device_group }}",
                     eventtype: "{{ $eventtype }}"
