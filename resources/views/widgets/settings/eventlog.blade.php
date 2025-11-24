@@ -35,7 +35,7 @@
     </div>
     <div class="form-group">
         <label for="age-{{ $id }}" class="control-label">{{ __('Max age') }}</label>
-        <input type="text" class="form-control" name="age id="age-{{ $id }}" placeholder="{{ __('24h') }}" value="{{ $age }}">
+        <input type="text" class="form-control" name="age" id="age-{{ $id }}" placeholder="{{ __('24h') }}" value="{{ $age }}">
     </div>
     <div class="form-group">
         <label for="hidenavigation-{{ $id }}" class="control-label">{{ __('Hide Navigation') }}</label>
