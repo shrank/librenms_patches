@@ -41,6 +41,8 @@ class EventlogController extends TableController
             'device' => 'nullable|int',
             'device_group' => 'nullable|int',
             'eventtype' => 'nullable|string',
+            'age' => 'nullable|int',
+            'message' => 'nullable|string',
         ];
     }
 
@@ -70,11 +72,18 @@ class EventlogController extends TableController
      */
     public function baseQuery($request)
     {
-        return Eventlog::hasAccess($request->user())
+        $query =  Eventlog::hasAccess($request->user())
             ->with('device')
             ->when($request->device_group, function ($query) use ($request) {
                 $query->inDeviceGroup($request->device_group);
             });
+        if(!empty($request->message)) {
+            $query->where('message', 'like', '%'.$request->message.'%');
+        }
+        if(!empty($request->age)) {
+            $query->where('datetime', '>', Carbon::now()->subHours($request->age)->timestamp);
+        }
+        return $query;
     }
 
     /**
