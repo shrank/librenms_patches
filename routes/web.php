@@ -37,6 +37,7 @@ use App\Http\Controllers\PortGroupController;
 use App\Http\Controllers\PushNotificationController;
 use App\Http\Controllers\Select;
 use App\Http\Controllers\SensorController;
+use App\Http\Controllers\SensorAlertController;
 use App\Http\Controllers\ServiceTemplateController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\Table;
@@ -201,6 +202,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('plugin/{plugin:plugin_name}', PluginPageController::class)->name('plugin.page');
 
     Route::get('health/{metric?}/{legacyview?}', [SensorController::class, 'index'])->name('sensor.index');
+    Route::get('healthalert/{metric?}/{legacyview?}', [SensorAlertController::class, 'index'])->name('sensoralert.index');
     Route::get('wireless/{metric}/{legacyview?}', [WirelessSensorController::class, 'index'])->name('wireless.index');
 
     // old route redirects
@@ -290,6 +292,7 @@ Route::middleware(['auth'])->group(function () {
             Route::get('processors/export', [Table\ProcessorsController::class, 'export']);
             Route::post('routes', Table\RoutesTablesController::class);
             Route::post('sensors', Table\SensorsController::class)->name('table.sensors');
+            Route::post('sensorsalert', Table\SensorsAlertController::class)->name('table.sensorsalert');
             Route::get('sensors/export', [Table\SensorsController::class, 'export']);
             Route::post('storages', Table\StoragesController::class)->name('table.storages');
             Route::get('storages/export', [Table\StoragesController::class, 'export']);
