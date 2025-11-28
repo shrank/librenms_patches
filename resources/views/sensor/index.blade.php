@@ -33,13 +33,38 @@
         </div>
     </div>
     <script>
+        $(document).ready(function(){
+
+            $('.actionBar').append('<div class="pull-left">\
+                <label for="sensor-status-dropdown" class="control-label">{{ __('Status') }}:</label>\
+                <select class="form-control" name="sensor-status" id="sensor-status-dropdown">\
+                    <option value="alert" @if( $metric != 'alert' ) selected @endif >Alert</option>\
+                    <option value="error">Error</option>\
+                    <option value="warning">Warning</option>\
+                    @if( $metric == 'all' || $metric == 'state') <option value="unknown">Unknown</option> @endif\
+                    @if( $metric != 'all' ) <option selected value="">All</option> @endif\
+                </select>\
+            </div>'
+            );
+
+            $("#sensor-status-dropdown").on("change", function() {
+                  $("#sensors").bootgrid('reload');
+              });
+
+        });
+
         var grid = $("#sensors").bootgrid({
             ajax: true,
             rowCount: [50, 100, 250, -1],
             post: function () {
+                let status = $("#sensor-status-dropdown").val()
+                if(!status && '{{ $metric }}' == 'all') {
+                    status = "alert";
+                }
                 return {
                     view: '{{ $view }}',
-                    class: '{{ $metric }}'
+                    class: '{{ $metric }}',
+                    status: status,
                 };
             }
         });
