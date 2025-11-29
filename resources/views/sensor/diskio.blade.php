@@ -29,24 +29,6 @@
         </div>
     </div>
     <script>
-        $(document).ready(function(){
-
-            $('.actionBar').append('<div class="pull-left">\
-                <label for="sensor-status-dropdown" class="control-label">{{ __('Status') }}:</label>\
-                <select class="form-control" name="sensor-status" id="sensor-status-dropdown">\
-                    <option value="alert">Alert</option>\
-                    <option value="error">Error</option>\
-                    <option value="warning">Warning</option>\
-                    <option selected value="">All</option>\
-                </select>\
-            </div>'
-            );
-
-            $("#sensor-status-dropdown").on("change", function() {
-                  $("#storage").bootgrid('reload');
-              });
-
-        });
 
         var grid = $("#storage").bootgrid({
             ajax: true,
@@ -54,8 +36,7 @@
             post: function ()
             {
                 return {
-                    view: '{{ $view }}',
-                    status: $("#sensor-status-dropdown").val(),
+                    view: '{{ $view }}'
                 };
             },
             url: "<?php echo route('table.diskio') ?>"

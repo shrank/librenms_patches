@@ -35,8 +35,6 @@
         $('.actionBar').append('<div class="pull-left">\
             <label for="sensor-status-dropdown" class="control-label">{{ __('Status') }}:</label>\
             <select class="form-control" name="sensor-status" id="sensor-status-dropdown">\
-                <option value="alert">Alert</option>\
-                <option value="error">Error</option>\
                 <option value="warning">Warning</option>\
                 <option selected value="">All</option>\
             </select>\
