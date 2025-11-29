@@ -78,6 +78,11 @@ class SensorController
     private function getMetrics(Request $request): array
     {
         $metrics = [
+            'all' => [
+                'text' => __('All'),
+                'link' => route('sensor.index', $request->all() + ['metric' => 'all']),
+                'icon' => 'fa-bell',
+            ],
             'mempool' => [
                 'text' => __('Memory'),
                 'link' => route('sensor.index', $request->all() + ['metric' => 'mempool']),
