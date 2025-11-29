@@ -53,7 +53,7 @@ class StoragesController extends TableController
 
         switch($status) {
             case "warning":
-                $query->whereRaw('storage_perc >= storage_perc_warn');
+                $query->whereRaw('storage_perc > 0 AND storage_perc >= storage_perc_warn');
         }
 
         return $query;

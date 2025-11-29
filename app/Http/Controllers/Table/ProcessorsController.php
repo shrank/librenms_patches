@@ -50,7 +50,7 @@ class ProcessorsController extends TableController
 
         switch($status) {
             case "warning":
-                $query->whereRaw('processor_usage >= processor_perc_warn');
+                $query->whereRaw('processor_perc_warn > 0 AND processor_usage >= processor_perc_warn');
         }
         
         return $query;
