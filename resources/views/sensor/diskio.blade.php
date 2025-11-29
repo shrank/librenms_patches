@@ -29,7 +29,6 @@
         </div>
     </div>
     <script>
-
         var grid = $("#storage").bootgrid({
             ajax: true,
             rowCount: [50, 100, 250, -1],
