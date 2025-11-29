@@ -35,7 +35,7 @@
     <script>
         $(document).ready(function(){
 
-            $('.actionBar').append('<div class="pull-left">\
+            $('.actionBar').append('<div class="pull-left form-inline">\
                 <label for="sensor-status-dropdown" class="control-label">{{ __('Status') }}:</label>\
                 <select class="form-control" name="sensor-status" id="sensor-status-dropdown">\
                     <option value="alert" @if( $metric != 'alert' ) selected @endif >Alert</option>\
