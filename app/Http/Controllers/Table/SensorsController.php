@@ -61,7 +61,7 @@ class SensorsController extends TableController
             ->when($request->get('searchPhrase'), fn ($q) => $q->leftJoin('devices', 'devices.device_id', '=', 'sensors.device_id'))
             ->with($relations)
             ->withAggregate('device', 'hostname');
-        
+
         if($status != "") {
             $query->leftJoin('sensors_to_state_indexes', 'sensors_to_state_indexes.sensor_id', '=', 'sensors.sensor_id')
             ->leftJoin('state_translations', function ($j) {
@@ -69,17 +69,17 @@ class SensorsController extends TableController
                 ->on( 'sensors.sensor_current', '=', 'state_translations.state_value');
             });
         }
-            
+
         if($class != "all") {
             $query->where('sensor_class', $class);
         }
 
         switch($status) {
             case "unknown":
-                $query->whereRaw('state_translations.state_generic_value = 3)');          
+                $query->whereRaw('state_translations.state_generic_value = 3)');
                 break;
             case "alert":
-                $query->where('sensor_alert', 1);  
+                $query->where('sensor_alert', 1);
             case "error":
                 $query->whereRaw('(sensor_current < sensor_limit_low OR sensor_current > sensor_limit OR state_translations.state_generic_value = 2)');
                 break;

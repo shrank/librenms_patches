@@ -48,7 +48,7 @@ class SensorController
             'graphs' => ['text' => __('Graphs'), 'link' => $request->fullUrlWithQuery(['view' => 'graphs'])],
             'detail' => ['text' => __('No Graphs'), 'link' => $request->fullUrlWithoutQuery('view')],
         ];
-        
+
         $status_bar = [
             'all' => [ 'text' => __('All'), 'link' => $request->fullUrlWithQuery(['status' => 'all'])],
             'alert' => [ 'text' => __('Alert') , 'link' => $request->fullUrlWithQuery(['status' => 'alert'])],
