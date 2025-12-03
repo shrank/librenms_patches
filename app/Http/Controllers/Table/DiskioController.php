@@ -33,13 +33,6 @@ use LibreNMS\Util\Url;
 
 class DiskioController extends TableController
 {
-    protected function rules(): array
-    {
-        return [
-            'status' => 'nullable|string',
-        ];
-    }
-
     protected function sortFields($request): array
     {
         return [
@@ -58,19 +51,10 @@ class DiskioController extends TableController
 
     protected function baseQuery(Request $request)
     {
-        $status = $request->input('status');
-
-        $query = UcdDiskio::query()
+        return UcdDiskio::query()
             ->hasAccess($request->user())
             ->when($request->get('searchPhrase'), fn ($q) => $q->leftJoin('devices', 'devices.device_id', '=', 'sensors.device_id'))
             ->withAggregate('device', 'hostname');
-        
-        switch($status) {
-            case "warning":
-                $query->whereRaw('mempool_perc >= mempool_perc_warn');
-        }
-
-        return $query;
     }
 
     /**

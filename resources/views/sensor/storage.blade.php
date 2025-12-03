@@ -35,23 +35,6 @@
         </div>
     </div>
     <script>
-        $(document).ready(function(){
-
-            $('.actionBar').append('<div class="pull-left form-inline">\
-                <label for="sensor-status-dropdown" class="control-label">{{ __('Status') }}:</label>\
-                <select class="form-control" name="sensor-status" id="sensor-status-dropdown">\
-                    <option value="warning">Warning</option>\
-                    <option selected value="">All</option>\
-                </select>\
-            </div>'
-            );
-
-            $("#sensor-status-dropdown").on("change", function() {
-                  $("#storage").bootgrid('reload');
-              });
-
-        });
-
         var grid = $("#storage").bootgrid({
             ajax: true,
             rowCount: [50, 100, 250, -1],

@@ -57,8 +57,8 @@ class SensorController
         ];
 
         if($metric == 'all') {
-          unset($status_bar['all']);
-          if($status == 'all') $status = 'alert';
+            unset($status_bar['all']);
+            if($status == 'all') $status = 'alert';
         }
 
         if(in_array($metric, ['all', 'state'])) {
@@ -66,9 +66,9 @@ class SensorController
         }
 
         if(in_array($metric ,['mempool', 'processor', 'storage'])) {
-          unset($status_bar['alert']);
-          unset($status_bar['error']);
-          unset($status_bar['unknown']);
+            unset($status_bar['alert']);
+            unset($status_bar['error']);
+            unset($status_bar['unknown']);
         }
 
         if(!array_key_exists($status, $status_bar )) $status = array_key_first($status_bar);

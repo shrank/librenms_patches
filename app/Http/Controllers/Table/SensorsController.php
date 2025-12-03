@@ -84,7 +84,9 @@ class SensorsController extends TableController
                 $query->whereRaw('(sensor_current < sensor_limit_low OR sensor_current > sensor_limit OR state_translations.state_generic_value = 2)');
                 break;
             case "warning":
-                $query->whereRaw('((sensor_current > sensor_limit_low AND sensor_current < sensor_limit AND (sensor_current < sensor_limit_low_warn OR sensor_current > sensor_limit_warn) OR state_translations.state_generic_value = 1))');
+                $query->whereRaw('((sensor_current > sensor_limit_low AND sensor_current < sensor_limit'
+                  . ' AND (sensor_current < sensor_limit_low_warn OR sensor_current > sensor_limit_warn)'
+                  . ' OR state_translations.state_generic_value = 1))');
         }
         return $query;
     }
