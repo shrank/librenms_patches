@@ -33,7 +33,6 @@ if ($vars['string']) {
     $param[] = '%' . $vars['string'] . '%';
 }
 
-
 if (Auth::user()->hasGlobalRead()) {
     $sql = " FROM `eventlog` AS E LEFT JOIN `devices` AS `D` ON `E`.`device_id`=`D`.`device_id` WHERE $where";
 } else {
