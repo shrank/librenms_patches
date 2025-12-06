@@ -32,6 +32,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Blade;
 use LibreNMS\Enum\Severity;
 use LibreNMS\Util\Url;
+use LibreNMS\Util\Time;
 
 class EventlogController extends TableController
 {
@@ -81,7 +82,7 @@ class EventlogController extends TableController
             $query->where('message', 'like', '%'.$request->message.'%');
         }
         if(!empty($request->age)) {
-            $query->where('datetime', '>', Carbon::now()->subHours((int) $request->age));
+            $query->where('datetime', '>', Carbon::now()->subSeconds( Time::durationToSeconds($request->age)));
         }
         return $query;
     }
