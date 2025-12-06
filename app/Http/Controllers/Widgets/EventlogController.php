@@ -45,10 +45,10 @@ class EventlogController extends WidgetController
 
     public function getView(Request $request): View|string
     {
-        $data = $this->getSettings(true);
+        $data = $this->getSettings();
 
-        if($data->age != '') {
-          $data->age = Time::durationToSeconds($data->age);
+        if($data['age'] != '') {
+          $data['age'] = Time::durationToSeconds($data['age']);
         }
         return view("widgets.$this->name", $data);
     }
