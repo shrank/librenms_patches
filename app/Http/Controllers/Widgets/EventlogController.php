@@ -43,13 +43,20 @@ class EventlogController extends WidgetController
         'hidenavigation' => 0,
     ];
 
-    public function getSettingsView(Request $request): \Illuminate\View\View
+    public function getView(Request $request): View|string
     {
         $data = $this->getSettings(true);
 
         if($data->age != '') {
           $data->age = Time::durationToSeconds($data->age);
         }
+        return view("widgets.$this->name", $data);
+    }
+
+
+    public function getSettingsView(Request $request): \Illuminate\View\View
+    {
+        $data = $this->getSettings(true);
 
         $data['device'] = Device::hasAccess($request->user())->find($data['device']);
 
