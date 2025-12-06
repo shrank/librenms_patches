@@ -43,7 +43,7 @@ class EventlogController extends WidgetController
         'hidenavigation' => 0,
     ];
 
-    public function getView(Request $request): View|string
+    public function getView(Request $request): \Illuminate\View\View|string
     {
         $data = $this->getSettings();
 
