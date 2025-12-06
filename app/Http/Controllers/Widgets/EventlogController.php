@@ -28,6 +28,7 @@ namespace App\Http\Controllers\Widgets;
 
 use App\Models\Device;
 use Illuminate\Http\Request;
+use LibreNMS\Util\Time;
 
 class EventlogController extends WidgetController
 {
@@ -45,6 +46,10 @@ class EventlogController extends WidgetController
     public function getSettingsView(Request $request): \Illuminate\View\View
     {
         $data = $this->getSettings(true);
+
+        if($data->age != '') {
+          $data->age = Time::durationToSeconds($data->age);
+        }
 
         $data['device'] = Device::hasAccess($request->user())->find($data['device']);
 
