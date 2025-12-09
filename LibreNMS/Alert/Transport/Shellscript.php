@@ -40,8 +40,9 @@ class Shellscript extends Transport
         $output = exec($cli, $output, $res_code);
 
         if($res_code > 0) {
-            throw new AlertTransportDeliveryException($alert_data, str($res_code), $output, $cli);
+            throw new AlertTransportDeliveryException($alert_data, $res_code, $cli . "\n" . $output, $cli );
         }
+        return true;
     }
 
     public static function configTemplate(): array
@@ -54,13 +55,6 @@ class Shellscript extends Transport
                     'descr' => 'Shell command with arguments ',
                     'type' => 'text',
                 ],
-                [
-                    'title' => 'body',
-                    'name' => 'shellscript-body',
-                    'descr' => 'This data will be sent to STDIN',
-                    'type' => 'textarea',
-                ],
-
             ],
             'validation' => [
                 'shellscript-cli' => 'required',
