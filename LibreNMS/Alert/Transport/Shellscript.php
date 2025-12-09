@@ -17,9 +17,8 @@
 /**
  * API Transport
  *
- * @author f0o <f0o@devilcode.org>
- * @author PipoCanaja (github.com/PipoCanaja)
- * @copyright 2014 f0o, LibreNMS
+ * @author shrank <info@murxs.ch>
+ * @copyright 2025 shrank, LibreNMS
  * @license GPL
  */
 
@@ -36,7 +35,7 @@ class Shellscript extends Transport
     public function deliverAlert(array $alert_data): bool
     {
         $cli = SimpleTemplate::parse($this->config['shellscript-cli'], $alert_data);
-        
+
         $output = exec($cli, $output, $res_code);
 
         if($res_code > 0) {
