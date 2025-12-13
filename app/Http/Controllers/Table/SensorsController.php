@@ -59,47 +59,43 @@ class SensorsController extends TableController
         $query = Sensor::query()
             ->hasAccess($request->user())
             ->when($request->get('searchPhrase'), fn ($q) => $q->leftJoin('devices', 'devices.device_id', '=', 'sensors.device_id'))
+            ->when($class != "all", fn($q) => $q->where('sensor_class', $class))
             ->with($relations)
             ->withAggregate('device', 'hostname');
 
-        if($status != "") {
-            $query->leftJoin('sensors_to_state_indexes', 'sensors_to_state_indexes.sensor_id', '=', 'sensors.sensor_id')
-            ->leftJoin('state_translations', function ($j) {
-                $j->on( 'sensors_to_state_indexes.state_index_id', '=', 'state_translations.state_index_id')
-                ->on( 'sensors.sensor_current', '=', 'state_translations.state_value');
-            });
-        }
-
-        if($class != "all") {
-            $query->where('sensor_class', $class);
+            
+        function has_state($q, $state) {
+            $q->where('state_generic_value', $state)
+                ->whereColumn( 'sensor_current', '=', 'state_value');
         }
 
         switch($status) {
             case "unknown":
-                $query->where('state_translations.state_generic_value', 3);
+                $query->whereHas('translations', fn ($q) => has_state($q, 3));
                 break;
             case "alert":
                 $query->where('sensor_alert', 1);
             case "error":
-                $query->where(function (Builder $query) {
-                    $query->where('sensor_current', '<', 'sensor_limit_low')
+                $query->where(function ($q) {
+                    $q->where('sensor_current', '<', 'sensor_limit_low')
                     ->orWhereColumn('sensor_current', '>', 'sensor_limit')
-                    ->orWhere('state_translations.state_generic_value', 2);
+                    ->orWhereHas('translations', fn ($q) => has_state($q, 2));
                 });
                 break;
             case "warning":
-                $query->where(function (Builder $query) {
-                    $query->where('state_translations.state_generic_value', 1)
-                    ->orWhere(function (Builder $query) {
-                        $query->whereColumn('sensor_current', '>', 'sensor_limit_low')
+                $query->where(function ($q) {
+                    $q->WhereHas('translations', fn ($q) => has_state($q, 1))
+                    ->orWhere(function ($q) {
+                        $q->whereColumn('sensor_current', '>', 'sensor_limit_low')
                         ->whereColumn('sensor_current', '<', 'sensor_limit')
-                        ->where(function (Builder $query) {
-                            $query->whereColumn('sensor_current', '<', 'sensor_limit_low_warn')
+                        ->where(function ($q) {
+                            $q->whereColumn('sensor_current', '<', 'sensor_limit_low_warn')
                             ->orWhereColumn('sensor_current', '>', 'sensor_limit_warn');
                         });
                     });
                 });
         }
+
         return $query;
     }
 
