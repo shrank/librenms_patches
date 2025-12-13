@@ -76,17 +76,29 @@ class SensorsController extends TableController
 
         switch($status) {
             case "unknown":
-                $query->whereRaw('state_translations.state_generic_value = 3)');
+                $query->where('state_translations.state_generic_value', 3);
                 break;
             case "alert":
                 $query->where('sensor_alert', 1);
             case "error":
-                $query->whereRaw('(sensor_current < sensor_limit_low OR sensor_current > sensor_limit OR state_translations.state_generic_value = 2)');
+                $query->where(function (Builder $query) {
+                    $query->where('sensor_current', '<', 'sensor_limit_low')
+                    ->orWhereColumn('sensor_current', '>', 'sensor_limit')
+                    ->orWhere('state_translations.state_generic_value', 2);
+                });
                 break;
             case "warning":
-                $query->whereRaw('((sensor_current > sensor_limit_low AND sensor_current < sensor_limit'
-                  . ' AND (sensor_current < sensor_limit_low_warn OR sensor_current > sensor_limit_warn)'
-                  . ' OR state_translations.state_generic_value = 1))');
+                $query->where(function (Builder $query) {
+                    $query->where('state_translations.state_generic_value', 1)
+                    ->orWhere(function (Builder $query) {
+                        $query->whereColumn('sensor_current', '>', 'sensor_limit_low')
+                        ->whereColumn('sensor_current', '<', 'sensor_limit')
+                        ->where(function (Builder $query) {
+                            $query->whereColumn('sensor_current', '<', 'sensor_limit_low_warn')
+                            ->orWhereColumn('sensor_current', '>', 'sensor_limit_warn');
+                        });
+                    });
+                });
         }
         return $query;
     }
