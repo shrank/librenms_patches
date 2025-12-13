@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Validation\Rule;
 use LibreNMS\Enum\Severity;
+use LibreNMS\Enum\SensorState;
 use LibreNMS\Util\Html;
 use LibreNMS\Util\Url;
 
@@ -71,7 +72,13 @@ class SensorsController extends TableController
 
         switch($status) {
             case "unknown":
-                $query->whereHas('translations', fn ($q) => has_state($q, 3));
+                $query->whereHas('translations', function ($q) {
+                    $q->whereColumn( 'sensor_current', '=', 'state_value')
+                    ->where(function ($q) {
+                        $q->where('state_generic_value', '<', SensorState::Ok)
+                        ->orwhere('state_generic_value', '>', SensorState::Error);
+                    });
+                });
                 break;
             case "alert":
                 $query->where('sensor_alert', 1);
@@ -79,12 +86,12 @@ class SensorsController extends TableController
                 $query->where(function ($q) {
                     $q->where('sensor_current', '<', 'sensor_limit_low')
                     ->orWhereColumn('sensor_current', '>', 'sensor_limit')
-                    ->orWhereHas('translations', fn ($q) => has_state($q, 2));
+                    ->orWhereHas('translations', fn ($q) => has_state($q, SensorState::Error));
                 });
                 break;
             case "warning":
                 $query->where(function ($q) {
-                    $q->WhereHas('translations', fn ($q) => has_state($q, 1))
+                    $q->WhereHas('translations', fn ($q) => has_state($q, SensorState::Warning))
                     ->orWhere(function ($q) {
                         $q->whereColumn('sensor_current', '>', 'sensor_limit_low')
                         ->whereColumn('sensor_current', '<', 'sensor_limit')
