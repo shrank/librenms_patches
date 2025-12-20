@@ -72,18 +72,18 @@ class EventlogController extends TableController
      */
     public function baseQuery($request)
     {
-        $query =  Eventlog::hasAccess($request->user())
+        return Eventlog::hasAccess($request->user())
             ->with('device')
             ->when($request->device_group, function ($query) use ($request) {
                 $query->inDeviceGroup($request->device_group);
+            })
+            ->when($request->message, function ($query) use ($request) {
+                $query->where('message', 'like', '%'.$request->message.'%');
+            })
+            ->when($request->age, function ($query) use ($request) {
+                $query->where('datetime', '>', Carbon::now()->subSeconds( (int) $request->age));
             });
-        if(!empty($request->message)) {
-            $query->where('message', 'like', '%'.$request->message.'%');
-        }
-        if(!empty($request->age)) {
-            $query->where('datetime', '>', Carbon::now()->subSeconds( (int) $request->age));
-        }
-        return $query;
+        
     }
 
     /**
