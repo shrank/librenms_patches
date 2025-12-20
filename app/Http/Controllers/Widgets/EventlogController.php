@@ -37,7 +37,7 @@ class EventlogController extends WidgetController
         'device' => null,
         'device_group' => null,
         'eventtype' => null,
-        'filter' => null,
+        'message_filter' => null,
         'age' => null,
         'hidenavigation' => 0,
     ];

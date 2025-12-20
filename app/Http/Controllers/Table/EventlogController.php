@@ -78,12 +78,11 @@ class EventlogController extends TableController
                 $query->inDeviceGroup($request->device_group);
             })
             ->when($request->message, function ($query) use ($request) {
-                $query->where('message', 'like', '%'.$request->message.'%');
+                $query->where('message', 'like', '%' . $request->message . '%');
             })
             ->when($request->age, function ($query) use ($request) {
                 $query->where('datetime', '>', Carbon::now()->subSeconds( (int) $request->age));
             });
-        
     }
 
     /**

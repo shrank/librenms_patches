@@ -30,8 +30,8 @@
         </select>
     </div>
     <div class="form-group">
-        <label for="filter-{{ $id }}" class="control-label">{{ __('Filer text') }}</label>
-        <input type="text" class="form-control" name="filter" id="filter-{{ $id }}" placeholder="{{ __('Prefilter Log') }}" value="{{ $filter }}">
+        <label for="message_filter-{{ $id }}" class="control-label">{{ __('Filer text') }}</label>
+        <input type="text" class="form-control" name="message_filter" id="message_filter-{{ $id }}" placeholder="{{ __('Prefilter Log Messages') }}" value="{{ $message_filter }}">
     </div>
     <div class="form-group">
         <label for="age-{{ $id }}" class="control-label">{{ __('Max age') }}</label>
