@@ -28,8 +28,6 @@ namespace App\Http\Controllers\Widgets;
 
 use App\Models\Device;
 use Illuminate\Http\Request;
-use Illuminate\View\View;
-use LibreNMS\Util\Time;
 
 class EventlogController extends WidgetController
 {
@@ -43,17 +41,6 @@ class EventlogController extends WidgetController
         'age' => null,
         'hidenavigation' => 0,
     ];
-
-    public function getView(Request $request): string|View
-    {
-        $data = $this->getSettings();
-
-        if($data['age'] != '') {
-          $data['age'] = Time::durationToSeconds($data['age']);
-        }
-        return view("widgets.$this->name", $data);
-    }
-
 
     public function getSettingsView(Request $request): \Illuminate\View\View
     {

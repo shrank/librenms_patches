@@ -23,7 +23,7 @@
             {
                 return {
                     @if($filter) message: "{{ $filter }}", @endif
-                    @if($age) age: "{{ $age }}", @endif
+                    @if($age) age: "{{ LibreNMS\Util\Time::durationToSeconds($age) }}", @endif
                     device: "{{ $device }}",
                     device_group: "{{ $device_group }}",
                     eventtype: "{{ $eventtype }}"
