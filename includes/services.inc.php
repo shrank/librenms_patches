@@ -103,7 +103,7 @@ function poll_service($service)
         // Set the DS in the DB if it is blank.
         $DS = [];
         foreach ($perf as $k => $v) {
-            $DS[$k] = ['uom' => $v['uom'], 'full_name' => $v['full_name']];
+            $DS[$k] = $v['uom'];
         }
         d_echo('Service DS: ' . json_encode($DS, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . "\n");
         if (($service['service_ds'] == '{}') || ($service['service_ds'] == '')) {
