@@ -51,15 +51,15 @@ class InfluxDB extends BaseDatastore
         // since the transport doesn't support querying.  That said
         // the database will be created automatically upon data
         // reception.
-        if (LibrenmsConfig::get('influxdb.transport', 'http') !== 'udp') {
-            try {
-                if (! $this->connection->exists()) {
-                    $this->connection->create();
-                }
-            } catch (\Exception) {
-                Log::warning('InfluxDB: Could not create database');
-            }
-        }
+        // if (LibrenmsConfig::get('influxdb.transport', 'http') !== 'udp') {
+        //     try {
+        //         if (! $this->connection->exists()) {
+        //             $this->connection->create();
+        //         }
+        //     } catch (\Exception) {
+        //         Log::warning('InfluxDB: Could not create database');
+        //     }
+        // }
     }
 
     public function terminate(): void
