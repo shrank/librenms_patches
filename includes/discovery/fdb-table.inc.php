@@ -1,9 +1,8 @@
 <?php
+use App\Facades\LibrenmsConfig;
+use Illuminate\Support\Facades\Log;
 
 // Build a dictionary of vlans in database
-use App\Facades\LibrenmsConfig;
-use Log;
-
 $vlans_dict = [];
 foreach (dbFetchRows('SELECT `vlan_id`, `vlan_vlan` from `vlans` WHERE `device_id` = ?', [$device['device_id']]) as $vlan_entry) {
     $vlans_dict[$vlan_entry['vlan_vlan']] = $vlan_entry['vlan_id'];
@@ -60,8 +59,8 @@ if (! empty($insert)) {
                 unset($existing_fdbs[$vlan_id][$mac_address_entry]);
             } else {
                 if (is_null($entry['port_id'])) {
-                    Log::warning("FDB: missing port id for device {$device['device_id']}, MAC {$mac_address_entry}, VLAN {$vlan_id}");
-                    continue;              
+                    Log::warning("FDB: missing port id for MAC {$mac_address_entry}, VLAN {$vlan_id}, device {$device['device_id']}");
+                    continue;
                 }
 
                 DB::table('ports_fdb')->insert([
