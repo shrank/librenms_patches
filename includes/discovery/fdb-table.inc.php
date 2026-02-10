@@ -1,8 +1,8 @@
 <?php
+use App\Facades\LibrenmsConfig;
+use Illuminate\Support\Facades\Log;
 
 // Build a dictionary of vlans in database
-use App\Facades\LibrenmsConfig;
-
 $vlans_dict = [];
 foreach (dbFetchRows('SELECT `vlan_id`, `vlan_vlan` from `vlans` WHERE `device_id` = ?', [$device['device_id']]) as $vlan_entry) {
     $vlans_dict[$vlan_entry['vlan_vlan']] = $vlan_entry['vlan_id'];
@@ -59,11 +59,8 @@ if (! empty($insert)) {
                 unset($existing_fdbs[$vlan_id][$mac_address_entry]);
             } else {
                 if (is_null($entry['port_id'])) {
-                    // fix SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'port_id' cannot be null
-                    // If $entry['port_id'] truly is null then  Illuminate throws a fatal errory and all subsequent processing stops.
-                    // Cisco ISO (and others) may have null ids. We still want them inserted as new
-                    // strings work with DB::table->insert().
-                    $entry['port_id'] = '';
+                    Log::warning("FDB: missing port id for MAC {$mac_address_entry}, VLAN {$vlan_id}, device {$device['device_id']}");
+                    continue;
                 }
 
                 DB::table('ports_fdb')->insert([
