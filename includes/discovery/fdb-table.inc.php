@@ -63,7 +63,7 @@ if (! empty($insert)) {
                     // If $entry['port_id'] truly is null then  Illuminate throws a fatal errory and all subsequent processing stops.
                     // Cisco ISO (and others) may have null ids. We still want them inserted as new
                     // strings work with DB::table->insert().
-                    $entry['port_id'] = '';
+                    $entry['port_id'] = 0;
                 }
 
                 DB::table('ports_fdb')->insert([
