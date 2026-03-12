@@ -34,7 +34,7 @@ class SensorController
     public function index(Request $request, string $metric = '', string $legacyview = ''): View
     {
         $metric = str_replace('metric=', '', $metric);
-        $view = str_replace('view=', '', $legacyview) ?: $request->get('view', 'detail');
+        $view = str_replace('view=', '', $legacyview) ?: $request->input('view', 'detail');
         $status = $request->get('status', 'all');
 
         $metrics = $this->getMetrics($request);
@@ -76,7 +76,7 @@ class SensorController
         $title = 'Health :: ' . match ($metric) {
             'dbm' => 'dBm',
             'snr' => 'SNR',
-            default => ucfirst($metric),
+            default => ucfirst((string) $metric),
         };
 
         $blade_view = match ($metric) {
