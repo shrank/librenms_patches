@@ -6,12 +6,13 @@ Route: `/api/v0/resources/vlans`
 
 Input:
 
--
+- hostname - Optional. Filter VLANs by device hostname or ID
 
 Example:
 
 ```curl
 curl -H 'X-Auth-Token: YOURAPITOKENHERE' https://foo.example/api/v0/resources/vlans
+curl -H 'X-Auth-Token: YOURAPITOKENHERE' https://foo.example/api/v0/resources/vlans?hostname=localhost
 ```
 
 Output:
