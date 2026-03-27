@@ -41,6 +41,7 @@ continue to function as normal.
     lnms config:set influxdb.measurements ''
     lnms config:set influxdb.verifySSL false
     lnms config:set influxdb.debug false
+    lnms config:set influxdb.extra_tags []
     ```
 
 No credentials are needed if you don't use InfluxDB authentication.
@@ -48,3 +49,24 @@ No credentials are needed if you don't use InfluxDB authentication.
 The same data then stored within rrd will be sent to InfluxDB and
 recorded. You can then create graphs within Grafana to display the
 information you need.
+
+## Extra Tags
+
+You can configure additional tags that will be added to every metric
+sent to InfluxDB. This is useful for adding contextual information
+like site location or environment.
+
+!!! setting "poller/influxdb"
+    ```bash
+    lnms config:set influxdb.extra_tags '["site=branch A, tag2=value 2", "environment=production"]'
+    ```
+
+Each array element can contain multiple comma-separated key=value pairs.
+These tags will be added to all measurements along with the following
+dynamic tags:
+
+- `device_ip` - The IP address of the device
+- `device_serial` - The serial number of the device
+- `device_model` - The hardware/model of the device
+- `device_groups` - Comma-separated list of device group names
+- `module` - The name of the module that collected the metric

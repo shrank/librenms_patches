@@ -40,11 +40,14 @@ class InfluxDB extends BaseDatastore
     private $batchSize = 0; // Number of points to write at once
     private $measurements = []; // List of measurements to write
 
+    private $extraTags = [];
+
     public function __construct(private readonly Database $connection)
     {
         parent::__construct();
         $this->batchSize = LibrenmsConfig::get('influxdb.batch_size', 0);
         $this->measurements = LibrenmsConfig::get('influxdb.measurements', []);
+        $this->extraTags = $this->parseExtraTags(LibrenmsConfig::get('influxdb.extra_tags', []));
 
         // if the database doesn't exist, create it.
         // When using UDP transport, the call to exists() fails
@@ -60,6 +63,26 @@ class InfluxDB extends BaseDatastore
                 Log::warning('InfluxDB: Could not create database');
             }
         }
+    }
+
+    private function parseExtraTags(array $extraTagsConfig): array
+    {
+        $parsed = [];
+        foreach ($extraTagsConfig as $tagString) {
+            if (empty($tagString)) {
+                continue;
+            }
+            $pairs = explode(',', $tagString);
+            foreach ($pairs as $pair) {
+                $pair = trim($pair);
+                if (str_contains($pair, '=')) {
+                    [$key, $value] = array_map('trim', explode('=', $pair, 2));
+                    $parsed[$key] = $value;
+                }
+            }
+        }
+
+        return $parsed;
     }
 
     public function terminate(): void
@@ -89,8 +112,29 @@ class InfluxDB extends BaseDatastore
         }
 
         $stat = Measurement::start('write');
+        $device = $this->getDevice($meta);
         $tmp_fields = [];
-        $tmp_tags['hostname'] = $this->getDevice($meta)->hostname;
+        $tmp_tags['hostname'] = $device->hostname;
+
+        // Add dynamic device tags
+        $tmp_tags['device_ip'] = $device->ip ?? '';
+        $tmp_tags['device_serial'] = $device->serial ?? '';
+        $tmp_tags['device_model'] = $device->hardware ?? '';
+
+        // Add device groups as comma-separated list
+        $groups = $device->groups;
+        if ($groups->isNotEmpty()) {
+            $tmp_tags['device_groups'] = $groups->pluck('name')->implode(',');
+        }
+
+        // Add module name (measurement name)
+        $tmp_tags['module'] = $measurement;
+
+        // Add extra tags from configuration
+        foreach ($this->extraTags as $key => $value) {
+            $tmp_tags[$key] = $value;
+        }
+
         foreach ($tags as $k => $v) {
             if (empty($v)) {
                 $v = '_blank_';
