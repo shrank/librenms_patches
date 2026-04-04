@@ -112,7 +112,7 @@ class InfluxDB extends BaseDatastore
         }
 
         $stat = Measurement::start('write');
-        $device = $this->getDevice($meta);
+        $device = $this->getDevice($meta); //@TD: make sure this is not a DB lookup
         $tmp_fields = [];
         $tmp_tags['hostname'] = $device->hostname;
 
