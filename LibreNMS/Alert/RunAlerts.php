@@ -31,7 +31,7 @@
 
 namespace LibreNMS\Alert;
 
-include "includes\html\functions";
+require_once __DIR__ . '/../../includes/html/functions.inc.php';
 use App\Facades\DeviceCache;
 use App\Facades\LibrenmsConfig;
 use App\Facades\Rrd;
