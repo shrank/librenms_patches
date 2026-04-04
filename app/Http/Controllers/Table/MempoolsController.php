@@ -37,9 +37,16 @@ use LibreNMS\Util\Url;
 
 class MempoolsController extends TableController
 {
+    protected function rules(): array
+    {
+        return [
+            'status' => 'nullable|string',
+        ];
+    }
+
     protected function searchFields($request)
     {
-        return ['hostname', 'mempool_descr'];
+        return ['hostname', 'display', 'mempool_descr'];
     }
 
     protected function sortFields($request)
@@ -52,18 +59,24 @@ class MempoolsController extends TableController
      */
     protected function baseQuery($request)
     {
-        if ($request->get('view') == 'graphs') {
-            return Device::hasAccess($request->user())->has('mempools')->with('mempools');
+        if ($request->input('view') == 'graphs') {
+            $query = Device::hasAccess($request->user())->has('mempools')->with('mempools');
+        } else {
+            $query = Mempool::hasAccess($request->user())
+                ->with(['device', 'device.location']);
+
+            // join devices table to sort by hostname or search
+            if (array_key_exists('hostname', $request->input('sort', $this->default_sort)) || $request->input('searchPhrase')) {
+                $query->join('devices', 'mempools.device_id', 'devices.device_id')
+                    ->select('mempools.*');
+            }
         }
 
-        $query = Mempool::hasAccess($request->user())
-            ->with(['device', 'device.location']);
-
-        // join devices table to sort by hostname or search
-        if (array_key_exists('hostname', $request->get('sort', $this->default_sort)) || $request->get('searchPhrase')) {
-            $query->join('devices', 'mempools.device_id', 'devices.device_id')
-                ->select('mempools.*');
-        }
+        $query->when($request->input('status') == 'warning', function ($q): void {
+            // show only entries in warning state
+            $q->where('mempool_perc_warn', '>', 0)
+                ->whereColumn('mempool_perc', '>=', 'mempool_perc_warn');
+        });
 
         return $query;
     }
@@ -131,7 +144,7 @@ class MempoolsController extends TableController
         $used = $is_percent ? $mempool->mempool_used : Number::formatBi($mempool->mempool_used);
         $total = $is_percent ? $mempool->mempool_total : Number::formatBi($mempool->mempool_total);
 
-        $percent = Html::percentageBar(400, 20, $mempool->mempool_perc, "$used / $total", $free, $mempool->mempool_perc_warn);
+        $percent = Html::percentageBar(400, 10, $mempool->mempool_perc, "$used / $total", $total !== $free ? $free : $free, $mempool->mempool_perc_warn);
         $link = Url::generate(['page' => 'graphs'], Arr::only($graph, ['id', 'type', 'from']));
 
         return Url::overlibLink($link, $percent, Url::graphTag($graph));

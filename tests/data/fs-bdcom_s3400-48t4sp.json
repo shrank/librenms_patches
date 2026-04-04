@@ -10745,7 +10745,7 @@
                     "sensor_index": "ifSfpParameterTable.sfpLostStatus.178",
                     "sensor_type": "ifSfpParameterTable",
                     "sensor_descr": "TGigaEthernet0/2 LOS",
-                    "group": "Transceiver: TGigaEthernet0/2 (Vendor: FS PN:  S/N: F2220943223-1 256nm)",
+                    "group": "transceiver",
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -217548,6 +217548,45 @@
                     "state": "unknown",
                     "cost": 0,
                     "untagged": 1
+                }
+            ]
+        }
+    },
+    "transceivers": {
+        "discovery": {
+            "transceivers": [
+                {
+                    "index": "178",
+                    "entity_physical_index": 178,
+                    "type": "DAC",
+                    "vendor": "FS",
+                    "oui": null,
+                    "model": null,
+                    "revision": null,
+                    "serial": "F2220943223-1",
+                    "date": null,
+                    "ddm": null,
+                    "encoding": null,
+                    "cable": null,
+                    "distance": 2,
+                    "wavelength": 256,
+                    "connector": null,
+                    "channels": 1,
+                    "ifIndex": 178
+                }
+            ]
+        }
+    },
+    "hr-device": {
+        "discovery": {
+            "hrDevice": [
+                {
+                    "hrDeviceIndex": 1,
+                    "hrDeviceDescr": "",
+                    "hrDeviceType": "",
+                    "hrDeviceErrors": 0,
+                    "hrDeviceStatus": "unknown",
+                    "hrProcessorLoad": 28
                 }
             ]
         }
