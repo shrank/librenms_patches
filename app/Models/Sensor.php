@@ -13,6 +13,7 @@ use LibreNMS\Interfaces\Models\Keyable;
 use LibreNMS\Util\Number;
 use LibreNMS\Util\Rewrite;
 use LibreNMS\Util\Time;
+use LibreNMS\Enum\SensorState;
 
 class Sensor extends DeviceRelatedModel implements Keyable
 {
@@ -167,7 +168,29 @@ class Sensor extends DeviceRelatedModel implements Keyable
      * @param  Builder  $query
      * @return Builder
      */
-    public function scopeIsCritical($query)
+        public function scopeIsWarning($query)
+    {
+        return $query->whereColumn('sensor_current', '<', 'sensor_limit_low_warn')
+            ->orWhereColumn('sensor_current', '>', 'sensor_limit_warn');
+    }
+        public function scopeStateUnknown($query)
+    {
+        return $query->whereHas('translations', function ($q): void {
+            $q->whereColumn('sensor_current', '=', 'state_value')
+                ->where(function ($q): void {
+                    $q->where('state_generic_value', '<', SensorState::Ok)
+                        ->orWhere('state_generic_value', '>', SensorState::Error);
+                });
+        });
+    }
+    public function scopeStateEq($query, $state)
+    {
+        return $query->whereHas('translations', function ($q) use ($state): void {
+            $q->where('state_generic_value', $state)
+                ->whereColumn('sensor_current', '=', 'state_value');
+        });
+    }
+        public function scopeIsCritical($query)
     {
         return $query->whereColumn('sensor_current', '<', 'sensor_limit_low')
             ->orWhereColumn('sensor_current', '>', 'sensor_limit');

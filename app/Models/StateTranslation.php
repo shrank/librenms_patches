@@ -30,7 +30,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use LibreNMS\Enum\Severity;
 use LibreNMS\Interfaces\Models\Keyable;
-
+use LibreNMS\Enum\SensorState;
 class StateTranslation extends Model implements Keyable
 {
     const CREATED_AT = null;
@@ -46,9 +46,9 @@ class StateTranslation extends Model implements Keyable
     public function severity(): Severity
     {
         return match ((int) $this->getAttribute('state_generic_value')) {
-            0 => Severity::Ok,
-            1 => Severity::Warning,
-            2 => Severity::Error,
+            SensorState::Ok->value => Severity::Ok,
+            SensorState::Warning->value => Severity::Warning,
+            SensorState::Error->value => Severity::Error,
             default => Severity::Unknown,
         };
     }
