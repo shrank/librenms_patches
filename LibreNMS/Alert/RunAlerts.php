@@ -31,6 +31,7 @@
 
 namespace LibreNMS\Alert;
 
+require_once __DIR__ . '/../../includes/html/functions.inc.php';
 use App\Facades\DeviceCache;
 use App\Facades\LibrenmsConfig;
 use App\Facades\Rrd;
@@ -224,6 +225,10 @@ class RunAlerts
         $obj['state'] = $alert['state'];
         $obj['alerted'] = $alert['alerted'];
         $obj['template'] = $template;
+
+        // Generate pretty HTML details for templates
+        $obj['pretty_details_html'] = alert_details($extra)[0] ?? '';
+        $obj['pretty_details_string'] = trim(strip_tags(str_replace(['<br>', '<br/>', '<br />'], "\n", html_entity_decode(html_entity_decode($obj['pretty_details_html'])))));
 
         return $obj;
     }
