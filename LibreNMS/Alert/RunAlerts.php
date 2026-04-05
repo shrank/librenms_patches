@@ -228,7 +228,7 @@ class RunAlerts
 
         // Generate pretty HTML details for templates
         $obj['pretty_details_html'] = alert_details($extra)[0] ?? '';
-        $obj['pretty_details_string'] = trim(html_entity_decode(strip_tags(str_replace(['<br>', '<br/>', '<br />'], "\n", $obj['pretty_details_html']))));
+        $obj['pretty_details_string'] = trim(strip_tags(str_replace(['<br>', '<br/>', '<br />'], "\n", html_entity_decode(html_entity_decode($obj['pretty_details_html'])))));
 
         return $obj;
     }
