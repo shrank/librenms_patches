@@ -58,7 +58,7 @@ like site location or environment.
 
 !!! setting "poller/influxdb"
     ```bash
-    lnms config:set influxdb.extra_tags '["site=branch A, tag2=value 2", "environment=production"]'
+    lnms config:set influxdb.extra_tags '["site=branch A", "tag2=value 2", "environment=production"]'
     ```
 
 Each array element can contain multiple comma-separated key=value pairs.

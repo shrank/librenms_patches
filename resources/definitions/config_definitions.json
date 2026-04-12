@@ -4754,12 +4754,23 @@
             "section": "influxdb",
             "order": 10
         },
+        "influxdb.extra_tags": {
+            "default": [],
+            "type": "array",
+            "validate": {
+                "value": "array",
+                "value.*": "string"
+            },
+            "group": "poller",
+            "section": "influxdb",
+            "order": 11
+        },
         "influxdb.debug": {
             "default": false,
             "type": "boolean",
             "group": "poller",
             "section": "influxdb",
-            "order": 11
+            "order": 12
         },
         "influxdbv2.enable": {
             "default": false,
