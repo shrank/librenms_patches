@@ -894,7 +894,7 @@ function get_oxidized_nodes_list()
 
     $data = json_decode(file_get_contents(LibrenmsConfig::get('oxidized.url') . '/nodes?format=json', false, $context), true);
 
-    function format_oxidize_timestamp(time) 
+    function format_oxidize_timestamp($time) 
     {
         try {
             // Convert UTC time string to local timezone set
