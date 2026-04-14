@@ -922,8 +922,8 @@ function get_oxidized_nodes_list()
         <td>' . $object['name'] . '</td>
         <td>' . $device['sysName'] . '</td>
         <td>' . $object['status'] . '</td>
-        <td>' . format_oxidize_timestamp(object["time"]) . '</td>
-        <td>' . format_oxidize_timestamp(object["mtime"]) . '</td>
+        <td>' . format_oxidize_timestamp($object["time"]) . '</td>
+        <td>' . format_oxidize_timestamp($object["mtime"]) . '</td>
         <td>' . $object['model'] . '</td>
         <td>' . $object['group'] . '</td>
         <td></td>
