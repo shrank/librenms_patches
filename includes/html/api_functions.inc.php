@@ -2793,10 +2793,26 @@ function get_fdb(Illuminate\Http\Request $request)
         return api_error(404, "Device $hostname not found");
     }
 
-    return check_device_permission($device_id, function () use ($device) {
-        if ($device) {
-            $fdb = $device->portsFdb;
+    $vlan_list = [];
+    $vlans = $request->get('vlan_id');
+    if (!empty($vlans)) {
+        if (is_string($vlans)) {
+            $vlan_list = explode(',', $vlans);
+        } else {
+            $vlan_list = [$vlans];
+        }
+        // Convert to integers and filter out invalid values
+        $vlan_list = array_filter(array_map('intval', $vlan_list));
+    }
+    $age = $request->get('age');
 
+    return check_device_permission($device_id, function () use ($device, $vlan_list, $age) {
+        if ($device) {
+            $fdb = $device->portsFdb()
+                ->when(!empty($vlan_list), fn ($q) => $q->whereIn('vlan_id', $vlan_list))
+                ->when($age, fn ($q) => $q->where('updated_at', '>=', now()->subMinutes($age)))
+                ->get();
+            
             return api_success($fdb, 'ports_fdb');
         }
 
@@ -2816,9 +2832,12 @@ function get_nac(Illuminate\Http\Request $request)
     if (! $device->exists) {
         return api_error(404, "Device $hostname not found");
     }
+    $hideHistorical = $request->get('hide_historical', false) == "true";
 
-    return check_device_permission($device, function () use ($device) {
-        $nac = $device->portsNac;
+    return check_device_permission($device, function () use ($device, $hideHistorical) {
+        
+        $nac = $device->portsNac
+            ->when($hideHistorical, fn ($q) => $q->where('historical', 0));
 
         return api_success($nac, 'ports_nac');
     });

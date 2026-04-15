@@ -643,6 +643,10 @@ Route: `/api/v0/devices/:hostname/fdb`
 
 - hostname can be either the device hostname or id
 
+Input:
+- vlan_id: Filter results by VLAN ID(s). Can be a single VLAN (vlan_id=100) or multiple VLANs as comma-separated values (vlan_id=100,200,300)
+- age: Only return result last seen within the last X minutes.
+
 Example:
 
 ```curl
@@ -666,6 +670,12 @@ Output:
 }
 ```
 
+Example with VLAN filtering:
+
+```curl
+curl -H 'X-Auth-Token: YOURAPITOKENHERE' https://foo.example/api/v0/devices/localhost/fdb?vlan_id=100,200
+```
+
 ### `get_device_nac`
 
 Get a list of NAC entries associated with a device.
@@ -674,10 +684,19 @@ Route: `/api/v0/devices/:hostname/nac`
 
 - hostname can be either the device hostname or id
 
+Input:
+- hide_historical: Set to true to hide historical entries
+
 Example:
 
 ```curl
 curl -H 'X-Auth-Token: YOURAPITOKENHERE' https://foo.example/api/v0/devices/localhost/nac
+```
+
+Example with hide_historical parameter:
+
+```curl
+curl -H 'X-Auth-Token: YOURAPITOKENHERE' https://foo.example/api/v0/devices/localhost/nac?hide_historical=true
 ```
 
 Output:
