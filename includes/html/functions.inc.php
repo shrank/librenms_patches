@@ -917,13 +917,17 @@ function get_oxidized_nodes_list()
             //user cannot see this device, so let's skip it.
             continue;
         }
+        $extra_columns = "";
+        if (LibrenmsConfig::get('oxidized.features.versioning') === true) {
+          $extra_columns .= '<td>' . format_oxidize_timestamp($object["mtime"]) . '</td>';
+        }
         echo '<tr>
         <td>' . $device['device_id'] . '</td>
         <td>' . $object['name'] . '</td>
         <td>' . $device['sysName'] . '</td>
         <td>' . $object['status'] . '</td>
         <td>' . format_oxidize_timestamp($object["time"]) . '</td>
-        <td>' . format_oxidize_timestamp($object["mtime"]) . '</td>
+        ' . $extra_columns . '
         <td>' . $object['model'] . '</td>
         <td>' . $object['group'] . '</td>
         <td></td>
