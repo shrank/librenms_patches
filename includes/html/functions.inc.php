@@ -631,33 +631,42 @@ function get_oxidized_nodes_list()
 
     $data = json_decode(file_get_contents(LibrenmsConfig::get('oxidized.url') . '/nodes?format=json', false, $context), true);
 
+    function format_oxidize_timestamp($time) 
+    {
+        try {
+            // Convert UTC time string to local timezone set
+            $utc_time = $time;
+            $utc_date = new DateTime($utc_time, new DateTimeZone('UTC'));
+            $local_timezone = new DateTimeZone(date_default_timezone_get());
+            $local_date = $utc_date->setTimezone($local_timezone);
+
+            // Generate local time string
+            return $local_date->format('Y-m-d H:i:s T');
+        } catch (Exception) {
+            // Just display the current value
+            return $time;
+        }
+
+    }
     foreach ($data as $object) {
         $device = DeviceCache::getByHostname($object['name']);
         if (! device_permitted($device->device_id)) {
             //user cannot see this device, so let's skip it.
             continue;
         }
-        try {
-            // Convert UTC time string to local timezone set
-            $utc_time = $object['time'];
-            $utc_date = new DateTime($utc_time, new DateTimeZone('UTC'));
-            $local_timezone = new DateTimeZone(date_default_timezone_get());
-            $local_date = $utc_date->setTimezone($local_timezone);
-
-            // Generate local time string
-            $formatted_local_time = $local_date->format('Y-m-d H:i:s T');
-        } catch (Exception) {
-            // Just display the current value of $object['time'];
-            $formatted_local_time = $object['time'];
+        $extra_columns = "";
+        if (LibrenmsConfig::get('oxidized.features.versioning') === true) {
+          $extra_columns .= '<td>' . format_oxidize_timestamp($object["mtime"]) . '</td>';
         }
         echo '<tr>
-        <td>' . e($device->device_id) . '</td>
-        <td>' . e($object['name']) . '</td>
-        <td>' . e($device->sysName) . '</td>
-        <td>' . e($object['status']) . '</td>
-        <td>' . e($formatted_local_time) . '</td>
-        <td>' . e($object['model']) . '</td>
-        <td>' . e($object['group']) . '</td>
+        <td>' . $device->device_id . '</td>
+        <td>' . $object['name'] . '</td>
+        <td>' . $device->sysName . '</td>
+        <td>' . $object['status'] . '</td>
+        <td>' . format_oxidize_timestamp($object["time"]) . '</td>
+        ' . $extra_columns . '
+        <td>' . $object['model'] . '</td>
+        <td>' . $object['group'] . '</td>
         <td></td>
         </tr>';
     }
