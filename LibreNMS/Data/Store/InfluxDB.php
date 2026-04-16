@@ -129,7 +129,11 @@ class InfluxDB extends BaseDatastore
             $groups = $device->groups;
             if ($groups->isNotEmpty()) {
                 foreach ($groups->pluck('name') as $group_name) {
-                    $tmp_tags['group_' . $group_name] = $group_name;
+                    // Sanitize group name to be a valid InfluxDB tag key
+                    // Replace invalid characters with underscore
+                    $sanitized = preg_replace('/[^a-zA-Z0-9_]/', '_', $group_name);
+                    // Ensure it doesn't start with a number
+                    $tmp_tags['group_' . $sanitized] = $group_name;
                 }
             }
         }
