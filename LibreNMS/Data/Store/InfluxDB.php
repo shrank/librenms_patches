@@ -42,13 +42,16 @@ class InfluxDB extends BaseDatastore
 
     private $extraTags = [];
 
+    private $add_group_tags = False;
+
     public function __construct(private readonly Database $connection)
     {
         parent::__construct();
         $this->batchSize = LibrenmsConfig::get('influxdb.batch_size', 0);
         $this->measurements = LibrenmsConfig::get('influxdb.measurements', []);
         $this->extraTags = $this->parseExtraTags(LibrenmsConfig::get('influxdb.extra_tags', []));
-
+        $this->add_group_tags = LibrenmsConfig::get('influxdb.add_group_tags', False);
+ 
         // if the database doesn't exist, create it.
         // When using UDP transport, the call to exists() fails
         // since the transport doesn't support querying.  That said
@@ -121,10 +124,14 @@ class InfluxDB extends BaseDatastore
         $tmp_tags['device_serial'] = $device->serial ?? '';
         $tmp_tags['device_model'] = $device->hardware ?? '';
 
-        // Add device groups as comma-separated list
-        $groups = $device->groups;
-        if ($groups->isNotEmpty()) {
-            $tmp_tags['device_groups'] = $groups->pluck('name')->implode(',');
+        if($this->add_group_tags) {
+            // Add device groups as tags
+            $groups = $device->groups;
+            if ($groups->isNotEmpty()) {
+                foreach ($groups->pluck('name') as $group_name) {
+                    $tmp_tags['group_' . $group_name] = $group_name;
+                }
+            }
         }
 
         // Add module name (measurement name)

@@ -1196,6 +1196,14 @@ return [
                 'description' => 'Verify SSL',
                 'help' => 'Verify the SSL certificate is valid and trusted',
             ],
+            'influxdb.extra_tags' => [
+                'description' => 'Add Extra Tags',
+                'help' => 'additional tags that will be added to every metric: site=branch A',
+            ],
+            'influxdb.add_group_tags' => [
+                'description' => 'Add Group Tags',
+                'help' => 'Add groups as seperate tags',
+            ],
             'debug' => [
                 'description' => 'Debug',
                 'help' => 'To enable or disable verbose output to CLI',

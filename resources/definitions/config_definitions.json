@@ -4765,12 +4765,19 @@
             "section": "influxdb",
             "order": 11
         },
-        "influxdb.debug": {
+        "influxdb.add_group_tags": {
             "default": false,
             "type": "boolean",
             "group": "poller",
             "section": "influxdb",
             "order": 12
+        },
+        "influxdb.debug": {
+            "default": false,
+            "type": "boolean",
+            "group": "poller",
+            "section": "influxdb",
+            "order": 13
         },
         "influxdbv2.enable": {
             "default": false,
