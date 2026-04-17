@@ -100,8 +100,10 @@ class InfluxDB extends BaseDatastore
         $device = $this->getDevice($meta);
         $tmp_fields = [];
         $tmp_tags['hostname'] = $device->hostname;
-        // Add maintenance status tag
-        $tmp_tags['maintenance'] = $this->getMaintenance($device);
+        // skip if maintenance status is set
+        if($this->getMaintenance($device) == 1) {
+          return;
+        }
         foreach ($tags as $k => $v) {
             if (empty($v)) {
                 $v = '_blank_';
