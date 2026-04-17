@@ -27,6 +27,7 @@
 
 namespace LibreNMS\Data\Store;
 
+use Illuminate\Support\Facades\Cache;
 use App\Facades\LibrenmsConfig;
 use App\Polling\Measure\Measurement;
 use InfluxDB\Client;
@@ -51,15 +52,15 @@ class InfluxDB extends BaseDatastore
         // since the transport doesn't support querying.  That said
         // the database will be created automatically upon data
         // reception.
-        if (LibrenmsConfig::get('influxdb.transport', 'http') !== 'udp') {
-            try {
-                if (! $this->connection->exists()) {
-                    $this->connection->create();
-                }
-            } catch (\Exception) {
-                Log::warning('InfluxDB: Could not create database');
-            }
-        }
+        // if (LibrenmsConfig::get('influxdb.transport', 'http') !== 'udp') {
+        //     try {
+        //         if (! $this->connection->exists()) {
+        //             $this->connection->create();
+        //         }
+        //     } catch (\Exception) {
+        //         Log::warning('InfluxDB: Could not create database');
+        //     }
+        // }
     }
 
     public function terminate(): void
@@ -78,6 +79,13 @@ class InfluxDB extends BaseDatastore
         return LibrenmsConfig::get('influxdb.enable', false);
     }
 
+    private function getMaintenance($device) {
+      $key=str($device->device_id) . "_maintenance";
+      return Cache::remember($key, 60, function () use ($device, $key) {
+          return $device->isUnderMaintenance() ? '1' : '0';;
+      });
+    }
+
     /**
      * @inheritDoc
      */
@@ -89,8 +97,13 @@ class InfluxDB extends BaseDatastore
         }
 
         $stat = Measurement::start('write');
+        $device = $this->getDevice($meta);
         $tmp_fields = [];
-        $tmp_tags['hostname'] = $this->getDevice($meta)->hostname;
+        $tmp_tags['hostname'] = $device->hostname;
+        // skip if maintenance status is set
+        if($this->getMaintenance($device) == 1) {
+          return;
+        }
         foreach ($tags as $k => $v) {
             if (empty($v)) {
                 $v = '_blank_';
