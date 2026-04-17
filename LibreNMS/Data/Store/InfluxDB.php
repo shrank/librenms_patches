@@ -133,7 +133,7 @@ class InfluxDB extends BaseDatastore
         $tmp_tags['device_model'] = $device->hardware ?? '';
 
         // Add maintenance status tag
-        $tmp_tags['maintenance'] = this->getMaintenance($device);
+        $tmp_tags['maintenance'] = $this->getMaintenance($device);
 
         if($this->add_group_tags) {
             // Add device groups as tags
