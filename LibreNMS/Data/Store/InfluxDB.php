@@ -104,6 +104,14 @@ class InfluxDB extends BaseDatastore
         return LibrenmsConfig::get('influxdb.enable', false);
     }
 
+    private function getMaintenance($device) {
+      $key=str($device->id) . "_maintenance";
+      return Cache::remember($key, 60, function () use ($device, $key) {
+          print("DB: query: " . $key);
+          return $device->isUnderMaintenance() ? '1' : '0';;
+      });
+    }
+
     /**
      * @inheritDoc
      */
@@ -123,6 +131,9 @@ class InfluxDB extends BaseDatastore
         $tmp_tags['device_ip'] = $device->ip ?? '';
         $tmp_tags['device_serial'] = $device->serial ?? '';
         $tmp_tags['device_model'] = $device->hardware ?? '';
+
+        // Add maintenance status tag
+        $tmp_tags['maintenance'] = this->getMaintenance($device);
 
         if($this->add_group_tags) {
             // Add device groups as tags
