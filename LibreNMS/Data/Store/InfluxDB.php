@@ -27,6 +27,7 @@
 
 namespace LibreNMS\Data\Store;
 
+use Illuminate\Support\Facades\Cache;
 use App\Facades\LibrenmsConfig;
 use App\Polling\Measure\Measurement;
 use InfluxDB\Client;
