@@ -108,7 +108,7 @@ class InfluxDB extends BaseDatastore
     private function getMaintenance($device) {
       $key=str($device->id) . "_maintenance";
       return Cache::remember($key, 60, function () use ($device, $key) {
-          file_put_contents('php://stderr', "DB: query: " . $key,FILE_APPEND);
+          file_put_contents('/tmp/cache', "DB: query: " . $key,FILE_APPEND);
           return $device->isUnderMaintenance() ? '1' : '0';;
       });
     }
