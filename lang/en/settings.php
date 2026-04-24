@@ -1204,6 +1204,10 @@ return [
                 'description' => 'Add Group Tags',
                 'help' => 'Add groups as seperate tags',
             ],
+            'influxdb.add_maintenance_tag' => [
+                'description' => 'Add Maintenance Tag',
+                'help' => 'Add maintenance status tag to each metric',
+            ],
             'debug' => [
                 'description' => 'Debug',
                 'help' => 'To enable or disable verbose output to CLI',

@@ -4772,12 +4772,19 @@
             "section": "influxdb",
             "order": 12
         },
-        "influxdb.debug": {
+        "influxdb.add_maintenance_tag": {
             "default": false,
             "type": "boolean",
             "group": "poller",
             "section": "influxdb",
             "order": 13
+        },
+        "influxdb.debug": {
+            "default": false,
+            "type": "boolean",
+            "group": "poller",
+            "section": "influxdb",
+            "order": 14
         },
         "influxdbv2.enable": {
             "default": false,

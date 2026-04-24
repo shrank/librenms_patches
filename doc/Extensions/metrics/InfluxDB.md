@@ -70,3 +70,22 @@ dynamic tags:
 - `device_model` - The hardware/model of the device
 - `device_groups` - Comma-separated list of device group names
 - `module` - The name of the module that collected the metric
+- `maintenance` - Whether the device is under maintenance (1 or 0)
+
+## Maintenance Tag
+
+By default, a `maintenance` tag is added to each metric indicating whether
+the device is currently under maintenance. This requires a database query
+per device per polling cycle (cached for 60 seconds).
+
+If you do not need this tag, disabling it avoids the database lookup and
+reduces load:
+
+!!! setting "poller/influxdb"
+    ```bash
+    lnms config:set influxdb.add_maintenance_tag false
+    ```
+
+!!! note
+    Disabling this tag avoids one database query per device per polling cycle.
+    The maintenance status is cached for 60 seconds when enabled.

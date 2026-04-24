@@ -45,6 +45,8 @@ class InfluxDB extends BaseDatastore
 
     private $add_group_tags = False;
 
+    private $add_maintenance_tag = True;
+
     public function __construct(private readonly Database $connection)
     {
         parent::__construct();
@@ -52,6 +54,7 @@ class InfluxDB extends BaseDatastore
         $this->measurements = LibrenmsConfig::get('influxdb.measurements', []);
         $this->extraTags = $this->parseExtraTags(LibrenmsConfig::get('influxdb.extra_tags', []));
         $this->add_group_tags = LibrenmsConfig::get('influxdb.add_group_tags', False);
+        $this->add_maintenance_tag = LibrenmsConfig::get('influxdb.add_maintenance_tag', True);
  
         // if the database doesn't exist, create it.
         // When using UDP transport, the call to exists() fails
@@ -107,7 +110,7 @@ class InfluxDB extends BaseDatastore
 
     private function getMaintenance($device) {
       $key=str($device->device_id) . "_maintenance";
-      return Cache::remember($key, 60, function () use ($device, $key) {
+      return Cache::remember($key, 60, function () use ($device) {
           return $device->isUnderMaintenance() ? '1' : '0';;
       });
     }
@@ -133,7 +136,9 @@ class InfluxDB extends BaseDatastore
         $tmp_tags['device_model'] = $device->hardware ?? '';
 
         // Add maintenance status tag
-        $tmp_tags['maintenance'] = $this->getMaintenance($device);
+        if ($this->add_maintenance_tag) {
+            $tmp_tags['maintenance'] = $this->getMaintenance($device);
+        }
 
         if($this->add_group_tags) {
             // Add device groups as tags
