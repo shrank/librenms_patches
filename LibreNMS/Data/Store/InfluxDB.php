@@ -45,7 +45,7 @@ class InfluxDB extends BaseDatastore
 
     private $add_group_tags = False;
 
-    private $add_maintenance_tag = True;
+    private $add_maintenance_tag = False;
 
     public function __construct(private readonly Database $connection)
     {
@@ -54,7 +54,7 @@ class InfluxDB extends BaseDatastore
         $this->measurements = LibrenmsConfig::get('influxdb.measurements', []);
         $this->extraTags = $this->parseExtraTags(LibrenmsConfig::get('influxdb.extra_tags', []));
         $this->add_group_tags = LibrenmsConfig::get('influxdb.add_group_tags', False);
-        $this->add_maintenance_tag = LibrenmsConfig::get('influxdb.add_maintenance_tag', True);
+        $this->add_maintenance_tag = LibrenmsConfig::get('influxdb.add_maintenance_tag', False);
  
         // if the database doesn't exist, create it.
         // When using UDP transport, the call to exists() fails
