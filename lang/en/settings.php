@@ -1196,15 +1196,15 @@ return [
                 'description' => 'Verify SSL',
                 'help' => 'Verify the SSL certificate is valid and trusted',
             ],
-            'influxdb.extra_tags' => [
+            'extra_tags' => [
                 'description' => 'Add Extra Tags',
                 'help' => 'additional tags that will be added to every metric: site=branch A',
             ],
-            'influxdb.add_group_tags' => [
+            'add_group_tags' => [
                 'description' => 'Add Group Tags',
                 'help' => 'Add groups as seperate tags',
             ],
-            'influxdb.add_maintenance_tag' => [
+            'add_maintenance_tag' => [
                 'description' => 'Add Maintenance Tag',
                 'help' => 'Add maintenance status tag to each metric',
             ],
