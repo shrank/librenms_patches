@@ -27,6 +27,7 @@
 
 namespace LibreNMS\Data\Store;
 
+use Illuminate\Support\Facades\Cache;
 use App\Facades\LibrenmsConfig;
 use App\Polling\Measure\Measurement;
 use InfluxDB\Client;
@@ -40,12 +41,21 @@ class InfluxDB extends BaseDatastore
     private $batchSize = 0; // Number of points to write at once
     private $measurements = []; // List of measurements to write
 
+    private $extraTags = [];
+
+    private $add_group_tags = False;
+
+    private $add_maintenance_tag = False;
+
     public function __construct(private readonly Database $connection)
     {
         parent::__construct();
         $this->batchSize = LibrenmsConfig::get('influxdb.batch_size', 0);
         $this->measurements = LibrenmsConfig::get('influxdb.measurements', []);
-
+        $this->extraTags = $this->parseExtraTags(LibrenmsConfig::get('influxdb.extra_tags', []));
+        $this->add_group_tags = LibrenmsConfig::get('influxdb.add_group_tags', False);
+        $this->add_maintenance_tag = LibrenmsConfig::get('influxdb.add_maintenance_tag', False);
+ 
         // if the database doesn't exist, create it.
         // When using UDP transport, the call to exists() fails
         // since the transport doesn't support querying.  That said
@@ -60,6 +70,26 @@ class InfluxDB extends BaseDatastore
                 Log::warning('InfluxDB: Could not create database');
             }
         }
+    }
+
+    private function parseExtraTags(array $extraTagsConfig): array
+    {
+        $parsed = [];
+        foreach ($extraTagsConfig as $tagString) {
+            if (empty($tagString)) {
+                continue;
+            }
+            $pairs = explode(',', $tagString);
+            foreach ($pairs as $pair) {
+                $pair = trim($pair);
+                if (str_contains($pair, '=')) {
+                    [$key, $value] = array_map('trim', explode('=', $pair, 2));
+                    $parsed[$key] = $value;
+                }
+            }
+        }
+
+        return $parsed;
     }
 
     public function terminate(): void
@@ -78,6 +108,13 @@ class InfluxDB extends BaseDatastore
         return LibrenmsConfig::get('influxdb.enable', false);
     }
 
+    private function getMaintenance($device) {
+      $key=str($device->device_id) . "_maintenance";
+      return Cache::remember($key, 60, function () use ($device) {
+          return $device->isUnderMaintenance() ? '1' : '0';;
+      });
+    }
+
     /**
      * @inheritDoc
      */
@@ -89,8 +126,42 @@ class InfluxDB extends BaseDatastore
         }
 
         $stat = Measurement::start('write');
+        $device = $this->getDevice($meta);
         $tmp_fields = [];
-        $tmp_tags['hostname'] = $this->getDevice($meta)->hostname;
+        $tmp_tags['hostname'] = $device->hostname;
+
+        // Add dynamic device tags
+        $tmp_tags['device_ip'] = $device->ip ?? '';
+        $tmp_tags['device_serial'] = $device->serial ?? '';
+        $tmp_tags['device_model'] = $device->hardware ?? '';
+
+        // Add maintenance status tag
+        if ($this->add_maintenance_tag) {
+            $tmp_tags['maintenance'] = $this->getMaintenance($device);
+        }
+
+        if($this->add_group_tags) {
+            // Add device groups as tags
+            $groups = $device->groups;
+            if ($groups->isNotEmpty()) {
+                foreach ($groups->pluck('name') as $group_name) {
+                    // Sanitize group name to be a valid InfluxDB tag key
+                    // Replace invalid characters with underscore
+                    $sanitized = preg_replace('/[^a-zA-Z0-9_]/', '_', $group_name);
+                    // Ensure it doesn't start with a number
+                    $tmp_tags['group_' . $sanitized] = $group_name;
+                }
+            }
+        }
+
+        // Add module name (measurement name)
+        $tmp_tags['module'] = $measurement;
+
+        // Add extra tags from configuration
+        foreach ($this->extraTags as $key => $value) {
+            $tmp_tags[$key] = $value;
+        }
+
         foreach ($tags as $k => $v) {
             if (empty($v)) {
                 $v = '_blank_';

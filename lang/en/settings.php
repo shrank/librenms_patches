@@ -1196,6 +1196,18 @@ return [
                 'description' => 'Verify SSL',
                 'help' => 'Verify the SSL certificate is valid and trusted',
             ],
+            'extra_tags' => [
+                'description' => 'Add Extra Tags',
+                'help' => 'additional tags that will be added to every metric: site=branch A',
+            ],
+            'add_group_tags' => [
+                'description' => 'Add Group Tags',
+                'help' => 'Add groups as seperate tags',
+            ],
+            'add_maintenance_tag' => [
+                'description' => 'Add Maintenance Tag',
+                'help' => 'Add maintenance status tag to each metric',
+            ],
             'debug' => [
                 'description' => 'Debug',
                 'help' => 'To enable or disable verbose output to CLI',

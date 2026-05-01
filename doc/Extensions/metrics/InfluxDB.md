@@ -41,6 +41,9 @@ continue to function as normal.
     lnms config:set influxdb.measurements ''
     lnms config:set influxdb.verifySSL false
     lnms config:set influxdb.debug false
+    lnms config:set influxdb.extra_tags []
+    lnms config:set influxdb.add_group_tags false
+    lnms config:set influxdb.add_maintenance_tag false
     ```
 
 No credentials are needed if you don't use InfluxDB authentication.
@@ -48,3 +51,56 @@ No credentials are needed if you don't use InfluxDB authentication.
 The same data then stored within rrd will be sent to InfluxDB and
 recorded. You can then create graphs within Grafana to display the
 information you need.
+
+## Extra Tags
+
+You can configure additional tags that will be added to every metric
+sent to InfluxDB. This is useful for adding contextual information
+like site location or environment.
+
+!!! setting "poller/influxdb"
+    ```bash
+    lnms config:set influxdb.extra_tags '["site=branch A", "tag2=value 2", "environment=production"]'
+    ```
+
+Each array element can contain multiple comma-separated key=value pairs.
+These tags will be added to all measurements along with the following
+dynamic tags:
+
+- `device_ip` - The IP address of the device
+- `device_serial` - The serial number of the device
+- `device_model` - The hardware/model of the device
+- `module` - The name of the module that collected the metric
+
+Optional dynamic tags (require enabling the corresponding setting):
+
+- `maintenance` - Whether the device is under maintenance (1 or 0).
+  Requires `influxdb.add_maintenance_tag` to be enabled.
+- `group_<sanitized_name>` - Device groups as separate tags.
+  Requires `influxdb.add_group_tags` to be enabled.
+
+## Group Tags
+
+When `influxdb.add_group_tags` is enabled, each device group is added as
+a separate tag. The group name is sanitized to create a valid InfluxDB tag key:
+invalid characters are replaced with underscores and the prefix `group_`
+is added.
+
+!!! setting "poller/influxdb"
+    ```bash
+    lnms config:set influxdb.add_group_tags true
+    ```
+
+For example, a device in groups "Datacenter" and "Core-Switches" will
+receive tags `group_Datacenter` and `group_Core_Switches`.
+
+## Maintenance Tag
+
+When `influxdb.add_maintenance_tag` is enabled, a `maintenance` tag is
+added to each metric indicating whether the device is currently under
+maintenance.
+
+!!! setting "poller/influxdb"
+    ```bash
+    lnms config:set influxdb.add_maintenance_tag true
+    ```
