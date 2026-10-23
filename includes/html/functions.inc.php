@@ -22,6 +22,7 @@ use Illuminate\Support\HtmlString;
 use LibreNMS\Enum\ImageFormat;
 use LibreNMS\Util\Number;
 use LibreNMS\Util\Rewrite;
+use LibreNMS\Util\Time;
 use LibreNMS\Util\Url;
 
 function generate_link($text, $vars, $new_vars = [])
@@ -621,29 +622,6 @@ function eventlog_severity($eventlog_severity)
     };
 } // end eventlog_severity
 
-/**
- * Convert a UTC timestamp to local timezone.
- *
- * @param  string  $time  UTC time string
- * @return string Formatted local time with timezone abbreviation, or original value on error
- */
-function format_oxidize_timestamp($time)
-{
-    try {
-        // Convert UTC time string to local timezone set
-        $utc_time = $time;
-        $utc_date = new DateTime($utc_time, new DateTimeZone('UTC'));
-        $local_timezone = new DateTimeZone(date_default_timezone_get());
-        $local_date = $utc_date->setTimezone($local_timezone);
-
-        // Generate local time string
-        return $local_date->format('Y-m-d H:i:s T');
-    } catch (Exception) {
-        // Just display the current value
-        return $time;
-    }
-}
-
 function get_oxidized_nodes_list()
 {
     $context = stream_context_create([
@@ -660,17 +638,20 @@ function get_oxidized_nodes_list()
             //user cannot see this device, so let's skip it.
             continue;
         }
+        $last_change = Time::parseInput($object['mtime'] ?? null);
+        $last_update = Time::parseInput($object['time'] ?? null);
+
         $extra_columns = '';
         if (LibrenmsConfig::get('oxidized.features.versioning') === true) {
-            $extra_columns .= '<td>' . format_oxidize_timestamp($object['mtime']) . '</td>';
+            $extra_columns .= '<td>' . ($last_change === null ? '-' : e(Time::format($last_change, 'compact'))) . '</td>';
         }
         echo '<tr>
         <td>' . e($device->device_id) . '</td>
         <td>' . e($object['name']) . '</td>
         <td>' . e($device->sysName) . '</td>
         <td>' . e($object['status']) . '</td>
-        <td>' . format_oxidize_timestamp($object['time']) . '</td>
-        <td>' . e($formatted_local_time) . '</td>
+        <td>' . ($last_update === null ? '-' : e(Time::format($last_update, 'compact'))) . '</td>
+        ' . $extra_columns . '
         <td>' . e($object['model']) . '</td>
         <td>' . e($object['group']) . '</td>
         <td></td>
