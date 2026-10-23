@@ -2,7 +2,6 @@
 
 namespace LibreNMS\Modules;
 
-use App\Facades\LibrenmsConfig;
 use App\Models\Device;
 use App\Models\WirelessSensor;
 use App\Observers\ModuleModelObserver;
@@ -12,15 +11,25 @@ use LibreNMS\DB\SyncsModels;
 use LibreNMS\Enum\WirelessSensorType;
 use LibreNMS\Interfaces\Data\DataStorageInterface;
 use LibreNMS\Interfaces\Module;
+use LibreNMS\Interfaces\SupportsSubmodules;
 use LibreNMS\OS;
+use LibreNMS\Polling\ConnectivityHelper;
 use LibreNMS\Polling\ModuleStatus;
 use LibreNMS\RRD\RrdDefinition;
 use LibreNMS\Util\StringHelpers;
 use SnmpQuery;
 
-class Wireless implements Module
+class Wireless implements Module, SupportsSubmodules
 {
     use SyncsModels;
+
+    /** @var string[]|null */
+    private ?array $submodules = null;
+
+    public function setSubmodules(?array $submodules): void
+    {
+        $this->submodules = $submodules;
+    }
 
     /**
      * @inheritDoc
@@ -33,17 +42,17 @@ class Wireless implements Module
     /**
      * @inheritDoc
      */
-    public function shouldDiscover(OS $os, ModuleStatus $status): bool
+    public function shouldDiscover(OS $os, ModuleStatus $status, ConnectivityHelper $connectivity): bool
     {
-        return $status->isEnabledAndDeviceUp($os->getDevice());
+        return $status->isEnabled() && $connectivity->snmpIsAvailable();
     }
 
     /**
      * @inheritDoc
      */
-    public function shouldPoll(OS $os, ModuleStatus $status): bool
+    public function shouldPoll(OS $os, ModuleStatus $status, ConnectivityHelper $connectivity): bool
     {
-        return $status->isEnabledAndDeviceUp($os->getDevice());
+        return $status->isEnabled() && $connectivity->snmpIsAvailable();
     }
 
     /**
@@ -51,7 +60,7 @@ class Wireless implements Module
      */
     public function discover(OS $os): void
     {
-        $submodules = LibrenmsConfig::get('discovery_submodules.wireless', WirelessSensorType::values());
+        $submodules = $this->submodules ?? WirelessSensorType::values();
         $types = array_filter(WirelessSensorType::cases(), fn (WirelessSensorType $type) => in_array($type->value, $submodules));
         $existingSensors = $os->getDevice()->wirelessSensors()->get()->groupBy('sensor_class');
 
@@ -106,7 +115,7 @@ class Wireless implements Module
     public function poll(OS $os, DataStorageInterface $datastore): void
     {
         // fetch and group sensors
-        $submodules = LibrenmsConfig::get('poller_submodules.wireless', []);
+        $submodules = $this->submodules ?? [];
         $sensors = $os->getDevice()->wirelessSensors()
             ->when($submodules, fn ($q) => $q->whereIn('sensor_class', $submodules))
             ->get()->keyBy('sensor_id');

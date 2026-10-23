@@ -3,7 +3,7 @@
 use App\Models\AlertTransport;
 use Illuminate\Support\Facades\Gate;
 
-if (Gate::allows('create', AlertTransport::class)) {
+if (Gate::allows('viewAny', AlertTransport::class)) {
     // handle OAuth requests
     $request = request();  // grab the Request object
 
@@ -30,7 +30,7 @@ if (Gate::allows('create', AlertTransport::class)) {
     unset($request);
 
     // print alert transports
-    require_once 'includes/html/print-alert-transports.php';
+    require 'includes/html/print-alert-transports.php';
 } else {
     include 'includes/html/error-no-perm.inc.php';
 }

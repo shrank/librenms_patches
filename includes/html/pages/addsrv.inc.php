@@ -12,7 +12,6 @@ if (Gate::denies('create', Service::class)) {
 }
 
 $servicesform = '';
-$devicesform = '';
 $updated = false;
 $message_break = '';
 $message = '';
@@ -30,10 +29,6 @@ foreach (list_available_services() as $current_service) {
     $servicesform .= "<option value='$current_service'>$current_service</option>";
 }
 
-foreach (dbFetchRows('SELECT * FROM `devices` ORDER BY `hostname`') as $device) {
-    $devicesform .= "<option value='" . $device['device_id'] . "'>" . htmlentities(format_hostname($device)) . '</option>';
-}
-
 if ($updated) {
     print_message('Device Settings Saved');
 }
@@ -45,7 +40,7 @@ echo "<div class='row'>
     </div>
     <div class='col-sm-6'>";
 
-include_once 'includes/html/print-service-add.inc.php';
+include 'includes/html/print-service-add.inc.php';
 
 echo '</div>
     </div>';

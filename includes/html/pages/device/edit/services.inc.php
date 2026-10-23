@@ -22,16 +22,13 @@ if (Gate::allows('create', Service::class)) {
         }
     }
 
-    $dev = device_by_id_cache($device['device_id']);
-    $devicesform = "<option value='" . $dev['device_id'] . "'>" . $dev['hostname'] . '</option>';
-
     if ($updated) {
         print_message('Device Settings Saved');
     }
 
     echo '<div class="col-sm-6 col-sm-offset-3">';
 
-    include_once 'includes/html/print-service-add.inc.php';
+    include 'includes/html/print-service-add.inc.php';
 } else {
     include 'includes/html/error-no-perm.inc.php';
 }

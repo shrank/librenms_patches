@@ -9,11 +9,11 @@
                 <table id="eventlog" class="table table-hover table-condensed table-striped">
                     <thead>
                     <tr>
-                        <th data-column-id="datetime" data-order="desc">Timestamp</th>
-                        <th data-column-id="type">Type</th>
-                        <th data-column-id="device_id">Hostname</th>
-                        <th data-column-id="message">Message</th>
-                        <th data-column-id="username">User</th>
+                        <th data-column-id="datetime" data-order="desc">{{ __('Timestamp') }}</th>
+                        <th data-column-id="type">{{ __('Type') }}</th>
+                        <th data-column-id="device_id">{{ __('device.attributes.hostname') }}</th>
+                        <th data-column-id="message">{{ __('Message') }}</th>
+                        <th data-column-id="username">{{ __('User') }}</th>
                     </tr>
                     </thead>
                 </table>
@@ -49,7 +49,7 @@
                 '<label><strong>Device&nbsp;&nbsp;</strong></label>' +
                 '<select name="device" id="device" class="form-control">' +
                 '<option value="">All Devices</option>' +
-                '<option value=$device->device_id>" . $device->displayName() . "</option>' +
+                '<option value="{{ $device->device_id }}">' + @json(e($device->displayName())) + '</option>' +
                 '</select>' +
                 '</div>&nbsp;&nbsp;&nbsp;&nbsp;' +
             @endif
@@ -57,7 +57,7 @@
             '<div class="form-group"><label><strong>Type&nbsp;&nbsp;</strong></label>' +
             '<select name="eventtype" id="eventtype" class="form-control input-sm">' +
                 '<option value="">All types</option>' +
-                '<option value=\"' + @json($eventtype) + '\">' + @json($eventtype) + '</option>' +
+                '<option value=\"' + @json(e($eventtype)) + '\">' + @json(e($eventtype)) + '</option>' +
             '</select>' +
             '</div>&nbsp;&nbsp;' +
             '<button type="submit" class="btn btn-default">Filter</button>' +

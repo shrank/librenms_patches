@@ -39,9 +39,13 @@ use App\Models\MplsSdpBind;
 use App\Models\MplsService;
 use App\Models\MplsTunnelArHop;
 use App\Models\MplsTunnelCHop;
+use App\Models\PortVlan;
 use App\Models\Transceiver;
+use App\Models\Vlan;
 use Illuminate\Support\Collection;
 use LibreNMS\Device\WirelessSensor;
+use LibreNMS\Discovery\Neighbors\Neighbor;
+use LibreNMS\Discovery\Neighbors\NeighborParser;
 use LibreNMS\Enum\WirelessSensorType;
 use LibreNMS\Exceptions\InvalidIpException;
 use LibreNMS\Interfaces\Discovery\MplsDiscovery;
@@ -52,13 +56,14 @@ use LibreNMS\Interfaces\Discovery\Sensors\WirelessRsrqDiscovery;
 use LibreNMS\Interfaces\Discovery\Sensors\WirelessRssiDiscovery;
 use LibreNMS\Interfaces\Discovery\Sensors\WirelessSnrDiscovery;
 use LibreNMS\Interfaces\Discovery\TransceiverDiscovery;
+use LibreNMS\Interfaces\Discovery\VlanDiscovery;
 use LibreNMS\Interfaces\Polling\MplsPolling;
 use LibreNMS\OS;
 use LibreNMS\RRD\RrdDefinition;
 use LibreNMS\Util\IP;
 use SnmpQuery;
 
-class Timos extends OS implements MplsDiscovery, MplsPolling, TransceiverDiscovery, WirelessPowerDiscovery, WirelessSnrDiscovery, WirelessRsrqDiscovery, WirelessRssiDiscovery, WirelessRsrpDiscovery, WirelessChannelDiscovery
+class Timos extends OS implements MplsDiscovery, MplsPolling, TransceiverDiscovery, VlanDiscovery, WirelessPowerDiscovery, WirelessSnrDiscovery, WirelessRsrqDiscovery, WirelessRssiDiscovery, WirelessRsrpDiscovery, WirelessChannelDiscovery
 {
     public function discoverOS(Device $device): void
     {
@@ -943,6 +948,101 @@ class Timos extends OS implements MplsDiscovery, MplsPolling, TransceiverDiscove
         return $inventory;
     }
 
+    /**
+     * Discover VLANs on Nokia TiMOS devices
+     *
+     * Uses parent Q-BRIDGE-MIB discovery first, then falls back to
+     * extracting VLAN IDs from SAP encapsulation values.
+     *
+     * @return Collection of Vlan objects
+     */
+    public function discoverVlans(): Collection
+    {
+        // Try standard Q-BRIDGE-MIB discovery from parent
+        $vlans = parent::discoverVlans();
+        if ($vlans->isNotEmpty()) {
+            return $vlans;
+        }
+
+        // Fallback: Extract VLANs from SAP encapsulation values
+        return SnmpQuery::hideMib()->walk('TIMETRA-SAP-MIB::sapBaseInfoTable')
+            ->mapTable(function ($data, $svcId, $sapPortId, $sapEncapValue) {
+                $vlanNumber = $this->extractVlanFromEncapValue($sapEncapValue);
+
+                if ($vlanNumber < 1 || $vlanNumber > 4094) {
+                    return null;
+                }
+
+                return new Vlan([
+                    'vlan_vlan' => $vlanNumber,
+                    'vlan_name' => "VLAN $vlanNumber",
+                ]);
+            })->filter()->unique('vlan_vlan')->values();
+    }
+
+    /**
+     * Discover VLAN-Port associations on Nokia TiMOS devices
+     *
+     * Uses parent Q-BRIDGE-MIB discovery first, then falls back to
+     * extracting port membership from SAP encapsulation values.
+     *
+     * @param  Collection  $vlans  Collection of discovered Vlan objects
+     * @return Collection of PortVlan objects
+     */
+    public function discoverVlanPorts($vlans): Collection
+    {
+        // Try standard Q-BRIDGE-MIB discovery from parent
+        $portVlans = parent::discoverVlanPorts($vlans);
+        if ($portVlans->isNotEmpty()) {
+            return $portVlans;
+        }
+
+        // Fallback: Extract VLAN-Port associations from SAP encapsulation values
+        return SnmpQuery::hideMib()->walk('TIMETRA-SAP-MIB::sapBaseInfoTable')
+            ->mapTable(function ($data, $svcId, $sapPortId, $sapEncapValue) use ($vlans) {
+                $vlanNumber = $this->extractVlanFromEncapValue($sapEncapValue);
+
+                if ($vlanNumber < 1 || $vlanNumber > 4094) {
+                    return null;
+                }
+
+                $vlan = $vlans->firstWhere('vlan_vlan', $vlanNumber);
+                if (! $vlan) {
+                    return null;
+                }
+
+                $portId = PortCache::getIdFromIfIndex((int) $sapPortId, $this->getDevice());
+                if (! $portId) {
+                    return null;
+                }
+
+                return new PortVlan([
+                    'port_id' => $portId,
+                    'vlan' => $vlanNumber,
+                    'state' => 'tagged',
+                ]);
+            })->filter()->unique(fn ($item) => $item->port_id . '-' . $item->vlan)->values();
+    }
+
+    /**
+     * Extract outer VLAN ID from TmnxEncapVal
+     *
+     * TmnxEncapVal uses:
+     * - Lower 12 bits for dot1q (simple VLAN)
+     * - Lower 16 bits for outer VLAN in QinQ
+     * - Upper 16 bits for inner VLAN in QinQ
+     *
+     * @param  int|string  $encapVal  The encoded encapsulation value
+     * @return int The VLAN ID (outer VLAN for QinQ)
+     */
+    private function extractVlanFromEncapValue($encapVal): int
+    {
+        $encapVal = (int) $encapVal;
+
+        // Extract lower 12 bits for VLAN ID
+        return $encapVal & 0x0FFF;
+    }
+
     private function parseIpField(array $data, string $ngField): ?string
     {
         if (isset($data[$ngField])) {
@@ -1069,8 +1169,82 @@ class Timos extends OS implements MplsDiscovery, MplsPolling, TransceiverDiscove
                 'ddm' => $ddm,
                 'connector' => $connector,
                 'wavelength' => $wavelength > 0 ? $wavelength : null,
-                'channels' => $data['TIMETRA-PORT-MIB::tmnxPortSFPNumLanes'] ?? null,
+                'channels' => (int) ($data['TIMETRA-PORT-MIB::tmnxPortSFPNumLanes'] ?? 1),
             ]);
         })->filter();
+    }
+
+    /**
+     * Decode TmnxEncapVal to extract VLAN ID(s)
+     *
+     * @param  int|string  $encapVal  The encoded encapsulation value
+     * @return array{outer: int, inner: int|null} Outer VLAN, and inner VLAN when QinQ
+     *
+     * @see TIMETRA-TC-MIB::TmnxEncapVal
+     */
+    public static function decodeEncapValue($encapVal): array
+    {
+        $encapVal = (int) $encapVal;
+
+        // Null encapsulation
+        if ($encapVal == 0) {
+            return ['outer' => 0, 'inner' => null];
+        }
+
+        // Check for QinQ: if upper 16 bits have a value (ignoring special bits)
+        $innerVlan = ($encapVal >> 16) & 0x0FFF;  // Upper 12 bits of upper 16 bits
+        $outerVlan = $encapVal & 0x0FFF;          // Lower 12 bits
+
+        if ($innerVlan > 0) {
+            // QinQ encapsulation
+            return ['outer' => $outerVlan, 'inner' => $innerVlan];
+        }
+
+        // Simple dot1q encapsulation - VLAN is in lower 12 bits
+        return ['outer' => $outerVlan, 'inner' => null];
+    }
+
+    /**
+     * Format TmnxEncapVal for display (Nokia-friendly format)
+     *
+     * @param  int|string  $encapVal  The encoded encapsulation value
+     * @return string Formatted encap value (e.g., "500" or "100.200" for QinQ)
+     */
+    public static function formatEncapValue($encapVal): string
+    {
+        $decoded = self::decodeEncapValue($encapVal);
+
+        if ($decoded['inner'] !== null) {
+            // QinQ format: outer.inner
+            return $decoded['outer'] . '.' . $decoded['inner'];
+        }
+
+        if ($decoded['outer'] == 4095) {
+            return '*';  // Wildcard
+        }
+
+        return (string) $decoded['outer'];
+    }
+
+    /**
+     * TiMOS has its own copy of the LLDP-MIB indexed by ifIndex
+     *
+     * @return Collection<int, Neighbor>
+     */
+    protected function discoverLldpNeighbors(): Collection
+    {
+        return SnmpQuery::hideMib()->walk('TIMETRA-LLDP-MIB::tmnxLldpRemTable')
+            ->mapTable(function (array $entry, $timeMark, $ifIndex = null, $destMacIndex = null, $remIndex = null) {
+                if ($remIndex === null) {
+                    return null; // invalid index
+                }
+
+                $lldpEntry = [];
+                foreach ($entry as $column => $value) {
+                    $lldpEntry[str_replace('tmnxLldpRem', 'lldpRem', $column)] = $value;
+                }
+
+                return NeighborParser::fromLldpRemEntry($lldpEntry, PortCache::getIdFromIfIndex($ifIndex, $this->getDeviceId()));
+            })->filter()->values();
     }
 }

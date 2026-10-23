@@ -12,6 +12,9 @@ return [
     */
 
     'title' => 'Sensors',
+    'category' => [
+        'stack' => 'Stack',
+    ],
     'airflow' => [
         'short' => 'Airflow',
         'long' => 'Airflow',
@@ -100,7 +103,7 @@ return [
         'short' => 'Percent',
         'long' => 'Loss Percentage',
         'unit' => '%',
-        'unit_long' => 'percentage',
+        'unit_long' => 'Percent',
     ],
     'power' => [
         'short' => 'Power',
@@ -142,7 +145,7 @@ return [
         'short' => 'Signal',
         'long' => 'Signal',
         'unit' => 'dBm',
-        'unit_long' => 'Decibal-Milliwatts',
+        'unit_long' => 'Decibel-Milliwatts',
     ],
     'tv_signal' => [
         'short' => 'Signal',
@@ -172,6 +175,7 @@ return [
         'short' => 'State',
         'long' => 'State',
         'unit' => '',
+        'unit_long' => '',
     ],
     'temperature' => [
         'short' => 'Temperature',

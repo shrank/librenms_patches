@@ -26,8 +26,6 @@
 
 namespace LibreNMS\Polling;
 
-use App\Models\Device;
-
 class ModuleStatus implements \Stringable
 {
     public function __construct(
@@ -75,15 +73,6 @@ class ModuleStatus implements \Stringable
         }
 
         return 'globally';
-    }
-
-    public function isEnabledAndDeviceUp(Device $device, bool $check_snmp = true): bool
-    {
-        if ($check_snmp && $device->snmp_disable) {
-            return false;
-        }
-
-        return $this->isEnabled() && $device->status;
     }
 
     public function hasSubModules(): bool

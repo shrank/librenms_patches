@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Console\Commands\Traits\CompletesDeviceArgument;
 use App\Console\DynamicInputOption;
 use App\Console\LnmsCommand;
 use App\Console\SyntheticDeviceField;
@@ -12,10 +13,13 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Schema;
 use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 
 class ReportDevices extends LnmsCommand
 {
+    use CompletesDeviceArgument;
+
     protected $name = 'report:devices';
     const NONE_SEPERATOR = "\t";
 
@@ -254,7 +258,7 @@ class ReportDevices extends LnmsCommand
     /**
      * @return Collection<int, string>|null
      */
-    public function completeOptionValue(DynamicInputOption $option, string $current): ?Collection
+    public function completeOptionValue(DynamicInputOption $option, string $current, ?InputInterface $input = null): ?Collection
     {
         if ($option->getName() == 'fields') {
             return collect()
