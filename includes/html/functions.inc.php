@@ -22,6 +22,7 @@ use Illuminate\Support\HtmlString;
 use LibreNMS\Enum\ImageFormat;
 use LibreNMS\Util\Number;
 use LibreNMS\Util\Rewrite;
+use LibreNMS\Util\Time;
 use LibreNMS\Util\Url;
 
 function generate_link($text, $vars, $new_vars = [])
@@ -637,25 +638,20 @@ function get_oxidized_nodes_list()
             //user cannot see this device, so let's skip it.
             continue;
         }
-        try {
-            // Convert UTC time string to local timezone set
-            $utc_time = $object['time'];
-            $utc_date = new DateTime($utc_time, new DateTimeZone('UTC'));
-            $local_timezone = new DateTimeZone(date_default_timezone_get());
-            $local_date = $utc_date->setTimezone($local_timezone);
+        $last_change = Time::parseInput($object['mtime'] ?? null);
+        $last_update = Time::parseInput($object['time'] ?? null);
 
-            // Generate local time string
-            $formatted_local_time = $local_date->format('Y-m-d H:i:s T');
-        } catch (Exception) {
-            // Just display the current value of $object['time'];
-            $formatted_local_time = $object['time'];
+        $extra_columns = '';
+        if (LibrenmsConfig::get('oxidized.features.versioning') === true) {
+            $extra_columns .= '<td>' . ($last_change === null ? '-' : e(Time::format($last_change, 'compact'))) . '</td>';
         }
         echo '<tr>
         <td>' . e($device->device_id) . '</td>
         <td>' . e($object['name']) . '</td>
         <td>' . e($device->sysName) . '</td>
         <td>' . e($object['status']) . '</td>
-        <td>' . e($formatted_local_time) . '</td>
+        <td>' . e(($last_update === null ? $object['time'] : Time::format($last_update, 'compact'))) . '</td>
+        ' . $extra_columns . '
         <td>' . e($object['model']) . '</td>
         <td>' . e($object['group']) . '</td>
         <td></td>
