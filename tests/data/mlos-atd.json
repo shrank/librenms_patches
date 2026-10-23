@@ -77,6 +77,7 @@
                     "sensor_type": "mlos-atd",
                     "sensor_descr": "ATD Files Processing",
                     "group": "File Processing",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -102,6 +103,7 @@
                     "sensor_type": "mlos-atd",
                     "sensor_descr": "ATD Files Queued",
                     "group": "File Processing",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -127,6 +129,7 @@
                     "sensor_type": "mlos-atd",
                     "sensor_descr": "ATD Data Disk Space Utilization",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 10,
@@ -152,6 +155,7 @@
                     "sensor_type": "mlos-atd",
                     "sensor_descr": "ATD System Disk Space Utilization",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 10,
@@ -177,6 +181,7 @@
                     "sensor_type": "mlos-atd",
                     "sensor_descr": "ATD Var Disk Space Utilization",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6,
@@ -202,6 +207,7 @@
                     "sensor_type": "atdBackupSchedulerStatus",
                     "sensor_descr": "Backup Scheduler Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -227,6 +233,7 @@
                     "sensor_type": "atdDXLChannelStatus",
                     "sensor_descr": "ATD DXL Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -252,6 +259,7 @@
                     "sensor_type": "atdEmailConnectorStatus",
                     "sensor_descr": "ATD Email Connetor Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -277,6 +285,7 @@
                     "sensor_type": "atdEmailGatewayWaitTime",
                     "sensor_descr": "Email Gateway Wait Time Threshold",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -302,6 +311,7 @@
                     "sensor_type": "atdLicenseStatus",
                     "sensor_descr": "ATD License Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -327,6 +337,7 @@
                     "sensor_type": "atdLoadBalancerStatus",
                     "sensor_descr": "ATD Load Balancer Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -352,6 +363,7 @@
                     "sensor_type": "atdMalwareInterfaceStatus",
                     "sensor_descr": "ATD Malware Interface Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -377,6 +389,7 @@
                     "sensor_type": "atdSensorStatus",
                     "sensor_descr": "ATD Sensor Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -402,6 +415,7 @@
                     "sensor_type": "atdSystemHealth",
                     "sensor_descr": "System Health",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -427,6 +441,7 @@
                     "sensor_type": "atdTAXIIStatus",
                     "sensor_descr": "ATD TAXII Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -452,6 +467,7 @@
                     "sensor_type": "mlos-atd",
                     "sensor_descr": "System Temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 30,
@@ -473,217 +489,186 @@
                 {
                     "state_name": "atdBackupSchedulerStatus",
                     "state_descr": "Backup Scheduler Status Failed",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "atdBackupSchedulerStatus",
                     "state_descr": "Backup Scheduler Status Ok",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "atdDXLChannelStatus",
                     "state_descr": "Down",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "atdDXLChannelStatus",
                     "state_descr": "Up",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "atdEmailConnectorStatus",
                     "state_descr": "Email Connector Disabled",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "atdEmailConnectorStatus",
                     "state_descr": "Email Connector Ok",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "atdEmailConnectorStatus",
                     "state_descr": "Email Connector Degraded",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "atdEmailConnectorStatus",
                     "state_descr": "Email Connector Overloaded",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "atdEmailGatewayWaitTime",
                     "state_descr": "Email Gateway Threshold Ok",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "atdEmailGatewayWaitTime",
                     "state_descr": "Email Gateway Threshold Wait Time Reached",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "atdLicenseStatus",
                     "state_descr": "Valid",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "atdLicenseStatus",
                     "state_descr": "Invalid",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "atdLicenseStatus",
                     "state_descr": "Expired",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "atdLoadBalancerStatus",
                     "state_descr": "Device In Standalone Mode",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "atdLoadBalancerStatus",
                     "state_descr": "Load Balancer Down",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "atdLoadBalancerStatus",
                     "state_descr": "Load Balancer Up",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "atdLoadBalancerStatus",
                     "state_descr": "SW VERSION MISMATCH",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "atdLoadBalancerStatus",
                     "state_descr": "Primary Node LB Not Up",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "atdLoadBalancerStatus",
                     "state_descr": "SCP Failed",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "atdLoadBalancerStatus",
                     "state_descr": "VM Creation Failed",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "atdLoadBalancerStatus",
                     "state_descr": "Invalid Status",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "atdMalwareInterfaceStatus",
                     "state_descr": "Down",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "atdMalwareInterfaceStatus",
                     "state_descr": "Up",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "atdSensorStatus",
                     "state_descr": "Inactive",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "atdSensorStatus",
                     "state_descr": "Active",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "atdSensorStatus",
                     "state_descr": "Not Connected",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "atdSystemHealth",
                     "state_descr": "Bad",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "atdSystemHealth",
                     "state_descr": "Good",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "atdTAXIIStatus",
                     "state_descr": "Down",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "atdTAXIIStatus",
                     "state_descr": "Up",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "atdTAXIIStatus",
                     "state_descr": "Unknown",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 3
                 }

@@ -1,5 +1,5 @@
 <?php
 
-$class = 'frequency';
+$class = \LibreNMS\Enum\SensorType::Frequency;
 
 require 'sensors.inc.php';

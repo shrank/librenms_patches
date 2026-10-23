@@ -1,14 +1,16 @@
 <?php
 
+use LibreNMS\Enum\SensorType;
+
 // RFC1628 UPS
 echo 'RFC1628 ';
 
-$value = snmp_get($device, 'upsEstimatedChargeRemaining.0', '-OvqU', 'UPS-MIB');
+$value = SnmpQuery::get('UPS-MIB::upsEstimatedChargeRemaining.0')->value();
 
 if (is_numeric($value)) {
     discover_sensor(
         null,
-        'charge',
+        SensorType::Charge,
         $device,
         '.1.3.6.1.2.1.33.1.2.4.0',
         500,

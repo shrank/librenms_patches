@@ -28,39 +28,75 @@ namespace App\Http\Controllers;
 
 use App\Facades\LibrenmsConfig;
 use App\Models\Device;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Str;
 use LibreNMS\Util\Graph;
 
 class DevicePopupController
 {
-    public function __invoke(Device $device)
+    public function __invoke(Request $request, Device $device)
     {
         if (! LibrenmsConfig::get('web_mouseover', true)) {
             return response('Disabled');
         }
 
         // Check access permissions
-        if (! $device->canAccess(auth()->user())) {
-            return response('Unauthorized', 403);
-        }
-
-        // Build graphs HTML using existing graph-row component
-        $graphs = [];
-        foreach (Graph::getOverviewGraphsForDevice($device) as $graph) {
-            if (isset($graph['text'], $graph['graph'])) {
-                $graphs[] = [
-                    'device' => $device,
-                    'type' => $graph['graph'],
-                    'title' => $graph['text'],
-                    'graphs' => [['from' => '-1d'], ['from' => '-7d']],
-                ];
-            }
-        }
+        Gate::authorize('view', $device);
 
         return view('device.popup', [
             'device' => $device,
             'osText' => LibrenmsConfig::getOsSetting($device->os ?? '', 'text'),
             'href' => route('device', ['device' => $device->device_id]),
-            'graphs' => $graphs,
+            'graphs' => $this->buildGraphs($request, $device),
         ]);
+    }
+
+    /**
+     * @return array[]
+     */
+    private function buildGraphs(Request $request, Device $device): array
+    {
+        $type = $request->string('type');
+        if ($type->isNotEmpty()) {
+            return [
+                [
+                    'device' => $device,
+                    'type' => $type->value(),
+                    'title' => $request->string('title', Str::title(str_replace('_', ' ', $type->value())))->value(),
+                    'graphs' => $this->parseGraphRanges($request, [['from' => '-1d'], ['from' => '-7d'], ['from' => '-14d'], ['from' => '-30d']]),
+                ],
+            ];
+        }
+
+        $overview = Graph::getOverviewGraphsForDevice($device);
+        $defaultRanges = $this->parseGraphRanges($request, [['from' => '-1d'], ['from' => '-7d']]);
+
+        $graphs = [];
+        foreach ($overview as $graph) {
+            if (isset($graph['text'], $graph['graph'])) {
+                $graphs[] = [
+                    'device' => $device,
+                    'type' => $graph['graph'],
+                    'title' => $graph['text'],
+                    'graphs' => $defaultRanges,
+                ];
+            }
+        }
+
+        return $graphs;
+    }
+
+    /**
+     * @param  array<int, array<string, string>>  $default
+     * @return array<int, array<string, string>>
+     */
+    private function parseGraphRanges(Request $request, array $default): array
+    {
+        if (! $request->has('from')) {
+            return $default;
+        }
+
+        return array_map(fn ($f) => ['from' => (string) $f], (array) $request->input('from'));
     }
 }

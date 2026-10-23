@@ -1,21 +1,48 @@
 <?php
 
-use App\Facades\LibrenmsConfig;
+use App\Models\BgpPeer;
+use App\Models\BgpPeerCbgp;
 use LibreNMS\Exceptions\InvalidIpException;
 use LibreNMS\Util\IP;
+use LibreNMS\Util\ProgressList;
 
 //
 // Load OS specific file
 //
-if (file_exists(LibrenmsConfig::get('install_dir') . "/includes/discovery/bgp-peers/{$device['os']}.inc.php")) {
-    include LibrenmsConfig::get('install_dir') . "/includes/discovery/bgp-peers/{$device['os']}.inc.php";
+$os_specific_bgp_discovery = file_exists(base_path("includes/discovery/bgp-peers/{$device['os']}.inc.php"));
+if ($os_specific_bgp_discovery) {
+    include base_path("includes/discovery/bgp-peers/{$device['os']}.inc.php");
 }
 
 if (empty($bgpLocalAs)) {
     $bgpLocalAs = \SnmpQuery::get('BGP4-MIB::bgpLocalAs.0')->value();
 }
 
-foreach (DeviceCache::getPrimary()->getVrfContexts() as $context_name) {
+if (is_numeric($bgpLocalAs)) {
+    $bgpLocalAs = \LibreNMS\Util\Number::correctIntegerOverflow($bgpLocalAs);
+}
+
+if (! empty($bgpLocalAs) && $bgpLocalAs == '23456') { // 4Byte ASN
+    if ($device['os_group'] === 'arista') {
+        $bgpLocalAs = \SnmpQuery::next('ARISTA-BGP4V2-MIB::aristaBgp4V2PeerLocalAs')->value();
+    } elseif ($device['os'] == 'junos') {
+        $bgpLocalAs = \SnmpQuery::next('BGP4-V2-MIB-JUNIPER::jnxBgpM2PeerLocalAs')->value();
+    } elseif ($device['os_group'] === 'cisco') {
+        $bgpLocalAs = \SnmpQuery::next('CISCO-BGP4-MIB::cbgpPeer2LocalAs')->value();
+    } elseif ($device['os'] === 'cumulus') {
+        $bgpLocalAs = \SnmpQuery::get('CUMULUS-BGPUN-MIB::bgpLocalAs.0')->value();
+    }
+}
+
+$routing_snmp_contexts_raw = DeviceCache::getPrimary()->getAttrib('routing_snmp_contexts', '[]');
+$routing_snmp_contexts = json_decode((string) $routing_snmp_contexts_raw, true);
+
+$contexts = array_values(array_unique(array_merge(
+    DeviceCache::getPrimary()->getVrfContexts(),
+    $routing_snmp_contexts
+)));
+
+foreach ($contexts as $context_name) {
     $device['context_name'] = $context_name;
     $peer2 = false;
     $peers_data = '';
@@ -32,13 +59,33 @@ foreach (DeviceCache::getPrimary()->getVrfContexts() as $context_name) {
             $peers_data = snmp_walk($device, 'aristaBgp4V2PeerRemoteAs', '-Oq', 'ARISTA-BGP4V2-MIB');
             $peer2 = true;
         } elseif ($device['os'] == 'junos') {
-            $peers_data = snmp_walk($device, 'jnxBgpM2PeerRemoteAs', '-Onq', 'BGP4-V2-MIB-JUNIPER', 'junos');
+            $peers_data = snmp_walk($device, 'jnxBgpM2PeerRemoteAs', '-Onq', 'BGP4-V2-MIB-JUNIPER', 'juniper/junos');
         } elseif ($device['os_group'] === 'cisco') {
             $peers_data = snmp_walk($device, 'cbgpPeer2RemoteAs', '-Oq', 'CISCO-BGP4-MIB');
             $peer2 = ! empty($peers_data);
         } elseif ($device['os'] === 'cumulus') {
             $peers_data = snmp_walk($device, 'bgpPeerRemoteAs', '-Oq', 'CUMULUS-BGPUN-MIB');
             $peer2 = ! empty($peers_data);
+        } elseif ($device['os'] === 'vyos') {
+            foreach (\SnmpQuery::walk('BGP4V2-MIB::bgp4V2PeerRemoteAs')->valuesByIndex() as $index => $data) {
+                $remote_as = $data['BGP4V2-MIB::bgp4V2PeerRemoteAs'] ?? null;
+                if (! is_numeric($remote_as)) {
+                    continue;
+                }
+                // With the BGP4V2-MIB loaded, SnmpQuery formats the OID index as:
+                // "1.ipv4..192.0.2.1"  (dot-notation, real FRR devices)
+                // "1.ipv4.\"192.0.2.1\""  (quoted, some snmpsim/implementations)
+                if (! preg_match('/\.(ipv4|ipv6)\.(?:\.([0-9.]+)|"([^"]+)")$/', (string) $index, $m)) {
+                    continue;
+                }
+                $addrStr = $m[2] !== '' ? $m[2] : $m[3];
+                try {
+                    $ip = str_contains($addrStr, ':') ? IP::fromHexString($addrStr) : IP::fromSnmpString($addrStr);
+                    // toSnmpString() produces the colon-hex-byte format build_bgp_peers expects for IPv6
+                    $peers_data .= $ip->toSnmpString() . " $remote_as\n";
+                } catch (InvalidIpException) {
+                }
+            }
         }
 
         if (empty($peers_data)) {
@@ -60,6 +107,7 @@ foreach (DeviceCache::getPrimary()->getVrfContexts() as $context_name) {
         $af_data = [];
         $af_list = [];
 
+        $progress = ProgressList::start('BGP peers');
         foreach ($peerlist as $peer) {
             $peer['astext'] = \LibreNMS\Util\AutonomousSystem::get($peer['as'])->name();
 
@@ -102,7 +150,7 @@ foreach (DeviceCache::getPrimary()->getVrfContexts() as $context_name) {
                 $safis[133] = 'flow';
 
                 if (! isset($j_peerIndexes)) {
-                    $j_bgp = snmpwalk_cache_multi_oid($device, 'jnxBgpM2PeerTable', [], 'BGP4-V2-MIB-JUNIPER', 'junos', '-OQUbs');
+                    $j_bgp = snmpwalk_cache_multi_oid($device, 'jnxBgpM2PeerTable', [], 'BGP4-V2-MIB-JUNIPER', 'juniper/junos', '-OQUbs');
                     d_echo($j_bgp);
                     $j_peerIndexes = [];
                     foreach ($j_bgp as $entry) {
@@ -118,7 +166,7 @@ foreach (DeviceCache::getPrimary()->getVrfContexts() as $context_name) {
                 }
 
                 if (! isset($j_afisafi)) {
-                    $j_prefixes = snmpwalk_cache_multi_oid($device, 'jnxBgpM2PrefixCountersTable', [], 'BGP4-V2-MIB-JUNIPER', 'junos');
+                    $j_prefixes = snmpwalk_cache_multi_oid($device, 'jnxBgpM2PrefixCountersTable', [], 'BGP4-V2-MIB-JUNIPER', 'juniper/junos');
                     $j_afisafi = [];
                     foreach (array_keys($j_prefixes) as $key) {
                         [$index,$afisafi] = explode('.', (string) $key, 2);
@@ -135,37 +183,44 @@ foreach (DeviceCache::getPrimary()->getVrfContexts() as $context_name) {
                 }
             }
 
-            $af_query = 'SELECT bgpPeerIdentifier, afi, safi FROM bgpPeers_cbgp WHERE `device_id`=? AND bgpPeerIdentifier=? AND context_name=?';
-            foreach (dbFetchRows($af_query, [$device['device_id'], $peer['ip'], $device['context_name']]) as $entry) {
-                $afi = $entry['afi'];
-                $safi = $entry['safi'];
-                if (! $af_list[$entry['bgpPeerIdentifier']][$afi][$safi]) {
-                    dbDelete(
-                        'bgpPeers_cbgp',
-                        '`device_id`=? AND `bgpPeerIdentifier`=? AND context_name=? AND afi=? AND safi=?',
-                        [$device['device_id'], $peer['ip'], $device['context_name'], $afi, $safi]
-                    );
+            if (! empty($af_list)) {
+                $af_query = 'SELECT bgpPeerIdentifier, afi, safi FROM bgpPeers_cbgp WHERE `device_id`=? AND bgpPeerIdentifier=? AND context_name=?';
+                foreach (dbFetchRows($af_query, [$device['device_id'], $peer['ip'], $device['context_name']]) as $entry) {
+                    $afi = $entry['afi'];
+                    $safi = $entry['safi'];
+                    if (! isset($af_list[$entry['bgpPeerIdentifier']][$afi][$safi])) {
+                        BgpPeerCbgp::where('device_id', $device['device_id'])
+                            ->where('bgpPeerIdentifier', $peer['ip'])
+                            ->where('context_name', $device['context_name'])
+                            ->where('afi', $afi)
+                            ->where('safi', $safi)
+                            ->delete();
+                    }
                 }
             }
         }
+        $progress->end();
         unset($j_afisafi);
         unset($j_prefixes);
         unset($j_bgp);
         unset($j_peerIndexes);
     }
 
-    // clean up peers
-    $params = [$device['device_id'], $device['context_name']];
-    $query = 'device_id=? AND context_name=?';
-    if (! empty($peerlist)) {
-        $query .= ' AND bgpPeerIdentifier NOT IN ' . dbGenPlaceholders(count($peerlist));
-        $params = array_merge($params, array_column($peerlist, 'ip'));
+    // clean up peers, os specific modules track and remove their own
+    if (! $os_specific_bgp_discovery) {
+        $bgpQuery = BgpPeer::where('device_id', $device['device_id'])
+            ->where('context_name', $device['context_name']);
+        $cbgpQuery = BgpPeerCbgp::where('device_id', $device['device_id'])
+            ->where('context_name', $device['context_name']);
+        if (! empty($peerlist)) {
+            $bgpQuery->whereNotIn('bgpPeerIdentifier', array_column($peerlist, 'ip'));
+            $cbgpQuery->whereNotIn('bgpPeerIdentifier', array_column($peerlist, 'ip'));
+        }
+        $deleted = $bgpQuery->delete();
+        $cbgpQuery->delete();
+
+        echo str_repeat('-', $deleted);
     }
-
-    $deleted = dbDelete('bgpPeers', $query, $params);
-    dbDelete('bgpPeers_cbgp', $query, $params);
-
-    echo str_repeat('-', $deleted);
     echo PHP_EOL;
 
     unset(
@@ -176,16 +231,19 @@ foreach (DeviceCache::getPrimary()->getVrfContexts() as $context_name) {
 }
 
 // delete unknown contexts
-$contexts = dbFetchColumn(
-    'SELECT DISTINCT context_name FROM bgpPeers WHERE device_id=?',
-    [$device['device_id']]
-);
+$contexts = BgpPeer::where('device_id', $device['device_id'])
+    ->distinct()
+    ->pluck('context_name')
+    ->all();
 
-$existing_contexts = DeviceCache::getPrimary()->getVrfContexts();
+$existing_contexts = array_values(array_unique(array_merge(
+    DeviceCache::getPrimary()->getVrfContexts(),
+    $routing_snmp_contexts
+)));
 foreach ($contexts as $context) {
     if (! in_array($context, $existing_contexts)) {
-        dbDelete('bgpPeers', 'device_id=? and context_name=?', [$device['device_id'], $context]);
-        dbDelete('bgpPeers_cbgp', 'device_id=? and context_name=?', [$device['device_id'], $context]);
+        BgpPeer::where('device_id', $device['device_id'])->where('context_name', $context)->delete();
+        BgpPeerCbgp::where('device_id', $device['device_id'])->where('context_name', $context)->delete();
         echo '-';
     }
 }

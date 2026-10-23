@@ -23,8 +23,11 @@
  * @copyright  2016 Tony Murray
  * @author     Tony Murray <murraytony@gmail.com>
  */
+
+use LibreNMS\Enum\SensorType;
+
 $ups_temperature_oid = '.1.3.6.1.4.1.935.1.1.1.2.2.3.0';
-$ups_temperature = snmp_get($device, $ups_temperature_oid, '-Oqv');
+$ups_temperature = SnmpQuery::get($ups_temperature_oid)->value();
 
 if (! empty($ups_temperature) || $ups_temperature == 0) {
     $type = 'netagent2';
@@ -39,7 +42,7 @@ if (! empty($ups_temperature) || $ups_temperature == 0) {
 
     discover_sensor(
         null,
-        'temperature',
+        SensorType::Temperature,
         $device,
         $ups_temperature_oid,
         $index,

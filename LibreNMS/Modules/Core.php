@@ -26,16 +26,18 @@
 
 namespace LibreNMS\Modules;
 
+use App\Events\OsChangedEvent;
 use App\Facades\LibrenmsConfig;
 use App\Models\Device;
 use App\Models\Eventlog;
 use App\Observers\DeviceObserver;
-use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Str;
+use LibreNMS\Data\Source\Icmp\FpingResponse;
+use LibreNMS\Enum\PollingMethodType;
 use LibreNMS\Enum\Severity;
 use LibreNMS\Interfaces\Data\DataStorageInterface;
 use LibreNMS\Interfaces\Module;
 use LibreNMS\OS;
+use LibreNMS\Polling\ConnectivityHelper;
 use LibreNMS\Polling\ModuleStatus;
 use LibreNMS\RRD\RrdDefinition;
 use LibreNMS\Util\Compare;
@@ -54,42 +56,63 @@ class Core implements Module
         return [];
     }
 
-    public function shouldDiscover(OS $os, ModuleStatus $status): bool
+    public function shouldDiscover(OS $os, ModuleStatus $status, ConnectivityHelper $connectivity): bool
     {
-        return ! $os->getDevice()->snmp_disable && $os->getDevice()->status;
+        return $status->isEnabled() && $connectivity->snmpIsAvailable();
     }
 
     public function discover(OS $os): void
     {
-        $snmpdata = SnmpQuery::numeric()->get(['SNMPv2-MIB::sysObjectID.0', 'SNMPv2-MIB::sysDescr.0', 'SNMPv2-MIB::sysName.0'])
-            ->values();
+        $snmpdata = SnmpQuery::numeric()->get([
+            'SNMPv2-MIB::sysObjectID.0',
+            'SNMPv2-MIB::sysDescr.0',
+            'SNMPv2-MIB::sysName.0',
+        ])->values();
+
+        $snmp_engine = SnmpQuery::get('SNMP-FRAMEWORK-MIB::snmpEngineID.0')->value();
 
         $device = $os->getDevice();
         $device->fill([
             'sysObjectID' => $snmpdata['.1.3.6.1.2.1.1.2.0'] ?? null,
             'sysName' => $snmpdata['.1.3.6.1.2.1.1.5.0'] ?? null,
             'sysDescr' => $snmpdata['.1.3.6.1.2.1.1.1.0'] ?? null,
+            'snmpEngineID' => $snmp_engine,
         ]);
 
-        foreach (['sysObjectID', 'sysName', 'sysDescr'] as $attribute) {
+        foreach (['sysObjectID', 'sysName', 'sysDescr', 'snmpEngineID'] as $attribute) {
             if ($device->isDirty($attribute)) {
-                $message = DeviceObserver::attributeChangedMessage($attribute, $device->$attribute, $device->getOriginal($attribute));
-                Eventlog::log($message, $device, 'system', Severity::Notice);
+                Log::debug(DeviceObserver::attributeChangedMessage($attribute, $device->$attribute, $device->getOriginal($attribute)));
                 $os->getDeviceArray()[$attribute] = $device->$attribute; // update device array
             }
         }
 
         // detect OS
         $device->os = self::detectOS($device, false);
+
+        // Set type to a predefined type for the OS if it's not user set (still could be overridden later by os discovery)
+        if (! $device->getAttrib('override_device_type')) {
+            $device->type = LibrenmsConfig::getOsSetting($device->os, 'type');
+            $os->getDeviceArray()['type'] = $device->type;
+        }
+
+        if ($device->isDirty('os')) {
+            OsChangedEvent::dispatch($device);
+        }
     }
 
-    public function shouldPoll(OS $os, ModuleStatus $status): bool
+    public function shouldPoll(OS $os, ModuleStatus $status, ConnectivityHelper $connectivity): bool
     {
-        return ! $os->getDevice()->snmp_disable && $os->getDevice()->status;
+        return $status->isEnabled() && ($connectivity->snmpIsAvailable() || $connectivity->icmpIsEnabled());
     }
 
     public function poll(OS $os, DataStorageInterface $datastore): void
     {
+        $this->storeIcmpResponse($os);
+
+        if (! $os->getMethodResults()->isAvailable(PollingMethodType::Snmp)) {
+            return;
+        }
+
         $device = $os->getDevice();
         $oids = [];
 
@@ -150,18 +173,21 @@ class Core implements Module
 
         Log::debug("| $device->sysDescr | $device->sysObjectID | \n");
 
+        $sysDescr = (string) ($device->sysDescr ?? '');
+        $sysObjectID = (string) ($device->sysObjectID ?? '');
+
         $deferred_os = [];
         $generic_os = [
-            'airos',
-            'freebsd',
-            'linux',
+            'airos' => true,
+            'freebsd' => true,
+            'linux' => true,
         ];
 
         // check yaml files
         $os_defs = LibrenmsConfig::get('os');
 
         foreach ($os_defs as $os => $def) {
-            if (isset($def['discovery']) && ! in_array($os, $generic_os)) {
+            if (isset($def['discovery']) && ! isset($generic_os[$os])) {
                 if (self::discoveryIsSlow($def)) {
                     // defer all os that use snmpget or snmpwalk
                     $deferred_os[] = $os;
@@ -169,7 +195,7 @@ class Core implements Module
                 }
 
                 foreach ($def['discovery'] as $item) {
-                    if (self::checkDiscovery($device, $item, $def['mib_dir'] ?? null)) {
+                    if (self::checkDiscovery($device, $item, $def['mib_dir'] ?? null, $sysDescr, $sysObjectID)) {
                         return $os;
                     }
                 }
@@ -177,11 +203,21 @@ class Core implements Module
         }
 
         // check deferred os
-        $deferred_os = array_merge($deferred_os, $generic_os);
         foreach ($deferred_os as $os) {
             foreach ($os_defs[$os]['discovery'] as $item) {
-                if (self::checkDiscovery($device, $item, $os_defs[$os]['mib_dir'] ?? null)) {
+                if (self::checkDiscovery($device, $item, $os_defs[$os]['mib_dir'] ?? null, $sysDescr, $sysObjectID)) {
                     return $os;
+                }
+            }
+        }
+
+        // check generic os
+        foreach (['airos', 'freebsd', 'linux'] as $os) {
+            if (isset($os_defs[$os]['discovery'])) {
+                foreach ($os_defs[$os]['discovery'] as $item) {
+                    if (self::checkDiscovery($device, $item, $os_defs[$os]['mib_dir'] ?? null, $sysDescr, $sysObjectID)) {
+                        return $os;
+                    }
                 }
             }
         }
@@ -194,61 +230,122 @@ class Core implements Module
      * sysObjectID if sysObjectID starts with any of the values under this item
      * sysDescr if sysDescr contains any of the values under this item
      * sysDescr_regex if sysDescr matches any of the regexes under this item
-     * snmpget perform an snmpget on `oid` and check if the result contains `value`. Other subkeys: options, mib, mibdir
+     * snmpget perform an snmpget on `oid` and check if the result contains `value`. Other subkeys: options, mib_dir
      *
      * Appending _except to any condition will invert the match.
      *
      * @param  Device  $device
      * @param  array  $array  Array of items, keys should be sysObjectID, sysDescr, or sysDescr_regex
      * @param  string|array  $mibdir  MIB directory for evaluated OS
+     * @param  string  $sysDescr
+     * @param  string  $sysObjectID
      * @return bool the result (all items passed return true)
      */
-    protected static function checkDiscovery(Device $device, array $array, $mibdir): bool
+    protected static function checkDiscovery(Device $device, array $array, $mibdir, string $sysDescr = '', string $sysObjectID = ''): bool
     {
+        if ($sysDescr === '' && $sysObjectID === '') {
+            $sysDescr = (string) ($device->sysDescr ?? '');
+            $sysObjectID = (string) ($device->sysObjectID ?? '');
+        }
+
         // all items must be true
         foreach ($array as $key => $value) {
-            if ($check = Str::endsWith($key, '_except')) {
+            $check = str_ends_with((string) $key, '_except');
+            if ($check) {
                 $key = substr((string) $key, 0, -7);
             }
 
-            if ($key == 'sysObjectID') {
-                if (Str::startsWith($device['sysObjectID'] ?? '', $value) == $check) {
+            if ($key === 'sysObjectID') {
+                $matched = false;
+                if (is_array($value)) {
+                    foreach ($value as $v) {
+                        if ($v !== '' && str_starts_with($sysObjectID, (string) $v)) {
+                            $matched = true;
+                            break;
+                        }
+                    }
+                } else {
+                    $matched = $value !== '' && str_starts_with($sysObjectID, (string) $value);
+                }
+                if ($matched === $check) {
                     return false;
                 }
-            } elseif ($key == 'sysDescr') {
-                if (Str::contains($device['sysDescr'] ?? '', $value) == $check) {
+            } elseif ($key === 'sysDescr') {
+                $matched = false;
+                if (is_array($value)) {
+                    foreach ($value as $v) {
+                        if ($v !== '' && str_contains($sysDescr, (string) $v)) {
+                            $matched = true;
+                            break;
+                        }
+                    }
+                } else {
+                    $matched = $value !== '' && str_contains($sysDescr, (string) $value);
+                }
+                if ($matched === $check) {
                     return false;
                 }
-            } elseif ($key == 'sysDescr_regex') {
-                if (preg_match_any($device['sysDescr'] ?? '', $value) == $check) {
+            } elseif ($key === 'sysDescr_regex') {
+                if (preg_match_any($sysDescr, $value) === $check) {
                     return false;
                 }
-            } elseif ($key == 'sysObjectID_regex') {
-                if (preg_match_any($device['sysObjectID'] ?? '', $value) == $check) {
+            } elseif ($key === 'sysObjectID_regex') {
+                if (preg_match_any($sysObjectID, $value) === $check) {
                     return false;
                 }
-            } elseif ($key == 'snmpget') {
-                $get_value = SnmpQuery::device($device)
+            } elseif ($key === 'snmpget') {
+                $response = SnmpQuery::device($device)
                     ->options($value['options'] ?? null)
                     ->mibDir($value['mib_dir'] ?? $mibdir)
-                    ->get(isset($value['mib']) ? "{$value['mib']}::{$value['oid']}" : $value['oid'])
-                    ->value();
-                if (Compare::values($get_value, $value['value'], $value['op'] ?? 'contains') == $check) {
+                    ->get($value['oid']);
+
+                if (Compare::values($response->isValid() ? $response->value() : null, $value['value'], $value['op'] ?? 'contains') === $check) {
                     return false;
                 }
-            } elseif ($key == 'snmpwalk') {
-                $walk_value = SnmpQuery::device($device)
+            } elseif ($key === 'snmpwalk') {
+                $walk_values = SnmpQuery::device($device)
                     ->options($value['options'] ?? null)
                     ->mibDir($value['mib_dir'] ?? $mibdir)
-                    ->walk(isset($value['mib']) ? "{$value['mib']}::{$value['oid']}" : $value['oid'])
-                    ->raw;
-                if (Compare::values($walk_value, $value['value'], $value['op'] ?? 'contains') == $check) {
+                    ->walk($value['oid'])
+                    ->values();
+                $op = $value['op'] ?? 'contains';
+                $expected = $value['value'];
+                $matched = false;
+                foreach ($walk_values as $val) {
+                    if (Compare::values($val, $expected, $op)) {
+                        $matched = true;
+                        break;
+                    }
+                }
+                if ($matched === $check) {
                     return false;
                 }
             }
         }
 
         return true;
+    }
+
+    /**
+     * Store the ping response of the ICMP check in the device stats and icmp-perf rrd
+     */
+    private function storeIcmpResponse(OS $os): void
+    {
+        $result = $os->getMethodResults()->result(PollingMethodType::Icmp);
+        if ($result === null) {
+            return;
+        }
+
+        $device = $os->getDevice();
+
+        if ($result->stat('duplicates')) {
+            Eventlog::log('Duplicate ICMP response detected! This could indicate a network issue.', $device, 'icmp', Severity::Warning);
+        }
+
+        $response = $result->stat('fping_status');
+        if ($response instanceof FpingResponse) {
+            $response->saveStats($device);
+        }
     }
 
     private function calculateUptime(OS $os, ?string $sysUpTime, DataStorageInterface $datastore): void
@@ -259,20 +356,14 @@ class Core implements Module
             return;
         }
 
-        $agent_data = Cache::driver('array')->get('agent_data');
-        if (! empty($agent_data['uptime'])) {
-            $uptime = round((float) substr((string) $agent_data['uptime'], 0, strpos((string) $agent_data['uptime'], ' ')));
-            Log::info("Using UNIX Agent Uptime ($uptime)");
-        } else {
-            $uptime_data = SnmpQuery::make()->get(['SNMP-FRAMEWORK-MIB::snmpEngineTime.0', 'HOST-RESOURCES-MIB::hrSystemUptime.0'])->values();
+        $uptime_data = SnmpQuery::make()->get(['SNMP-FRAMEWORK-MIB::snmpEngineTime.0', 'HOST-RESOURCES-MIB::hrSystemUptime.0'])->values();
 
-            $uptime = max(
-                round(Number::cast($sysUpTime) / 100),
-                LibrenmsConfig::get("os.$device->os.bad_snmpEngineTime") ? 0 : Number::cast($uptime_data['SNMP-FRAMEWORK-MIB::snmpEngineTime.0'] ?? 0),
-                LibrenmsConfig::get("os.$device->os.bad_hrSystemUptime") ? 0 : round(Number::cast($uptime_data['HOST-RESOURCES-MIB::hrSystemUptime.0'] ?? 0) / 100)
-            );
-            Log::debug("Uptime seconds: $uptime\n");
-        }
+        $uptime = max(
+            round(Number::cast($sysUpTime) / 100),
+            LibrenmsConfig::get("os.$device->os.bad_snmpEngineTime") ? 0 : Number::cast($uptime_data['SNMP-FRAMEWORK-MIB::snmpEngineTime.0'] ?? 0),
+            LibrenmsConfig::get("os.$device->os.bad_hrSystemUptime") ? 0 : round(Number::cast($uptime_data['HOST-RESOURCES-MIB::hrSystemUptime.0'] ?? 0) / 100)
+        );
+        Log::debug("Uptime seconds: $uptime\n");
 
         // set it if unless it is wrong
         if ($uptime > 0) {

@@ -24097,6 +24097,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 HotSwap: Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 320,
@@ -24122,6 +24123,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 HotSwap: Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 269,
@@ -24147,6 +24149,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 HotSwap: Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 257,
@@ -24172,6 +24175,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 4 Linecard - Slot 4 HotSwap: Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 472,
@@ -24197,6 +24201,7 @@
                     "sensor_type": "cefcFRUPowerOperStatus",
                     "sensor_descr": "Slot 1 Linecard",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -24222,6 +24227,7 @@
                     "sensor_type": "cefcFRUPowerOperStatus",
                     "sensor_descr": "Power Supply Module 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -24247,6 +24253,7 @@
                     "sensor_type": "cefcFRUPowerOperStatus",
                     "sensor_descr": "Power Supply Module 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -24272,6 +24279,7 @@
                     "sensor_type": "cefcFRUPowerOperStatus",
                     "sensor_descr": "Slot 2 Supervisor",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -24297,6 +24305,7 @@
                     "sensor_type": "cefcFRUPowerOperStatus",
                     "sensor_descr": "Power Supply Module 3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -24322,6 +24331,7 @@
                     "sensor_type": "cefcFRUPowerOperStatus",
                     "sensor_descr": "Power Supply Module 4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -24347,6 +24357,7 @@
                     "sensor_type": "cefcFRUPowerOperStatus",
                     "sensor_descr": "Slot 3 Supervisor",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -24372,6 +24383,7 @@
                     "sensor_type": "cefcFRUPowerOperStatus",
                     "sensor_descr": "Slot 4 Linecard",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -24397,6 +24409,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 1/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24422,6 +24435,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 1/2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24447,6 +24461,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 2/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24472,6 +24487,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 2/2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24497,6 +24513,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 3/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24522,6 +24539,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 3/2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24547,6 +24565,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 4/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24572,6 +24591,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 4/2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24597,6 +24617,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan Tray",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24622,6 +24643,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 9/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24647,6 +24669,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 9/2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24672,6 +24695,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 9/3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24697,6 +24721,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 9/4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24722,6 +24747,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 9/5",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24747,6 +24773,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 9/6",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24772,6 +24799,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 9/7",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24797,6 +24825,7 @@
                     "sensor_type": "ciscoEnvMonFanState",
                     "sensor_descr": "Fan 9/8",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24822,6 +24851,7 @@
                     "sensor_type": "ciscoEnvMonSupplyState",
                     "sensor_descr": "Power Supply Module 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24847,6 +24877,7 @@
                     "sensor_type": "ciscoEnvMonSupplyState",
                     "sensor_descr": "Power Supply 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24872,6 +24903,7 @@
                     "sensor_type": "ciscoEnvMonSupplyState",
                     "sensor_descr": "Power Supply Module 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24897,6 +24929,7 @@
                     "sensor_type": "ciscoEnvMonSupplyState",
                     "sensor_descr": "Power Supply 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24922,6 +24955,7 @@
                     "sensor_type": "ciscoEnvMonSupplyState",
                     "sensor_descr": "Power Supply Module 3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24947,6 +24981,7 @@
                     "sensor_type": "ciscoEnvMonSupplyState",
                     "sensor_descr": "Power Supply 3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24972,6 +25007,7 @@
                     "sensor_type": "ciscoEnvMonSupplyState",
                     "sensor_descr": "Power Supply Module 4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -24997,6 +25033,7 @@
                     "sensor_type": "ciscoEnvMonSupplyState",
                     "sensor_descr": "Power Supply 4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -25022,6 +25059,7 @@
                     "sensor_type": "ciscoEnvMonTemperatureState",
                     "sensor_descr": "Slot 1 Temp:   Outlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -25047,6 +25085,7 @@
                     "sensor_type": "ciscoEnvMonTemperatureState",
                     "sensor_descr": "Slot 1 Temp:    Inlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -25072,6 +25111,7 @@
                     "sensor_type": "ciscoEnvMonTemperatureState",
                     "sensor_descr": "Slot 2 Temp: Coretemp",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -25097,6 +25137,7 @@
                     "sensor_type": "ciscoEnvMonTemperatureState",
                     "sensor_descr": "Slot 2 Temp: UADP",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -25122,6 +25163,7 @@
                     "sensor_type": "ciscoEnvMonTemperatureState",
                     "sensor_descr": "Slot 2 Temp:   Outlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -25147,6 +25189,7 @@
                     "sensor_type": "ciscoEnvMonTemperatureState",
                     "sensor_descr": "Slot 2 Temp:    Inlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -25172,6 +25215,7 @@
                     "sensor_type": "ciscoEnvMonTemperatureState",
                     "sensor_descr": "Slot 3 Temp: Coretemp",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -25197,6 +25241,7 @@
                     "sensor_type": "ciscoEnvMonTemperatureState",
                     "sensor_descr": "Slot 3 Temp: UADP",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -25222,6 +25267,7 @@
                     "sensor_type": "ciscoEnvMonTemperatureState",
                     "sensor_descr": "Slot 3 Temp:   Outlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -25247,6 +25293,7 @@
                     "sensor_type": "ciscoEnvMonTemperatureState",
                     "sensor_descr": "Slot 3 Temp:    Inlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -25272,6 +25319,7 @@
                     "sensor_type": "ciscoEnvMonTemperatureState",
                     "sensor_descr": "Slot 4 Temp:   Outlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -25297,6 +25345,7 @@
                     "sensor_type": "ciscoEnvMonTemperatureState",
                     "sensor_descr": "Slot 4 Temp:    Inlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -25322,6 +25371,7 @@
                     "sensor_type": "cRFCfgRedundancyOperMode",
                     "sensor_descr": "VSS Mode",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 8,
@@ -25347,6 +25397,7 @@
                     "sensor_type": "cRFStatusPeerUnitState",
                     "sensor_descr": "VSS Peer State",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 9,
@@ -25372,6 +25423,7 @@
                     "sensor_type": "cRFStatusUnitState",
                     "sensor_descr": "VSS Device State",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 14,
@@ -25397,6 +25449,7 @@
                     "sensor_type": "cisco",
                     "sensor_descr": "Slot 1 Temp:   Outlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 43,
@@ -25422,6 +25475,7 @@
                     "sensor_type": "cisco",
                     "sensor_descr": "Slot 1 Temp:    Inlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 37,
@@ -25447,6 +25501,7 @@
                     "sensor_type": "cisco",
                     "sensor_descr": "Slot 2 Temp: Coretemp",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 52,
@@ -25472,6 +25527,7 @@
                     "sensor_type": "cisco",
                     "sensor_descr": "Slot 2 Temp: UADP",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 53,
@@ -25497,6 +25553,7 @@
                     "sensor_type": "cisco",
                     "sensor_descr": "Slot 2 Temp:   Outlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 44,
@@ -25522,6 +25579,7 @@
                     "sensor_type": "cisco",
                     "sensor_descr": "Slot 2 Temp:    Inlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 32,
@@ -25547,6 +25605,7 @@
                     "sensor_type": "cisco",
                     "sensor_descr": "Slot 3 Temp: Coretemp",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 46,
@@ -25572,6 +25631,7 @@
                     "sensor_type": "cisco",
                     "sensor_descr": "Slot 3 Temp: UADP",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 53,
@@ -25597,6 +25657,7 @@
                     "sensor_type": "cisco",
                     "sensor_descr": "Slot 3 Temp:   Outlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 43,
@@ -25622,6 +25683,7 @@
                     "sensor_type": "cisco",
                     "sensor_descr": "Slot 3 Temp:    Inlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 32,
@@ -25647,6 +25709,7 @@
                     "sensor_type": "cisco",
                     "sensor_descr": "Slot 4 Temp:   Outlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 29,
@@ -25672,6 +25735,7 @@
                     "sensor_type": "cisco",
                     "sensor_descr": "Slot 4 Temp:    Inlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 29,
@@ -25697,6 +25761,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1   Outlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 43,
@@ -25722,6 +25787,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1    Inlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 37,
@@ -25747,6 +25813,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 Coretemp",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 53,
@@ -25772,6 +25839,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 UADP",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 53,
@@ -25797,6 +25865,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2   Outlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 44,
@@ -25822,6 +25891,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2    Inlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 32,
@@ -25847,6 +25917,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 Coretemp",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 47,
@@ -25872,6 +25943,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 UADP",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 53,
@@ -25897,6 +25969,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3   Outlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 43,
@@ -25922,6 +25995,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3    Inlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 32,
@@ -25947,6 +26021,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 4 Linecard - Slot 4   Outlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 29,
@@ -25972,6 +26047,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 4 Linecard - Slot 4    Inlet",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 29,
@@ -25997,6 +26073,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.294,
@@ -26022,6 +26099,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.901,
@@ -26047,6 +26125,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.999,
@@ -26072,6 +26151,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.028,
@@ -26097,6 +26177,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX5",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.507,
@@ -26122,6 +26203,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX6",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.2,
@@ -26147,6 +26229,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX7",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.501,
@@ -26172,6 +26255,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX8",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.795,
@@ -26197,6 +26281,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX9",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.09,
@@ -26222,6 +26307,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX10",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.508,
@@ -26247,6 +26333,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX11",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.312,
@@ -26272,6 +26359,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX12",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.849,
@@ -26297,6 +26385,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX13",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.034,
@@ -26322,6 +26411,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX14",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.035,
@@ -26347,6 +26437,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX15",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.035,
@@ -26372,6 +26463,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 V1: VX16",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.036,
@@ -26397,6 +26489,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 1 Linecard - Slot 1 HotSwap: Volts",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 53,
@@ -26422,6 +26515,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.872,
@@ -26447,6 +26541,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.497,
@@ -26472,6 +26567,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.057,
@@ -26497,6 +26593,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.852,
@@ -26522,6 +26619,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX5",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.508,
@@ -26547,6 +26645,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX6",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.301,
@@ -26572,6 +26671,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX7",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.004,
@@ -26597,6 +26697,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX8",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.101,
@@ -26622,6 +26723,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX9",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.204,
@@ -26647,6 +26749,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX10",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.706,
@@ -26672,6 +26775,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX11",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.223,
@@ -26697,6 +26801,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX12",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.804,
@@ -26722,6 +26827,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX13",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.498,
@@ -26747,6 +26853,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX14",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.307,
@@ -26772,6 +26879,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX15",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 5.043,
@@ -26797,6 +26905,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 V1: VX16",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.9,
@@ -26822,6 +26931,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 2 Supervisor - Slot 2 HotSwap: Volts",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 53,
@@ -26847,6 +26957,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.87,
@@ -26872,6 +26983,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.501,
@@ -26897,6 +27009,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.055,
@@ -26922,6 +27035,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.85,
@@ -26947,6 +27061,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX5",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.508,
@@ -26972,6 +27087,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX6",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.303,
@@ -26997,6 +27113,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX7",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.004,
@@ -27022,6 +27139,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX8",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.099,
@@ -27047,6 +27165,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX9",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.203,
@@ -27072,6 +27191,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX10",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.706,
@@ -27097,6 +27217,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX11",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.221,
@@ -27122,6 +27243,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX12",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.802,
@@ -27147,6 +27269,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX13",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.501,
@@ -27172,6 +27295,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX14",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.29,
@@ -27197,6 +27321,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX15",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 5.032,
@@ -27222,6 +27347,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 V1: VX16",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.899,
@@ -27247,6 +27373,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 3 Supervisor - Slot 3 HotSwap: Volts",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 53,
@@ -27272,6 +27399,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 4 Linecard - Slot 4 V1: VX1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.997,
@@ -27297,6 +27425,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 4 Linecard - Slot 4 V1: VX2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.5,
@@ -27322,6 +27451,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 4 Linecard - Slot 4 V1: VX3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.798,
@@ -27347,6 +27477,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 4 Linecard - Slot 4 V1: VX4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.293,
@@ -27372,6 +27503,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 4 Linecard - Slot 4 V1: VX5",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.325,
@@ -27397,6 +27529,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 4 Linecard - Slot 4 V1: VX6",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.5,
@@ -27422,6 +27555,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 4 Linecard - Slot 4 V1: VX7",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.032,
@@ -27447,6 +27581,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 4 Linecard - Slot 4 V1: VX8",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.316,
@@ -27472,6 +27607,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 4 Linecard - Slot 4 V1: VX9",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 12.079,
@@ -27497,6 +27633,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 4 Linecard - Slot 4 V1: VX10",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.004,
@@ -27522,6 +27659,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 4 Linecard - Slot 4 V1: VX11",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.035,
@@ -27547,6 +27685,7 @@
                     "sensor_type": "cisco-entity-sensor",
                     "sensor_descr": "Slot 4 Linecard - Slot 4 HotSwap: Volts",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 53,
@@ -27568,490 +27707,420 @@
                 {
                     "state_name": "cefcFRUPowerOperStatus",
                     "state_descr": "off (other)",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cefcFRUPowerOperStatus",
                     "state_descr": "on",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cefcFRUPowerOperStatus",
                     "state_descr": "off (admin)",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cefcFRUPowerOperStatus",
                     "state_descr": "off (denied)",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cefcFRUPowerOperStatus",
                     "state_descr": "off (environmental)",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cefcFRUPowerOperStatus",
                     "state_descr": "off (temperature)",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cefcFRUPowerOperStatus",
                     "state_descr": "off (fan)",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cefcFRUPowerOperStatus",
                     "state_descr": "failed",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cefcFRUPowerOperStatus",
                     "state_descr": "on (fan failed)",
-                    "state_draw_graph": 0,
                     "state_value": 9,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cefcFRUPowerOperStatus",
                     "state_descr": "off (cooling)",
-                    "state_draw_graph": 0,
                     "state_value": 10,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cefcFRUPowerOperStatus",
                     "state_descr": "off (connector rating)",
-                    "state_draw_graph": 0,
                     "state_value": 11,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cefcFRUPowerOperStatus",
                     "state_descr": "on (no inline power)",
-                    "state_draw_graph": 0,
                     "state_value": 12,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "ciscoEnvMonFanState",
                     "state_descr": "normal",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ciscoEnvMonFanState",
                     "state_descr": "warning",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "ciscoEnvMonFanState",
                     "state_descr": "critical",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ciscoEnvMonFanState",
                     "state_descr": "shutdown",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "ciscoEnvMonFanState",
                     "state_descr": "notPresent",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "ciscoEnvMonFanState",
                     "state_descr": "notFunctioning",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ciscoEnvMonSupplyState",
                     "state_descr": "normal",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ciscoEnvMonSupplyState",
                     "state_descr": "warning",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "ciscoEnvMonSupplyState",
                     "state_descr": "critical",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ciscoEnvMonSupplyState",
                     "state_descr": "shutdown",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "ciscoEnvMonSupplyState",
                     "state_descr": "notPresent",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "ciscoEnvMonSupplyState",
                     "state_descr": "notFunctioning",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ciscoEnvMonTemperatureState",
                     "state_descr": "normal",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ciscoEnvMonTemperatureState",
                     "state_descr": "warning",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "ciscoEnvMonTemperatureState",
                     "state_descr": "critical",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ciscoEnvMonTemperatureState",
                     "state_descr": "shutdown",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "ciscoEnvMonTemperatureState",
                     "state_descr": "notPresent",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "ciscoEnvMonTemperatureState",
                     "state_descr": "notFunctioning",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cRFCfgRedundancyOperMode",
                     "state_descr": "nonRedundant",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cRFCfgRedundancyOperMode",
                     "state_descr": "staticLoadShareNonRedundant",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cRFCfgRedundancyOperMode",
                     "state_descr": "dynamicLoadShareNonRedundant",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cRFCfgRedundancyOperMode",
                     "state_descr": "staticLoadShareRedundant",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cRFCfgRedundancyOperMode",
                     "state_descr": "dynamicLoadShareRedundant",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cRFCfgRedundancyOperMode",
                     "state_descr": "coldStandbyRedundant",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cRFCfgRedundancyOperMode",
                     "state_descr": "warmStandbyRedundant",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cRFCfgRedundancyOperMode",
                     "state_descr": "hotStandbyRedundant",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "notKnown",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "disabled",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "initialization",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "negotiation",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "standbyCold",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "standbyColdConfig",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "standbyColdFileSys",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "standbyColdBulk",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "standbyHot",
-                    "state_draw_graph": 0,
                     "state_value": 9,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "activeFast",
-                    "state_draw_graph": 0,
                     "state_value": 10,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "activeDrain",
-                    "state_draw_graph": 0,
                     "state_value": 11,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "activePreconfig",
-                    "state_draw_graph": 0,
                     "state_value": 12,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "activePostconfig",
-                    "state_draw_graph": 0,
                     "state_value": 13,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "active",
-                    "state_draw_graph": 0,
                     "state_value": 14,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "activeExtraload",
-                    "state_draw_graph": 0,
                     "state_value": 15,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusPeerUnitState",
                     "state_descr": "activeHandback",
-                    "state_draw_graph": 0,
                     "state_value": 16,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "notKnown",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "disabled",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "initialization",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "negotiation",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "standbyCold",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "standbyColdConfig",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "standbyColdFileSys",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "standbyColdBulk",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "standbyHot",
-                    "state_draw_graph": 0,
                     "state_value": 9,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "activeFast",
-                    "state_draw_graph": 0,
                     "state_value": 10,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "activeDrain",
-                    "state_draw_graph": 0,
                     "state_value": 11,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "activePreconfig",
-                    "state_draw_graph": 0,
                     "state_value": 12,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "activePostconfig",
-                    "state_draw_graph": 0,
                     "state_value": 13,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "active",
-                    "state_draw_graph": 0,
                     "state_value": 14,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "activeExtraload",
-                    "state_draw_graph": 0,
                     "state_value": 15,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "cRFStatusUnitState",
                     "state_descr": "activeHandback",
-                    "state_draw_graph": 0,
                     "state_value": 16,
                     "state_generic_value": 1
                 }
@@ -28457,34 +28526,6 @@
                     "vlan_domain": 1,
                     "vlan_name": "default",
                     "vlan_type": "ethernet",
-                    "vlan_state": 1
-                },
-                {
-                    "vlan_vlan": 1002,
-                    "vlan_domain": 1,
-                    "vlan_name": "fddi-default",
-                    "vlan_type": "fddi",
-                    "vlan_state": 1
-                },
-                {
-                    "vlan_vlan": 1003,
-                    "vlan_domain": 1,
-                    "vlan_name": "token-ring-default",
-                    "vlan_type": "tokenRing",
-                    "vlan_state": 1
-                },
-                {
-                    "vlan_vlan": 1004,
-                    "vlan_domain": 1,
-                    "vlan_name": "fddinet-default",
-                    "vlan_type": "fddiNet",
-                    "vlan_state": 1
-                },
-                {
-                    "vlan_vlan": 1005,
-                    "vlan_domain": 1,
-                    "vlan_name": "trnet-default",
-                    "vlan_type": "trNet",
                     "vlan_state": 1
                 }
             ],
@@ -29524,6 +29565,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Cisco Systems Inc",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29543,6 +29585,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29562,6 +29605,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29581,6 +29625,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29600,6 +29645,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29619,6 +29665,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29638,6 +29685,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29657,6 +29705,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29676,6 +29725,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29695,6 +29745,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29714,6 +29765,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29733,6 +29785,7 @@
                     "entPhysicalContainedIn": 11,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "Cisco Systems Inc",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29752,6 +29805,7 @@
                     "entPhysicalContainedIn": 12,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29771,6 +29825,7 @@
                     "entPhysicalContainedIn": 12,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29790,6 +29845,7 @@
                     "entPhysicalContainedIn": 12,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29809,6 +29865,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29828,6 +29885,7 @@
                     "entPhysicalContainedIn": 16,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "Cisco Systems Inc",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29847,6 +29905,7 @@
                     "entPhysicalContainedIn": 17,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29866,6 +29925,7 @@
                     "entPhysicalContainedIn": 17,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29885,6 +29945,7 @@
                     "entPhysicalContainedIn": 17,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29904,6 +29965,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29923,6 +29985,7 @@
                     "entPhysicalContainedIn": 21,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "Cisco Systems Inc",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29942,6 +30005,7 @@
                     "entPhysicalContainedIn": 22,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29961,6 +30025,7 @@
                     "entPhysicalContainedIn": 22,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29980,6 +30045,7 @@
                     "entPhysicalContainedIn": 22,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -29999,6 +30065,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30018,6 +30085,7 @@
                     "entPhysicalContainedIn": 26,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "Cisco Systems Inc",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30037,6 +30105,7 @@
                     "entPhysicalContainedIn": 27,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30056,6 +30125,7 @@
                     "entPhysicalContainedIn": 27,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30075,6 +30145,7 @@
                     "entPhysicalContainedIn": 27,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30094,6 +30165,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30113,6 +30185,7 @@
                     "entPhysicalContainedIn": 31,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "Cisco Systems Inc",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30132,6 +30205,7 @@
                     "entPhysicalContainedIn": 32,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30151,6 +30225,7 @@
                     "entPhysicalContainedIn": 32,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30170,6 +30245,7 @@
                     "entPhysicalContainedIn": 32,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30189,6 +30265,7 @@
                     "entPhysicalContainedIn": 32,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30208,6 +30285,7 @@
                     "entPhysicalContainedIn": 32,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30227,6 +30305,7 @@
                     "entPhysicalContainedIn": 32,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30246,6 +30325,7 @@
                     "entPhysicalContainedIn": 32,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30265,6 +30345,7 @@
                     "entPhysicalContainedIn": 32,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30284,6 +30365,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30303,6 +30385,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "Cisco Systems Inc",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30322,6 +30405,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30341,6 +30425,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30360,6 +30445,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30379,6 +30465,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30398,6 +30485,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30417,6 +30505,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30436,6 +30525,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30455,6 +30545,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30474,6 +30565,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30493,6 +30585,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30512,6 +30605,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30531,6 +30625,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30550,6 +30645,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30569,6 +30665,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30588,6 +30685,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30607,6 +30705,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30626,6 +30725,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30645,6 +30745,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30664,6 +30765,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30683,6 +30785,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -30702,6 +30805,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 2
                 },
                 {
@@ -30721,6 +30825,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 3
                 },
                 {
@@ -30740,6 +30845,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 4
                 },
                 {
@@ -30759,6 +30865,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 5
                 },
                 {
@@ -30778,6 +30885,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 6
                 },
                 {
@@ -30797,6 +30905,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 7
                 },
                 {
@@ -30816,6 +30925,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 8
                 },
                 {
@@ -30835,6 +30945,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 9
                 },
                 {
@@ -30854,6 +30965,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 10
                 },
                 {
@@ -30873,6 +30985,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 11
                 },
                 {
@@ -30892,6 +31005,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 12
                 },
                 {
@@ -30911,6 +31025,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 13
                 },
                 {
@@ -30930,6 +31045,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 14
                 },
                 {
@@ -30949,6 +31065,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 15
                 },
                 {
@@ -30968,6 +31085,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 16
                 },
                 {
@@ -30987,6 +31105,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 17
                 },
                 {
@@ -31006,6 +31125,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 18
                 },
                 {
@@ -31025,6 +31145,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 19
                 },
                 {
@@ -31044,6 +31165,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 20
                 },
                 {
@@ -31063,6 +31185,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 21
                 },
                 {
@@ -31082,6 +31205,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 22
                 },
                 {
@@ -31101,6 +31225,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 23
                 },
                 {
@@ -31120,6 +31245,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 24
                 },
                 {
@@ -31139,6 +31265,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 25
                 },
                 {
@@ -31158,6 +31285,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 26
                 },
                 {
@@ -31177,6 +31305,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 27
                 },
                 {
@@ -31196,6 +31325,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 27,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 28
                 },
                 {
@@ -31215,6 +31345,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 28,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 29
                 },
                 {
@@ -31234,6 +31365,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 29,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 30
                 },
                 {
@@ -31253,6 +31385,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 30,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 31
                 },
                 {
@@ -31272,6 +31405,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 31,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 32
                 },
                 {
@@ -31291,6 +31425,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 32,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 33
                 },
                 {
@@ -31310,6 +31445,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 33,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 34
                 },
                 {
@@ -31329,6 +31465,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 34,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 35
                 },
                 {
@@ -31348,6 +31485,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 35,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 36
                 },
                 {
@@ -31367,6 +31505,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 36,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 37
                 },
                 {
@@ -31386,6 +31525,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 37,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 38
                 },
                 {
@@ -31405,6 +31545,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 38,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 39
                 },
                 {
@@ -31424,6 +31565,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 39,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 40
                 },
                 {
@@ -31443,6 +31585,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 40,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 41
                 },
                 {
@@ -31462,6 +31605,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 41,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 42
                 },
                 {
@@ -31481,6 +31625,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 42,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 43
                 },
                 {
@@ -31500,6 +31645,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 43,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 44
                 },
                 {
@@ -31519,6 +31665,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 44,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 45
                 },
                 {
@@ -31538,6 +31685,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 45,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 46
                 },
                 {
@@ -31557,6 +31705,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 46,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 47
                 },
                 {
@@ -31576,6 +31725,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 47,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 48
                 },
                 {
@@ -31595,6 +31745,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 48,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 49
                 },
                 {
@@ -31614,6 +31765,7 @@
                     "entPhysicalContainedIn": 6,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "Cisco Systems Inc",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31633,6 +31785,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31652,6 +31805,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31671,6 +31825,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31690,6 +31845,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31709,6 +31865,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31728,6 +31885,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31747,6 +31905,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31766,6 +31925,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 27,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31785,6 +31945,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 28,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31804,6 +31965,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 29,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31823,6 +31985,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 30,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31842,6 +32005,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 31,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31861,6 +32025,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 32,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31880,6 +32045,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 33,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31899,6 +32065,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 34,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31918,6 +32085,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 35,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31937,6 +32105,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 36,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31956,6 +32125,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 37,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31975,6 +32145,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 38,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -31994,6 +32165,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 39,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32013,6 +32185,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 40,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32032,6 +32205,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 41,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32051,6 +32225,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32070,6 +32245,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32089,6 +32265,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32108,6 +32285,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32127,6 +32305,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32146,6 +32325,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32165,6 +32345,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32184,6 +32365,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32203,6 +32385,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32222,6 +32405,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32241,6 +32425,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32260,6 +32445,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32279,6 +32465,7 @@
                     "entPhysicalContainedIn": 2000,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32298,6 +32485,7 @@
                     "entPhysicalContainedIn": 2061,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "CISCO-AVAGO",
+                    "entPhysicalMfgDate": "12594-56",
                     "ifIndex": 50
                 },
                 {
@@ -32317,6 +32505,7 @@
                     "entPhysicalContainedIn": 2062,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "CISCO-AVAGO",
+                    "entPhysicalMfgDate": "12594-56",
                     "ifIndex": 51
                 },
                 {
@@ -32336,6 +32525,7 @@
                     "entPhysicalContainedIn": 7,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "Cisco Systems Inc",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32355,6 +32545,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32374,6 +32565,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32393,6 +32585,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32412,6 +32605,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32431,6 +32625,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32450,6 +32645,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32469,6 +32665,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32488,6 +32685,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 27,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32507,6 +32705,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 28,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32526,6 +32725,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 29,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32545,6 +32745,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 30,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32564,6 +32765,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 31,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32583,6 +32785,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 32,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32602,6 +32805,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 33,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32621,6 +32825,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 34,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32640,6 +32845,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 35,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32659,6 +32865,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 36,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32678,6 +32885,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 37,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32697,6 +32905,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 38,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32716,6 +32925,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 39,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32735,6 +32945,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 40,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32754,6 +32965,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 41,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32773,6 +32985,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32792,6 +33005,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32811,6 +33025,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32830,6 +33045,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32849,6 +33065,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32868,6 +33085,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32887,6 +33105,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32906,6 +33125,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32925,6 +33145,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32944,6 +33165,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32963,6 +33185,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -32982,6 +33205,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33001,6 +33225,7 @@
                     "entPhysicalContainedIn": 3000,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33020,6 +33245,7 @@
                     "entPhysicalContainedIn": 3061,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "CISCO-AVAGO",
+                    "entPhysicalMfgDate": "12594-56",
                     "ifIndex": 60
                 },
                 {
@@ -33039,6 +33265,7 @@
                     "entPhysicalContainedIn": 3062,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "CISCO-AVAGO",
+                    "entPhysicalMfgDate": "12594-56",
                     "ifIndex": 61
                 },
                 {
@@ -33058,6 +33285,7 @@
                     "entPhysicalContainedIn": 5,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "Cisco Systems Inc",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33077,6 +33305,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33096,6 +33325,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33115,6 +33345,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33134,6 +33365,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33153,6 +33385,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33172,6 +33405,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33191,6 +33425,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33210,6 +33445,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33229,6 +33465,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33248,6 +33485,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33267,6 +33505,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33286,6 +33525,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33305,6 +33545,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33324,6 +33565,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33343,6 +33585,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -33362,6 +33605,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 70
                 },
                 {
@@ -33381,6 +33625,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 71
                 },
                 {
@@ -33400,6 +33645,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 72
                 },
                 {
@@ -33419,6 +33665,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 73
                 },
                 {
@@ -33438,6 +33685,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 74
                 },
                 {
@@ -33457,6 +33705,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 75
                 },
                 {
@@ -33476,6 +33725,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 76
                 },
                 {
@@ -33495,6 +33745,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 77
                 },
                 {
@@ -33514,6 +33765,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 78
                 },
                 {
@@ -33533,6 +33785,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 79
                 },
                 {
@@ -33552,6 +33805,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 80
                 },
                 {
@@ -33571,6 +33825,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 81
                 },
                 {
@@ -33590,6 +33845,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 82
                 },
                 {
@@ -33609,6 +33865,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 83
                 },
                 {
@@ -33628,6 +33885,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 84
                 },
                 {
@@ -33647,6 +33905,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 85
                 },
                 {
@@ -33666,6 +33925,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 86
                 },
                 {
@@ -33685,6 +33945,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 87
                 },
                 {
@@ -33704,6 +33965,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 88
                 },
                 {
@@ -33723,6 +33985,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 89
                 },
                 {
@@ -33742,6 +34005,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 90
                 },
                 {
@@ -33761,6 +34025,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 91
                 },
                 {
@@ -33780,6 +34045,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 92
                 },
                 {
@@ -33799,6 +34065,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 93
                 },
                 {
@@ -33818,6 +34085,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 94
                 },
                 {
@@ -33837,6 +34105,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 95
                 },
                 {
@@ -33856,6 +34125,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 27,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 96
                 },
                 {
@@ -33875,6 +34145,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 28,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 97
                 },
                 {
@@ -33894,6 +34165,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 29,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 98
                 },
                 {
@@ -33913,6 +34185,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 30,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 99
                 },
                 {
@@ -33932,6 +34205,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 31,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 100
                 },
                 {
@@ -33951,6 +34225,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 32,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 101
                 },
                 {
@@ -33970,6 +34245,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 33,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 102
                 },
                 {
@@ -33989,6 +34265,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 34,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 103
                 },
                 {
@@ -34008,6 +34285,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 35,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 104
                 },
                 {
@@ -34027,6 +34305,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 36,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 105
                 },
                 {
@@ -34046,6 +34325,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 37,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 106
                 },
                 {
@@ -34065,6 +34345,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 38,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 107
                 },
                 {
@@ -34084,6 +34365,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 39,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 108
                 },
                 {
@@ -34103,6 +34385,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 40,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 109
                 },
                 {
@@ -34122,6 +34405,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 41,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 110
                 },
                 {
@@ -34141,6 +34425,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 42,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 111
                 },
                 {
@@ -34160,6 +34445,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 43,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 112
                 },
                 {
@@ -34179,6 +34465,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 44,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 113
                 },
                 {
@@ -34198,6 +34485,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 45,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 114
                 },
                 {
@@ -34217,6 +34505,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 46,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 115
                 },
                 {
@@ -34236,6 +34525,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 47,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 116
                 },
                 {
@@ -34255,6 +34545,7 @@
                     "entPhysicalContainedIn": 4000,
                     "entPhysicalParentRelPos": 48,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "12595-53-48,53:48:48.51,550",
                     "ifIndex": 117
                 },
                 {
@@ -34274,6 +34565,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -34293,6 +34585,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 }
             ]
@@ -34311,7 +34604,7 @@
                     "model": "SFP-10G-AOC2M",
                     "revision": "V01",
                     "serial": "A1111111111-A",
-                    "date": null,
+                    "date": "12594-56",
                     "ddm": null,
                     "encoding": null,
                     "cable": null,
@@ -34330,7 +34623,7 @@
                     "model": "ABCU-5710RZ-CS5",
                     "revision": "",
                     "serial": "AGM11111111",
-                    "date": null,
+                    "date": "12594-56",
                     "ddm": null,
                     "encoding": null,
                     "cable": null,
@@ -34349,7 +34642,7 @@
                     "model": "SFP-10G-AOC2M",
                     "revision": "V01",
                     "serial": "A4Z2150K132-A",
-                    "date": null,
+                    "date": "12594-56",
                     "ddm": null,
                     "encoding": null,
                     "cable": null,
@@ -34368,7 +34661,7 @@
                     "model": "ABCU-5710RZ-CS5",
                     "revision": "",
                     "serial": "AGM204442RB",
-                    "date": null,
+                    "date": "12594-56",
                     "ddm": null,
                     "encoding": null,
                     "cable": null,

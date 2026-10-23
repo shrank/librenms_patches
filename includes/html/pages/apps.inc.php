@@ -182,6 +182,10 @@ $graphs['gpsd'] = [
     'satellites',
     'dop',
     'mode',
+    'altitude',
+    'location',
+    'latitude',
+    'longitude',
 ];
 $graphs['exim-stats'] = [
     'frozen',
@@ -641,6 +645,21 @@ $graphs['i2pd'] = [
     'tunnels_successrate',
     'peers',
     'total_bytes',
+];
+$graphs['syslog-ng'] = [
+    'center',
+    'batch_size_avg',
+    'batch_size_max',
+    'memory_usage',
+    'msg_size_avg',
+    'connections',
+    'discarded',
+    'dropped',
+    'processed',
+    'queued',
+    'truncated_bytes',
+    'truncated_count',
+    'written',
 ];
 
 echo '<div class="panel panel-default">';

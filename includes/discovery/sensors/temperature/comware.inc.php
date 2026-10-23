@@ -12,6 +12,9 @@
  *
  * @author     Peca Nesovanovic <peca.nesovanovic@sattrakt.com>
 */
+use LibreNMS\Enum\IfOperStatus;
+use LibreNMS\Enum\SensorType;
+
 echo 'Comware ';
 
 $entphydata = DeviceCache::getPrimary()->entityPhysical()
@@ -34,7 +37,7 @@ if (! empty($entphydata)) {
                 $cur_oid = '.1.3.6.1.4.1.25506.2.6.1.1.1.1.12.';
                 discover_sensor(
                     null,
-                    'temperature',
+                    SensorType::Temperature,
                     $device,
                     $cur_oid . $tempindex,
                     'temp-' . $tempindex,
@@ -62,7 +65,7 @@ $hh3cTransceiverInfoTable = SnmpQuery::cache()->enumStrings()->walk('HH3C-TRANSC
 foreach ($hh3cTransceiverInfoTable as $index => $entry) {
     if (is_numeric($entry['HH3C-TRANSCEIVER-INFO-MIB::hh3cTransceiverTemperature']) && $entry['HH3C-TRANSCEIVER-INFO-MIB::hh3cTransceiverTemperature'] != 2147483647 && isset($entry['HH3C-TRANSCEIVER-INFO-MIB::hh3cTransceiverDiagnostic'])) {
         $port = PortCache::getByIfIndex($index, $device['device_id']);
-        if ($port?->ifAdminStatus != 'up') {
+        if ($port?->ifAdminStatus != IfOperStatus::Up) {
             continue;
         }
 
@@ -76,6 +79,6 @@ foreach ($hh3cTransceiverInfoTable as $index => $entry) {
         $entPhysicalIndex_measured = 'ports';
 
         $descr = $port->getShortLabel() . ' Module';
-        discover_sensor(null, 'temperature', $device, $oid, 'temp-trans-' . $index, 'comware', $descr, $divisor, $multiplier, $limit_low, $warn_limit_low, $warn_limit, $limit, $current, 'snmp', $entPhysicalIndex, $entPhysicalIndex_measured, group: 'transceiver');
+        discover_sensor(null, SensorType::Temperature, $device, $oid, 'temp-trans-' . $index, 'comware', $descr, $divisor, $multiplier, $limit_low, $warn_limit_low, $warn_limit, $limit, $current, 'snmp', $entPhysicalIndex, $entPhysicalIndex_measured, group: 'transceiver');
     }
 }

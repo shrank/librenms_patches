@@ -38,6 +38,14 @@ class CommandStartingListener
         'list:bash-completion',
     ];
 
+    /** queue workers print their own job status, job logs go to the log file unless -v is given */
+    private array $skip_stdout_log = [
+        'queue:work',
+        'queue:listen',
+        'scan', // draws a live view, it shows logs with -v
+        'scan:network',
+    ];
+
     /**
      * @throws RunningAsIncorrectUserException
      */
@@ -52,13 +60,14 @@ class CommandStartingListener
         $verbosity = $event->output->getVerbosity();
 
         if ($verbosity === OutputInterface::VERBOSITY_QUIET) {
-            Log::setDefaultDriver('stack'); // this omits stdout
             Debug::setCliQuietOutput();
 
             return;
         }
 
-        Log::setDefaultDriver('console');
+        if (! in_array($event->command, $this->skip_stdout_log) || $verbosity >= OutputInterface::VERBOSITY_VERBOSE) {
+            $this->ensureChannelWithStdout();
+        }
 
         if ($verbosity >= OutputInterface::VERBOSITY_VERY_VERBOSE) {
             Debug::set();
@@ -90,5 +99,25 @@ class CommandStartingListener
         if ($librenms_user !== $current_user) {
             throw new RunningAsIncorrectUserException("Error: $executable must be run as the user $librenms_user.");
         }
+    }
+
+    private function ensureChannelWithStdout(): void
+    {
+        $defaultChannel = config('logging.default');
+        $channelConfig = config("logging.channels.$defaultChannel");
+
+        $channels = $channelConfig['channels'] ?? [$defaultChannel];
+
+        if (in_array('stdout', $channels, true)) {
+            return; // Already has stdout
+        }
+
+        $channels[] = 'stdout';
+        config(["logging.channels.{$defaultChannel}_with_stdout" => [
+            'driver' => 'stack',
+            'channels' => $channels,
+            'ignore_exceptions' => $channelConfig['ignore_exceptions'] ?? false,
+        ]]);
+        Log::setDefaultDriver("{$defaultChannel}_with_stdout");
     }
 }

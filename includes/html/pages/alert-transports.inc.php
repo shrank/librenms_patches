@@ -1,6 +1,9 @@
 <?php
 
-if (Auth::user()->hasGlobalAdmin()) {
+use App\Models\AlertTransport;
+use Illuminate\Support\Facades\Gate;
+
+if (Gate::allows('viewAny', AlertTransport::class)) {
     // handle OAuth requests
     $request = request();  // grab the Request object
 
@@ -9,7 +12,7 @@ if (Auth::user()->hasGlobalAdmin()) {
         $validator = Validator::make($request->all(), ['oauthtransport' => 'required|alpha']);
 
         if ($validator->passes()) {
-            $transport_name = $request->get('oauthtransport');
+            $transport_name = $request->input('oauthtransport');
             $class = \LibreNMS\Alert\Transport::getClass($transport_name);
             if (class_exists($class)) {
                 $transport = app($class);
@@ -27,7 +30,7 @@ if (Auth::user()->hasGlobalAdmin()) {
     unset($request);
 
     // print alert transports
-    require_once 'includes/html/print-alert-transports.php';
+    require 'includes/html/print-alert-transports.php';
 } else {
     include 'includes/html/error-no-perm.inc.php';
 }

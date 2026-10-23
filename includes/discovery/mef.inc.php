@@ -2,6 +2,7 @@
 
 use App\Models\Eventlog;
 use LibreNMS\Enum\Severity;
+use LibreNMS\Util\ProgressList;
 
 /*
  * Try to discover any MEF Links
@@ -17,9 +18,9 @@ $mef_list = [];
  * Fetch information about MEF Links.
  */
 
-$oids = snmpwalk_cache_multi_oid($device, 'MefServiceEvcCfgEntry', $oids, 'MEF-UNI-EVC-MIB');
+$oids = snmpwalk_cache_multi_oid($device, 'MefServiceEvcCfgEntry', [], 'MEF-UNI-EVC-MIB');
 
-echo 'MEF : ';
+$progress = ProgressList::start('MEF');
 foreach ($oids as $index => $entry) {
     $mefIdent = $entry['mefServiceEvcCfgIdentifier'];
     $mefType = $entry['mefServiceEvcCfgServiceType'];
@@ -41,9 +42,9 @@ foreach ($oids as $index => $entry) {
     if (dbFetchCell('SELECT COUNT(id) FROM `mefinfo` WHERE `device_id` = ? AND `mefID` = ?', [$device['device_id'], $index]) == 0) {
         $mefid = dbInsert(['device_id' => $device['device_id'], 'mefID' => $index, 'mefType' => $mefType, 'mefIdent' => $mefIdent, 'mefMTU' => $mefMtu, 'mefAdmState' => $mefAdmState, 'mefRowState' => $mefRowState], 'mefinfo');
         Eventlog::log('MEF link: ' . $mefIdent . ' (' . $index . ') Discovered', $device['device_id'], 'system', Severity::Info);
-        echo '+';
+        $progress->mark('+');
     } else {
-        echo '.';
+        $progress->mark('.');
     }
     /*
      * Save the discovered MEF Link
@@ -61,13 +62,13 @@ foreach (dbFetchRows($sql) as $db_mef) {
      * Delete the MEF Link that are removed from the host.
      */
     if (! in_array($db_mef['mefID'], $mef_list)) {
-        dbDelete('mefinfo', '`id` = ?', [$db_mef['id']]);
+        \App\Models\MefInfo::where('id', $db_mef['id'])->delete();
         Eventlog::log('MEF link: ' . $db_mef['mefIdent'] . ' Removed', $device['device_id'], 'system', Severity::Notice);
-        echo '-';
+        $progress->mark('-');
     }
 }
 /*
  * Finished MEF information
  */
 unset($mef_list, $oids, $db_mef);
-echo PHP_EOL;
+$progress->end();

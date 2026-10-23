@@ -12,11 +12,9 @@
  * the source code distribution for details.
  */
 
-use App\Facades\LibrenmsConfig;
 use LibreNMS\Enum\MaintenanceBehavior;
 
-if (\Auth::user()->hasGlobalAdmin()) {
-    $default_behavior = MaintenanceBehavior::tryFrom((int) LibrenmsConfig::get('alert.scheduled_maintenance_default_behavior'));
+$default_behavior = MaintenanceBehavior::fromConfig();
     ?>
 
 <div class="modal fade bs-example-modal-sm" id="schedule-maintenance" tabindex="-1" role="dialog" aria-labelledby="Create" aria-hidden="true">
@@ -35,8 +33,6 @@ if (\Auth::user()->hasGlobalAdmin()) {
                 <form method="post" role="form" id="sched-form" class="form-horizontal schedule-maintenance-form">
                     <?php echo csrf_field() ?>
                     <input type="hidden" name="schedule_id" id="schedule_id">
-                    <input type="hidden" name="type" id="type" value="schedule-maintenance">
-                    <input type="hidden" name="sub_type" id="sub_type" value="new-maintenance">
                     <div class="row">
                         <div class="col-md-12">
                             <span id="response"></span>
@@ -116,15 +112,11 @@ if (\Auth::user()->hasGlobalAdmin()) {
                         <label for='behavior' class='col-sm-4 control-label'>Behavior <exp>*</exp> </label>
                         <div class="col-sm-8">
                             <select id="behavior" name="behavior" class="form-control">
-                                <option value='<?= MaintenanceBehavior::SKIP_ALERTS->value; ?>' <?= $default_behavior === MaintenanceBehavior::SKIP_ALERTS ? 'selected' : '' ?>>
-                                    <?= __('alerting.maintenance.behavior.options.skip_alerts') ?>
+<?php foreach (MaintenanceBehavior::cases() as $behavior): ?>
+                                <option value='<?= $behavior->value ?>' <?= $behavior === $default_behavior ? 'selected' : '' ?>>
+                                    <?= htmlentities($behavior->descr()) ?>
                                 </option>
-                                <option value='<?= MaintenanceBehavior::MUTE_ALERTS->value; ?>' <?= $default_behavior === MaintenanceBehavior::MUTE_ALERTS ? 'selected' : '' ?>>
-                                    <?= __('alerting.maintenance.behavior.options.mute_alerts') ?>
-                                </option>
-                                <option value='<?= MaintenanceBehavior::RUN_ALERTS->value; ?>' <?= $default_behavior === MaintenanceBehavior::RUN_ALERTS ? 'selected' : '' ?>>
-                                    <?= __('alerting.maintenance.behavior.options.run_alerts') ?>
-                                </option>
+<?php endforeach; ?>
                             </select>
                         </div>
                     </div>
@@ -177,9 +169,8 @@ $('#schedule-maintenance').on('show.bs.modal', function (event) {
         $('#sched-form').hide();
         $('#sched-spinner').show();
         $.ajax({
-            type: "POST",
-            url: "ajax_form.php",
-            data: { type: "schedule-maintenance", sub_type: "parse-maintenance", schedule_id: schedule_id },
+            type: "GET",
+            url: route('alert-schedule.show', {alert_schedule: schedule_id}),
             dataType: "json",
             success: function(output) {
                 var maps = $('#maps');
@@ -274,27 +265,30 @@ function recurring_switch() {
 $('#sched-submit').on("click", function(e) {
     e.preventDefault();
     // parse start/end to ISO8601
-    var formData = $('form.schedule-maintenance-form').serializeArray();
-    formData.find(input => input.name === 'start').value = $('#start').data("DateTimePicker").date().format();
-    formData.find(input => input.name === 'end').value = $('#end').data("DateTimePicker").date().format();
+    var schedule_id = $('#schedule_id').val();
+    var formData = $('form.schedule-maintenance-form').serializeArray().filter(input => input.name !== 'schedule_id');
+    formData.find(input => input.name === 'start').value = moment($('#start').val(), 'YYYY-MM-DD HH:mm').format();
+    formData.find(input => input.name === 'end').value = moment($('#end').val(), 'YYYY-MM-DD HH:mm').format();
     $.ajax({
-        type: "POST",
-        url: "ajax_form.php",
-        data: formData,
+        type: schedule_id > 0 ? "PUT" : "POST",
+        url: schedule_id > 0 ? route('alert-schedule.update', {alert_schedule: schedule_id}) : route('alert-schedule.store'),
+        data: $.param(formData),
         dataType: "json",
         success: function(data){
-            if(data.status == 'ok') {
-                $("#message").html('<div id="schedulemsg" class="alert alert-info"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+data.message+'</div>');
-                window.setTimeout(function() { $('#schedulemsg').fadeOut().slideUp(); } , 5000);
-                $("#schedule-maintenance").modal('hide');
-                $("#schedulemodal-alert").remove();
-                $("#alert-schedule").bootgrid('reload');
-            } else {
-                $("#response").html('<div id="schedulemodal-alert" class="alert alert-danger">'+data.message+'</div>');
-            }
+            $("#message").html('<div id="schedulemsg" class="alert alert-info"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+data.message+'</div>');
+            window.setTimeout(function() { $('#schedulemsg').fadeOut().slideUp(); } , 5000);
+            $("#schedule-maintenance").modal('hide');
+            $("#schedulemodal-alert").remove();
+            $("#alert-schedule").bootgrid('reload');
         },
-        error: function(){
-            $("#response").html('<div id="schedulemodal-alert" class="alert alert-danger">An error occurred.</div>');
+        error: function(jqXHR){
+            var message = 'An error occurred.';
+            if (jqXHR.responseJSON && jqXHR.responseJSON.errors) {
+                message = Object.values(jqXHR.responseJSON.errors).flat().map(m => $('<div>').text(m).html()).join('<br />');
+            } else if (jqXHR.responseJSON && jqXHR.responseJSON.message) {
+                message = $('<div>').text(jqXHR.responseJSON.message).html();
+            }
+            $("#response").html('<div id="schedulemodal-alert" class="alert alert-danger">' + message + '</div>');
         }
     });
 });
@@ -423,5 +417,3 @@ $(function () {
 
 $("[name='recurring']").bootstrapSwitch();
 </script>
-    <?php
-}

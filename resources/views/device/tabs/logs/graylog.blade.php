@@ -10,12 +10,12 @@
                     <thead>
                     <tr>
                         <th data-column-id="severity" data-sortable="false"></th>
-                        <th data-column-id="origin">Origin</th>
-                        <th data-column-id="timestamp" data-formatter="browserTime">Timestamp</th>
-                        <th data-column-id="level">Level</th>
-                        <th data-column-id="source">Source</th>
-                        <th data-column-id="message" data-sortable="false">Message</th>
-                        <th data-column-id="facility">Facility</th>
+                        <th data-column-id="origin">{{ __('Origin') }}</th>
+                        <th data-column-id="timestamp" data-formatter="browserTime">{{ __('Timestamp') }}</th>
+                        <th data-column-id="level">{{ __('Level') }}</th>
+                        <th data-column-id="source">{{ __('Source') }}</th>
+                        <th data-column-id="message" data-sortable="false">{{ __('Message') }}</th>
+                        <th data-column-id="facility">{{ __('Facility') }}</th>
                     </tr>
                     </thead>
                 </table>
@@ -35,14 +35,14 @@
                     "Filter: " +
                     "<div class=\"form-group\"><select name=\"stream\" id=\"stream\" class=\"form-control\" data-placeholder=\"All Messages\">"+
                     @if($stream)
-                        "<option value=\"" + @json($stream) + "\">" + @json($stream) + "</option>" +
+                        "<option value=\"" + @json(e($stream)) + "\">" + @json(e($stream)) + "</option>" +
                     @endif
                         "</select>&nbsp;</div>"+
 
                     @if($filter_device)
                         "<div class=\"form-group\"><select name=\"device\" id=\"device\" class=\"form-control\" data-placeholder=\"All Devices\">"+
                         @if($device)
-                        "<option value=\"{{ $device->device_id }}\">" + @json($device->displayName()) + "</option>" +
+                        "<option value=\"{{ $device->device_id }}\">" + @json(e($device->displayName())) + "</option>" +
                         @endif
                         "</select>&nbsp;</div>"+
                     @endif

@@ -1,7 +1,5 @@
 <?php
 
-$class = 'tv_signal';
-
-$graph_type = 'sensor_signal';
+$class = \LibreNMS\Enum\SensorType::TvSignal;
 
 require 'sensors.inc.php';

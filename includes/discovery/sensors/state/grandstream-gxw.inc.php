@@ -23,12 +23,16 @@
  * @copyright  2025 LibreNMS
  * @author     LibreNMS Contributors
  */
-echo 'Grandstream GXW: ';
+
+use Illuminate\Support\Facades\Log;
+use LibreNMS\Enum\SensorType;
+
+Log::info('Grandstream GXW: ', ['nlb' => true]);
 
 $state_name = 'hookStatus';
 $states = [
-    ['value' => 0, 'generic' => 0, 'graph' => 1, 'descr' => 'On Hook'],
-    ['value' => 1, 'generic' => 0, 'graph' => 1, 'descr' => 'Off Hook'],
+    ['value' => 0, 'generic' => 0, 'descr' => 'On Hook'],
+    ['value' => 1, 'generic' => 0, 'descr' => 'Off Hook'],
 ];
 
 create_state_index($state_name, $states);
@@ -51,7 +55,7 @@ if (is_array($statuses)) {
 
         discover_sensor(
             null,
-            'state',
+            SensorType::State,
             $device,
             $oid,
             $index,
@@ -75,8 +79,8 @@ if (is_array($statuses)) {
 
 $state_name = 'regStatus';
 $states = [
-    ['value' => 0, 'generic' => 0, 'graph' => 1, 'descr' => 'Registered'],
-    ['value' => 1, 'generic' => 2, 'graph' => 1, 'descr' => 'Not Registered'],
+    ['value' => 0, 'generic' => 0, 'descr' => 'Registered'],
+    ['value' => 1, 'generic' => 2, 'descr' => 'Not Registered'],
 ];
 
 create_state_index($state_name, $states);
@@ -99,7 +103,7 @@ if (is_array($statuses)) {
 
         discover_sensor(
             null,
-            'state',
+            SensorType::State,
             $device,
             $oid,
             $index,

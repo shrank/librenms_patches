@@ -909,6 +909,7 @@
                     "sensor_type": "acos",
                     "sensor_descr": "Count of L4 Sessions",
                     "group": "Connections",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -934,6 +935,7 @@
                     "sensor_type": "acos",
                     "sensor_descr": "Count of non TCP/UDP",
                     "group": "Connections",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -959,6 +961,7 @@
                     "sensor_type": "acos",
                     "sensor_descr": "Count of TCP Established",
                     "group": "Connections",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -984,6 +987,7 @@
                     "sensor_type": "acos",
                     "sensor_descr": "Count of UDP connections",
                     "group": "Connections",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1009,6 +1013,7 @@
                     "sensor_type": "axHAGroupLocalStatus",
                     "sensor_descr": "HA Local Status",
                     "group": "HA",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1030,21 +1035,18 @@
                 {
                     "state_name": "axHAGroupLocalStatus",
                     "state_descr": "standby",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "axHAGroupLocalStatus",
                     "state_descr": "active",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "axHAGroupLocalStatus",
                     "state_descr": "notConfigured",
-                    "state_draw_graph": 0,
                     "state_value": 9,
                     "state_generic_value": 2
                 }

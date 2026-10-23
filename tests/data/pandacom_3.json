@@ -6250,6 +6250,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -6269,6 +6270,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -6288,6 +6290,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -6307,6 +6310,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -6326,6 +6330,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -6345,6 +6350,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -6364,6 +6370,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -6383,6 +6390,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -6402,6 +6410,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 }
             ]
@@ -6505,6 +6514,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Client Port 2 Lane 1 Tx Current",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 100000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.04157,
@@ -6530,6 +6540,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Client Port 2 Lane 2 Tx Current",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 100000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.04976,
@@ -6555,6 +6566,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Client Port 2 Lane 3 Tx Current",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 100000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.04112,
@@ -6580,6 +6592,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Client Port 2 Lane 4 Tx Current",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 100000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.04357,
@@ -6605,6 +6618,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Line Port 1 Tx Current",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 100000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.0125,
@@ -6630,6 +6644,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Port 2 Lane 1 Rx Power",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.55,
@@ -6655,6 +6670,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Port 2 Lane 2 Rx Power",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.98,
@@ -6680,6 +6696,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Port 2 Lane 3 Rx Power",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.31,
@@ -6705,6 +6722,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Port 2 Lane 4 Rx Power",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.98,
@@ -6730,6 +6748,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Port 2 Lane 1 Tx Power",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.4,
@@ -6755,6 +6774,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Port 2 Lane 2 Tx Power",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.64,
@@ -6780,6 +6800,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Port 2 Lane 3 Tx Power",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": -0.29,
@@ -6805,6 +6826,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Port 2 Lane 4 Tx Power",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.9,
@@ -6830,6 +6852,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Line Port 1 Rx Power",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": -8.66,
@@ -6855,6 +6878,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Line Port 1 Tx Power",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.01,
@@ -6880,6 +6904,7 @@
                     "sensor_type": "SPEEDCARRIER-MIB::nmAAlarmState",
                     "sensor_descr": "Agent",
                     "group": "Alarms",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -6905,6 +6930,7 @@
                     "sensor_type": "SPEEDCARRIER-MIB::nmFanState",
                     "sensor_descr": "Fans",
                     "group": "Alarms",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -6930,6 +6956,7 @@
                     "sensor_type": "SPEEDCARRIER-MIB::nmPSU1Status",
                     "sensor_descr": "PSU 1",
                     "group": "Alarms",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -6955,6 +6982,7 @@
                     "sensor_type": "SPEEDCARRIER-MIB::nmPSU2Status",
                     "sensor_descr": "PSU 2",
                     "group": "Alarms",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -6980,6 +7008,7 @@
                     "sensor_type": "SPEEDCARRIER-MIB::nmPSU3Status",
                     "sensor_descr": "PSU 3",
                     "group": "Alarms",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 255,
@@ -7005,6 +7034,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Client Port 2 Temperature",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 41,
@@ -7030,6 +7060,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Client Port 4 Temperature",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 30,
@@ -7055,6 +7086,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Line Port 1 Temperature",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 58,
@@ -7080,6 +7112,7 @@
                     "sensor_type": "pandacom",
                     "sensor_descr": "Slot 16 Temperature",
                     "group": "Chassis",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 31,
@@ -7101,133 +7134,114 @@
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmAAlarmState",
                     "state_descr": "off",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmAAlarmState",
                     "state_descr": "on",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmFanState",
                     "state_descr": "not Available",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmFanState",
                     "state_descr": "Ok",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmFanState",
                     "state_descr": "Failed",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmFanState",
                     "state_descr": "not Installed",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmPSU1Status",
                     "state_descr": "not Installed",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmPSU1Status",
                     "state_descr": "Critical",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmPSU1Status",
                     "state_descr": "Warning",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmPSU1Status",
                     "state_descr": "Ok",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmPSU2Status",
                     "state_descr": "not Installed",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmPSU2Status",
                     "state_descr": "Critical",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmPSU2Status",
                     "state_descr": "Warning",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmPSU2Status",
                     "state_descr": "Ok",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmPSU3Status",
                     "state_descr": "not Installed",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmPSU3Status",
                     "state_descr": "Critical",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmPSU3Status",
                     "state_descr": "Warning",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmPSU3Status",
                     "state_descr": "Ok",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "SPEEDCARRIER-MIB::nmPSU3Status",
                     "state_descr": "not Available",
-                    "state_draw_graph": 1,
                     "state_value": 255,
                     "state_generic_value": 0
                 }

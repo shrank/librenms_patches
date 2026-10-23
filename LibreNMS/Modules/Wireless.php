@@ -2,52 +2,34 @@
 
 namespace LibreNMS\Modules;
 
-use App\Facades\LibrenmsConfig;
 use App\Models\Device;
 use App\Models\WirelessSensor;
 use App\Observers\ModuleModelObserver;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Log;
 use LibreNMS\DB\SyncsModels;
+use LibreNMS\Enum\WirelessSensorType;
 use LibreNMS\Interfaces\Data\DataStorageInterface;
 use LibreNMS\Interfaces\Module;
+use LibreNMS\Interfaces\SupportsSubmodules;
 use LibreNMS\OS;
+use LibreNMS\Polling\ConnectivityHelper;
 use LibreNMS\Polling\ModuleStatus;
 use LibreNMS\RRD\RrdDefinition;
 use LibreNMS\Util\StringHelpers;
 use SnmpQuery;
 
-class Wireless implements Module
+class Wireless implements Module, SupportsSubmodules
 {
     use SyncsModels;
 
-    // Add new types here translations/descriptions/units in lang/<lang>/wireless.php
-    private array $types = [
-        'ap-count',
-        'clients',
-        'quality',
-        'capacity',
-        'utilization',
-        'rate',
-        'ccq',
-        'snr',
-        'sinr',
-        'rsrp',
-        'rsrq',
-        'ssr',
-        'mse',
-        'xpi',
-        'rssi',
-        'power',
-        'noise-floor',
-        'errors',
-        'error-ratio',
-        'error-rate',
-        'frequency',
-        'distance',
-        'cell',
-        'channel',
-    ];
+    /** @var string[]|null */
+    private ?array $submodules = null;
+
+    public function setSubmodules(?array $submodules): void
+    {
+        $this->submodules = $submodules;
+    }
 
     /**
      * @inheritDoc
@@ -60,17 +42,17 @@ class Wireless implements Module
     /**
      * @inheritDoc
      */
-    public function shouldDiscover(OS $os, ModuleStatus $status): bool
+    public function shouldDiscover(OS $os, ModuleStatus $status, ConnectivityHelper $connectivity): bool
     {
-        return $status->isEnabledAndDeviceUp($os->getDevice());
+        return $status->isEnabled() && $connectivity->snmpIsAvailable();
     }
 
     /**
      * @inheritDoc
      */
-    public function shouldPoll(OS $os, ModuleStatus $status): bool
+    public function shouldPoll(OS $os, ModuleStatus $status, ConnectivityHelper $connectivity): bool
     {
-        return $status->isEnabledAndDeviceUp($os->getDevice());
+        return $status->isEnabled() && $connectivity->snmpIsAvailable();
     }
 
     /**
@@ -78,13 +60,13 @@ class Wireless implements Module
      */
     public function discover(OS $os): void
     {
-        $submodules = LibrenmsConfig::get('discovery_submodules.wireless', $this->types);
-        $types = array_intersect($this->types, $submodules);
+        $submodules = $this->submodules ?? WirelessSensorType::values();
+        $types = array_filter(WirelessSensorType::cases(), fn (WirelessSensorType $type) => in_array($type->value, $submodules));
         $existingSensors = $os->getDevice()->wirelessSensors()->get()->groupBy('sensor_class');
 
         ModuleModelObserver::observe(WirelessSensor::class);
         foreach ($types as $type) {
-            $typeInterface = $this->getDiscoveryInterface($type);
+            $typeInterface = $this->getDiscoveryInterface($type->value);
             if (! interface_exists($typeInterface)) {
                 Log::error("Discovery Interface doesn't exist! $typeInterface");
                 continue;
@@ -93,8 +75,8 @@ class Wireless implements Module
             $sensors = [];
 
             if ($os instanceof $typeInterface) {
-                Log::info("$type: ");
-                $function = $this->getDiscoveryMethod($type);
+                Log::info("{$type->value}: ");
+                $function = $this->getDiscoveryMethod($type->value);
                 $sensors = $os->$function();
 
                 // TODO update interfaces and remove this check
@@ -119,7 +101,7 @@ class Wireless implements Module
             })->filter(fn (WirelessSensor $sensor) => is_numeric($sensor->sensor_current));
 
             // sync only models for this type
-            $synced = $this->syncModels($os->getDevice(), 'wirelessSensors', $sensors, $existingSensors->get($type, new Collection));
+            $synced = $this->syncModels($os->getDevice(), 'wirelessSensors', $sensors, $existingSensors->get($type->value, new Collection));
 
             if ($synced->isNotEmpty()) {
                 Log::info('');
@@ -133,7 +115,7 @@ class Wireless implements Module
     public function poll(OS $os, DataStorageInterface $datastore): void
     {
         // fetch and group sensors
-        $submodules = LibrenmsConfig::get('poller_submodules.wireless', []);
+        $submodules = $this->submodules ?? [];
         $sensors = $os->getDevice()->wirelessSensors()
             ->when($submodules, fn ($q) => $q->whereIn('sensor_class', $submodules))
             ->get()->keyBy('sensor_id');
@@ -212,7 +194,7 @@ class Wireless implements Module
         // update rrd and database
         $rrd_name = [
             'wireless-sensor',
-            $sensor->sensor_class,
+            $sensor->sensor_class->value,
             $sensor->sensor_type,
             $sensor->sensor_index,
         ];
@@ -223,7 +205,7 @@ class Wireless implements Module
         ];
 
         $tags = [
-            'sensor_class' => $sensor->sensor_class,
+            'sensor_class' => $sensor->sensor_class->value,
             'sensor_type' => $sensor->sensor_type,
             'sensor_descr' => $sensor->sensor_descr,
             'sensor_index' => $sensor->sensor_index,
@@ -232,7 +214,7 @@ class Wireless implements Module
         ];
         $datastore->put($os->getDeviceArray(), 'wireless-sensor', $tags, $fields);
 
-        Log::info("  $sensor->sensor_descr: $sensor->sensor_current " . __("wireless.$sensor->sensor_class.unit"));
+        Log::info("  $sensor->sensor_descr: $sensor->sensor_current " . __("wireless.{$sensor->sensor_class->value}.unit"));
     }
 
     protected function getDiscoveryInterface($type): string

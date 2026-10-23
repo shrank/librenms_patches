@@ -287,6 +287,7 @@
                     "sensor_type": "acAnalogFxsFxoHookState",
                     "sensor_descr": "FXS 0 (Fax, 9647)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -312,6 +313,7 @@
                     "sensor_type": "acAnalogFxsFxoHookState",
                     "sensor_descr": "FXS 1 (Fax, 9702)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -337,6 +339,7 @@
                     "sensor_type": "acAnalogFxsFxoHookState",
                     "sensor_descr": "FXS 2 (Fax, 9782)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -362,6 +365,7 @@
                     "sensor_type": "acAnalogFxsFxoHookState",
                     "sensor_descr": "FXS 3 (Fax, 9785)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -387,6 +391,7 @@
                     "sensor_type": "acAnalogFxsFxoHookState",
                     "sensor_descr": "FXS 4 (Fax, 9788)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -412,6 +417,7 @@
                     "sensor_type": "acAnalogFxsFxoHookState",
                     "sensor_descr": "FXS 5 (Fax, 9798)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -437,6 +443,7 @@
                     "sensor_type": "acAnalogFxsFxoHookState",
                     "sensor_descr": "FXS 6 (Fax, 9801)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -462,6 +469,7 @@
                     "sensor_type": "acAnalogFxsFxoHookState",
                     "sensor_descr": "FXS 7 (Fax, 9806)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -483,14 +491,12 @@
                 {
                     "state_name": "acAnalogFxsFxoHookState",
                     "state_descr": "offHook",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "acAnalogFxsFxoHookState",
                     "state_descr": "onHook",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 }
@@ -541,6 +547,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "MP-118 FXS",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -560,6 +567,7 @@
                     "entPhysicalContainedIn": 67112960,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -579,6 +587,7 @@
                     "entPhysicalContainedIn": 67379200,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -598,6 +607,7 @@
                     "entPhysicalContainedIn": 67383297,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 1141129473
                 },
                 {
@@ -617,6 +627,7 @@
                     "entPhysicalContainedIn": 67383297,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 1141129474
                 },
                 {
@@ -636,6 +647,7 @@
                     "entPhysicalContainedIn": 67383297,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 1141129475
                 },
                 {
@@ -655,6 +667,7 @@
                     "entPhysicalContainedIn": 67383297,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 1141129476
                 },
                 {
@@ -674,6 +687,7 @@
                     "entPhysicalContainedIn": 67383297,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 1141129477
                 },
                 {
@@ -693,6 +707,7 @@
                     "entPhysicalContainedIn": 67383297,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 1141129478
                 },
                 {
@@ -712,6 +727,7 @@
                     "entPhysicalContainedIn": 67383297,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 1141129479
                 },
                 {
@@ -731,6 +747,7 @@
                     "entPhysicalContainedIn": 67383297,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 1141129480
                 },
                 {
@@ -750,6 +767,7 @@
                     "entPhysicalContainedIn": 67383297,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 1141129985
                 }
             ]

@@ -25,10 +25,6 @@
 
 use LibreNMS\Alerting\QueryBuilderParser;
 
-if (! Auth::user()->hasGlobalAdmin()) {
-    exit('ERROR: You need to be admin');
-}
-
 ?>
 
 <div class="modal fade" id="search_rule_modal" tabindex="-1" role="dialog" aria-labelledby="search_rule" aria-hidden="true">
@@ -82,7 +78,7 @@ if (! Auth::user()->hasGlobalAdmin()) {
                                 var template_rule_id = $(this).data("rule_id");
                                 $.ajax({
                                     type: "GET",
-                                    url: "<?php echo route('alert-rule-template', ':template_id') ?>".replace(':template_id', template_rule_id),
+                                    url: route('alert-rule-template', template_rule_id),
                                     dataType: "json",
                                     success: function (data) {
                                         if (data.status == 'ok') {
@@ -113,5 +109,11 @@ if (! Auth::user()->hasGlobalAdmin()) {
         $("#template_rule_id").val('');
         $("#rule_suggest").val('');
         $("#rule_display").html('');
+
+        var $parent = $('#create-alert');
+        if ($parent.hasClass('in')) {
+            $('body').addClass('modal-open');
+            $parent.modal('handleUpdate');
+        }
     });
 </script>

@@ -26,16 +26,25 @@
 
 namespace App\Models;
 
+use App\Models\Traits\Filterable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
-use Permissions;
+use Illuminate\Support\Facades\Gate;
 
 class CustomMap extends BaseModel
 {
+    use Filterable;
     use HasFactory;
+
     protected $primaryKey = 'custom_map_id';
+    protected array $filterable = [
+        'name',
+        'menu_group',
+        'nodes.device_id',
+        'edges.port_id',
+    ];
     protected $fillable = [
         'name',
         'menu_group',
@@ -55,7 +64,7 @@ class CustomMap extends BaseModel
     ];
 
     /**
-     * @return array{options: 'array', legend_colours: 'array', newnodeconfig: 'array', newedgeconfig: 'array', background_data: 'array'}
+     * @return array<string, string>
      */
     protected function casts(): array
     {
@@ -82,28 +91,25 @@ class CustomMap extends BaseModel
         return $config;
     }
 
-    public function hasReadAccess(User $user): bool
+    /**
+     * Get legend config intended to be passed to javascript
+     */
+    public function getLegendConfig(): array
     {
-        $device_ids = $this->nodes()->whereNotNull('device_id')->pluck('device_id');
-
-        // Restricted users can only view maps that have at least one device
-        if (count($device_ids) === 0) {
-            return false;
-        }
-
-        // Deny access if we don't have permission on any device
-        foreach ($device_ids as $device_id) {
-            if (! Permissions::canAccessDevice($device_id, $user)) {
-                return false;
-            }
-        }
-
-        return true;
+        return [
+            'x' => $this->legend_x,
+            'y' => $this->legend_y,
+            'steps' => $this->legend_steps,
+            'hide_invalid' => (bool) $this->legend_hide_invalid,
+            'hide_overspeed' => (bool) $this->legend_hide_overspeed,
+            'font_size' => $this->legend_font_size,
+            'colours' => $this->legend_colours,
+        ];
     }
 
-    public function scopeHasAccess(Builder $query, User $user): Builder
+    protected function scopeHasAccess(Builder $query, User $user): Builder
     {
-        if ($user->hasGlobalRead()) {
+        if (Gate::allows('viewAll', CustomMap::class)) {
             return $query;
         }
 

@@ -1,9 +1,10 @@
 import logging
 import os
-import pymysql  # pylint: disable=import-error
 import sys
 import threading
 import time
+
+import pymysql  # pylint: disable=import-error
 
 import LibreNMS
 from LibreNMS.config import DBConfig
@@ -15,6 +16,7 @@ except ImportError:
 
 from datetime import timedelta
 from datetime import datetime
+from enum import Enum
 from platform import python_version
 from time import sleep
 from socket import gethostname
@@ -36,6 +38,16 @@ except ImportError:
 
 
 logger = logging.getLogger(__name__)
+
+# how often to re-collect the poller details reported to poller_cluster (6 hours)
+POLLER_DETAILS_REFRESH = 21600
+
+
+class LogOutput(Enum):
+    NONE = "none"
+    PASSTHROUGH = "passthrough"
+    LOGGER = "logger"
+    FILE = "file"
 
 
 class ServiceConfig(DBConfig):
@@ -70,6 +82,7 @@ class ServiceConfig(DBConfig):
     single_instance = True
     distributed = False
     group = 0
+    memory_pressure_percent = None
 
     debug = False
     log_level = 20
@@ -101,7 +114,7 @@ class ServiceConfig(DBConfig):
     redis_sentinel_service = None
     redis_timeout = 60
 
-    log_output = False
+    log_output = LogOutput.NONE
     logdir = "logs"
 
     watchdog_enabled = False
@@ -118,26 +131,14 @@ class ServiceConfig(DBConfig):
         self.group = ServiceConfig.parse_group(
             config.get("distributed_poller_group", ServiceConfig.group)
         )
+        self.memory_pressure_percent = os.getenv(
+            "DISPATCHER_MEMORY_PRESSURE_PERCENT",
+            ServiceConfig.memory_pressure_percent,
+        )
 
-        # backward compatible options
         self.master_timeout = config.get(
             "service_master_timeout", ServiceConfig.master_timeout
         )
-        self.poller.workers = config.get(
-            "poller_service_workers", ServiceConfig.poller.workers
-        )
-        self.poller.frequency = config.get(
-            "poller_service_poll_frequency", ServiceConfig.poller.frequency
-        )
-        self.discovery.frequency = config.get(
-            "poller_service_discover_frequency", ServiceConfig.discovery.frequency
-        )
-        self.down_retry = config.get(
-            "poller_service_down_retry", ServiceConfig.down_retry
-        )
-        self.log_level = config.get("poller_service_loglevel", ServiceConfig.log_level)
-
-        # new options
         self.poller.enabled = (
             config.get("service_poller_enabled", True)
             if config.get("schedule_type").get("poller", "legacy") == "legacy"
@@ -147,7 +148,8 @@ class ServiceConfig(DBConfig):
             "service_poller_workers", ServiceConfig.poller.workers
         )
         self.poller.frequency = config.get(
-            "service_poller_frequency", ServiceConfig.poller.frequency
+            "service_poller_frequency",
+            config.get("rrd").get("step", ServiceConfig.poller.frequency),
         )
         self.discovery.enabled = (
             config.get("service_discovery_enabled", True)
@@ -195,7 +197,10 @@ class ServiceConfig(DBConfig):
             if config.get("schedule_type").get("ping", "legacy") == "legacy"
             else config.get("schedule_type").get("ping", "legacy") == "dispatcher"
         )
-        self.ping.frequency = config.get("ping_rrd_step", ServiceConfig.ping.frequency)
+        self.ping.frequency = config.get(
+            "service_ping_frequency",
+            config.get("ping_rrd_step", ServiceConfig.ping.frequency),
+        )
         self.down_retry = config.get(
             "service_poller_down_retry", ServiceConfig.down_retry
         )
@@ -246,9 +251,11 @@ class ServiceConfig(DBConfig):
         self.redis_timeout = int(
             os.getenv(
                 "REDIS_TIMEOUT",
-                self.alerting.frequency
-                if self.alerting.frequency != 0
-                else self.redis_timeout,
+                (
+                    self.alerting.frequency
+                    if self.alerting.frequency != 0
+                    else self.redis_timeout
+                ),
             )
         )
 
@@ -428,6 +435,7 @@ class Service:
             10, self.systemd_watchdog, "systemd-watchdog"
         )
         self.is_master = False
+        self._poller_details_time = 0
 
     def service_age(self):
         return time.time() - self.start_time
@@ -513,15 +521,21 @@ class Service:
         )
         logger.info(
             "Queue Workers: Discovery={} Poller={} Services={} Alerting={} Billing={} Ping={}".format(
-                self.config.discovery.workers
-                if self.config.discovery.enabled
-                else "disabled",
-                self.config.poller.workers
-                if self.config.poller.enabled
-                else "disabled",
-                self.config.services.workers
-                if self.config.services.enabled
-                else "disabled",
+                (
+                    self.config.discovery.workers
+                    if self.config.discovery.enabled
+                    else "disabled"
+                ),
+                (
+                    self.config.poller.workers
+                    if self.config.poller.enabled
+                    else "disabled"
+                ),
+                (
+                    self.config.services.workers
+                    if self.config.services.enabled
+                    else "disabled"
+                ),
                 "enabled" if self.config.alerting.enabled else "disabled",
                 "enabled" if self.config.billing.enabled else "disabled",
                 "enabled" if self.config.ping.enabled else "disabled",
@@ -632,7 +646,7 @@ class Service:
                     `last_polled` <= DATE_ADD(DATE_ADD(NOW(), INTERVAL -%s SECOND), INTERVAL COALESCE(`last_polled_timetaken`, 0) SECOND) OR
                     `last_discovered` <= DATE_ADD(DATE_ADD(NOW(), INTERVAL -%s SECOND), INTERVAL COALESCE(`last_discovered_timetaken`, 0) SECOND)
                 )
-                ORDER BY `last_polled_timetaken` DESC""",
+                ORDER BY `last_discovered` IS NULL DESC, `last_polled_timetaken` DESC""",
                 (
                     poller_find_time,
                     self.service_age(),
@@ -894,6 +908,16 @@ class Service:
                 )
             )
 
+            try:
+                poller_details = self.get_poller_details_due()
+                if poller_details is not None:
+                    self._db.query(
+                        "UPDATE `poller_cluster` SET `poller_details`=%s WHERE `node_id`=%s",
+                        (poller_details, self.config.node_id),
+                    )
+            except Exception:
+                logger.warning("Could not record poller details", exc_info=True)
+
             # Find our ID
             self._db.query(
                 'SELECT id INTO @parent_poller_id FROM poller_cluster WHERE node_id="{0}"; '.format(
@@ -927,6 +951,14 @@ class Service:
                 "Unable to log performance statistics - is the database still online?",
                 exc_info=True,
             )
+
+    def get_poller_details_due(self):
+        now = time.time()
+        if now - self._poller_details_time > POLLER_DETAILS_REFRESH:
+            self._poller_details_time = now
+            return LibreNMS.get_poller_details_json()
+
+        return None
 
     def systemd_watchdog(self):
         if self.config.health_file:

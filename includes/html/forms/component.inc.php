@@ -1,11 +1,17 @@
 <?php
 
+use App\Facades\DeviceCache;
+use Illuminate\Support\Facades\Gate;
+
 header('Content-type: application/json');
 
-if (! Auth::user()->hasGlobalAdmin()) {
+// enable/disable components on devices.
+$device_id = intval($_POST['device']);
+
+if (Gate::denies('component.update') || Gate::denies('view', DeviceCache::get($device_id))) {
     $response = [
         'status' => 'error',
-        'message' => 'Need to be admin',
+        'message' => 'Need to have permission',
     ];
     echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
     exit;
@@ -13,9 +19,6 @@ if (! Auth::user()->hasGlobalAdmin()) {
 
 $status = 'error';
 $message = 'Error with config';
-
-// enable/disable components on devices.
-$device_id = intval($_POST['device']);
 
 $OBJCOMP = new LibreNMS\Component();
 

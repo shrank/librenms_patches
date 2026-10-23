@@ -12,6 +12,7 @@
  */
 
 use Illuminate\Support\Facades\Log;
+use LibreNMS\Enum\SensorType;
 
 Log::debug('Quanta Chassis Power Supply state');
 
@@ -27,14 +28,14 @@ foreach ($tables as $tablevalue) {
         $state_name = $tablevalue[2];
         if ($state_name == 'quantaPowerSupplyStatus') {
             $states = [
-                ['value' => 0, 'generic' => 3, 'graph' => 0, 'descr' => 'other'],
-                ['value' => 1, 'generic' => 3, 'graph' => 0, 'descr' => 'notpresent'],
-                ['value' => 2, 'generic' => 0, 'graph' => 0, 'descr' => 'operational'],
-                ['value' => 3, 'generic' => 2, 'graph' => 0, 'descr' => 'failed'],
-                ['value' => 4, 'generic' => 0, 'graph' => 0, 'descr' => 'powering'],
-                ['value' => 5, 'generic' => 1, 'graph' => 0, 'descr' => 'nopower'],
-                ['value' => 6, 'generic' => 1, 'graph' => 0, 'descr' => 'notpowering'],
-                ['value' => 7, 'generic' => 2, 'graph' => 0, 'descr' => 'incompatible'],
+                ['value' => 0, 'generic' => 3, 'descr' => 'other'],
+                ['value' => 1, 'generic' => 3, 'descr' => 'notpresent'],
+                ['value' => 2, 'generic' => 0, 'descr' => 'operational'],
+                ['value' => 3, 'generic' => 2, 'descr' => 'failed'],
+                ['value' => 4, 'generic' => 0, 'descr' => 'powering'],
+                ['value' => 5, 'generic' => 1, 'descr' => 'nopower'],
+                ['value' => 6, 'generic' => 1, 'descr' => 'notpowering'],
+                ['value' => 7, 'generic' => 2, 'descr' => 'incompatible'],
             ];
         }
         create_state_index($state_name, $states);
@@ -43,7 +44,7 @@ foreach ($tables as $tablevalue) {
             $descr = $tablevalue[3] . $index;
             $oid_for_entry = $tablevalue[5] . '.' . $index;
 
-            discover_sensor(null, 'state', $device, $oid_for_entry, $index, $state_name, $descr, 1, 1, null, null, null, null, $entry[$cur_oid], 'snmp');
+            discover_sensor(null, SensorType::State, $device, $oid_for_entry, $index, $state_name, $descr, 1, 1, null, null, null, null, $entry[$cur_oid], 'snmp');
         }
     }
 }

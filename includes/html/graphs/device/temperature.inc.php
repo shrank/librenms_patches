@@ -2,6 +2,6 @@
 
 $graph_params->alt_y_grid = true;
 
-$class = 'temperature';
+$class = \LibreNMS\Enum\SensorType::Temperature;
 
 require 'includes/html/graphs/device/sensor.inc.php';

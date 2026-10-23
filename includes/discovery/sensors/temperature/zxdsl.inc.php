@@ -1,6 +1,9 @@
 <?php
 
-echo 'ZTE ZXDSL:';
+use Illuminate\Support\Facades\Log;
+use LibreNMS\Enum\SensorType;
+
+Log::info('ZTE ZXDSL:', ['nlb' => true]);
 
 // System temperature
 $high_limit = 70;
@@ -10,13 +13,13 @@ $low_limit = -30;
 
 $descr = 'System Temperature';
 $valueoid = '.1.3.6.1.4.1.3902.1004.3.1.2.1.0';
-$value = snmp_get($device, $valueoid, '-Oqv');
+$value = SnmpQuery::get($valueoid)->value();
 $value = str_replace('"', '', $value);
 
 if (is_numeric($value)) {
     discover_sensor(
         null,
-        'temperature',
+        SensorType::Temperature,
         $device,
         $valueoid,
         0,

@@ -2,11 +2,13 @@
 
 namespace LibreNMS;
 
+use App\Facades\DeviceCache;
 use App\Facades\LibrenmsConfig;
 use DateTime;
 use DateTimeZone;
 use Illuminate\Support\Str;
 use LibreNMS\Util\Number;
+use SnmpQuery;
 
 class Billing
 {
@@ -73,101 +75,57 @@ class Billing
         $total = $end->diff($start)->format('%a');
         $since = $now->diff($start)->format('%a');
 
+        // Prevent DivisionByZeroError when short previous months cause date_sub() to overflow the start date, making $since equal to 0.
+        if ($since == 0) {
+            $since = 1;
+        }
+
         return $cur_used / $since * $total;
     }
 
-    public static function getValue($host, $port, $id, $inout): int
+    public static function calculateBitrate(int|float $measurement, int|float $last_measurement, int|float $period): float
     {
-        $oid = 'IF-MIB::ifHC' . $inout . 'Octets.' . $id;
-        $device = dbFetchRow('SELECT * from `devices` WHERE `hostname` = ? LIMIT 1', [$host]);
-        $value = snmp_get($device, $oid, '-Oqv');
+        if ($period <= 0) {
+            return 0.0;
+        }
+
+        return round(($measurement - $last_measurement) * 8 / $period, 2);
+    }
+
+    public static function getValue($device_id, $id, $inout): ?int
+    {
+        $device = DeviceCache::get($device_id);
+        $value = SnmpQuery::device($device)->get('IF-MIB::ifHC' . $inout . 'Octets.' . $id)->value();
 
         if (! is_numeric($value)) {
-            $oid = 'IF-MIB::if' . $inout . 'Octets.' . $id;
-            $value = snmp_get($device, $oid, '-Oqv');
+            $value = SnmpQuery::device($device)->get('IF-MIB::if' . $inout . 'Octets.' . $id)->value();
         }
 
-        return (int) $value;
-    }
-
-    public static function getLastPortCounter($port_id, $bill_id): array
-    {
-        $return = [];
-        $row = dbFetchRow('SELECT timestamp, in_counter, in_delta, out_counter, out_delta FROM bill_port_counters WHERE `port_id` = ? AND `bill_id` = ?', [$port_id, $bill_id]);
-        if (! is_null($row)) {
-            $return['timestamp'] = $row['timestamp'];
-            $return['in_counter'] = $row['in_counter'];
-            $return['in_delta'] = $row['in_delta'];
-            $return['out_counter'] = $row['out_counter'];
-            $return['out_delta'] = $row['out_delta'];
-            $return['state'] = 'ok';
-        } else {
-            $return['state'] = 'failed';
-        }
-
-        return $return;
-    }
-
-    public static function getLastMeasurement($bill_id): array
-    {
-        $return = [];
-        $row = dbFetchRow('SELECT timestamp,delta,in_delta,out_delta FROM bill_data WHERE bill_id = ? ORDER BY timestamp DESC LIMIT 1', [$bill_id]);
-        if (! is_null($row)) {
-            $return['delta'] = $row['delta'];
-            $return['in_delta'] = $row['in_delta'];
-            $return['out_delta'] = $row['out_delta'];
-            $return['timestamp'] = $row['timestamp'];
-            $return['state'] = 'ok';
-        } else {
-            $return['state'] = 'failed';
-        }
-
-        return $return;
+        return is_numeric($value) ? (int) $value : null;
     }
 
     private static function get95thagg($bill_id, $datefrom, $dateto): float
     {
-        $mq_sql = 'SELECT count(delta) FROM bill_data WHERE bill_id = ?';
-        $mq_sql .= ' AND timestamp > ? AND timestamp <= ?';
-        $measurements = dbFetchCell($mq_sql, [$bill_id, $datefrom, $dateto]);
-        $measurement_95th = (round($measurements / 100 * 95) - 1);
+        $sum_data = dbFetchRows('SELECT (SUM(delta) / SUM(period) * 8) as rate, FROM_UNIXTIME(FLOOR(UNIX_TIMESTAMP(`timestamp`) / 300) * 300) AS bucket_start FROM bill_data WHERE bill_id = ? AND timestamp > ? AND timestamp <= ? GROUP BY bill_id, bucket_start ORDER BY rate ASC', [$bill_id, $datefrom, $dateto]);
+        $measurement_95th = max(0, (int) round(count($sum_data) / 100 * 95) - 2);
 
-        $q_95_sql = 'SELECT (delta / period * 8) AS rate FROM bill_data  WHERE bill_id = ?';
-        $q_95_sql .= ' AND timestamp > ? AND timestamp <= ? ORDER BY rate ASC';
-        $a_95th = dbFetchColumn($q_95_sql, [$bill_id, $datefrom, $dateto]);
-        $m_95th = $a_95th[$measurement_95th];
-
-        return round($m_95th, 2);
+        return round($sum_data[$measurement_95th]['rate'] ?? 0, 2);
     }
 
     private static function get95thIn($bill_id, $datefrom, $dateto): float
     {
-        $mq_sql = 'SELECT count(delta) FROM bill_data WHERE bill_id = ?';
-        $mq_sql .= ' AND timestamp > ? AND timestamp <= ?';
-        $measurements = dbFetchCell($mq_sql, [$bill_id, $datefrom, $dateto]);
-        $measurement_95th = (round($measurements / 100 * 95) - 1);
+        $sum_data = dbFetchRows('SELECT (SUM(in_delta) / SUM(period) * 8) as rate, FROM_UNIXTIME(FLOOR(UNIX_TIMESTAMP(`timestamp`) / 300) * 300) AS bucket_start FROM bill_data WHERE bill_id = ? AND timestamp > ? AND timestamp <= ? GROUP BY bill_id, bucket_start ORDER BY rate ASC', [$bill_id, $datefrom, $dateto]);
+        $measurement_95th = max(0, (int) round(count($sum_data) / 100 * 95) - 2);
 
-        $q_95_sql = 'SELECT (in_delta / period * 8) AS rate FROM bill_data  WHERE bill_id = ?';
-        $q_95_sql .= ' AND timestamp > ? AND timestamp <= ? ORDER BY rate ASC';
-        $a_95th = dbFetchColumn($q_95_sql, [$bill_id, $datefrom, $dateto]);
-        $m_95th = $a_95th[$measurement_95th] ?? 0;
-
-        return round($m_95th, 2);
+        return round($sum_data[$measurement_95th]['rate'] ?? 0, 2);
     }
 
     private static function get95thout($bill_id, $datefrom, $dateto): float
     {
-        $mq_sql = 'SELECT count(delta) FROM bill_data WHERE bill_id = ?';
-        $mq_sql .= ' AND timestamp > ? AND timestamp <= ?';
-        $measurements = dbFetchCell($mq_sql, [$bill_id, $datefrom, $dateto]);
-        $measurement_95th = (round($measurements / 100 * 95) - 1);
+        $sum_data = dbFetchRows('SELECT (SUM(out_delta) / SUM(period) * 8) as rate, FROM_UNIXTIME(FLOOR(UNIX_TIMESTAMP(`timestamp`) / 300) * 300) AS bucket_start FROM bill_data WHERE bill_id = ? AND timestamp > ? AND timestamp <= ? GROUP BY bill_id, bucket_start ORDER BY rate ASC', [$bill_id, $datefrom, $dateto]);
+        $measurement_95th = max(0, (int) round(count($sum_data) / 100 * 95) - 2);
 
-        $q_95_sql = 'SELECT (out_delta / period * 8) AS rate FROM bill_data  WHERE bill_id = ?';
-        $q_95_sql .= ' AND timestamp > ? AND timestamp <= ? ORDER BY rate ASC';
-        $a_95th = dbFetchColumn($q_95_sql, [$bill_id, $datefrom, $dateto]);
-        $m_95th = $a_95th[$measurement_95th] ?? 0;
-
-        return round($m_95th, 2);
+        return round($sum_data[$measurement_95th]['rate'] ?? 0, 2);
     }
 
     public static function getRates($bill_id, $datefrom, $dateto, $dir_95th): array
@@ -421,7 +379,7 @@ class Billing
         $data = [];
         $average = 0;
         if ($imgtype == 'day') {
-            foreach (dbFetchRows('SELECT DISTINCT UNIX_TIMESTAMP(timestamp) as timestamp, SUM(delta) as traf_total, SUM(in_delta) as traf_in, SUM(out_delta) as traf_out FROM bill_data WHERE `bill_id` = ? AND `timestamp` >= FROM_UNIXTIME(?) AND `timestamp` <= FROM_UNIXTIME(?) GROUP BY DATE(timestamp) ORDER BY timestamp ASC', [$bill_id, $from, $to]) as $data) {
+            foreach (dbFetchRows('SELECT UNIX_TIMESTAMP(MIN(timestamp)) as timestamp, SUM(delta) as traf_total, SUM(in_delta) as traf_in, SUM(out_delta) as traf_out FROM bill_data WHERE `bill_id` = ? AND `timestamp` >= FROM_UNIXTIME(?) AND `timestamp` <= FROM_UNIXTIME(?) GROUP BY DATE(timestamp) ORDER BY DATE(timestamp) ASC', [$bill_id, $from, $to]) as $data) {
                 array_push($ticklabels, date('Y-m-d', $data['timestamp']));
                 array_push($in_data, $data['traf_in'] ?? 0);
                 array_push($out_data, $data['traf_out'] ?? 0);

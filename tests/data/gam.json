@@ -4649,7 +4649,8 @@
                     "ifStackStatus": "active"
                 }
             ]
-        }
+        },
+        "poller": "matches discovery"
     },
     "entity-physical": {
         "discovery": {
@@ -4671,6 +4672,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 }
             ]
@@ -4707,6 +4709,7 @@
                     "sensor_type": "gam",
                     "sensor_descr": "Fan #0",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 9299,
@@ -4732,6 +4735,7 @@
                     "sensor_type": "gam",
                     "sensor_descr": "Fan #1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 9165,
@@ -4757,6 +4761,7 @@
                     "sensor_type": "gam",
                     "sensor_descr": "Fan #2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 9433,
@@ -4782,6 +4787,7 @@
                     "sensor_type": "gam",
                     "sensor_descr": "Fan #3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 9433,
@@ -4807,6 +4813,7 @@
                     "sensor_type": "GAM-SYSUTIL-MIB::gamSysutilStatusPowerSupplyTable",
                     "sensor_descr": "Main power supply",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -4832,6 +4839,7 @@
                     "sensor_type": "GAM-SYSUTIL-MIB::gamSysutilStatusPowerSupplyTable",
                     "sensor_descr": "Redundant power supply",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -4857,6 +4865,7 @@
                     "sensor_type": "gam",
                     "sensor_descr": "Intake #1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 16.9,
@@ -4882,6 +4891,7 @@
                     "sensor_type": "gam",
                     "sensor_descr": "Intake #2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 14.8,
@@ -4907,6 +4917,7 @@
                     "sensor_type": "gam",
                     "sensor_descr": "Exhaust #1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 14.2,
@@ -4932,6 +4943,7 @@
                     "sensor_type": "gam",
                     "sensor_descr": "Exhaust #2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 12,
@@ -4957,6 +4969,7 @@
                     "sensor_type": "gam",
                     "sensor_descr": "CPU",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 18.5,
@@ -4978,21 +4991,18 @@
                 {
                     "state_name": "GAM-SYSUTIL-MIB::gamSysutilStatusPowerSupplyTable",
                     "state_descr": "Active",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "GAM-SYSUTIL-MIB::gamSysutilStatusPowerSupplyTable",
                     "state_descr": "Standby",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "GAM-SYSUTIL-MIB::gamSysutilStatusPowerSupplyTable",
                     "state_descr": "Not Present",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 3
                 }
@@ -5007,7 +5017,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "host.name",
-                    "remote_port": "xe23 (e8c57ad4cd10)",
+                    "remote_port": "xe23",
                     "remote_platform": null,
                     "remote_version": "Hardware Model:UFI_S9510-28DC, Software version: OcNOS,6.4.2.105",
                     "ifAlias": "Port 10G-1",
@@ -5018,7 +5028,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "host-name-gam",
-                    "remote_port": "13 (000ed81a87c2)",
+                    "remote_port": "13",
                     "remote_platform": null,
                     "remote_version": "GAM-12/24-C_v1.5.4 2023-10-14T00:08:11-04:00",
                     "ifAlias": "Port 10G-2",

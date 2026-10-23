@@ -35,6 +35,9 @@ use App\Models\Transceiver;
 use App\Models\Vlan;
 use Illuminate\Support\Collection;
 use LibreNMS\Device\WirelessSensor;
+use LibreNMS\Discovery\Neighbors\Neighbor;
+use LibreNMS\Discovery\Neighbors\NeighborParser;
+use LibreNMS\Enum\WirelessSensorType;
 use LibreNMS\Interfaces\Data\DataStorageInterface;
 use LibreNMS\Interfaces\Discovery\QosDiscovery;
 use LibreNMS\Interfaces\Discovery\Sensors\WirelessCcqDiscovery;
@@ -97,7 +100,7 @@ class Routeros extends OS implements
             $freq = $entry['mtxrWlApFreq'] ? substr((string) $entry['mtxrWlApFreq'], 0, 1) . 'G' : 'SSID';
 
             $sensors[] = new WirelessSensor(
-                'ccq',
+                WirelessSensorType::Ccq,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.3.1.10.' . $index,
                 'mikrotik',
@@ -115,7 +118,7 @@ class Routeros extends OS implements
             }
 
             $sensors[] = new WirelessSensor(
-                'ccq',
+                WirelessSensorType::Ccq,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.1.1.9.' . $index,
                 'mikrotik-tx-ccq',
@@ -124,7 +127,7 @@ class Routeros extends OS implements
                 $entry['mtxrWlStatTxCCQ']
             );
             $sensors[] = new WirelessSensor(
-                'ccq',
+                WirelessSensorType::Ccq,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.1.1.10.' . $index,
                 'mikrotik-rx-ccq',
@@ -150,7 +153,7 @@ class Routeros extends OS implements
             $freq = $entry['mtxrWlApFreq'] ? substr((string) $entry['mtxrWlApFreq'], 0, 1) . 'G' : 'SSID';
 
             $sensors[] = new WirelessSensor(
-                'clients',
+                WirelessSensorType::Clients,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.3.1.6.' . $index,
                 'mikrotik',
@@ -179,7 +182,7 @@ class Routeros extends OS implements
             }
             $freq = substr((string) $entry['mtxrWlApFreq'], 0, 1) . 'G';
             $sensors[] = new WirelessSensor(
-                'frequency',
+                WirelessSensorType::Frequency,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.3.1.7.' . $index,
                 'mikrotik',
@@ -196,7 +199,7 @@ class Routeros extends OS implements
             }
             $freq = substr((string) $entry['mtxrWlStatFreq'], 0, 1) . 'G';
             $sensors[] = new WirelessSensor(
-                'frequency',
+                WirelessSensorType::Frequency,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.1.1.7.' . $index,
                 'mikrotik',
@@ -209,7 +212,7 @@ class Routeros extends OS implements
         $data = $this->getCacheTable('MIKROTIK-MIB::mtxrWl60GTable');
         foreach ($data as $index => $entry) {
             $sensors[] = new WirelessSensor(
-                'frequency',
+                WirelessSensorType::Frequency,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.8.1.6.' . $index,
                 'mikrotik-60g',
@@ -235,7 +238,7 @@ class Routeros extends OS implements
 
         foreach ($data as $index => $entry) {
             $sensors[] = new WirelessSensor(
-                'rssi',
+                WirelessSensorType::Rssi,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.8.1.12.' . $index,
                 'mikrotik',
@@ -261,7 +264,7 @@ class Routeros extends OS implements
 
         foreach ($data as $index => $entry) {
             $sensors[] = new WirelessSensor(
-                'quality',
+                WirelessSensorType::Quality,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.8.1.8.' . $index,
                 'mikrotik',
@@ -288,7 +291,7 @@ class Routeros extends OS implements
             $freq = $entry['mtxrWlApFreq'] ? substr((string) $entry['mtxrWlApFreq'], 0, 1) . 'G' : 'SSID';
 
             $sensors[] = new WirelessSensor(
-                'noise-floor',
+                WirelessSensorType::NoiseFloor,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.3.1.9.' . $index,
                 'mikrotik',
@@ -319,7 +322,7 @@ class Routeros extends OS implements
 
             $freq = $entry['mtxrWlApFreq'] ? substr((string) $entry['mtxrWlApFreq'], 0, 1) . 'G' : 'SSID';
             $sensors[] = new WirelessSensor(
-                'rate',
+                WirelessSensorType::Rate,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.3.1.2.' . $index,
                 'mikrotik-tx',
@@ -328,7 +331,7 @@ class Routeros extends OS implements
                 $entry['mtxrWlApTxRate']
             );
             $sensors[] = new WirelessSensor(
-                'rate',
+                WirelessSensorType::Rate,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.3.1.3.' . $index,
                 'mikrotik-rx',
@@ -345,7 +348,7 @@ class Routeros extends OS implements
             }
             $freq = $entry['mtxrWlStatFreq'] ? substr((string) $entry['mtxrWlStatFreq'], 0, 1) . 'G' : 'SSID';
             $sensors[] = new WirelessSensor(
-                'rate',
+                WirelessSensorType::Rate,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.1.1.2.' . $index,
                 'mikrotik-tx',
@@ -354,7 +357,7 @@ class Routeros extends OS implements
                 $entry['mtxrWlStatTxRate']
             );
             $sensors[] = new WirelessSensor(
-                'rate',
+                WirelessSensorType::Rate,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.1.1.3.' . $index,
                 'mikrotik-rx',
@@ -367,7 +370,7 @@ class Routeros extends OS implements
         $data = $this->getCacheTable('MIKROTIK-MIB::mtxrWl60GTable');
         foreach ($data as $index => $entry) {
             $sensors[] = new WirelessSensor(
-                'rate',
+                WirelessSensorType::Rate,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.8.1.13.' . $index,
                 'mikrotik-60g-tx',
@@ -394,7 +397,7 @@ class Routeros extends OS implements
         $data = $this->getCacheTable('MIKROTIK-MIB::mtxrWl60GStaTable');
         foreach ($data as $index => $entry) {
             $sensors[] = new WirelessSensor(
-                'distance',
+                WirelessSensorType::Distance,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.1.9.1.10.' . $index,
                 'mikrotik',
@@ -423,7 +426,7 @@ class Routeros extends OS implements
         foreach ($data as $index => $entry) {
             $name = $this->getCacheByIndex('MIKROTIK-MIB::mtxrInterfaceStatsName');
             $sensors[] = new WirelessSensor(
-                'rsrq',
+                WirelessSensorType::Rsrq,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.16.1.1.3.' . $index,
                 'routeros',
@@ -450,7 +453,7 @@ class Routeros extends OS implements
         foreach ($data as $index => $entry) {
             $name = $this->getCacheByIndex('MIKROTIK-MIB::mtxrInterfaceStatsName');
             $sensors[] = new WirelessSensor(
-                'rsrp',
+                WirelessSensorType::Rsrp,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.16.1.1.4.' . $index,
                 'routeros',
@@ -477,7 +480,7 @@ class Routeros extends OS implements
         foreach ($data as $index => $entry) {
             $name = $this->getCacheByIndex('MIKROTIK-MIB::mtxrInterfaceStatsName');
             $sensors[] = new WirelessSensor(
-                'sinr',
+                WirelessSensorType::Sinr,
                 $this->getDeviceId(),
                 '.1.3.6.1.4.1.14988.1.1.16.1.1.7.' . $index,
                 'routeros',
@@ -660,6 +663,15 @@ class Routeros extends OS implements
     public function discoverTransceivers(): Collection
     {
         return \SnmpQuery::walk('MIKROTIK-MIB::mtxrOpticalTable')->mapTable(function ($data, $ifIndex) {
+            // RouterOS >= 7.24 lists every SFP cage, including empty ones
+            if (isset($data['MIKROTIK-MIB::mtxrOpticalModulePresent'])) {
+                if (! in_array($data['MIKROTIK-MIB::mtxrOpticalModulePresent'], ['true', '1'], true)) {
+                    return null;
+                }
+            } elseif (isset($data['MIKROTIK-MIB::mtxrOpticalVendorSerial']) && $data['MIKROTIK-MIB::mtxrOpticalVendorSerial'] === '' && empty($data['MIKROTIK-MIB::mtxrOpticalVendorName'])) {
+                return null;
+            }
+
             $wavelength = isset($data['MIKROTIK-MIB::mtxrOpticalWavelength']) && $data['MIKROTIK-MIB::mtxrOpticalWavelength'] != '.00' ? Number::cast($data['MIKROTIK-MIB::mtxrOpticalWavelength']) : null;
 
             return new Transceiver([
@@ -670,7 +682,7 @@ class Routeros extends OS implements
                 'wavelength' => $wavelength == 65535 ? null : $wavelength, // NA value = 65535.00
                 'entity_physical_index' => $ifIndex,
             ]);
-        });
+        })->filter();
     }
 
     public function discoverVlans(): Collection
@@ -746,5 +758,43 @@ class Routeros extends OS implements
         }
 
         return $ports;
+    }
+
+    protected function discoverLldpNeighbors(): Collection
+    {
+        // RouterOS before 7.7 reports all neighbors on port 0
+        $portZeroEntries = SnmpQuery::hideMib()->cache()->walk('LLDP-MIB::lldpRemTable')->table(3)[0][0] ?? [];
+
+        return empty($portZeroEntries)
+            ? parent::discoverLldpNeighbors()
+            : $this->discoverMikrotikLldpNeighbors($portZeroEntries);
+    }
+
+    /**
+     * RouterOS uses the ifIndex as the LLDP port number
+     *
+     * @return array<int|string, int|string>
+     */
+    protected function lldpBridgePortIfIndexes(): array
+    {
+        return [];
+    }
+
+    /**
+     * The port of neighbors reported on port 0 is in the MIKROTIK-MIB neighbor table
+     *
+     * @param  array<int|string, array<string, mixed>>  $entries  lldpRemTable entries indexed by lldpRemIndex
+     * @return Collection<int, Neighbor>
+     */
+    private function discoverMikrotikLldpNeighbors(array $entries): Collection
+    {
+        $interfaceIds = SnmpQuery::hideMib()->walk('MIKROTIK-MIB::mtxrNeighborInterfaceID')->pluck();
+        $interfaceNames = SnmpQuery::hideMib()->walk('MIKROTIK-MIB::mtxrInterfaceStatsName')->pluck();
+
+        return (new Collection($entries))->filter(fn ($entry) => is_array($entry))->map(function (array $entry, $index) use ($interfaceIds, $interfaceNames) {
+            $ifName = isset($interfaceIds[$index]) ? $interfaceNames[hexdec((string) $interfaceIds[$index])] ?? null : null;
+
+            return NeighborParser::fromLldpRemEntry($entry, $this->lldpLocalPorts()->byDescr($ifName)?->port_id);
+        })->values();
     }
 }

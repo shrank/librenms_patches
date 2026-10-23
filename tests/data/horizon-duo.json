@@ -32,6 +32,7 @@
                     "sensor_type": "horizon-duo",
                     "sensor_descr": "Enet Port1 Link Downs",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 13,
@@ -57,6 +58,7 @@
                     "sensor_type": "horizon-duo",
                     "sensor_descr": "Enet Port1 CRC Error",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -82,6 +84,7 @@
                     "sensor_type": "horizon-duo",
                     "sensor_descr": "Enet Port1 Input Error",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -107,6 +110,7 @@
                     "sensor_type": "horizon-duo",
                     "sensor_descr": "Enet Port2 Link Downs",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -132,6 +136,7 @@
                     "sensor_type": "horizon-duo",
                     "sensor_descr": "Enet Port2 CRC Error",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -157,6 +162,7 @@
                     "sensor_type": "horizon-duo",
                     "sensor_descr": "Enet Port2 Input Error",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -182,6 +188,7 @@
                     "sensor_type": "horizon-duo",
                     "sensor_descr": "Modem1 Rx Loss of Signals",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 42,
@@ -207,6 +214,7 @@
                     "sensor_type": "horizon-duo",
                     "sensor_descr": "Modem2 Rx Loss of Signals",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 18,
@@ -232,6 +240,7 @@
                     "sensor_type": "hzIduEnetPort1EthernetLinkDown",
                     "sensor_descr": "Enet Port1 Link State",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -257,6 +266,7 @@
                     "sensor_type": "hzIduEnetPort2EthernetLinkDown",
                     "sensor_descr": "Enet Port2 Link State",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -282,6 +292,7 @@
                     "sensor_type": "hzIduModemModulationType",
                     "sensor_descr": "Modem1 Modulation",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 7,
@@ -307,6 +318,7 @@
                     "sensor_type": "hzIduModemModulationType",
                     "sensor_descr": "Modem2 Modulation",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 7,
@@ -332,6 +344,7 @@
                     "sensor_type": "hzIduModemRxLossOfSignal",
                     "sensor_descr": "Modem1 Rx Loss of Signal",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -357,6 +370,7 @@
                     "sensor_type": "hzIduModemRxLossOfSignal",
                     "sensor_descr": "Modem2 Rx Loss of Signal",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -378,98 +392,84 @@
                 {
                     "state_name": "hzIduEnetPort1EthernetLinkDown",
                     "state_descr": "Up",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hzIduEnetPort1EthernetLinkDown",
                     "state_descr": "Down",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hzIduEnetPort2EthernetLinkDown",
                     "state_descr": "Up",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hzIduEnetPort2EthernetLinkDown",
                     "state_descr": "Down",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hzIduModemModulationType",
                     "state_descr": "qpsk",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hzIduModemModulationType",
                     "state_descr": "qam",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hzIduModemModulationType",
                     "state_descr": "qam16",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hzIduModemModulationType",
                     "state_descr": "qam32",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hzIduModemModulationType",
                     "state_descr": "qam64",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hzIduModemModulationType",
                     "state_descr": "qam128",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hzIduModemModulationType",
                     "state_descr": "qam256",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hzIduModemModulationType",
                     "state_descr": "x8psk",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hzIduModemRxLossOfSignal",
                     "state_descr": "No",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hzIduModemRxLossOfSignal",
                     "state_descr": "Yes",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 }

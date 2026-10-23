@@ -17087,6 +17087,7 @@
                     "sensor_type": "KeyingState",
                     "sensor_descr": "Keying A13-H08-OBL",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -17112,6 +17113,7 @@
                     "sensor_type": "LinkActive",
                     "sensor_descr": "Link Active A13-H08-OBL",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -17137,6 +17139,7 @@
                     "sensor_type": "RemoteStatus",
                     "sensor_descr": "Remote Status A13-H08-OBL",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -17162,6 +17165,7 @@
                     "sensor_type": "WpaVersion",
                     "sensor_descr": "WPA Version A13-H08-OBL",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -17187,6 +17191,7 @@
                     "sensor_type": "lcos",
                     "sensor_descr": "Temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 40,
@@ -17208,91 +17213,78 @@
                 {
                     "state_name": "KeyingState",
                     "state_descr": "Idle",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "KeyingState",
                     "state_descr": "Pending",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "KeyingState",
                     "state_descr": "Done",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "KeyingState",
                     "state_descr": "SaePending",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "LinkActive",
                     "state_descr": "No",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "LinkActive",
                     "state_descr": "Yes",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "RemoteStatus",
                     "state_descr": "Unknown",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "RemoteStatus",
                     "state_descr": "NotOK",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "RemoteStatus",
                     "state_descr": "OK",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "WpaVersion",
                     "state_descr": "None",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "WpaVersion",
                     "state_descr": "Wpa1",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "WpaVersion",
                     "state_descr": "Wpa2",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "WpaVersion",
                     "state_descr": "Wpa3",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 0
                 }

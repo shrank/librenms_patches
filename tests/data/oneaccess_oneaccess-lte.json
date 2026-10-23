@@ -1698,6 +1698,7 @@
                     "sensor_type": "oneaccess",
                     "sensor_descr": "CellID",
                     "group": "UMTS/LTE",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 14663945,
@@ -1723,6 +1724,7 @@
                     "sensor_type": "oneaccess",
                     "sensor_descr": "PLMN",
                     "group": "UMTS/LTE",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 20801,
@@ -1748,6 +1750,7 @@
                     "sensor_type": "oneaccess",
                     "sensor_descr": "RSRP",
                     "group": "UMTS/LTE",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -96,
@@ -1773,6 +1776,7 @@
                     "sensor_type": "oneaccess",
                     "sensor_descr": "Signal strength",
                     "group": "UMTS/LTE",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -64,
@@ -1798,6 +1802,7 @@
                     "sensor_type": "oneaccess",
                     "sensor_descr": "RSRQ",
                     "group": "UMTS/LTE",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -12,
@@ -1823,6 +1828,7 @@
                     "sensor_type": "oneaccess",
                     "sensor_descr": "SNR",
                     "group": "UMTS/LTE",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 10,
@@ -1848,6 +1854,7 @@
                     "sensor_type": "oacCellRadioAccessTechnology",
                     "sensor_descr": "Technology",
                     "group": "UMTS/LTE",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 4,
@@ -1873,6 +1880,7 @@
                     "sensor_type": "oacSysCpuUsedCoreType",
                     "sensor_descr": "Core Type #0",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1898,6 +1906,7 @@
                     "sensor_type": "oacSysCpuUsedCoreType",
                     "sensor_descr": "Core Type #1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1919,49 +1928,42 @@
                 {
                     "state_name": "oacCellRadioAccessTechnology",
                     "state_descr": "GSM",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "oacCellRadioAccessTechnology",
                     "state_descr": "UMTS",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "oacCellRadioAccessTechnology",
                     "state_descr": "LTE",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "oacSysCpuUsedCoreType",
                     "state_descr": "controlplane",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "oacSysCpuUsedCoreType",
                     "state_descr": "dataforwarding",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "oacSysCpuUsedCoreType",
                     "state_descr": "application",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "oacSysCpuUsedCoreType",
                     "state_descr": "mixed",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 0
                 }
@@ -1989,6 +1991,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 }
             ]

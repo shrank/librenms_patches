@@ -17,7 +17,7 @@ use App\Models\Device;
 
 $no_refresh = true;
 $param = [];
-if ($device_id = (int) Request::get('device')) {
+if ($device_id = (int) Request::input('device')) {
     $device = Device::find($device_id);
 }
 
@@ -30,7 +30,7 @@ $pagetitle[] = 'Eventlog';
     </div>
 
     <?php
-    require_once 'includes/html/common/eventlog.inc.php';
+    require 'includes/html/common/eventlog.inc.php';
     echo implode('', $common_output);
     ?>
 </div>
@@ -49,20 +49,20 @@ $pagetitle[] = 'Eventlog';
         '<option value="">All Devices</option>' +
             <?php
             if (isset($device) && $device instanceof Device) {
-                echo "'<option value=$device->device_id>" . $device->displayName() . "</option>' +";
+                echo "'<option value=\"" . (int) $device->device_id . '">' . addcslashes(e($device->display), "'\\") . "</option>' +";
             } ?>
         '</select>' +
         '</div>&nbsp;&nbsp;&nbsp;&nbsp;' +
             <?php
         } else {
-            echo "'&nbsp;&nbsp;<input type=\"hidden\" name=\"device\" id=\"device\" value=\"" . $vars['device'] . "\">' + ";
+            echo "'&nbsp;&nbsp;<input type=\"hidden\" name=\"device\" id=\"device\" value=\"" . $device?->device_id . "\">' + ";
         }
         ?>
         '<div class="form-group"><label><strong>Type&nbsp;&nbsp;</strong></label>' +
         '<select name="eventtype" id="eventtype" class="form-control input-sm">' +
         '<option value="">All types</option>' +
         <?php
-        if ($type = Request::get('eventtype')) {
+        if ($type = Request::input('eventtype')) {
             $js_type = addcslashes(htmlentities($type), "'");
             echo "'<option value=\"$js_type\">$js_type</option>' +";
         }
@@ -106,6 +106,6 @@ $pagetitle[] = 'Eventlog';
                 }
             }
         }
-    })<?php echo Request::get('eventtype') ? ".val('" . htmlspecialchars(Request::get('eventtype')) . "').trigger('change');" : ''; ?>;
+    })<?php echo Request::input('eventtype') ? ".val('" . htmlspecialchars(Request::input('eventtype')) . "').trigger('change');" : ''; ?>;
 
 </script>

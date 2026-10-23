@@ -1,19 +1,21 @@
 <?php
 
+use LibreNMS\Enum\SensorType;
+
 $oids = snmpwalk_group($device, 'slotModelTable', 'L-AM3440-A-Private');
 
 if (! empty($oids)) {
     //Create State Index
     $state_name = 'ccCardState';
     $states = [
-        ['value' => 1, 'generic' => 3, 'graph' => 0, 'descr' => 'Empty'],
-        ['value' => 2, 'generic' => 1, 'graph' => 0, 'descr' => 'Initializing'],
-        ['value' => 3, 'generic' => 0, 'graph' => 0, 'descr' => 'Working'],
-        ['value' => 4, 'generic' => 1, 'graph' => 0, 'descr' => 'Unplugged'],
-        ['value' => 5, 'generic' => 2, 'graph' => 0, 'descr' => 'Failed'],
-        ['value' => 6, 'generic' => 1, 'graph' => 0, 'descr' => 'UnknownCard'],
-        ['value' => 11, 'generic' => 1, 'graph' => 0, 'descr' => 'BrandMismatch'],
-        ['value' => 12, 'generic' => 1, 'graph' => 0, 'descr' => 'cardTypeMismatch'],
+        ['value' => 1, 'generic' => 3, 'descr' => 'Empty'],
+        ['value' => 2, 'generic' => 1, 'descr' => 'Initializing'],
+        ['value' => 3, 'generic' => 0, 'descr' => 'Working'],
+        ['value' => 4, 'generic' => 1, 'descr' => 'Unplugged'],
+        ['value' => 5, 'generic' => 2, 'descr' => 'Failed'],
+        ['value' => 6, 'generic' => 1, 'descr' => 'UnknownCard'],
+        ['value' => 11, 'generic' => 1, 'descr' => 'BrandMismatch'],
+        ['value' => 12, 'generic' => 1, 'descr' => 'cardTypeMismatch'],
     ];
     //Model names corresponding to ccModelType
     $models = [
@@ -98,7 +100,7 @@ if (! empty($oids)) {
             $description = $index; //Set description equials to slot name. Ex. Slot-A or Slot-1
         }
 
-        discover_sensor(null, 'state', $device, $num_oid . $num_index, $index, $state_name, $description, '1', '1', null, null, null, null, $currentValue, 'snmp', null, null, null, 'Line cards');
+        discover_sensor(null, SensorType::State, $device, $num_oid . $num_index, $index, $state_name, $description, '1', '1', null, null, null, null, $currentValue, 'snmp', null, null, null, 'Line cards');
         $num_index += 1;
     }
 }

@@ -1,51 +1,56 @@
 <?php
 
+use App\Facades\DeviceCache;
+use App\Models\BgpPeer;
+use App\Models\Sensor;
+use App\Models\WirelessSensor;
+use LibreNMS\Enum\PollingMethodType;
+
 $no_refresh = true;
 
 $link_array = ['page' => 'device',
     'device' => $device['device_id'],
     'tab' => 'edit', ];
 
-if (! Auth::user()->hasGlobalAdmin()) {
+if (Gate::denies('update', \App\Facades\DeviceCache::getPrimary())) {
     print_error('Insufficient Privileges');
 } else {
+    $isSnmpEnabled = DeviceCache::get((int) $device['device_id'])->polling()->isEnabled(PollingMethodType::Snmp);
     $panes['device'] = 'Device Settings';
-    $panes['snmp'] = 'SNMP';
-    if (! $device['snmp_disable']) {
-        $panes['ports'] = 'Port Settings';
+    $panes['polling'] = 'Polling';
+    if ($isSnmpEnabled) {
+        $panes['ports'] = 'Ports';
     }
 
-    if (dbFetchCell('SELECT COUNT(*) FROM `bgpPeers` WHERE `device_id` = ? LIMIT 1', [$device['device_id']]) > 0) {
+    if (BgpPeer::where('device_id', $device['device_id'])->exists()) {
         $panes['routing'] = 'Routing';
     }
 
-    if (count(\App\Facades\LibrenmsConfig::get("os.{$device['os']}.icons", []))) {
+    if (count(App\Facades\LibrenmsConfig::get("os.{$device['os']}.icons", []))) {
         $panes['icon'] = 'Icon';
     }
 
-    if (! $device['snmp_disable']) {
+    if ($isSnmpEnabled) {
         $panes['apps'] = 'Applications';
     }
     $panes['alert-rules'] = 'Alert Rules';
-    if (! $device['snmp_disable']) {
+    if ($isSnmpEnabled) {
         $panes['modules'] = 'Modules';
     }
 
-    if (\App\Facades\LibrenmsConfig::get('show_services')) {
+    if (App\Facades\LibrenmsConfig::get('show_services')) {
         $panes['services'] = 'Services';
     }
 
-    $panes['ipmi'] = 'IPMI';
-
-    if (dbFetchCell("SELECT COUNT(*) FROM `sensors` WHERE `device_id` = ? AND `sensor_deleted`='0' LIMIT 1", [$device['device_id']]) > 0) {
+    if (Sensor::where('device_id', $device['device_id'])->where('sensor_deleted', 0)->exists()) {
         $panes['health'] = 'Health';
     }
 
-    if (dbFetchCell("SELECT COUNT(*) FROM `wireless_sensors` WHERE `device_id` = ? AND `sensor_deleted`='0' LIMIT 1", [$device['device_id']]) > 0) {
+    if (WirelessSensor::where('device_id', $device['device_id'])->where('sensor_deleted', 0)->exists()) {
         $panes['wireless-sensors'] = 'Wireless Sensors';
     }
 
-    if (! $device['snmp_disable']) {
+    if ($isSnmpEnabled) {
         $panes['storage'] = 'Storage';
         $panes['processors'] = 'Processors';
         $panes['mempools'] = 'Memory';
@@ -60,20 +65,26 @@ if (! Auth::user()->hasGlobalAdmin()) {
 
     $sep = '';
     foreach ($panes as $type => $text) {
-        if (! isset($vars['section'])) {
-            $vars['section'] = $type;
-        }
+        $vars['section'] ??= $type;
         echo $sep;
         if ($vars['section'] == $type) {
             echo "<span class='pagemenu-selected'>";
-        } else {
         }
 
-        if ($type == 'device') {
-            echo '<a href="' . route('device.edit', [$device['device_id']]) . "\">$text</a>";
-        } else {
-            echo generate_link($text, $link_array, ['section' => $type]);
-        }
+        echo match ($type) {
+            'device' => '<a href="' . route('device.edit', [$device['device_id']]) . "\">$text</a>",
+            'misc' => '<a href="' . route('device.edit.misc', [$device['device_id']]) . "\">$text</a>",
+            'polling' => '<a href="' . route('device.edit.polling', [$device['device_id']]) . "\">$text</a>",
+            'ports' => '<a href="' . route('device.edit.ports', [$device['device_id']]) . "\">$text</a>",
+            'health' => '<a href="' . route('device.edit.health', [$device['device_id']]) . "\">$text</a>",
+            'modules' => '<a href="' . route('device.edit.modules', [$device['device_id']]) . "\">$text</a>",
+            'mempools' => '<a href="' . route('device.edit.mempools', [$device['device_id']]) . "\">$text</a>",
+            'processors' => '<a href="' . route('device.edit.processors', [$device['device_id']]) . "\">$text</a>",
+            'routing' => '<a href="' . route('device.edit.routing', [$device['device_id']]) . "\">$text</a>",
+            'storage' => '<a href="' . route('device.edit.storage', [$device['device_id']]) . "\">$text</a>",
+            'wireless-sensors' => '<a href="' . route('device.edit.wireless-sensors', [$device['device_id']]) . "\">$text</a>",
+            default => generate_link($text, $link_array, ['section' => $type]),
+        };
 
         if ($vars['section'] == $type) {
             echo '</span>';

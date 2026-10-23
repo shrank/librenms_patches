@@ -1118,6 +1118,7 @@
                     "sensor_type": "aiAPStatus",
                     "sensor_descr": "24:de:c6:c3:50:a4 (BT0489813)",
                     "group": "Cluster APs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1143,6 +1144,7 @@
                     "sensor_type": "aiAPStatus",
                     "sensor_descr": "24:de:c6:c3:52:da (BT0490379)",
                     "group": "Cluster APs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1168,6 +1170,7 @@
                     "sensor_type": "aiRadioStatus",
                     "sensor_descr": "24:de:c6:c3:50:a4 (BT0489813) Radio 0",
                     "group": "Cluster Radios",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1193,6 +1196,7 @@
                     "sensor_type": "aiRadioStatus",
                     "sensor_descr": "24:de:c6:c3:50:a4 (BT0489813) Radio 1",
                     "group": "Cluster Radios",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1218,6 +1222,7 @@
                     "sensor_type": "aiRadioStatus",
                     "sensor_descr": "24:de:c6:c3:52:da (BT0490379) Radio 0",
                     "group": "Cluster Radios",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1243,6 +1248,7 @@
                     "sensor_type": "aiRadioStatus",
                     "sensor_descr": "24:de:c6:c3:52:da (BT0490379) Radio 1",
                     "group": "Cluster Radios",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1264,28 +1270,24 @@
                 {
                     "state_name": "aiAPStatus",
                     "state_descr": "up",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "aiAPStatus",
                     "state_descr": "down",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "aiRadioStatus",
                     "state_descr": "up",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "aiRadioStatus",
                     "state_descr": "down",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 3
                 }
@@ -2115,6 +2117,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2134,6 +2137,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2153,6 +2157,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 }
             ]

@@ -39,6 +39,7 @@ use LibreNMS\Model;
 use LibreNMS\OS;
 use LibreNMS\RRD\RrdDefinition;
 use LibreNMS\Util\Oid;
+use LibreNMS\Util\ProgressList;
 
 class Processor extends Model implements DiscoveryModule, PollerModule, DiscoveryItem
 {
@@ -111,7 +112,7 @@ class Processor extends Model implements DiscoveryModule, PollerModule, Discover
             if (! $proc->valid) {
                 return $proc;
             }
-            $proc->processor_usage = static::processData($data, $proc->processor_precision);
+            $proc->processor_usage = self::processData($data, $proc->processor_precision);
         }
 
         d_echo('Discovered ' . static::class . ' ' . print_r($proc->toArray(), true));
@@ -130,7 +131,7 @@ class Processor extends Model implements DiscoveryModule, PollerModule, Discover
             $data['index'] ?? $index,
             empty($data['descr']) ? 'Processor' : trim((string) $data['descr']),
             $precision,
-            static::processData($data['value'], $precision),
+            self::processData($data['value'], $precision),
             $data['warn_percent'] ?? null,
             $data['entPhysicalIndex'] ?? null,
             $data['hrDeviceIndex'] ?? null
@@ -153,17 +154,17 @@ class Processor extends Model implements DiscoveryModule, PollerModule, Discover
         }
 
         if (isset($processors) && is_array($processors)) {
+            $progress = ProgressList::start('Processors');
             self::sync(
                 $os->getDeviceId(),
                 $processors,
                 ['device_id', 'processor_index', 'processor_type'],
                 ['processor_usage', 'processor_perc_warn']
             );
+            $progress->end();
         }
 
-        \App\Models\Processor::doesntHave('device')->delete();
-
-        echo PHP_EOL;
+        \App\Models\Processor::deleteOrphans();
     }
 
     public static function poll(OS $os)
@@ -173,7 +174,7 @@ class Processor extends Model implements DiscoveryModule, PollerModule, Discover
         if ($os instanceof ProcessorPolling) {
             $data = $os->pollProcessors($processors);
         } else {
-            $data = static::pollProcessors($os, $processors);
+            $data = self::pollProcessors($os, $processors);
         }
 
         $rrd_def = RrdDefinition::make()->addDataset('usage', 'GAUGE', -273, 1000);
@@ -221,7 +222,7 @@ class Processor extends Model implements DiscoveryModule, PollerModule, Discover
         $results = [];
         foreach ($processors as $processor) {
             if (isset($snmp_data[$processor['processor_oid']])) {
-                $value = static::processData(
+                $value = self::processData(
                     $snmp_data[$processor['processor_oid']],
                     $processor['processor_precision']
                 );
@@ -302,7 +303,7 @@ class Processor extends Model implements DiscoveryModule, PollerModule, Discover
     }
 
     /**
-     * @param  Processor  $processor
+     * @param  static  $processor
      */
     public static function onCreate($processor)
     {
@@ -313,7 +314,7 @@ class Processor extends Model implements DiscoveryModule, PollerModule, Discover
     }
 
     /**
-     * @param  Processor  $processor
+     * @param  static  $processor
      */
     public static function onDelete($processor)
     {

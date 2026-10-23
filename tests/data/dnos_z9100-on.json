@@ -11836,8 +11836,8 @@
                 {
                     "entPhysicalIndex": 0,
                     "hrDeviceIndex": 0,
-                    "processor_oid": ".1.3.6.1.4.1.6027.3.26.1.4.4.1.4.2.1.1",
-                    "processor_index": "dellNetCpuUtil1Min.2.1.1",
+                    "processor_oid": ".1.3.6.1.4.1.6027.3.26.1.4.4.1.4.stack.1.1",
+                    "processor_index": "dellNetCpuUtil1Min.stack.1.1",
                     "processor_type": "dnos",
                     "processor_usage": 11,
                     "processor_descr": "1m Utilization",
@@ -11847,8 +11847,8 @@
                 {
                     "entPhysicalIndex": 0,
                     "hrDeviceIndex": 0,
-                    "processor_oid": ".1.3.6.1.4.1.6027.3.26.1.4.4.1.5.2.1.1",
-                    "processor_index": "dellNetCpuUtil5Min.2.1.1",
+                    "processor_oid": ".1.3.6.1.4.1.6027.3.26.1.4.4.1.5.stack.1.1",
+                    "processor_index": "dellNetCpuUtil5Min.stack.1.1",
                     "processor_type": "dnos",
                     "processor_usage": 5,
                     "processor_descr": "5m Utilization",
@@ -11857,7 +11857,32 @@
                 }
             ]
         },
-        "poller": "matches discovery"
+        "poller": {
+            "processors": [
+                {
+                    "entPhysicalIndex": 0,
+                    "hrDeviceIndex": 0,
+                    "processor_oid": ".1.3.6.1.4.1.6027.3.26.1.4.4.1.4.stack.1.1",
+                    "processor_index": "dellNetCpuUtil1Min.stack.1.1",
+                    "processor_type": "dnos",
+                    "processor_usage": 0,
+                    "processor_descr": "1m Utilization",
+                    "processor_precision": 1,
+                    "processor_perc_warn": 75
+                },
+                {
+                    "entPhysicalIndex": 0,
+                    "hrDeviceIndex": 0,
+                    "processor_oid": ".1.3.6.1.4.1.6027.3.26.1.4.4.1.5.stack.1.1",
+                    "processor_index": "dellNetCpuUtil5Min.stack.1.1",
+                    "processor_type": "dnos",
+                    "processor_usage": 0,
+                    "processor_descr": "5m Utilization",
+                    "processor_precision": 1,
+                    "processor_perc_warn": 75
+                }
+            ]
+        }
     },
     "mempools": {
         "discovery": {
@@ -11871,11 +11896,11 @@
                     "mempool_descr": "Memory Usage",
                     "mempool_perc": 37,
                     "mempool_perc_oid": ".1.3.6.1.4.1.6027.3.26.1.4.4.1.6.2.1.1",
-                    "mempool_used": 1184869908,
+                    "mempool_used": 38797312,
                     "mempool_used_oid": null,
-                    "mempool_free": 2017481196,
+                    "mempool_free": 66060288,
                     "mempool_free_oid": null,
-                    "mempool_total": 3202351104,
+                    "mempool_total": 104857600,
                     "mempool_total_oid": null,
                     "mempool_largestfree": null,
                     "mempool_lowestfree": null,
@@ -11898,6 +11923,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/1/1 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.676,
@@ -11923,6 +11949,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/2/1 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.74,
@@ -11948,6 +11975,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/3/1 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.93,
@@ -11973,6 +12001,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Hu 1/32 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.804,
@@ -11998,6 +12027,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/1/2 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.676,
@@ -12023,6 +12053,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/2/2 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.74,
@@ -12048,6 +12079,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/3/2 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.868,
@@ -12073,6 +12105,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Hu 1/32 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.676,
@@ -12098,6 +12131,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/1/3 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.612,
@@ -12123,6 +12157,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/2/3 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.804,
@@ -12148,6 +12183,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/3/3 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.804,
@@ -12173,6 +12209,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Hu 1/32 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.804,
@@ -12198,6 +12235,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/1/4 100GBASE-SR4",
                     "group": "Lane 4",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.612,
@@ -12223,6 +12261,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/2/4 100GBASE-SR4",
                     "group": "Lane 4",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.804,
@@ -12248,6 +12287,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Hu 1/32 100GBASE-SR4",
                     "group": "Lane 4",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.74,
@@ -12273,6 +12313,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/1/1 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -2.740884,
@@ -12298,6 +12339,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/2/1 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -2.575891,
@@ -12323,6 +12365,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/3/1 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -2.481053,
@@ -12348,6 +12391,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/4/1 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -12373,6 +12417,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/5/1 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -12398,6 +12443,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Hu 1/32 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.498962,
@@ -12423,6 +12469,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/1/2 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -3.329208,
@@ -12448,6 +12495,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/2/2 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -2.974833,
@@ -12473,6 +12521,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/3/2 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -2.204757,
@@ -12498,6 +12547,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/4/2 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -12523,6 +12573,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/5/2 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -12548,6 +12599,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Hu 1/32 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.365938,
@@ -12573,6 +12625,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/1/3 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -2.451168,
@@ -12598,6 +12651,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/2/3 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -2.475674,
@@ -12623,6 +12677,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/3/3 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -1.985963,
@@ -12648,6 +12703,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/4/3 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -12673,6 +12729,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/5/3 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -12698,6 +12755,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Hu 1/32 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.302694,
@@ -12723,6 +12781,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/1/4 100GBASE-SR4",
                     "group": "Lane 4",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -1.88157,
@@ -12748,6 +12807,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/2/4 100GBASE-SR4",
                     "group": "Lane 4",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -2.644011,
@@ -12773,6 +12833,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/3/4 100GBASE-SR4",
                     "group": "Lane 4",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -12798,6 +12859,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/4/4 100GBASE-SR4",
                     "group": "Lane 4",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -12823,6 +12885,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Te 1/5/4 100GBASE-SR4",
                     "group": "Lane 4",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -12848,6 +12911,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Rx Hu 1/32 100GBASE-SR4",
                     "group": "Lane 4",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.722234,
@@ -12873,6 +12937,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/1/1 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.091058,
@@ -12898,6 +12963,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/2/1 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.779127,
@@ -12923,6 +12989,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/3/1 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.014245,
@@ -12948,6 +13015,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/4/1 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -12973,6 +13041,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/5/1 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -12998,6 +13067,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Hu 1/32 100GBASE-SR4",
                     "group": "Lane 1",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.949027,
@@ -13023,6 +13093,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/1/2 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.928461,
@@ -13048,6 +13119,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/2/2 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.303981,
@@ -13073,6 +13145,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/3/2 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.684975,
@@ -13098,6 +13171,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/4/2 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -13123,6 +13197,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/5/2 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -13148,6 +13223,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Hu 1/32 100GBASE-SR4",
                     "group": "Lane 2",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.108801,
@@ -13173,6 +13249,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/1/3 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.769879,
@@ -13198,6 +13275,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/2/3 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.689981,
@@ -13223,6 +13301,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/3/3 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -0.790423,
@@ -13248,6 +13327,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/4/3 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -13273,6 +13353,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/5/3 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -13298,6 +13379,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Hu 1/32 100GBASE-SR4",
                     "group": "Lane 3",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.133849,
@@ -13323,6 +13405,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/1/4 100GBASE-SR4",
                     "group": "Lane 4",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.276039,
@@ -13348,6 +13431,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/2/4 100GBASE-SR4",
                     "group": "Lane 4",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.51615,
@@ -13373,6 +13457,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/3/4 100GBASE-SR4",
                     "group": "Lane 4",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -13398,6 +13483,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/4/4 100GBASE-SR4",
                     "group": "Lane 4",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -13423,6 +13509,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Te 1/5/4 100GBASE-SR4",
                     "group": "Lane 4",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -40,
@@ -13448,6 +13535,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Tx Hu 1/32 100GBASE-SR4",
                     "group": "Lane 4",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.138629,
@@ -13473,6 +13561,7 @@
                     "sensor_type": "dellNetFanTrayOperStatus",
                     "sensor_descr": "Fantray 1",
                     "group": "Fans",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13498,6 +13587,7 @@
                     "sensor_type": "dellNetFanTrayOperStatus",
                     "sensor_descr": "Fantray 2",
                     "group": "Fans",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13523,6 +13613,7 @@
                     "sensor_type": "dellNetFanTrayOperStatus",
                     "sensor_descr": "Fantray 3",
                     "group": "Fans",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13548,6 +13639,7 @@
                     "sensor_type": "dellNetFanTrayOperStatus",
                     "sensor_descr": "Fantray 4",
                     "group": "Fans",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13573,6 +13665,7 @@
                     "sensor_type": "dellNetFanTrayOperStatus",
                     "sensor_descr": "Fantray 5",
                     "group": "Fans",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13598,6 +13691,7 @@
                     "sensor_type": "dellNetPowerSupplyOperStatus",
                     "sensor_descr": "PSU 1",
                     "group": "PSUs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13623,6 +13717,7 @@
                     "sensor_type": "dellNetPowerSupplyOperStatus",
                     "sensor_descr": "PSU 2",
                     "group": "PSUs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13648,6 +13743,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 1",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -13673,6 +13769,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 11",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13698,6 +13795,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 2",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13723,6 +13821,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 3",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13748,6 +13847,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 4",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13773,6 +13873,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 5",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13798,6 +13899,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 6",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13823,6 +13925,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 61",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13848,6 +13951,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 62",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13873,6 +13977,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 63",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13898,6 +14003,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 64",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13923,6 +14029,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 65",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13948,6 +14055,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 7",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13973,6 +14081,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 71",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13998,6 +14107,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 72",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -14023,6 +14133,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 73",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -14048,6 +14159,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 74",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -14073,6 +14185,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 75",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -14098,6 +14211,7 @@
                     "sensor_type": "dellNetVLTDetailLocalStatus",
                     "sensor_descr": "Port-channel 8",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -14123,6 +14237,7 @@
                     "sensor_type": "dellNetVLTIclBwStatus",
                     "sensor_descr": "ICL Bandwidth",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -14148,6 +14263,7 @@
                     "sensor_type": "dellNetVLTIclStatus",
                     "sensor_descr": "Link Status",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -14173,6 +14289,7 @@
                     "sensor_type": "dellNetVLTRole",
                     "sensor_descr": "Role",
                     "group": "VIRTUAL-LINK-TRUNK",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -14198,6 +14315,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Stack Unit 1",
                     "group": "Chassis",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 25,
@@ -14223,6 +14341,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/1/1 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 35.484375,
@@ -14248,6 +14367,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/1/2 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 35.484375,
@@ -14273,6 +14393,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/1/3 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 35.484375,
@@ -14298,6 +14419,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/1/4 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 35.617188,
@@ -14323,6 +14445,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/2/1 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 37.769531,
@@ -14348,6 +14471,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/2/2 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 37.769531,
@@ -14373,6 +14497,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/2/3 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 37.769531,
@@ -14398,6 +14523,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/2/4 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 37.769531,
@@ -14423,6 +14549,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/3/1 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 39.496094,
@@ -14448,6 +14575,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/3/2 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 39.496094,
@@ -14473,6 +14601,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/3/3 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 39.496094,
@@ -14498,6 +14627,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/3/4 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 39.496094,
@@ -14523,6 +14653,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/4/1 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 33.640625,
@@ -14548,6 +14679,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/4/2 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 33.640625,
@@ -14573,6 +14705,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/4/3 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 33.640625,
@@ -14598,6 +14731,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/4/4 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 33.640625,
@@ -14623,6 +14757,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/5/1 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 33.070312,
@@ -14648,6 +14783,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/5/2 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 33.070312,
@@ -14673,6 +14809,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/5/3 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 33.070312,
@@ -14698,6 +14835,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/5/4 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 33.070312,
@@ -14723,6 +14861,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Hu 1/32 100GBASE-SR4",
                     "group": "Transceivers",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 33.988281,
@@ -14748,6 +14887,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/1/1 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2834,
@@ -14773,6 +14913,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/1/2 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2834,
@@ -14798,6 +14939,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/1/3 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2834,
@@ -14823,6 +14965,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/1/4 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2834,
@@ -14848,6 +14991,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/2/1 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2745,
@@ -14873,6 +15017,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/2/2 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2745,
@@ -14898,6 +15043,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/2/3 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2745,
@@ -14923,6 +15069,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/2/4 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2745,
@@ -14948,6 +15095,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/3/1 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2797,
@@ -14973,6 +15121,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/3/2 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2797,
@@ -14998,6 +15147,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/3/3 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2797,
@@ -15023,6 +15173,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/3/4 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2797,
@@ -15048,6 +15199,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/4/1 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2633,
@@ -15073,6 +15225,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/4/2 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.265,
@@ -15098,6 +15251,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/4/3 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.265,
@@ -15123,6 +15277,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/4/4 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.265,
@@ -15148,6 +15303,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/5/1 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2606,
@@ -15173,6 +15329,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/5/2 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2606,
@@ -15198,6 +15355,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/5/3 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2615,
@@ -15223,6 +15381,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Te 1/5/4 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2615,
@@ -15248,6 +15407,7 @@
                     "sensor_type": "dnos",
                     "sensor_descr": "Hu 1/32 100GBASE-SR4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2795,
@@ -15269,119 +15429,102 @@
                 {
                     "state_name": "dellNetFanTrayOperStatus",
                     "state_descr": "up",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "dellNetFanTrayOperStatus",
                     "state_descr": "down",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "dellNetFanTrayOperStatus",
                     "state_descr": "absent",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "dellNetPowerSupplyOperStatus",
                     "state_descr": "up",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "dellNetPowerSupplyOperStatus",
                     "state_descr": "down",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "dellNetPowerSupplyOperStatus",
                     "state_descr": "absent",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "dellNetVLTDetailLocalStatus",
                     "state_descr": "down",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "dellNetVLTDetailLocalStatus",
                     "state_descr": "up",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "dellNetVLTIclBwStatus",
                     "state_descr": "<80%",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "dellNetVLTIclBwStatus",
                     "state_descr": ">80%",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "dellNetVLTIclStatus",
                     "state_descr": "not established",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "dellNetVLTIclStatus",
                     "state_descr": "up",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "dellNetVLTIclStatus",
                     "state_descr": "down",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "dellNetVLTIclStatus",
                     "state_descr": "error",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "dellNetVLTRole",
                     "state_descr": "Standalone",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "dellNetVLTRole",
                     "state_descr": "Primary",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "dellNetVLTRole",
                     "state_descr": "Secondary",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 }
@@ -15471,6 +15614,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -15490,6 +15634,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "20033",
                     "ifIndex": null
                 },
                 {
@@ -15509,6 +15654,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -15528,6 +15674,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -15547,6 +15694,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2097156
                 },
                 {
@@ -15566,6 +15714,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2097284
                 },
                 {
@@ -15585,6 +15734,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2097412
                 },
                 {
@@ -15604,6 +15754,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2097540
                 },
                 {
@@ -15623,6 +15774,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2097668
                 },
                 {
@@ -15642,6 +15794,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2097796
                 },
                 {
@@ -15661,6 +15814,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2097924
                 },
                 {
@@ -15680,6 +15834,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2098052
                 },
                 {
@@ -15699,6 +15854,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2098180
                 },
                 {
@@ -15718,6 +15874,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2098308
                 },
                 {
@@ -15737,6 +15894,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2098436
                 },
                 {
@@ -15756,6 +15914,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2098564
                 },
                 {
@@ -15775,6 +15934,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2098692
                 },
                 {
@@ -15794,6 +15954,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2098820
                 },
                 {
@@ -15813,6 +15974,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2098948
                 },
                 {
@@ -15832,6 +15994,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2099076
                 },
                 {
@@ -15851,6 +16014,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2099204
                 },
                 {
@@ -15870,6 +16034,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2099332
                 },
                 {
@@ -15889,6 +16054,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2099460
                 },
                 {
@@ -15908,6 +16074,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2099588
                 },
                 {
@@ -15927,6 +16094,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2099726
                 },
                 {
@@ -15946,6 +16114,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2100238
                 },
                 {
@@ -15965,6 +16134,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2100750
                 },
                 {
@@ -15984,6 +16154,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2101262
                 },
                 {
@@ -16003,6 +16174,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2101774
                 },
                 {
@@ -16022,6 +16194,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2102286
                 },
                 {
@@ -16041,6 +16214,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2102798
                 },
                 {
@@ -16060,6 +16234,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2103310
                 },
                 {
@@ -16079,6 +16254,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2103822
                 },
                 {
@@ -16098,6 +16274,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2104334
                 },
                 {
@@ -16117,6 +16294,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2104846
                 },
                 {
@@ -16136,6 +16314,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2105358
                 },
                 {
@@ -16155,6 +16334,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2105870
                 },
                 {
@@ -16174,6 +16354,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2106382
                 },
                 {
@@ -16193,6 +16374,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2106894
                 },
                 {
@@ -16212,6 +16394,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2107406
                 },
                 {
@@ -16231,6 +16414,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2107918
                 },
                 {
@@ -16250,6 +16434,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2108430
                 },
                 {
@@ -16269,6 +16454,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 27,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2108942
                 },
                 {
@@ -16288,6 +16474,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 28,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2109454
                 },
                 {
@@ -16307,6 +16494,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 29,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2109966
                 },
                 {
@@ -16326,6 +16514,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 30,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2110478
                 },
                 {
@@ -16345,6 +16534,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 31,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2110990
                 },
                 {
@@ -16364,6 +16554,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 32,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2111502
                 },
                 {
@@ -16383,6 +16574,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 33,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2112014
                 },
                 {
@@ -16402,6 +16594,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 34,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2112526
                 },
                 {
@@ -16421,6 +16614,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 35,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2113038
                 },
                 {
@@ -16440,6 +16634,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 36,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2113540
                 },
                 {
@@ -16459,6 +16654,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 37,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2113668
                 },
                 {
@@ -16478,6 +16674,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16497,6 +16694,7 @@
                     "entPhysicalContainedIn": 135,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16516,6 +16714,7 @@
                     "entPhysicalContainedIn": 135,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16535,6 +16734,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16554,6 +16754,7 @@
                     "entPhysicalContainedIn": 138,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16573,6 +16774,7 @@
                     "entPhysicalContainedIn": 138,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16592,6 +16794,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16611,6 +16814,7 @@
                     "entPhysicalContainedIn": 141,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16630,6 +16834,7 @@
                     "entPhysicalContainedIn": 141,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16649,6 +16854,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16668,6 +16874,7 @@
                     "entPhysicalContainedIn": 144,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16687,6 +16894,7 @@
                     "entPhysicalContainedIn": 144,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16706,6 +16914,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16725,6 +16934,7 @@
                     "entPhysicalContainedIn": 147,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16744,6 +16954,7 @@
                     "entPhysicalContainedIn": 147,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16763,6 +16974,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16782,6 +16994,7 @@
                     "entPhysicalContainedIn": 150,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16801,6 +17014,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -16820,6 +17034,7 @@
                     "entPhysicalContainedIn": 152,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 }
             ]

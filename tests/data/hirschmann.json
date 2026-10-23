@@ -3887,6 +3887,7 @@
                     "sensor_type": "hmLEDRSFault",
                     "sensor_descr": "LED Status Fault",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -3912,6 +3913,7 @@
                     "sensor_type": "hmLEDRSPowerSupply",
                     "sensor_descr": "LED Status Power Supply",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -3937,6 +3939,7 @@
                     "sensor_type": "hmLEDRSRedundancyManager",
                     "sensor_descr": "LED Status Redundancy Manager",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -3962,6 +3965,7 @@
                     "sensor_type": "hmLEDRStandby",
                     "sensor_descr": "LED Status Standby",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -3987,6 +3991,7 @@
                     "sensor_type": "hmPowerSupplyStatus",
                     "sensor_descr": "Power Supply 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -4012,6 +4017,7 @@
                     "sensor_type": "hmPowerSupplyStatus",
                     "sensor_descr": "Power Supply 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -4037,6 +4043,7 @@
                     "sensor_type": "hirschmann",
                     "sensor_descr": "Temperature 0",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 43,
@@ -4058,140 +4065,120 @@
                 {
                     "state_name": "hmLEDRSFault",
                     "state_descr": "off",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hmLEDRSFault",
                     "state_descr": "green",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hmLEDRSFault",
                     "state_descr": "yellow",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hmLEDRSFault",
                     "state_descr": "red",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hmLEDRSPowerSupply",
                     "state_descr": "off",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hmLEDRSPowerSupply",
                     "state_descr": "green",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hmLEDRSPowerSupply",
                     "state_descr": "yellow",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hmLEDRSPowerSupply",
                     "state_descr": "red",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hmLEDRSRedundancyManager",
                     "state_descr": "off",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hmLEDRSRedundancyManager",
                     "state_descr": "green",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hmLEDRSRedundancyManager",
                     "state_descr": "yellow",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hmLEDRSRedundancyManager",
                     "state_descr": "red",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hmLEDRStandby",
                     "state_descr": "off",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hmLEDRStandby",
                     "state_descr": "green",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hmLEDRStandby",
                     "state_descr": "yellow",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hmLEDRStandby",
                     "state_descr": "red",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hmPowerSupplyStatus",
                     "state_descr": "ok",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hmPowerSupplyStatus",
                     "state_descr": "failed",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hmPowerSupplyStatus",
                     "state_descr": "notInstalled",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hmPowerSupplyStatus",
                     "state_descr": "unknown",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 3
                 }

@@ -6042,6 +6042,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "Background blocks: F2/1+2/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 832263570,
@@ -6067,6 +6068,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "Background blocks: 1/2+3/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 221018094,
@@ -6092,6 +6094,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "Background Block Errors: F2/1+2/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2061,
@@ -6117,6 +6120,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "Background Block Errors: 1/2+3/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 18,
@@ -6142,6 +6146,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "Errored Seconds: F2/1+2/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 185,
@@ -6167,6 +6172,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "Errored Seconds: 1/2+3/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 18,
@@ -6192,6 +6198,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "Severly Errored Seconds: F2/1+2/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 74,
@@ -6217,6 +6224,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "Severly Errored Seconds: 1/2+3/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -6242,6 +6250,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "Unavailable Seconds: F2/1+2/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -6267,6 +6276,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "Unavailable Seconds: 1/2+3/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -6292,6 +6302,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "Current Error Period: F2/1+2/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2499295,
@@ -6317,6 +6328,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "Current Error Period: 1/2+3/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 663719,
@@ -6342,6 +6354,7 @@
                     "sensor_type": "Admin status",
                     "sensor_descr": "RAU: F2/2.1/1",
                     "group": "Admin status",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -6367,6 +6380,7 @@
                     "sensor_type": "Admin status",
                     "sensor_descr": "RAU: F2/1.1/1",
                     "group": "Admin status",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -6392,6 +6406,7 @@
                     "sensor_type": "Admin status",
                     "sensor_descr": "RAU: 1/2.1/1",
                     "group": "Admin status",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -6417,6 +6432,7 @@
                     "sensor_type": "Admin status",
                     "sensor_descr": "RAU: 1/3.1/1",
                     "group": "Admin status",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -6442,6 +6458,7 @@
                     "sensor_type": "Operational status",
                     "sensor_descr": "RAU: F2/2.1/1",
                     "group": "Operational status",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 4,
@@ -6467,6 +6484,7 @@
                     "sensor_type": "Operational status",
                     "sensor_descr": "RAU: F2/1.1/1",
                     "group": "Operational status",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -6492,6 +6510,7 @@
                     "sensor_type": "Operational status",
                     "sensor_descr": "RAU: 1/2.1/1",
                     "group": "Operational status",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -6517,6 +6536,7 @@
                     "sensor_type": "Operational status",
                     "sensor_descr": "RAU: 1/3.1/1",
                     "group": "Operational status",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -6542,6 +6562,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "RAU: F2/2.1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 31,
@@ -6567,6 +6588,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "RAU: F2/1.1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 41,
@@ -6592,6 +6614,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "RAU: 1/2.1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -6617,6 +6640,7 @@
                     "sensor_type": "ericsson-tn",
                     "sensor_descr": "RAU: 1/3.1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 45,
@@ -6638,56 +6662,48 @@
                 {
                     "state_name": "Admin status",
                     "state_descr": "Other",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "Admin status",
                     "state_descr": "TX Off",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "Admin status",
                     "state_descr": "TX On",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "Admin status",
                     "state_descr": "Stand-by",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "Operational status",
                     "state_descr": "Other",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "Operational status",
                     "state_descr": "TX Off",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "Operational status",
                     "state_descr": "TX On",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "Operational status",
                     "state_descr": "Stand-by",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 3
                 }
@@ -7756,6 +7772,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7775,6 +7792,7 @@
                     "entPhysicalContainedIn": 1417949183,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7794,6 +7812,7 @@
                     "entPhysicalContainedIn": 1384391167,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7813,6 +7832,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7832,6 +7852,7 @@
                     "entPhysicalContainedIn": 1417945599,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2113143041
                 },
                 {
@@ -7851,6 +7872,7 @@
                     "entPhysicalContainedIn": 1417949183,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2113151233
                 },
                 {
@@ -7870,6 +7892,7 @@
                     "entPhysicalContainedIn": 1686384639,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7889,6 +7912,7 @@
                     "entPhysicalContainedIn": 1652826623,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7908,6 +7932,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7927,6 +7952,7 @@
                     "entPhysicalContainedIn": 1686381055,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2129920257
                 },
                 {
@@ -7946,6 +7972,7 @@
                     "entPhysicalContainedIn": 1686384639,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2129928449
                 },
                 {
@@ -7965,6 +7992,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7984,6 +8012,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8003,6 +8032,7 @@
                     "entPhysicalContainedIn": 1954815999,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8022,6 +8052,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8041,6 +8072,7 @@
                     "entPhysicalContainedIn": 1954820095,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8060,6 +8092,7 @@
                     "entPhysicalContainedIn": 1954820095,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8079,6 +8112,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8098,6 +8132,7 @@
                     "entPhysicalContainedIn": 1954824191,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8117,6 +8152,7 @@
                     "entPhysicalContainedIn": 1954824191,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8136,6 +8172,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8155,6 +8192,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8174,6 +8212,7 @@
                     "entPhysicalContainedIn": 1921257471,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8193,6 +8232,7 @@
                     "entPhysicalContainedIn": 1921257983,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8212,6 +8252,7 @@
                     "entPhysicalContainedIn": 1921261567,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8231,6 +8272,7 @@
                     "entPhysicalContainedIn": 1921262079,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8250,6 +8292,7 @@
                     "entPhysicalContainedIn": 1921265663,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8269,6 +8312,7 @@
                     "entPhysicalContainedIn": 1921266175,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8288,6 +8332,7 @@
                     "entPhysicalContainedIn": 1921269759,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8307,6 +8352,7 @@
                     "entPhysicalContainedIn": 1954811903,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2134638594
                 },
                 {
@@ -8326,6 +8372,7 @@
                     "entPhysicalContainedIn": 1954811903,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2134638595
                 },
                 {
@@ -8345,6 +8392,7 @@
                     "entPhysicalContainedIn": 1954815999,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2147442816
                 },
                 {
@@ -8364,6 +8412,7 @@
                     "entPhysicalContainedIn": 1954815999,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2147434624
                 },
                 {
@@ -8383,6 +8432,7 @@
                     "entPhysicalContainedIn": 1954815999,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2134638723
                 },
                 {
@@ -8402,6 +8452,7 @@
                     "entPhysicalContainedIn": 1954815999,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8421,6 +8472,7 @@
                     "entPhysicalContainedIn": 1954815999,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8440,6 +8492,7 @@
                     "entPhysicalContainedIn": 1954815999,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2147352704
                 },
                 {
@@ -8459,6 +8512,7 @@
                     "entPhysicalContainedIn": 1954815999,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2147352705
                 },
                 {
@@ -8478,6 +8532,7 @@
                     "entPhysicalContainedIn": 1954815999,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2147352706
                 },
                 {
@@ -8497,6 +8552,7 @@
                     "entPhysicalContainedIn": 1954815999,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2147352707
                 },
                 {
@@ -8516,6 +8572,7 @@
                     "entPhysicalContainedIn": 1954816511,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2146697473
                 },
                 {
@@ -8535,6 +8592,7 @@
                     "entPhysicalContainedIn": 1954820095,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2146705665
                 },
                 {
@@ -8554,6 +8612,7 @@
                     "entPhysicalContainedIn": 1954820607,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2146697601
                 },
                 {
@@ -8573,6 +8632,7 @@
                     "entPhysicalContainedIn": 1954824191,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Ericsson",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2146705793
                 }
             ]
@@ -8653,7 +8713,8 @@
                     "ifStackStatus": "active"
                 }
             ]
-        }
+        },
+        "poller": "matches discovery"
     },
     "ipv4-addresses": {
         "discovery": {

@@ -860,6 +860,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "ODU-1 Amp",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.45,
@@ -885,6 +886,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "ODU-2 Amp",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.45,
@@ -910,6 +912,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "OUD-1 Watt",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 10,
@@ -935,6 +938,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "OUD-2 Watt",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 10,
@@ -960,6 +964,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "R1 cable attenuation",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -985,6 +990,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "R2 cable attenuation",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -5,
@@ -1010,6 +1016,7 @@
                     "sensor_type": "activeLink",
                     "sensor_descr": "Active link",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1035,6 +1042,7 @@
                     "sensor_type": "activeTx",
                     "sensor_descr": "Active TX",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -1060,6 +1068,7 @@
                     "sensor_type": "bbSyncLostAlarm",
                     "sensor_descr": "Sync",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1085,6 +1094,7 @@
                     "sensor_type": "forcedLink",
                     "sensor_descr": "Forced link",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1110,6 +1120,7 @@
                     "sensor_type": "rf1OduHumidity",
                     "sensor_descr": "R1 Humidity",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1135,6 +1146,7 @@
                     "sensor_type": "rf1Operation",
                     "sensor_descr": "R1 Operation",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1160,6 +1172,7 @@
                     "sensor_type": "rf2OduHumidity",
                     "sensor_descr": "R2 Humidity",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1185,6 +1198,7 @@
                     "sensor_type": "rf2Operation",
                     "sensor_descr": "R2 Operation",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1210,6 +1224,7 @@
                     "sensor_type": "switchEnabledForRxBer",
                     "sensor_descr": "Switch enabled for RX BER",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1235,6 +1250,7 @@
                     "sensor_type": "switchMode",
                     "sensor_descr": "Switch mode",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1260,6 +1276,7 @@
                     "sensor_type": "termRf1CablePowerStatus",
                     "sensor_descr": "R1CblPwrStat",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1285,6 +1302,7 @@
                     "sensor_type": "termRf2CablePowerStatus",
                     "sensor_descr": "R2CblPwrStat",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1310,6 +1328,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "R1 odu temp",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 22,
@@ -1335,6 +1354,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "R2 odu temp",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 22,
@@ -1360,6 +1380,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "Idu temp",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 38,
@@ -1385,6 +1406,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "PSU-1 3V",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.53,
@@ -1410,6 +1432,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "PSU-2 3V",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.53,
@@ -1435,6 +1458,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "PSU-1 5V",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5.06,
@@ -1460,6 +1484,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "PSU-2 5V",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5.06,
@@ -1485,6 +1510,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "PSU-1 -5V",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -5.28,
@@ -1510,6 +1536,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "PSU-2 -5V",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -5.28,
@@ -1535,6 +1562,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "ODU-1 V",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 22.72,
@@ -1560,6 +1588,7 @@
                     "sensor_type": "saf-cfm",
                     "sensor_descr": "ODU-2 V",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 22.72,
@@ -1581,322 +1610,276 @@
                 {
                     "state_name": "activeLink",
                     "state_descr": "Unknown",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "activeLink",
                     "state_descr": "Link 1",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "activeLink",
                     "state_descr": "Link 2",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "activeLink",
                     "state_descr": "Error",
-                    "state_draw_graph": 1,
                     "state_value": 255,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "activeTx",
                     "state_descr": "None",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "activeTx",
                     "state_descr": "Link 1",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "activeTx",
                     "state_descr": "Link 2",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "activeTx",
                     "state_descr": "Both",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "bbSyncLostAlarm",
                     "state_descr": "Ok",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "bbSyncLostAlarm",
                     "state_descr": "Alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "forcedLink",
                     "state_descr": "Off",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "forcedLink",
                     "state_descr": "Link 1",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "forcedLink",
                     "state_descr": "Link 2",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "forcedLink",
                     "state_descr": "Error",
-                    "state_draw_graph": 1,
                     "state_value": 255,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "rf1OduHumidity",
                     "state_descr": "Low",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "rf1OduHumidity",
                     "state_descr": "High",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "rf1Operation",
                     "state_descr": "None",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "rf1Operation",
                     "state_descr": "Booting",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "rf1Operation",
                     "state_descr": "Ok",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "rf1Operation",
                     "state_descr": "Testing",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "rf1Operation",
                     "state_descr": "Error",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "rf1Operation",
                     "state_descr": "No data from ODU",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "rf2OduHumidity",
                     "state_descr": "Low",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "rf2OduHumidity",
                     "state_descr": "High",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "rf2Operation",
                     "state_descr": "None",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "rf2Operation",
                     "state_descr": "Booting",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "rf2Operation",
                     "state_descr": "Ok",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "rf2Operation",
                     "state_descr": "Testing",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "rf2Operation",
                     "state_descr": "Error",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "rf2Operation",
                     "state_descr": "No data from ODU",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "switchEnabledForRxBer",
                     "state_descr": "Disabled",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "switchEnabledForRxBer",
                     "state_descr": "Enabled",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "switchMode",
                     "state_descr": "Unknown",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "switchMode",
                     "state_descr": "Frequency diversity",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "switchMode",
                     "state_descr": "Hot standby",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "switchMode",
                     "state_descr": "Independent",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "termRf1CablePowerStatus",
                     "state_descr": "false",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "termRf1CablePowerStatus",
                     "state_descr": "ok",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "termRf1CablePowerStatus",
                     "state_descr": "short",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "termRf1CablePowerStatus",
                     "state_descr": "error",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "termRf1CablePowerStatus",
                     "state_descr": "power-off",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "termRf2CablePowerStatus",
                     "state_descr": "false",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "termRf2CablePowerStatus",
                     "state_descr": "ok",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "termRf2CablePowerStatus",
                     "state_descr": "short",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "termRf2CablePowerStatus",
                     "state_descr": "error",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "termRf2CablePowerStatus",
                     "state_descr": "power-off",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 2
                 }
@@ -2374,6 +2357,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "SAF",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2393,6 +2377,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2412,6 +2397,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2431,6 +2417,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2450,6 +2437,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2469,6 +2457,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2488,6 +2477,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2507,6 +2497,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 }
             ]

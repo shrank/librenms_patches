@@ -13687,6 +13687,7 @@
                     "sensor_type": "eltex-mes23xx",
                     "sensor_descr": "Stacked Chassis",
                     "group": "Chassis Count",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -13712,6 +13713,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/10",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.5,
@@ -13737,6 +13739,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/11",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.5,
@@ -13762,6 +13765,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/12",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 7,
@@ -13787,6 +13791,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/13",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.4,
@@ -13812,6 +13817,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/14",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 5.9,
@@ -13837,6 +13843,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/15",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.4,
@@ -13862,6 +13869,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/16",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.8,
@@ -13887,6 +13895,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/17",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.6,
@@ -13912,6 +13921,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/18",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.7,
@@ -13937,6 +13947,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/19",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.2,
@@ -13962,6 +13973,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/20",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.5,
@@ -13987,6 +13999,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/21",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.8,
@@ -14012,6 +14025,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/22",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.7,
@@ -14037,6 +14051,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/23",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.5,
@@ -14062,6 +14077,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/24",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.6,
@@ -14087,6 +14103,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/25",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.9,
@@ -14112,6 +14129,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/26",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.9,
@@ -14137,6 +14155,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/27",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 7,
@@ -14162,6 +14181,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/28",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.9,
@@ -14187,6 +14207,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/29",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.6,
@@ -14212,6 +14233,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/30",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.7,
@@ -14237,6 +14259,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/31",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.7,
@@ -14262,6 +14285,7 @@
                     "sensor_type": "rlPethPsePortOutputPower",
                     "sensor_descr": "PoE-gi1/0/32",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.6,
@@ -14287,6 +14311,7 @@
                     "sensor_type": "rlEnvMonFanStatusTable",
                     "sensor_descr": "fan1_unit1 status",
                     "group": "Chassis FAN",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -14312,6 +14337,7 @@
                     "sensor_type": "rlEnvMonFanStatusTable",
                     "sensor_descr": "fan2_unit1 status",
                     "group": "Chassis FAN",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -14337,6 +14363,7 @@
                     "sensor_type": "rlEnvMonFanStatusTable",
                     "sensor_descr": "fan3_unit1 status",
                     "group": "Chassis FAN",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -14362,6 +14389,7 @@
                     "sensor_type": "rlEnvMonFanStatusTable",
                     "sensor_descr": "fan4_unit1 status",
                     "group": "Chassis FAN",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -14387,6 +14415,7 @@
                     "sensor_type": "rlPhdUnitEnvParamEntry",
                     "sensor_descr": "Chassis#1 PSU#2 status",
                     "group": "Chassis PSU",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6,
@@ -14412,6 +14441,7 @@
                     "sensor_type": "rlPhdUnitEnvParamEntry",
                     "sensor_descr": "Chassis#1 TEMP status",
                     "group": "Chassis TEMP",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -14437,6 +14467,7 @@
                     "sensor_type": "rlPhdUnitEnvParamEntry",
                     "sensor_descr": "Chassis#1 PSU#1 status",
                     "group": "Chassis PSU",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -14462,6 +14493,7 @@
                     "sensor_type": "eltex-mes23xx",
                     "sensor_descr": "Chassis#1 PoE Temp",
                     "group": "PoE",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 29,
@@ -14487,6 +14519,7 @@
                     "sensor_type": "eltex-mes23xx",
                     "sensor_descr": "Chassis#1 Temp",
                     "group": "Chassis",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 26,
@@ -14508,35 +14541,30 @@
                 {
                     "state_name": "rlEnvMonFanStatusTable",
                     "state_descr": "OK",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "rlEnvMonFanStatusTable",
                     "state_descr": "Missing",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "rlPhdUnitEnvParamEntry",
                     "state_descr": "Normal",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "rlPhdUnitEnvParamEntry",
                     "state_descr": "Warning",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "rlPhdUnitEnvParamEntry",
                     "state_descr": "Critical",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 }
@@ -15105,6 +15133,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15124,6 +15153,7 @@
                     "entPhysicalContainedIn": 64,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Eltex",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15143,6 +15173,7 @@
                     "entPhysicalContainedIn": 67108992,
                     "entPhysicalParentRelPos": 31,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15162,6 +15193,7 @@
                     "entPhysicalContainedIn": 67108992,
                     "entPhysicalParentRelPos": 32,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15181,6 +15213,7 @@
                     "entPhysicalContainedIn": 67108992,
                     "entPhysicalParentRelPos": 41,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15200,6 +15233,7 @@
                     "entPhysicalContainedIn": 67108992,
                     "entPhysicalParentRelPos": 42,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15219,6 +15253,7 @@
                     "entPhysicalContainedIn": 67108992,
                     "entPhysicalParentRelPos": 43,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15238,6 +15273,7 @@
                     "entPhysicalContainedIn": 67108992,
                     "entPhysicalParentRelPos": 44,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15257,6 +15293,7 @@
                     "entPhysicalContainedIn": 67108992,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15276,6 +15313,7 @@
                     "entPhysicalContainedIn": 68157952,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15295,6 +15333,7 @@
                     "entPhysicalContainedIn": 68157952,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15314,6 +15353,7 @@
                     "entPhysicalContainedIn": 68420352,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15333,6 +15373,7 @@
                     "entPhysicalContainedIn": 68420288,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15352,6 +15393,7 @@
                     "entPhysicalContainedIn": 68420288,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15371,6 +15413,7 @@
                     "entPhysicalContainedIn": 68420288,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15390,6 +15433,7 @@
                     "entPhysicalContainedIn": 68420352,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15409,6 +15453,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 73
                 },
                 {
@@ -15428,6 +15473,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 49
                 },
                 {
@@ -15447,6 +15493,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 74
                 },
                 {
@@ -15466,6 +15513,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 50
                 },
                 {
@@ -15485,6 +15533,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 75
                 },
                 {
@@ -15504,6 +15553,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 51
                 },
                 {
@@ -15523,6 +15573,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 76
                 },
                 {
@@ -15542,6 +15593,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 52
                 },
                 {
@@ -15561,6 +15613,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 77
                 },
                 {
@@ -15580,6 +15633,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 53
                 },
                 {
@@ -15599,6 +15653,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 78
                 },
                 {
@@ -15618,6 +15673,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 54
                 },
                 {
@@ -15637,6 +15693,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 79
                 },
                 {
@@ -15656,6 +15713,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 55
                 },
                 {
@@ -15675,6 +15733,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 80
                 },
                 {
@@ -15694,6 +15753,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 56
                 },
                 {
@@ -15713,6 +15773,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 81
                 },
                 {
@@ -15732,6 +15793,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 57
                 },
                 {
@@ -15751,6 +15813,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 82
                 },
                 {
@@ -15770,6 +15833,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 58
                 },
                 {
@@ -15789,6 +15853,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 83
                 },
                 {
@@ -15808,6 +15873,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 59
                 },
                 {
@@ -15827,6 +15893,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 84
                 },
                 {
@@ -15846,6 +15913,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 60
                 },
                 {
@@ -15865,6 +15933,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 105
                 },
                 {
@@ -15884,6 +15953,7 @@
                     "entPhysicalContainedIn": 68424704,
                     "entPhysicalParentRelPos": 28,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 108
                 },
                 {
@@ -15903,6 +15973,7 @@
                     "entPhysicalContainedIn": 68420352,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -15922,6 +15993,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 85
                 },
                 {
@@ -15941,6 +16013,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 61
                 },
                 {
@@ -15960,6 +16033,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 86
                 },
                 {
@@ -15979,6 +16053,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 62
                 },
                 {
@@ -15998,6 +16073,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 87
                 },
                 {
@@ -16017,6 +16093,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 63
                 },
                 {
@@ -16036,6 +16113,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 88
                 },
                 {
@@ -16055,6 +16133,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 64
                 },
                 {
@@ -16074,6 +16153,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 89
                 },
                 {
@@ -16093,6 +16173,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 65
                 },
                 {
@@ -16112,6 +16193,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 90
                 },
                 {
@@ -16131,6 +16213,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 66
                 },
                 {
@@ -16150,6 +16233,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 91
                 },
                 {
@@ -16169,6 +16253,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 67
                 },
                 {
@@ -16188,6 +16273,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 92
                 },
                 {
@@ -16207,6 +16293,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 68
                 },
                 {
@@ -16226,6 +16313,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 93
                 },
                 {
@@ -16245,6 +16333,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 69
                 },
                 {
@@ -16264,6 +16353,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 94
                 },
                 {
@@ -16283,6 +16373,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 70
                 },
                 {
@@ -16302,6 +16393,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 95
                 },
                 {
@@ -16321,6 +16413,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 71
                 },
                 {
@@ -16340,6 +16433,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 96
                 },
                 {
@@ -16359,6 +16453,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 72
                 },
                 {
@@ -16378,6 +16473,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 106
                 },
                 {
@@ -16397,6 +16493,7 @@
                     "entPhysicalContainedIn": 68428800,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 107
                 },
                 {
@@ -16416,6 +16513,7 @@
                     "entPhysicalContainedIn": 64,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -16435,6 +16533,7 @@
                     "entPhysicalContainedIn": 64,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -16454,6 +16553,7 @@
                     "entPhysicalContainedIn": 64,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -16473,6 +16573,7 @@
                     "entPhysicalContainedIn": 64,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -16492,6 +16593,7 @@
                     "entPhysicalContainedIn": 64,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -16511,6 +16613,7 @@
                     "entPhysicalContainedIn": 64,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -16530,6 +16633,7 @@
                     "entPhysicalContainedIn": 64,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 }
             ]
@@ -16543,7 +16647,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.E340",
-                    "remote_port": "0 (a49bcd28e340)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16554,7 +16658,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.E0F4",
-                    "remote_port": "0 (a49bcd28e0f4)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16565,7 +16669,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.A4E0",
-                    "remote_port": "0 (a49bcd28a4e0)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16576,7 +16680,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.E358",
-                    "remote_port": "0 (a49bcd28e358)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16587,7 +16691,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.F630",
-                    "remote_port": "0 (a49bcd28f630)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16598,7 +16702,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.F118",
-                    "remote_port": "0 (a49bcd28f118)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16609,7 +16713,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.ECA8",
-                    "remote_port": "0 (a49bcd28eca8)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16620,7 +16724,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "AP84F1.47B3.2AD4",
-                    "remote_port": "0 (84f147b32ad4)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16631,7 +16735,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.D7F4",
-                    "remote_port": "0 (a49bcd28d7f4)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16642,7 +16746,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.8868",
-                    "remote_port": "0 (a49bcd288868)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16653,7 +16757,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.B664",
-                    "remote_port": "0 (a49bcd28b664)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16664,7 +16768,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.8708",
-                    "remote_port": "0 (a49bcd288708)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16675,7 +16779,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.E3D8",
-                    "remote_port": "0 (a49bcd28e3d8)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16686,7 +16790,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.E0A4",
-                    "remote_port": "0 (a49bcd28e0a4)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16697,7 +16801,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.BAD4",
-                    "remote_port": "0 (a49bcd28bad4)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16708,7 +16812,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.B390",
-                    "remote_port": "0 (a49bcd28b390)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16719,7 +16823,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "APA49B.CD28.EF7C",
-                    "remote_port": "0 (a49bcd28ef7c)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_INDOOR",
@@ -16730,7 +16834,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "AP84F1.47B3.2BC0",
-                    "remote_port": "0 (84f147b32bc0)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_OUTDOOR",
@@ -16741,7 +16845,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "AP84F1.47B3.1E60",
-                    "remote_port": "0 (84f147b31e60)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_OUTDOOR",
@@ -16752,7 +16856,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "AP84F1.47B3.2ADC",
-                    "remote_port": "0 (84f147b32adc)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_OUTDOOR",
@@ -16763,7 +16867,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "AP84F1.47B1.F42C",
-                    "remote_port": "0 (84f147b1f42c)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_OUTDOOR",
@@ -16774,7 +16878,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "AP84F1.47B2.2390",
-                    "remote_port": "0 (84f147b22390)",
+                    "remote_port": "0",
                     "remote_platform": null,
                     "remote_version": "Cisco AP Software, ap1g7-k9w8 Version: 17.3.3.26\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2021 by Cisco Systems, Inc.\nCompiled Wed",
                     "ifAlias": "CISCO_AP_OUTDOOR",
@@ -16785,7 +16889,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "bt-stadion-payload-ap-07",
-                    "remote_port": "bridge1/vlan75-payload (2cc81b5ba251)",
+                    "remote_port": "bridge1/vlan75-payload",
                     "remote_platform": null,
                     "remote_version": "MikroTik RouterOS 6.47.9 (long-term) RBcAPL-2nD",
                     "ifAlias": "MKT_AP1",
@@ -16796,7 +16900,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "bt-stadion-payload-ap-07",
-                    "remote_port": "ether1 (2cc81b5ba251)",
+                    "remote_port": "ether1",
                     "remote_platform": null,
                     "remote_version": "MikroTik RouterOS 6.47.9 (long-term) RBcAPL-2nD",
                     "ifAlias": "MKT_AP1",
@@ -16807,7 +16911,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "bt-stadion-payload-ap-05",
-                    "remote_port": "bridge1/vlan75-payload (2cc81b5ba309)",
+                    "remote_port": "bridge1/vlan75-payload",
                     "remote_platform": null,
                     "remote_version": "MikroTik RouterOS 6.47.9 (long-term) RBcAPL-2nD",
                     "ifAlias": "MKT_AP2",
@@ -16818,7 +16922,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "bt-stadion-payload-ap-05",
-                    "remote_port": "ether1 (2cc81b5ba309)",
+                    "remote_port": "ether1",
                     "remote_platform": null,
                     "remote_version": "MikroTik RouterOS 6.47.9 (long-term) RBcAPL-2nD",
                     "ifAlias": "MKT_AP2",
@@ -16829,7 +16933,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "bt-stadion-payload-ap-08",
-                    "remote_port": "bridge1/vlan75 (2cc81b5ba1d5)",
+                    "remote_port": "bridge1/vlan75",
                     "remote_platform": null,
                     "remote_version": "MikroTik RouterOS 6.47.9 (long-term) RBcAPL-2nD",
                     "ifAlias": "xxx",
@@ -16840,7 +16944,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "bt-stadion-payload-ap-08",
-                    "remote_port": "ether1 (2cc81b5ba1d5)",
+                    "remote_port": "ether1",
                     "remote_platform": null,
                     "remote_version": "MikroTik RouterOS 6.47.9 (long-term) RBcAPL-2nD",
                     "ifAlias": "xxx",
@@ -16851,7 +16955,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "Zapad",
-                    "remote_port": "eth0/0/3 ()",
+                    "remote_port": "eth0/0/3",
                     "remote_platform": null,
                     "remote_version": "Bosch Communication Systems,IPX_TGX,OMNEO7.01.8012 P0.0.0",
                     "ifAlias": "xxx",
@@ -19690,7 +19794,8 @@
                     "ifStackStatus": "active"
                 }
             ]
-        }
+        },
+        "poller": "matches discovery"
     },
     "ipv4-addresses": {
         "discovery": {

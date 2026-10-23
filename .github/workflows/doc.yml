@@ -1,6 +1,7 @@
 name: Docs
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - 'master'
@@ -21,15 +22,18 @@ on:
 permissions:
   contents: read # to fetch code (actions/checkout)
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
-          fetch-depth: 0
           sparse-checkout-cone-mode: false
           sparse-checkout: |
             /resources/definitions/os_detection
@@ -47,13 +51,14 @@ jobs:
           echo "Problems found:" && (grep -F 'no such' output.log && exit 1 || echo "None, Good job :)")
       -
         name: Check GitHub Pages status
-        uses: crazy-max/ghaction-github-status@v4
+        if: github.repository == 'librenms/librenms' && github.event_name != 'pull_request' && endsWith(github.ref, github.event.repository.default_branch)
+        uses: crazy-max/ghaction-github-status@v5
         with:
           pages_threshold: major_outage
       -
         name: Deploy
-        if: github.event_name != 'pull_request' && endsWith(github.ref, github.event.repository.default_branch)
-        uses: crazy-max/ghaction-github-pages@v4
+        if: github.repository == 'librenms/librenms' && github.event_name != 'pull_request' && endsWith(github.ref, github.event.repository.default_branch)
+        uses: crazy-max/ghaction-github-pages@v5
         with:
           repo: librenms/docs.librenms.org
           target_branch: main

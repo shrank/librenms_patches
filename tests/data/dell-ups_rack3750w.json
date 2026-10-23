@@ -454,6 +454,7 @@
                     "sensor_type": "dell-ups",
                     "sensor_descr": "System Consumption",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 307,
@@ -479,6 +480,7 @@
                     "sensor_type": "dell-ups",
                     "sensor_descr": "Runtime",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 60,
                     "sensor_multiplier": 1,
                     "sensor_current": 186.31666666667,
@@ -504,6 +506,7 @@
                     "sensor_type": "productStatusGlobalStatus",
                     "sensor_descr": "Current Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -525,42 +528,36 @@
                 {
                     "state_name": "productStatusGlobalStatus",
                     "state_descr": "other",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "productStatusGlobalStatus",
                     "state_descr": "unknown",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "productStatusGlobalStatus",
                     "state_descr": "ok",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "productStatusGlobalStatus",
                     "state_descr": "non-critical",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "productStatusGlobalStatus",
                     "state_descr": "critical",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "productStatusGlobalStatus",
                     "state_descr": "non-recoverable",
-                    "state_draw_graph": 1,
                     "state_value": 6,
                     "state_generic_value": 2
                 }
@@ -577,6 +574,7 @@
                     "sensor_type": "dell-ups",
                     "sensor_descr": "System Consumption",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 307,
@@ -602,6 +600,7 @@
                     "sensor_type": "dell-ups",
                     "sensor_descr": "Runtime",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 60,
                     "sensor_multiplier": 1,
                     "sensor_current": 186.31666666667,
@@ -627,6 +626,7 @@
                     "sensor_type": "productStatusGlobalStatus",
                     "sensor_descr": "Current Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -648,42 +648,36 @@
                 {
                     "state_name": "productStatusGlobalStatus",
                     "state_descr": "other",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "productStatusGlobalStatus",
                     "state_descr": "unknown",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "productStatusGlobalStatus",
                     "state_descr": "ok",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "productStatusGlobalStatus",
                     "state_descr": "non-critical",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "productStatusGlobalStatus",
                     "state_descr": "critical",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "productStatusGlobalStatus",
                     "state_descr": "non-recoverable",
-                    "state_draw_graph": 1,
                     "state_value": 6,
                     "state_generic_value": 2
                 }

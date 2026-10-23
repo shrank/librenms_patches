@@ -6660,6 +6660,7 @@
                     "sensor_type": "rlPhyTestTableTxBias",
                     "sensor_descr": "TenGigabitEthernet1/0/10 Bias Current",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.018045,
@@ -6685,6 +6686,7 @@
                     "sensor_type": "rlPhyTestTableTxBias",
                     "sensor_descr": "TenGigabitEthernet1/0/13 Bias Current",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.010085,
@@ -6710,6 +6712,7 @@
                     "sensor_type": "rlPhyTestTableTxBias",
                     "sensor_descr": "TenGigabitEthernet1/0/14 Bias Current",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.02049,
@@ -6735,6 +6738,7 @@
                     "sensor_type": "rlPhyTestTableRxOpticalPower",
                     "sensor_descr": "TenGigabitEthernet1/0/10 Receive Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": -5.501,
@@ -6760,6 +6764,7 @@
                     "sensor_type": "rlPhyTestTableRxOpticalPower",
                     "sensor_descr": "TenGigabitEthernet1/0/13 Receive Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": -8.019,
@@ -6785,6 +6790,7 @@
                     "sensor_type": "rlPhyTestTableRxOpticalPower",
                     "sensor_descr": "TenGigabitEthernet1/0/14 Receive Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": -6.874,
@@ -6810,6 +6816,7 @@
                     "sensor_type": "rlPhyTestTableTxOutput",
                     "sensor_descr": "TenGigabitEthernet1/0/10 Transmit Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": -3.939,
@@ -6835,6 +6842,7 @@
                     "sensor_type": "rlPhyTestTableTxOutput",
                     "sensor_descr": "TenGigabitEthernet1/0/13 Transmit Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": -3.217,
@@ -6860,6 +6868,7 @@
                     "sensor_type": "rlPhyTestTableTxOutput",
                     "sensor_descr": "TenGigabitEthernet1/0/14 Transmit Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": -1.623,
@@ -6885,6 +6894,7 @@
                     "sensor_type": "rlEnvMonFanState",
                     "sensor_descr": "FAN 67109249 Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -6910,6 +6920,7 @@
                     "sensor_type": "rlEnvMonFanState",
                     "sensor_descr": "FAN 67109250 Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -6935,6 +6946,7 @@
                     "sensor_type": "rlEnvMonFanState",
                     "sensor_descr": "FAN 67109251 Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -6960,6 +6972,7 @@
                     "sensor_type": "rlEnvMonFanState",
                     "sensor_descr": "FAN 67109252 Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -6985,6 +6998,7 @@
                     "sensor_type": "rlEnvMonSupplyState",
                     "sensor_descr": "PSU 67109185 Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -7010,6 +7024,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/1 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7035,6 +7050,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/10 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7060,6 +7076,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/11 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7085,6 +7102,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/12 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7110,6 +7128,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/13 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7135,6 +7154,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/14 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7160,6 +7180,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/15 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7185,6 +7206,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/16 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7210,6 +7232,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/2 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7235,6 +7258,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/3 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7260,6 +7284,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/4 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7285,6 +7310,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/5 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7310,6 +7336,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/6 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7335,6 +7362,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/7 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7360,6 +7388,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/8 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7385,6 +7414,7 @@
                     "sensor_type": "swIfOperSuspendedStatus",
                     "sensor_descr": "TenGigabitEthernet1/0/9 Suspended Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -7410,6 +7440,7 @@
                     "sensor_type": "ciscosb",
                     "sensor_descr": "FAN 1 Temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 64,
@@ -7435,6 +7466,7 @@
                     "sensor_type": "rlPhyTestTableTransceiverTemp",
                     "sensor_descr": "TenGigabitEthernet1/0/10 Module",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 54,
@@ -7460,6 +7492,7 @@
                     "sensor_type": "rlPhyTestTableTransceiverTemp",
                     "sensor_descr": "TenGigabitEthernet1/0/13 Module",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 38,
@@ -7485,6 +7518,7 @@
                     "sensor_type": "rlPhyTestTableTransceiverTemp",
                     "sensor_descr": "TenGigabitEthernet1/0/14 Module",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 53,
@@ -7510,6 +7544,7 @@
                     "sensor_type": "rlPhyTestTableTransceiverSupply",
                     "sensor_descr": "TenGigabitEthernet1/0/10 Supply Voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000000,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2655,
@@ -7535,6 +7570,7 @@
                     "sensor_type": "rlPhyTestTableTransceiverSupply",
                     "sensor_descr": "TenGigabitEthernet1/0/13 Supply Voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000000,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2587,
@@ -7560,6 +7596,7 @@
                     "sensor_type": "rlPhyTestTableTransceiverSupply",
                     "sensor_descr": "TenGigabitEthernet1/0/14 Supply Voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000000,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2285,
@@ -7581,98 +7618,84 @@
                 {
                     "state_name": "rlEnvMonFanState",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "rlEnvMonFanState",
                     "state_descr": "wrning",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "rlEnvMonFanState",
                     "state_descr": "critical",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "rlEnvMonFanState",
                     "state_descr": "shutdown",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "rlEnvMonFanState",
                     "state_descr": "notPresent",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "rlEnvMonFanState",
                     "state_descr": "notFunctioning",
-                    "state_draw_graph": 1,
                     "state_value": 6,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "rlEnvMonSupplyState",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "rlEnvMonSupplyState",
                     "state_descr": "wrning",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "rlEnvMonSupplyState",
                     "state_descr": "critical",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "rlEnvMonSupplyState",
                     "state_descr": "shutdown",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "rlEnvMonSupplyState",
                     "state_descr": "notPresent",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "rlEnvMonSupplyState",
                     "state_descr": "notFunctioning",
-                    "state_draw_graph": 1,
                     "state_value": 6,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "swIfOperSuspendedStatus",
                     "state_descr": "true",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "swIfOperSuspendedStatus",
                     "state_descr": "false",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 }
@@ -9538,6 +9561,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9557,6 +9581,7 @@
                     "entPhysicalContainedIn": 128,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Cisco",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9576,6 +9601,7 @@
                     "entPhysicalContainedIn": 67109120,
                     "entPhysicalParentRelPos": 31,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9595,6 +9621,7 @@
                     "entPhysicalContainedIn": 67109120,
                     "entPhysicalParentRelPos": 41,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9614,6 +9641,7 @@
                     "entPhysicalContainedIn": 67109120,
                     "entPhysicalParentRelPos": 42,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9633,6 +9661,7 @@
                     "entPhysicalContainedIn": 67109120,
                     "entPhysicalParentRelPos": 43,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9652,6 +9681,7 @@
                     "entPhysicalContainedIn": 67109120,
                     "entPhysicalParentRelPos": 44,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9671,6 +9701,7 @@
                     "entPhysicalContainedIn": 67109120,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9690,6 +9721,7 @@
                     "entPhysicalContainedIn": 68158464,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9709,6 +9741,7 @@
                     "entPhysicalContainedIn": 68421120,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9728,6 +9761,7 @@
                     "entPhysicalContainedIn": 68421120,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9747,6 +9781,7 @@
                     "entPhysicalContainedIn": 68421120,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9766,6 +9801,7 @@
                     "entPhysicalContainedIn": 68421120,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9785,6 +9821,7 @@
                     "entPhysicalContainedIn": 68421120,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9804,6 +9841,7 @@
                     "entPhysicalContainedIn": 68421120,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9823,6 +9861,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 1
                 },
                 {
@@ -9842,6 +9881,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 4
                 },
                 {
@@ -9861,6 +9901,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 3
                 },
                 {
@@ -9880,6 +9921,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2
                 },
                 {
@@ -9899,6 +9941,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 5
                 },
                 {
@@ -9918,6 +9961,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 8
                 },
                 {
@@ -9937,6 +9981,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 7
                 },
                 {
@@ -9956,6 +10001,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 6
                 },
                 {
@@ -9975,6 +10021,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 9
                 },
                 {
@@ -9994,6 +10041,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 10
                 },
                 {
@@ -10013,6 +10061,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 11
                 },
                 {
@@ -10032,6 +10081,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 12
                 },
                 {
@@ -10051,6 +10101,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 13
                 },
                 {
@@ -10070,6 +10121,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 14
                 },
                 {
@@ -10089,6 +10141,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 27,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 15
                 },
                 {
@@ -10108,6 +10161,7 @@
                     "entPhysicalContainedIn": 68425728,
                     "entPhysicalParentRelPos": 28,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 16
                 },
                 {
@@ -10127,6 +10181,7 @@
                     "entPhysicalContainedIn": 128,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -10146,6 +10201,7 @@
                     "entPhysicalContainedIn": 128,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -10165,6 +10221,7 @@
                     "entPhysicalContainedIn": 128,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -10184,6 +10241,7 @@
                     "entPhysicalContainedIn": 128,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -10203,6 +10261,7 @@
                     "entPhysicalContainedIn": 128,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -10222,6 +10281,7 @@
                     "entPhysicalContainedIn": 128,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -10241,6 +10301,7 @@
                     "entPhysicalContainedIn": 128,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 }
             ]
@@ -10254,7 +10315,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "Lehrerzimmer",
-                    "remote_port": "te2 (b0c53cf2ad13)",
+                    "remote_port": "te2",
                     "remote_platform": null,
                     "remote_version": "",
                     "ifAlias": "TenGigabitEthernet1/0/1",
@@ -10265,7 +10326,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "JuveBIB10G",
-                    "remote_port": "te1/0/4 (04eb40d53280)",
+                    "remote_port": "te1/0/4",
                     "remote_platform": null,
                     "remote_version": "",
                     "ifAlias": "TenGigabitEthernet1/0/10",
@@ -10276,7 +10337,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "krypta",
-                    "remote_port": "gi27 (0cf5a4be75e4)",
+                    "remote_port": "gi27",
                     "remote_platform": null,
                     "remote_version": "",
                     "ifAlias": "TenGigabitEthernet1/0/11",
@@ -10287,7 +10348,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "JuveVerteilung",
-                    "remote_port": "gi27 (0cf5a4be6438)",
+                    "remote_port": "gi27",
                     "remote_platform": null,
                     "remote_version": "",
                     "ifAlias": "TenGigabitEthernet1/0/12",
@@ -10298,7 +10359,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "Verwaltung10G",
-                    "remote_port": "te1/0/1 (04eb40d5439b)",
+                    "remote_port": "te1/0/1",
                     "remote_platform": null,
                     "remote_version": "",
                     "ifAlias": "TenGigabitEthernet1/0/13",
@@ -10309,7 +10370,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "Bau-unten",
-                    "remote_port": "te1/0/3 (c4c603883971)",
+                    "remote_port": "te1/0/3",
                     "remote_platform": null,
                     "remote_version": "",
                     "ifAlias": "TenGigabitEthernet1/0/14",
@@ -10320,7 +10381,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "Juvenat-Inforaum",
-                    "remote_port": "gi28 (ccd5394d2923)",
+                    "remote_port": "gi28",
                     "remote_platform": null,
                     "remote_version": "",
                     "ifAlias": "TenGigabitEthernet1/0/15",
@@ -10331,7 +10392,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "SLZ-Switch",
-                    "remote_port": "te1/0/1 (5ce1764a3dea)",
+                    "remote_port": "te1/0/1",
                     "remote_platform": null,
                     "remote_version": "",
                     "ifAlias": "TenGigabitEthernet1/0/2",
@@ -10342,7 +10403,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "Inforaum",
-                    "remote_port": "te1/0/1 (c4c60388384f)",
+                    "remote_port": "te1/0/1",
                     "remote_platform": null,
                     "remote_version": "",
                     "ifAlias": "TenGigabitEthernet1/0/3",
@@ -10353,7 +10414,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "Broadcom Adv. Dual 10GBASE-T Ethernet fw_version:AFW_220.0.36.0",
-                    "remote_port": "4C D9 8F 2D 1F 46 (4cd98f2d1f46)",
+                    "remote_port": "4c:d9:8f:2d:1f:46",
                     "remote_platform": null,
                     "remote_version": "fw_version:AFW_220.0.36.0",
                     "ifAlias": "TenGigabitEthernet1/0/5",
@@ -10364,7 +10425,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "Serverraum",
-                    "remote_port": "te1/0/1 (40a6e8ea0d13)",
+                    "remote_port": "te1/0/1",
                     "remote_platform": null,
                     "remote_version": "",
                     "ifAlias": "TenGigabitEthernet1/0/6",
@@ -10375,7 +10436,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "KircheuntenLueftung",
-                    "remote_port": "gi28 (0c2724c4da4c)",
+                    "remote_port": "gi28",
                     "remote_platform": null,
                     "remote_version": "",
                     "ifAlias": "TenGigabitEthernet1/0/9",
@@ -37269,7 +37330,8 @@
                     "ifStackStatus": "active"
                 }
             ]
-        }
+        },
+        "poller": "matches discovery"
     },
     "ipv4-addresses": {
         "discovery": {

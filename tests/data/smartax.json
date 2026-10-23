@@ -7549,6 +7549,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "GPON 0/0/15 Added ONTs",
                     "group": "ONTs Count",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 11,
@@ -7574,6 +7575,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "GPON 0/0/15 T-CONT's",
                     "group": "T-CONTs Count",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 22,
@@ -7599,6 +7601,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/0",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.032,
@@ -7624,6 +7627,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/1",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.038,
@@ -7649,6 +7653,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/2",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.047,
@@ -7674,6 +7679,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/3",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.046,
@@ -7699,6 +7705,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/4",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.035,
@@ -7724,6 +7731,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/5",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.043,
@@ -7749,6 +7757,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/6",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.042,
@@ -7774,6 +7783,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/7",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.044,
@@ -7799,6 +7809,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/8",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.037,
@@ -7824,6 +7835,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/9",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.041,
@@ -7849,6 +7861,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/10",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.037,
@@ -7874,6 +7887,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/11",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.034,
@@ -7899,6 +7913,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/12",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.041,
@@ -7924,6 +7939,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/13",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.036,
@@ -7949,6 +7965,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/14",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.043,
@@ -7974,6 +7991,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/15",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.037,
@@ -7999,6 +8017,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/0",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.032,
@@ -8024,6 +8043,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/1",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.047,
@@ -8049,6 +8069,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/2",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.038,
@@ -8074,6 +8095,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/3",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.034,
@@ -8099,6 +8121,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/4",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.041,
@@ -8124,6 +8147,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/5",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.041,
@@ -8149,6 +8173,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/6",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.036,
@@ -8174,6 +8199,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/7",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.045,
@@ -8199,6 +8225,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/8",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.036,
@@ -8224,6 +8251,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/9",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.038,
@@ -8249,6 +8277,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/10",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.038,
@@ -8274,6 +8303,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/11",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.048,
@@ -8299,6 +8329,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/12",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.037,
@@ -8324,6 +8355,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/13",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.036,
@@ -8349,6 +8381,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/14",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.043,
@@ -8374,6 +8407,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/15",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.043,
@@ -8399,6 +8433,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/0 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.11,
@@ -8424,6 +8459,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/1 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.98,
@@ -8449,6 +8485,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/2 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.21,
@@ -8474,6 +8511,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/3 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.11,
@@ -8499,6 +8537,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/4 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.97,
@@ -8524,6 +8563,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/5 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.93,
@@ -8549,6 +8589,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/6 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7,
@@ -8574,6 +8615,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/7 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.22,
@@ -8599,6 +8641,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/8 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.99,
@@ -8624,6 +8667,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/9 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.02,
@@ -8649,6 +8693,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/10 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.04,
@@ -8674,6 +8719,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/11 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.13,
@@ -8699,6 +8745,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/12 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.1,
@@ -8724,6 +8771,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/13 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.22,
@@ -8749,6 +8797,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/14 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.07,
@@ -8774,6 +8823,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/15 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.17,
@@ -8799,6 +8849,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/0 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.16,
@@ -8824,6 +8875,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/1 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.11,
@@ -8849,6 +8901,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/2 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.07,
@@ -8874,6 +8927,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/3 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.02,
@@ -8899,6 +8953,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/4 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.02,
@@ -8924,6 +8979,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/5 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.3,
@@ -8949,6 +9005,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/6 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.05,
@@ -8974,6 +9031,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/7 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.17,
@@ -8999,6 +9057,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/8 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.2,
@@ -9024,6 +9083,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/9 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.11,
@@ -9049,6 +9109,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/10 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.25,
@@ -9074,6 +9135,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/11 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.1,
@@ -9099,6 +9161,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/12 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.36,
@@ -9124,6 +9187,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/13 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.14,
@@ -9149,6 +9213,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/14 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.16,
@@ -9174,6 +9239,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/15 TX",
                     "group": "SFPs TX",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 7.23,
@@ -9199,6 +9265,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "H805GPFD",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 50,
@@ -9224,6 +9291,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "H805GPFD",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 50,
@@ -9249,6 +9317,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "H802SCUN",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 50,
@@ -9274,6 +9343,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "H802X2CS",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 9,
@@ -9299,6 +9369,7 @@
                     "sensor_type": "smartax-total",
                     "sensor_descr": "Chassis Total",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 226,
@@ -9324,6 +9395,7 @@
                     "sensor_type": "hwFrameOperStatus",
                     "sensor_descr": "Frame 0 (H801MABO) Status",
                     "group": "Frames",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -9349,6 +9421,7 @@
                     "sensor_type": "hwSlotOperStatus",
                     "sensor_descr": "Slot 0 (H805GPFD) Status",
                     "group": "Boards",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -9374,6 +9447,7 @@
                     "sensor_type": "hwSlotOperStatus",
                     "sensor_descr": "Slot 1 (H805GPFD) Status",
                     "group": "Boards",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -9399,6 +9473,7 @@
                     "sensor_type": "hwSlotOperStatus",
                     "sensor_descr": "Slot 7 (H802SCUN) Status",
                     "group": "Boards",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -9424,6 +9499,7 @@
                     "sensor_type": "hwSlotOperStatus",
                     "sensor_descr": "Slot 8 (H802X2CS) Status",
                     "group": "Boards",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -9449,6 +9525,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "H805GPFD",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 35,
@@ -9474,6 +9551,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "H805GPFD",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 29,
@@ -9499,6 +9577,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/0",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 28,
@@ -9524,6 +9603,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/1",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 32,
@@ -9549,6 +9629,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/2",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 35,
@@ -9574,6 +9655,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/3",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 37,
@@ -9599,6 +9681,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/4",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 38,
@@ -9624,6 +9707,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/5",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 39,
@@ -9649,6 +9733,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/6",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 40,
@@ -9674,6 +9759,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/7",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 41,
@@ -9699,6 +9785,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/8",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 40,
@@ -9724,6 +9811,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/9",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 41,
@@ -9749,6 +9837,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/10",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 42,
@@ -9774,6 +9863,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/11",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 42,
@@ -9799,6 +9889,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/12",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 43,
@@ -9824,6 +9915,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/13",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 43,
@@ -9849,6 +9941,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/14",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 42,
@@ -9874,6 +9967,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/15",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 40,
@@ -9899,6 +9993,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/0",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 28,
@@ -9924,6 +10019,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/1",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 31,
@@ -9949,6 +10045,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/2",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 32,
@@ -9974,6 +10071,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/3",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 34,
@@ -9999,6 +10097,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/4",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 36,
@@ -10024,6 +10123,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/5",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 37,
@@ -10049,6 +10149,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/6",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 38,
@@ -10074,6 +10175,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/7",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 38,
@@ -10099,6 +10201,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/8",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 39,
@@ -10124,6 +10227,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/9",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 40,
@@ -10149,6 +10253,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/10",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 40,
@@ -10174,6 +10279,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/11",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 42,
@@ -10199,6 +10305,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/12",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 42,
@@ -10224,6 +10331,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/13",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 43,
@@ -10249,6 +10357,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/14",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 41,
@@ -10274,6 +10383,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/15",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 38,
@@ -10299,6 +10409,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "H802SCUN",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 22,
@@ -10324,6 +10435,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "H802X2CS",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 20,
@@ -10349,6 +10461,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/0",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.22,
@@ -10374,6 +10487,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/1",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2,
@@ -10399,6 +10513,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/2",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.21,
@@ -10424,6 +10539,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/3",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.18,
@@ -10449,6 +10565,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/4",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.21,
@@ -10474,6 +10591,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/5",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.18,
@@ -10499,6 +10617,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/6",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.21,
@@ -10524,6 +10643,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/7",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.19,
@@ -10549,6 +10669,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/8",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.22,
@@ -10574,6 +10695,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/9",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.18,
@@ -10599,6 +10721,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/10",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.22,
@@ -10624,6 +10747,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/11",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2,
@@ -10649,6 +10773,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/12",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.17,
@@ -10674,6 +10799,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/13",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.18,
@@ -10699,6 +10825,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/14",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.21,
@@ -10724,6 +10851,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/0/15",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.18,
@@ -10749,6 +10877,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/0",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.21,
@@ -10774,6 +10903,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/1",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.23,
@@ -10799,6 +10929,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/2",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.22,
@@ -10824,6 +10955,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/3",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.22,
@@ -10849,6 +10981,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/4",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.19,
@@ -10874,6 +11007,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/5",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.18,
@@ -10899,6 +11033,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/6",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.21,
@@ -10924,6 +11059,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/7",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.23,
@@ -10949,6 +11085,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/8",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.24,
@@ -10974,6 +11111,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/9",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.21,
@@ -10999,6 +11137,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/10",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.22,
@@ -11024,6 +11163,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/11",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.19,
@@ -11049,6 +11189,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/12",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.18,
@@ -11074,6 +11215,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/13",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.18,
@@ -11099,6 +11241,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/14",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.18,
@@ -11124,6 +11267,7 @@
                     "sensor_type": "smartax",
                     "sensor_descr": "SFP GPON 0/1/15",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.21,
@@ -11145,168 +11289,144 @@
                 {
                     "state_name": "hwFrameOperStatus",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hwFrameOperStatus",
                     "state_descr": "fault",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hwFrameOperStatus",
                     "state_descr": "other",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hwFrameOperStatus",
                     "state_descr": "discovery",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hwFrameOperStatus",
                     "state_descr": "mismatch",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hwFrameOperStatus",
                     "state_descr": "offline",
-                    "state_draw_graph": 1,
                     "state_value": 6,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "online",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "fault",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "forbidden",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "autofind",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "config",
-                    "state_draw_graph": 1,
                     "state_value": 6,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "offline",
-                    "state_draw_graph": 1,
                     "state_value": 7,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "abnormal",
-                    "state_draw_graph": 1,
                     "state_value": 8,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "versionerr",
-                    "state_draw_graph": 1,
                     "state_value": 9,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "autoload",
-                    "state_draw_graph": 1,
                     "state_value": 10,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "outofservice",
-                    "state_draw_graph": 1,
                     "state_value": 11,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "graceful",
-                    "state_draw_graph": 1,
                     "state_value": 12,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "shutdown",
-                    "state_draw_graph": 1,
                     "state_value": 13,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "energysavingshutdown",
-                    "state_draw_graph": 1,
                     "state_value": 14,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "hightemperatureshutdown",
-                    "state_draw_graph": 1,
                     "state_value": 15,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "manualshutdown",
-                    "state_draw_graph": 1,
                     "state_value": 16,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "mismatch",
-                    "state_draw_graph": 1,
                     "state_value": 17,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hwSlotOperStatus",
                     "state_descr": "acoffshutdown",
-                    "state_draw_graph": 1,
                     "state_value": 18,
                     "state_generic_value": 2
                 }
@@ -11360,6 +11480,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-17,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -11379,6 +11500,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -11398,6 +11520,7 @@
                     "entPhysicalContainedIn": 3346200,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -11417,6 +11540,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -11436,6 +11560,7 @@
                     "entPhysicalContainedIn": 3399240,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2018-5-30,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -11455,6 +11580,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194304000
                 },
                 {
@@ -11474,6 +11600,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194304256
                 },
                 {
@@ -11493,6 +11620,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194304512
                 },
                 {
@@ -11512,6 +11640,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194304768
                 },
                 {
@@ -11531,6 +11660,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194305024
                 },
                 {
@@ -11550,6 +11680,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194305280
                 },
                 {
@@ -11569,6 +11700,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194305536
                 },
                 {
@@ -11588,6 +11720,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194305792
                 },
                 {
@@ -11607,6 +11740,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194306048
                 },
                 {
@@ -11626,6 +11760,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194306304
                 },
                 {
@@ -11645,6 +11780,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194306560
                 },
                 {
@@ -11664,6 +11800,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194306816
                 },
                 {
@@ -11683,6 +11820,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194307072
                 },
                 {
@@ -11702,6 +11840,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194307328
                 },
                 {
@@ -11721,6 +11860,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194307584
                 },
                 {
@@ -11740,6 +11880,7 @@
                     "entPhysicalContainedIn": 3400020,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194307840
                 },
                 {
@@ -11759,6 +11900,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -11778,6 +11920,7 @@
                     "entPhysicalContainedIn": 3400800,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-12-30,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -11797,6 +11940,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194312192
                 },
                 {
@@ -11816,6 +11960,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194312448
                 },
                 {
@@ -11835,6 +11980,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194312704
                 },
                 {
@@ -11854,6 +12000,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194312960
                 },
                 {
@@ -11873,6 +12020,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194313216
                 },
                 {
@@ -11892,6 +12040,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194313472
                 },
                 {
@@ -11911,6 +12060,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194313728
                 },
                 {
@@ -11930,6 +12080,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194313984
                 },
                 {
@@ -11949,6 +12100,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194314240
                 },
                 {
@@ -11968,6 +12120,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194314496
                 },
                 {
@@ -11987,6 +12140,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194314752
                 },
                 {
@@ -12006,6 +12160,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194315008
                 },
                 {
@@ -12025,6 +12180,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194315264
                 },
                 {
@@ -12044,6 +12200,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194315520
                 },
                 {
@@ -12063,6 +12220,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194315776
                 },
                 {
@@ -12082,6 +12240,7 @@
                     "entPhysicalContainedIn": 3401580,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "HISILICON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 4194316032
                 },
                 {
@@ -12101,6 +12260,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12120,6 +12280,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12139,6 +12300,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12158,6 +12320,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12177,6 +12340,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12196,6 +12360,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12215,6 +12380,7 @@
                     "entPhysicalContainedIn": 3410160,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2014-6-11,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12234,6 +12400,7 @@
                     "entPhysicalContainedIn": 3410940,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2014-6-11,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12253,6 +12420,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12272,6 +12440,7 @@
                     "entPhysicalContainedIn": 3411720,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2017-9-26,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12291,6 +12460,7 @@
                     "entPhysicalContainedIn": 3412500,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "OEM",
+                    "entPhysicalMfgDate": "2020-2-10,0:0:0.0",
                     "ifIndex": 234946560
                 },
                 {
@@ -12310,6 +12480,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12329,6 +12500,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12348,6 +12520,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12367,6 +12540,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12386,6 +12560,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12405,6 +12580,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12424,6 +12600,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12443,6 +12620,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12462,6 +12640,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12481,6 +12660,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12500,6 +12680,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12519,6 +12700,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12538,6 +12720,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12557,6 +12740,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12576,6 +12760,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12595,6 +12780,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12614,6 +12800,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12633,6 +12820,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 27,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12652,6 +12840,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 28,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12671,6 +12860,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 29,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12690,6 +12880,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 30,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12709,6 +12900,7 @@
                     "entPhysicalContainedIn": 3397680,
                     "entPhysicalParentRelPos": 31,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "2016-6-20,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12728,6 +12920,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12747,6 +12940,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12766,6 +12960,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12785,6 +12980,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12804,6 +13000,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12823,6 +13020,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12842,6 +13040,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12861,6 +13060,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12880,6 +13080,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12899,6 +13100,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12918,6 +13120,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12937,6 +13140,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12956,6 +13160,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12975,6 +13180,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12994,6 +13200,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13013,6 +13220,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13032,6 +13240,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13051,6 +13260,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13070,6 +13280,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13089,6 +13300,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13108,6 +13320,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13127,6 +13340,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13146,6 +13360,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13165,6 +13380,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13184,6 +13400,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13203,6 +13420,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13222,6 +13440,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13241,6 +13460,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13260,6 +13480,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13279,6 +13500,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13298,6 +13520,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13317,6 +13540,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Huawei",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 }
             ]

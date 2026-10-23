@@ -17,9 +17,9 @@ class GraphController extends Controller
      */
     public function __invoke(Request $request, string $path = ''): Response
     {
-        $vars = array_merge(Url::parseLegacyPathVars($request->path()), $request->except(['username', 'password']));
+        $vars = Url::parseLegacyPathVars();
 
-        if (\Auth::check()) {
+        if ($request->user() !== null) {
             // only allow debug for logged in users
             Debug::set(! empty($vars['debug']));
         }
@@ -35,7 +35,7 @@ class GraphController extends Controller
                 'Content-type' => $graph->contentType(),
             ];
 
-            if ($request->get('output') == 'base64') {
+            if ($request->input('output') == 'base64') {
                 return response($graph->base64(), 200, $headers);
             }
 

@@ -43,6 +43,7 @@ class WorldMapController extends WidgetController
             'init_zoom' => LibrenmsConfig::get('leaflet.default_zoom'),
             'init_layer' => LibrenmsConfig::get('geoloc.layer'),
             'group_radius' => LibrenmsConfig::get('leaflet.group_radius'),
+            'auto_scale' => 0,
             'status' => '0,1',
             'device_group' => null,
         ];
@@ -51,7 +52,7 @@ class WorldMapController extends WidgetController
     public function getView(Request $request): string|View
     {
         $settings = $this->getSettings();
-        $settings['dimensions'] = $request->get('dimensions');
+        $settings['dimensions'] = $request->input('dimensions');
         $settings['status'] = array_map(intval(...), explode(',', (string) $settings['status']));
         $settings['disabled_alerts'] = LibrenmsConfig::get('network_map_worldmap_show_disabled_alerts') ? null : 0; // null to include 1 shows only notify disabled
         $settings['map_config'] = [

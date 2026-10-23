@@ -4,7 +4,9 @@ DO NOT DELETE THE UNDERLYING TEXT
 
 #### Please note
 
-> Please read this information carefully. You can run `./lnms dev:check` to check your code before submitting.
+> Please read this information carefully. Pull requests may be closed without explanation 
+> due to influx of low quality LLM generated pull requests.
+> You can run `./lnms dev:check` to check your code before submitting.
 
 - [ ] Have you followed our [code guidelines?](https://docs.librenms.org/Developing/Code-Guidelines/)
 - [ ] If my Pull Request does some changes/fixes/enhancements in the WebUI, I have inserted a screenshot of it.
@@ -12,5 +14,5 @@ DO NOT DELETE THE UNDERLYING TEXT
 
 #### Testers
 
-If you would like to test this pull request then please run: `./scripts/github-apply <pr_id>`, i.e `./scripts/github-apply 5926`
-After you are done testing, you can remove the changes with `./scripts/github-remove`.  If there are schema changes, you can ask on discord how to revert.
+If you would like to test this pull request then please run: `lnms patch:apply <pr_id>`, i.e `lnms patch:apply 5926`
+After you are done testing, you can remove the changes with `lnms patch:remove <pr_id>`. If the pull request added database migrations, you are asked whether to roll them back.

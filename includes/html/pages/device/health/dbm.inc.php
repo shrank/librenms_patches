@@ -1,5 +1,5 @@
 <?php
 
-$class = 'dbm';
+$class = \LibreNMS\Enum\SensorType::Dbm;
 
 require 'sensors.inc.php';

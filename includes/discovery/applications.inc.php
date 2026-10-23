@@ -24,14 +24,12 @@
  * @author     Tony Murray <murraytony@gmail.com>
  */
 
-use App\Facades\LibrenmsConfig;
 use App\Models\Application;
 use App\Models\ApplicationMetric;
 use App\Models\Eventlog;
 use App\Observers\ModuleModelObserver;
 use LibreNMS\Enum\Severity;
-
-echo "\nApplications: ";
+use LibreNMS\Util\ProgressList;
 
 // fetch applications from the client
 $results = snmpwalk_cache_oid($device, 'nsExtendStatus', [], 'NET-SNMP-EXTEND-MIB');
@@ -39,7 +37,7 @@ $results = snmpwalk_cache_oid($device, 'nsExtendStatus', [], 'NET-SNMP-EXTEND-MI
 // Load our list of available applications
 $applications = [];
 if ($results) {
-    foreach (glob(LibrenmsConfig::get('install_dir') . '/includes/polling/applications/*.inc.php') as $file) {
+    foreach (glob(base_path('includes/polling/applications/*.inc.php')) as $file) {
         $name = basename($file, '.inc.php');
         $applications[$name] = $name;
     }
@@ -75,6 +73,7 @@ d_echo('Checking for: ' . implode(', ', array_keys($results)) . PHP_EOL);
 
 // enable observer for printing changes
 ModuleModelObserver::observe(\App\Models\Application::class);
+$progress = ProgressList::start('Applications');
 
 // Enable applications
 $current_apps = [];
@@ -104,8 +103,7 @@ DeviceCache::getPrimary()->applications()->whereIn('app_type', $apps_to_remove)-
 
 // clean application_metrics
 ApplicationMetric::doesntHave('app')->delete();
-
-echo PHP_EOL;
+$progress->end();
 
 unset(
     $applications,

@@ -29,16 +29,18 @@
  * @author     Mikael Sipilainen <mikael.sipilainen@gmail.com>
  */
 
+use LibreNMS\Enum\SensorType;
+
 // Detect type of UPS (Signle-Phase/3 Phase)
 // Number of input lines
 $upsInputNumLines_oid = '.1.3.6.1.2.1.33.1.3.2.0';
-$in_phaseNum = snmp_get($device, $upsInputNumLines_oid, '-Oqv');
+$in_phaseNum = SnmpQuery::get($upsInputNumLines_oid)->value();
 
 // Single-phase system
 if ($in_phaseNum == '1') {
     // Input frequency
     $in_frequency_oid = '.1.3.6.1.4.1.935.1.1.1.3.2.4.0';
-    $in_frequency = snmp_get($device, $in_frequency_oid, '-Oqv');
+    $in_frequency = SnmpQuery::get($in_frequency_oid)->value();
 
     if (! empty($in_frequency) || $in_frequency == 0) {
         $type = 'netagent2';
@@ -53,7 +55,7 @@ if ($in_phaseNum == '1') {
 
         discover_sensor(
             null,
-            'frequency',
+            SensorType::Frequency,
             $device,
             $in_frequency_oid,
             $index,
@@ -70,7 +72,7 @@ if ($in_phaseNum == '1') {
     }
     // Output Frequency
     $out_frequency_oid = '.1.3.6.1.4.1.935.1.1.1.4.2.2.0';
-    $out_frequency = snmp_get($device, $out_frequency_oid, '-Oqv');
+    $out_frequency = SnmpQuery::get($out_frequency_oid)->value();
 
     if (! empty($out_frequency) || $out_frequency == 0) {
         $type = 'netagent2';
@@ -85,7 +87,7 @@ if ($in_phaseNum == '1') {
 
         discover_sensor(
             null,
-            'frequency',
+            SensorType::Frequency,
             $device,
             $out_frequency_oid,
             $index,
@@ -106,7 +108,7 @@ if ($in_phaseNum == '1') {
 if ($in_phaseNum == '3') {
     // Input frequency
     $in_frequency_oid = '.1.3.6.1.4.1.935.1.1.1.8.2.1.0';
-    $in_frequency = snmp_get($device, $in_frequency_oid, '-Oqv');
+    $in_frequency = SnmpQuery::get($in_frequency_oid)->value();
 
     if (! empty($in_frequency) || $in_frequency == 0) {
         $type = 'netagent2';
@@ -121,7 +123,7 @@ if ($in_phaseNum == '3') {
 
         discover_sensor(
             null,
-            'frequency',
+            SensorType::Frequency,
             $device,
             $in_frequency_oid,
             $index,
@@ -138,7 +140,7 @@ if ($in_phaseNum == '3') {
     }
     // Output frequency
     $in_frequency_oid = '.1.3.6.1.4.1.935.1.1.1.8.3.1.0';
-    $in_frequency = snmp_get($device, $in_frequency_oid, '-Oqv');
+    $in_frequency = SnmpQuery::get($in_frequency_oid)->value();
 
     if (! empty($in_frequency) || $in_frequency == 0) {
         $type = 'netagent2';
@@ -153,7 +155,7 @@ if ($in_phaseNum == '3') {
 
         discover_sensor(
             null,
-            'frequency',
+            SensorType::Frequency,
             $device,
             $in_frequency_oid,
             $index,
@@ -170,7 +172,7 @@ if ($in_phaseNum == '3') {
     }
     // Bypass frequency
     $in_frequency_oid = '.1.3.6.1.4.1.935.1.1.1.8.4.1.0';
-    $in_frequency = snmp_get($device, $in_frequency_oid, '-Oqv');
+    $in_frequency = SnmpQuery::get($in_frequency_oid)->value();
 
     if (! empty($in_frequency) || $in_frequency == 0) {
         $type = 'netagent2';
@@ -185,7 +187,7 @@ if ($in_phaseNum == '3') {
 
         discover_sensor(
             null,
-            'frequency',
+            SensorType::Frequency,
             $device,
             $in_frequency_oid,
             $index,

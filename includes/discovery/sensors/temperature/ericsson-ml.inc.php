@@ -11,14 +11,16 @@
  * the source code distribution for details.
  */
 
+use LibreNMS\Enum\SensorType;
+
 d_echo('ERICSSON-ML');
 $oid = '.1.3.6.1.4.1.193.223.2.4.1.1.2.1';
 $index = 0;
 $sensor_type = 'temperatureRadio';
 $descr = 'Internal Temp';
 $divisor = 1;
-$temperature = (float) snmp_get($device, $oid, '-Oqv', 'PT-MONITOR-MIB');
+$temperature = (float) SnmpQuery::get($oid)->value();
 
 if ($temperature != 0.0) {
-    discover_sensor(null, 'temperature', $device, $oid, $index, $sensor_type, $descr, $divisor, 1, null, null, null, null, $temperature);
+    discover_sensor(null, SensorType::Temperature, $device, $oid, $index, $sensor_type, $descr, $divisor, 1, null, null, null, null, $temperature);
 }

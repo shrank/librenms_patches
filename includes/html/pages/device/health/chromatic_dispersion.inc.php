@@ -1,5 +1,5 @@
 <?php
 
-$class = 'chromatic_dispersion';
+$class = \LibreNMS\Enum\SensorType::ChromaticDispersion;
 
 require 'sensors.inc.php';

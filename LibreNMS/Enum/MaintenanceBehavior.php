@@ -24,18 +24,25 @@
 
 namespace LibreNMS\Enum;
 
+use App\Facades\LibrenmsConfig;
+
 enum MaintenanceBehavior: int
 {
-    case SKIP_ALERTS = 1;
-    case MUTE_ALERTS = 2;
-    case RUN_ALERTS = 3;
+    case SkipAlerts = 1;
+    case MuteAlerts = 2;
+    case RunAlerts = 3;
+
+    public static function fromConfig(): self
+    {
+        return self::tryFrom((int) LibrenmsConfig::get('alert.scheduled_maintenance_default_behavior')) ?? self::SkipAlerts;
+    }
 
     public function descr(): string
     {
         return match ($this) {
-            self::SKIP_ALERTS => __('alerting.maintenance.behavior.options.skip_alerts') ,
-            self::MUTE_ALERTS => __('alerting.maintenance.behavior.options.mute_alerts'),
-            self::RUN_ALERTS => __('alerting.maintenance.behavior.options.run_alerts'),
+            self::SkipAlerts => __('alerting.maintenance.behavior.options.skip_alerts') ,
+            self::MuteAlerts => __('alerting.maintenance.behavior.options.mute_alerts'),
+            self::RunAlerts => __('alerting.maintenance.behavior.options.run_alerts'),
         };
     }
 }

@@ -1,7 +1,5 @@
 <?php
 
-$class = 'frequency';
-$unit = 'Hz';
-$unit_long = 'Hertz';
+$class = \LibreNMS\Enum\SensorType::Frequency;
 
 require 'includes/html/graphs/device/sensor.inc.php';

@@ -23,13 +23,16 @@
  * @copyright  2017 Lorenzo Zafra
  * @author     Lorenzo Zafra<zafra@ualberta.ca>
  */
+
+use LibreNMS\Enum\SensorType;
+
 $oids = snmpwalk_cache_oid($device, 'outputEntry', [], 'ICT-PDU-MIB');
 
 if (is_array($oids)) {
     $state_name = 'outputFuseStatus';
     $states = [
-        ['value' => 1, 'generic' => 0, 'graph' => 0, 'descr' => 'OK'],
-        ['value' => 2, 'generic' => 2, 'graph' => 0, 'descr' => 'OPEN'],
+        ['value' => 1, 'generic' => 0, 'descr' => 'OK'],
+        ['value' => 2, 'generic' => 2, 'descr' => 'OPEN'],
     ];
     create_state_index($state_name, $states);
 
@@ -45,6 +48,6 @@ if (is_array($oids)) {
             $current_value = 2;
         }
 
-        discover_sensor(null, 'state', $device, $fuse_state_oid, $index, $state_name, $descr, 1, 1, null, null, null, null, $current_value, 'snmp', $index);
+        discover_sensor(null, SensorType::State, $device, $fuse_state_oid, $index, $state_name, $descr, 1, 1, null, null, null, null, $current_value, 'snmp', $index);
     }
 }

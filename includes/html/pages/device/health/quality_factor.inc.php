@@ -1,5 +1,5 @@
 <?php
 
-$class = 'quality_factor';
+$class = \LibreNMS\Enum\SensorType::QualityFactor;
 
 require 'sensors.inc.php';

@@ -373,6 +373,7 @@
                     "sensor_type": "timos",
                     "sensor_descr": "RFU Frequency Band ChMO.mw-link-1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1000000,
                     "sensor_current": 11000000000,
@@ -398,6 +399,7 @@
                     "sensor_type": "timos",
                     "sensor_descr": "RFU Frequency Band ChMO.mw-link-2-Main",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1000000,
                     "sensor_current": 11000000000,
@@ -423,6 +425,7 @@
                     "sensor_type": "timos",
                     "sensor_descr": "RFU Frequency Band ChMO.mw-link-1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1000000,
                     "sensor_current": 11000000000,
@@ -448,6 +451,7 @@
                     "sensor_type": "timos",
                     "sensor_descr": "RFU Frequency Band ChMO.mw-link-2-Spare",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1000000,
                     "sensor_current": 11000000000,
@@ -473,6 +477,7 @@
                     "sensor_type": "aluMwRadioAlarmState",
                     "sensor_descr": "Current Alarm Severity ChMO.mw-link-1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -498,6 +503,7 @@
                     "sensor_type": "aluMwRadioAlarmState",
                     "sensor_descr": "Current Alarm Severity ChMO.mw-link-2-Main",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -523,6 +529,7 @@
                     "sensor_type": "aluMwRadioAlarmState",
                     "sensor_descr": "Current Alarm Severity ChMO.mw-link-1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -548,6 +555,7 @@
                     "sensor_type": "aluMwRadioAlarmState",
                     "sensor_descr": "Current Alarm Severity ChMO.mw-link-2-Spare",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -573,6 +581,7 @@
                     "sensor_type": "aluMwRadioTxMuted",
                     "sensor_descr": "Tx Mute ChMO.mw-link-1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -598,6 +607,7 @@
                     "sensor_type": "aluMwRadioTxMuted",
                     "sensor_descr": "Tx Mute ChMO.mw-link-2-Main",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -623,6 +633,7 @@
                     "sensor_type": "aluMwRadioTxMuted",
                     "sensor_descr": "Tx Mute ChMO.mw-link-1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -648,6 +659,7 @@
                     "sensor_type": "aluMwRadioTxMuted",
                     "sensor_descr": "Tx Mute ChMO.mw-link-2-Spare",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -673,6 +685,7 @@
                     "sensor_type": "tmnxChassisCriticalLEDState",
                     "sensor_descr": "Critical LED",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -698,6 +711,7 @@
                     "sensor_type": "tmnxChassisMajorLEDState",
                     "sensor_descr": "Major LED",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -723,6 +737,7 @@
                     "sensor_type": "tmnxChassisMinorLEDState",
                     "sensor_descr": "Minor LED",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -748,6 +763,7 @@
                     "sensor_type": "tmnxChassisOverTempState",
                     "sensor_descr": "Chassis Over Temp",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -773,6 +789,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "Fans",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -798,6 +815,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "Slot 1 NS1627S3701",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -823,6 +841,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "Slot A NS1627S3701",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -848,6 +867,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "Slot B NS1627S3962",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -873,6 +893,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "Slot A",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -898,6 +919,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "Slot B",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -923,6 +945,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "Fan Alarm Module NS1626S0915",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -948,6 +971,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "External Alarm Input 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -973,6 +997,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "External Alarm Input 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -998,6 +1023,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "External Alarm Input 3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1023,6 +1049,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "External Alarm Input 4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1048,6 +1075,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "MDA 1/1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1073,6 +1101,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "MDA 1/2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1098,6 +1127,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "MDA 1/3 NS2207S0797",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1123,6 +1153,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "MDA 1/4 NS1524S0205",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1148,6 +1179,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "MDA 1/5",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1173,6 +1205,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "MDA 1/6",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1198,6 +1231,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "cf1:",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1223,6 +1257,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "cf2:",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1248,6 +1283,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "cf3:",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1273,6 +1309,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "cf1:",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1298,6 +1335,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "cf2:",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1323,6 +1361,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "cf3:",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1348,6 +1387,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "Chassis 1 NS1628S3574",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1373,6 +1413,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "Power Feed 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1398,6 +1439,7 @@
                     "sensor_type": "tmnxHwAlarmState",
                     "sensor_descr": "Power Feed 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1423,6 +1465,7 @@
                     "sensor_type": "timos",
                     "sensor_descr": "RFU Temp SH1602H00W6",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 29,
@@ -1448,6 +1491,7 @@
                     "sensor_type": "timos",
                     "sensor_descr": "RFU Temp SH1542H001F",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 29,
@@ -1473,6 +1517,7 @@
                     "sensor_type": "timos",
                     "sensor_descr": "RFU Temp SH1602H00SK",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 32,
@@ -1498,6 +1543,7 @@
                     "sensor_type": "timos",
                     "sensor_descr": "RFU Temp SH1604H0003",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 31,
@@ -1523,6 +1569,7 @@
                     "sensor_type": "timos",
                     "sensor_descr": "Slot 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 30,
@@ -1548,6 +1595,7 @@
                     "sensor_type": "timos",
                     "sensor_descr": "Slot A",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 38,
@@ -1573,6 +1621,7 @@
                     "sensor_type": "timos",
                     "sensor_descr": "Slot B",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 31,
@@ -1598,6 +1647,7 @@
                     "sensor_type": "timos",
                     "sensor_descr": "MDA 1/3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 30,
@@ -1623,6 +1673,7 @@
                     "sensor_type": "timos",
                     "sensor_descr": "MDA 1/4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 26,
@@ -1644,329 +1695,282 @@
                 {
                     "state_name": "aluMwRadioAlarmState",
                     "state_descr": "alarmCleared",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "aluMwRadioAlarmState",
                     "state_descr": "Critical",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "aluMwRadioAlarmState",
                     "state_descr": "Major",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "aluMwRadioAlarmState",
                     "state_descr": "Minor",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "aluMwRadioAlarmState",
                     "state_descr": "Warning",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "aluMwRadioAlarmState",
                     "state_descr": "Indeterminate",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "aluMwRadioAlarmState",
                     "state_descr": "Unsupported",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "aluMwRadioAlarmState",
                     "state_descr": "Unknown",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "aluMwRadioTxMuted",
                     "state_descr": "Unknown",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "aluMwRadioTxMuted",
                     "state_descr": "None",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "aluMwRadioTxMuted",
                     "state_descr": "Manual",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "aluMwRadioTxMuted",
                     "state_descr": "Auto",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "tmnxChassisCriticalLEDState",
                     "state_descr": "NotApplicable",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "tmnxChassisCriticalLEDState",
                     "state_descr": "Off",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "tmnxChassisCriticalLEDState",
                     "state_descr": "Red",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "tmnxChassisCriticalLEDState",
                     "state_descr": "Amber",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "tmnxChassisCriticalLEDState",
                     "state_descr": "Yellow",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "tmnxChassisCriticalLEDState",
                     "state_descr": "Green",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "tmnxChassisCriticalLEDState",
                     "state_descr": "AmberBlink",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "tmnxChassisCriticalLEDState",
                     "state_descr": "YellowBlink",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "tmnxChassisCriticalLEDState",
                     "state_descr": "GreenBlink",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "tmnxChassisCriticalLEDState",
                     "state_descr": "RedBlink",
-                    "state_draw_graph": 0,
                     "state_value": 9,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "tmnxChassisMajorLEDState",
                     "state_descr": "NotApplicable",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "tmnxChassisMajorLEDState",
                     "state_descr": "Off",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "tmnxChassisMajorLEDState",
                     "state_descr": "Red",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "tmnxChassisMajorLEDState",
                     "state_descr": "Amber",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "tmnxChassisMajorLEDState",
                     "state_descr": "Yellow",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "tmnxChassisMajorLEDState",
                     "state_descr": "Green",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "tmnxChassisMajorLEDState",
                     "state_descr": "AmberBlink",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "tmnxChassisMajorLEDState",
                     "state_descr": "YellowBlink",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "tmnxChassisMajorLEDState",
                     "state_descr": "GreenBlink",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "tmnxChassisMajorLEDState",
                     "state_descr": "RedBlink",
-                    "state_draw_graph": 0,
                     "state_value": 9,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "tmnxChassisMinorLEDState",
                     "state_descr": "NotApplicable",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "tmnxChassisMinorLEDState",
                     "state_descr": "Off",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "tmnxChassisMinorLEDState",
                     "state_descr": "Red",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "tmnxChassisMinorLEDState",
                     "state_descr": "Amber",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "tmnxChassisMinorLEDState",
                     "state_descr": "Yellow",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "tmnxChassisMinorLEDState",
                     "state_descr": "Green",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "tmnxChassisMinorLEDState",
                     "state_descr": "AmberBlink",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "tmnxChassisMinorLEDState",
                     "state_descr": "YellowBlink",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "tmnxChassisMinorLEDState",
                     "state_descr": "GreenBlink",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "tmnxChassisMinorLEDState",
                     "state_descr": "RedBlink",
-                    "state_draw_graph": 0,
                     "state_value": 9,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "tmnxChassisOverTempState",
                     "state_descr": "Ok",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "tmnxChassisOverTempState",
                     "state_descr": "OverTemp",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "tmnxHwAlarmState",
                     "state_descr": "unknown",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "tmnxHwAlarmState",
                     "state_descr": "alarmActive",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "tmnxHwAlarmState",
                     "state_descr": "alarmCleared",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 }
@@ -8337,14 +8341,14 @@
                     "bgpPeerIface": null,
                     "bgpLocalAddr": "0.0.0.0",
                     "bgpPeerRemoteAddr": "0.0.0.0",
-                    "bgpPeerDescr": "",
+                    "bgpPeerDescr": "ChBiArtr01",
                     "bgpPeerInUpdates": 0,
                     "bgpPeerOutUpdates": 0,
                     "bgpPeerInTotalMessages": 0,
                     "bgpPeerOutTotalMessages": 0,
                     "bgpPeerFsmEstablishedTime": 0,
                     "bgpPeerInUpdateElapsedTime": 0,
-                    "context_name": null,
+                    "context_name": "",
                     "bgpLocalAs": 65000,
                     "vrfLocalAs": 65000
                 },
@@ -8360,14 +8364,14 @@
                     "bgpPeerIface": null,
                     "bgpLocalAddr": "0.0.0.0",
                     "bgpPeerRemoteAddr": "0.0.0.0",
-                    "bgpPeerDescr": "",
+                    "bgpPeerDescr": "ChBiBrtr01",
                     "bgpPeerInUpdates": 0,
                     "bgpPeerOutUpdates": 0,
                     "bgpPeerInTotalMessages": 0,
                     "bgpPeerOutTotalMessages": 0,
                     "bgpPeerFsmEstablishedTime": 0,
                     "bgpPeerInUpdateElapsedTime": 0,
-                    "context_name": null,
+                    "context_name": "",
                     "bgpLocalAs": 65000,
                     "vrfLocalAs": 65000
                 },
@@ -8383,14 +8387,14 @@
                     "bgpPeerIface": null,
                     "bgpLocalAddr": "0.0.0.0",
                     "bgpPeerRemoteAddr": "0.0.0.0",
-                    "bgpPeerDescr": "",
+                    "bgpPeerDescr": "Casper POE",
                     "bgpPeerInUpdates": 0,
                     "bgpPeerOutUpdates": 0,
                     "bgpPeerInTotalMessages": 0,
                     "bgpPeerOutTotalMessages": 0,
                     "bgpPeerFsmEstablishedTime": 0,
                     "bgpPeerInUpdateElapsedTime": 0,
-                    "context_name": null,
+                    "context_name": "",
                     "bgpLocalAs": 65000,
                     "vrfLocalAs": 65000
                 }
@@ -8410,14 +8414,14 @@
                     "bgpPeerIface": null,
                     "bgpLocalAddr": "0.0.0.0",
                     "bgpPeerRemoteAddr": "0.0.0.0",
-                    "bgpPeerDescr": "",
+                    "bgpPeerDescr": "ChBiArtr01",
                     "bgpPeerInUpdates": 0,
                     "bgpPeerOutUpdates": 0,
                     "bgpPeerInTotalMessages": 2790648,
                     "bgpPeerOutTotalMessages": 2784457,
-                    "bgpPeerFsmEstablishedTime": 4,
+                    "bgpPeerFsmEstablishedTime": 3600,
                     "bgpPeerInUpdateElapsedTime": 0,
-                    "context_name": null,
+                    "context_name": "",
                     "bgpLocalAs": 65000,
                     "vrfLocalAs": 65000
                 },
@@ -8433,14 +8437,14 @@
                     "bgpPeerIface": null,
                     "bgpLocalAddr": "0.0.0.0",
                     "bgpPeerRemoteAddr": "0.0.0.0",
-                    "bgpPeerDescr": "",
+                    "bgpPeerDescr": "ChBiBrtr01",
                     "bgpPeerInUpdates": 0,
                     "bgpPeerOutUpdates": 0,
                     "bgpPeerInTotalMessages": 2790762,
                     "bgpPeerOutTotalMessages": 2784438,
-                    "bgpPeerFsmEstablishedTime": 4,
+                    "bgpPeerFsmEstablishedTime": 3600,
                     "bgpPeerInUpdateElapsedTime": 0,
-                    "context_name": null,
+                    "context_name": "",
                     "bgpLocalAs": 65000,
                     "vrfLocalAs": 65000
                 },
@@ -8456,14 +8460,14 @@
                     "bgpPeerIface": null,
                     "bgpLocalAddr": "0.0.0.0",
                     "bgpPeerRemoteAddr": "0.0.0.0",
-                    "bgpPeerDescr": "",
+                    "bgpPeerDescr": "Casper POE",
                     "bgpPeerInUpdates": 0,
                     "bgpPeerOutUpdates": 0,
                     "bgpPeerInTotalMessages": 2794804,
                     "bgpPeerOutTotalMessages": 2784419,
-                    "bgpPeerFsmEstablishedTime": 4,
+                    "bgpPeerFsmEstablishedTime": 3600,
                     "bgpPeerInUpdateElapsedTime": 0,
-                    "context_name": null,
+                    "context_name": "",
                     "bgpLocalAs": 65000,
                     "vrfLocalAs": 65000
                 }
@@ -8505,7 +8509,8 @@
                     "ifStackStatus": "active"
                 }
             ]
-        }
+        },
+        "poller": "matches discovery"
     },
     "entity-physical": {
         "discovery": {
@@ -8527,6 +8532,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8546,6 +8552,7 @@
                     "entPhysicalContainedIn": 50331649,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "3HE06792EAAC0101",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8565,6 +8572,7 @@
                     "entPhysicalContainedIn": 50331649,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8584,6 +8592,7 @@
                     "entPhysicalContainedIn": 50331649,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8603,6 +8612,7 @@
                     "entPhysicalContainedIn": 50331649,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8622,6 +8632,7 @@
                     "entPhysicalContainedIn": 50331649,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8641,6 +8652,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "3HE06791AAAB0102",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8660,6 +8672,7 @@
                     "entPhysicalContainedIn": 50331649,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8679,6 +8692,7 @@
                     "entPhysicalContainedIn": 50331649,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8698,6 +8712,7 @@
                     "entPhysicalContainedIn": 50331649,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8717,6 +8732,7 @@
                     "entPhysicalContainedIn": 50331649,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "3HE02774ABAD0101",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8736,6 +8752,7 @@
                     "entPhysicalContainedIn": 50331649,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "3HE02774ABAD0101",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8755,6 +8772,7 @@
                     "entPhysicalContainedIn": 50331649,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "3HE02774ABAD0101",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8774,6 +8792,7 @@
                     "entPhysicalContainedIn": 50331649,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8793,6 +8812,7 @@
                     "entPhysicalContainedIn": 50331649,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8812,6 +8832,7 @@
                     "entPhysicalContainedIn": 134217729,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8831,6 +8852,7 @@
                     "entPhysicalContainedIn": 134217729,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8850,6 +8872,7 @@
                     "entPhysicalContainedIn": 134217729,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "3HE02782AAAC0105",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8869,6 +8892,7 @@
                     "entPhysicalContainedIn": 134217729,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "3HE02782AAAB0112",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8888,6 +8912,7 @@
                     "entPhysicalContainedIn": 134217729,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8907,6 +8932,7 @@
                     "entPhysicalContainedIn": 134217729,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8926,6 +8952,7 @@
                     "entPhysicalContainedIn": 150994977,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8945,6 +8972,7 @@
                     "entPhysicalContainedIn": 150994977,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8964,6 +8992,7 @@
                     "entPhysicalContainedIn": 150994977,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8983,6 +9012,7 @@
                     "entPhysicalContainedIn": 150994993,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9002,6 +9032,7 @@
                     "entPhysicalContainedIn": 150994993,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -9021,6 +9052,7 @@
                     "entPhysicalContainedIn": 150994993,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 }
             ]

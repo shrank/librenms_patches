@@ -53,7 +53,7 @@ class TwoFactorController extends Controller
 
         // token validated
         if (session('twofactorremove')) {
-            UserPref::forgetPref(auth()->user(), 'twofactor');
+            UserPref::forgetPref($request->user(), 'twofactor');
             $request->session()->forget(['twofactor', 'twofactorremove']);
 
             $toast->info(__('TwoFactor auth removed.'));
@@ -108,6 +108,11 @@ class TwoFactorController extends Controller
             'twofactor' => Rule::in('time', 'counter'),
         ]);
 
+        // Already enabled in the DB, or mid-setup in session - don't generate a new secret
+        if (UserPref::getPref($request->user(), 'twofactor') || Session::has('twofactoradd')) {
+            return redirect()->intended();
+        }
+
         $key = TwoFactor::genKey();
 
         // assume time based
@@ -115,7 +120,7 @@ class TwoFactorController extends Controller
             'key' => $key,
             'fails' => 0,
             'last' => 0,
-            'counter' => $request->get('twofactortype') == 'counter' ? 0 : false,
+            'counter' => $request->input('twofactortype') == 'counter' ? 0 : false,
         ];
 
         Session::put('twofactoradd', $settings);
@@ -168,6 +173,18 @@ class TwoFactorController extends Controller
 
         if (empty($twoFactorSettings)) {
             throw new AuthenticationException(__('No Two-Factor settings, how did you get here?'));
+        }
+
+        // lockout check
+        if (isset($twoFactorSettings['fails']) && $twoFactorSettings['fails'] >= 3) {
+            $lockout_time = LibrenmsConfig::get('twofactor_lock', 0);
+
+            if (! $lockout_time) {
+                auth()->logout();
+                throw new AuthenticationException(__('Too many two-factor failures, please contact administrator.'));
+            } elseif ((time() - ($twoFactorSettings['last'] ?? 0)) < $lockout_time) {
+                throw new AuthenticationException(__('Too many two-factor failures, please wait :time seconds', ['time' => $lockout_time]));
+            }
         }
 
         if (($server_count = TwoFactor::verifyHOTP($twoFactorSettings['key'], $token, $twoFactorSettings['counter'])) === false) {

@@ -11071,6 +11071,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "Speed",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2607,
@@ -11096,6 +11097,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "Speed",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2611,
@@ -11121,6 +11123,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "Speed",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2960,
@@ -11146,6 +11149,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "Speed",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2985,
@@ -11171,6 +11175,7 @@
                     "sensor_type": "alarmLedStatus",
                     "sensor_descr": "Alarm LED Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -11196,6 +11201,7 @@
                     "sensor_type": "chassisStatus",
                     "sensor_descr": "Chassis  Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -11221,6 +11227,7 @@
                     "sensor_type": "slotModuleStatus",
                     "sensor_descr": "0.1   Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -11246,6 +11253,7 @@
                     "sensor_type": "slotModuleStatus",
                     "sensor_descr": "0.6   Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -11271,6 +11279,7 @@
                     "sensor_type": "systemStatus",
                     "sensor_descr": "System Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -11296,6 +11305,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 22,
@@ -11321,6 +11331,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 22,
@@ -11346,6 +11357,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 16,
@@ -11371,6 +11383,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 16,
@@ -11396,6 +11409,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 15,
@@ -11421,6 +11435,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 17,
@@ -11446,6 +11461,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "mA",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.377,
@@ -11471,6 +11487,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "mA",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 11.956,
@@ -11496,6 +11513,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "mA",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.269,
@@ -11521,6 +11539,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "mA",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.224,
@@ -11546,6 +11565,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "mA",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.827,
@@ -11571,6 +11591,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "mA",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.809,
@@ -11596,6 +11617,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "mA",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.236,
@@ -11621,6 +11643,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "mA",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.317,
@@ -11646,6 +11669,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "mA",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.041,
@@ -11671,6 +11695,7 @@
                     "sensor_type": "ies5000",
                     "sensor_descr": "mA",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 5.031,
@@ -11692,182 +11717,156 @@
                 {
                     "state_name": "alarmLedStatus",
                     "state_descr": "on",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "alarmLedStatus",
                     "state_descr": "off",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "chassisStatus",
                     "state_descr": "empty",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "chassisStatus",
                     "state_descr": "up",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "chassisStatus",
                     "state_descr": "down",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "chassisStatus",
                     "state_descr": "testing",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "slotModuleStatus",
                     "state_descr": "empty",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "slotModuleStatus",
                     "state_descr": "up",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "slotModuleStatus",
                     "state_descr": "down",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "slotModuleStatus",
                     "state_descr": "testing",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "slotModuleStatus",
                     "state_descr": "standby",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "systemStatus",
                     "state_descr": "moduleNoDefect",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "systemStatus",
                     "state_descr": "moduleOverHeat",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "systemStatus",
                     "state_descr": "moduleFanRpmLow",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "systemStatus",
                     "state_descr": "moduleVoltageLow",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "systemStatus",
                     "state_descr": "moduleThermalSensorFailure",
-                    "state_draw_graph": 0,
                     "state_value": 16,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "systemStatus",
                     "state_descr": "modulePullOut",
-                    "state_draw_graph": 0,
                     "state_value": 32,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "systemStatus",
                     "state_descr": "powerDC48VAFailure",
-                    "state_draw_graph": 0,
                     "state_value": 64,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "systemStatus",
                     "state_descr": "powerDC48VBFailure",
-                    "state_draw_graph": 0,
                     "state_value": 128,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "systemStatus",
                     "state_descr": "extAlarmInputTrigger",
-                    "state_draw_graph": 0,
                     "state_value": 256,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "systemStatus",
                     "state_descr": "moduleDown",
-                    "state_draw_graph": 0,
                     "state_value": 512,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "systemStatus",
                     "state_descr": "mscSwitchOverOK",
-                    "state_draw_graph": 0,
                     "state_value": 1024,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "systemStatus",
                     "state_descr": "networkTopologyChange",
-                    "state_draw_graph": 0,
                     "state_value": 2048,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "systemStatus",
                     "state_descr": "macSpoof",
-                    "state_draw_graph": 0,
                     "state_value": 4096,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "systemStatus",
                     "state_descr": "cpuHigh",
-                    "state_draw_graph": 0,
                     "state_value": 8192,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "systemStatus",
                     "state_descr": "memoryUsageHigh",
-                    "state_draw_graph": 0,
                     "state_value": 16384,
                     "state_generic_value": 2
                 }

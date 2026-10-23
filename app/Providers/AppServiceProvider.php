@@ -2,22 +2,46 @@
 
 namespace App\Providers;
 
+use App\ApiClients\BingApi;
+use App\ApiClients\GoogleMapsApi;
+use App\ApiClients\MapquestApi;
+use App\ApiClients\NominatimApi;
+use App\Discovery\Sensor as DiscoverySensor;
 use App\Facades\LibrenmsConfig;
-use App\Guards\ApiTokenGuard;
+use App\Models\Device;
+use App\Models\DeviceGroup;
+use App\Models\Location;
+use App\Models\Port;
 use App\Models\Sensor;
 use App\Models\User;
+use App\Policies\RolePolicy;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Database\Eloquent\Relations\Relation;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\Password;
+use Laravel\Sanctum\Sanctum;
+use LibreNMS\Cache\Device as DeviceCache;
 use LibreNMS\Cache\PermissionsCache;
+use LibreNMS\Cache\Port as PortCache;
+use LibreNMS\Data\Source\Snmp\NetSnmp;
+use LibreNMS\Data\Source\Snmp\PhpSnmp;
+use LibreNMS\Data\Source\Snmp\SnmpBackendInterface;
+use LibreNMS\Data\Source\Snmp\SnmpQueryBuilder;
+use LibreNMS\Data\Source\Snmp\SnmpQueryInterface;
+use LibreNMS\Data\Source\Snmp\SnmpTranslatorInterface;
+use LibreNMS\Enum\SensorType;
+use LibreNMS\Interfaces\Geocoder;
+use LibreNMS\Util\Binaries;
+use LibreNMS\Util\Git;
 use LibreNMS\Util\IP;
 use LibreNMS\Util\Validate;
 use LibreNMS\Util\Version;
+use Spatie\Permission\Models\Role;
 use Validator;
 
 class AppServiceProvider extends ServiceProvider
@@ -40,19 +64,30 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->registerGeocoder();
 
-        $this->app->singleton('permissions', fn () => new PermissionsCache());
-        $this->app->singleton('device-cache', fn () => new \LibreNMS\Cache\Device());
-        $this->app->singleton('port-cache', fn () => new \LibreNMS\Cache\Port());
-        $this->app->singleton('git', fn () => new \LibreNMS\Util\Git());
+        $this->app->scoped('permissions', fn () => new PermissionsCache());
+        $this->app->scoped('device-cache', fn () => new DeviceCache());
+        $this->app->scoped('port-cache', fn () => new PortCache());
+        $this->app->scoped(Binaries::class);
+        $this->app->scoped('sensor-discovery', fn (Application $app) => new DiscoverySensor($app->make('device-cache')->getPrimary()));
 
-        $this->app->bind(\App\Models\Device::class, function (Application $app) {
-            /** @var \LibreNMS\Cache\Device $cache */
+        $this->app->singleton('git', fn () => new Git());
+
+        $this->app->bind(Device::class, function (Application $app) {
+            /** @var DeviceCache $cache */
             $cache = $app->make('device-cache');
 
-            return $cache->hasPrimary() ? $cache->getPrimary() : new \App\Models\Device;
+            return $cache->hasPrimary() ? $cache->getPrimary() : new Device;
         });
 
-        $this->app->singleton('sensor-discovery', fn (Application $app) => new \App\Discovery\Sensor($app->make('device-cache')->getPrimary()));
+        $this->app->bind(SnmpBackendInterface::class, function (Application $app) {
+            if (LibrenmsConfig::get('snmp.backend') === 'phpsnmp') {
+                return $app->make(PhpSnmp::class);
+            }
+
+            return $app->make(NetSnmp::class);
+        });
+        $this->app->bind(SnmpTranslatorInterface::class, NetSnmp::class);
+        $this->app->bind(SnmpQueryInterface::class, SnmpQueryBuilder::class);
     }
 
     /**
@@ -65,7 +100,6 @@ class AppServiceProvider extends ServiceProvider
         $this->bootCustomBladeDirectives();
         $this->bootCustomValidators();
         $this->configureMorphAliases();
-        $this->bootObservers();
         Version::registerAboutCommand();
 
         Password::defaults(function () {
@@ -85,7 +119,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Blade::if('config', fn ($key, $value = true) => LibrenmsConfig::get($key) == $value);
         Blade::if('notconfig', fn ($key) => ! LibrenmsConfig::get($key));
-        Blade::if('admin', fn () => auth()->check() && auth()->user()->isAdmin());
+        Blade::if('admin', fn () => auth()->check() && auth()->user()->hasRole('admin')); // TODO remove
 
         Blade::directive('deviceUrl', fn ($arguments) => "<?php echo \LibreNMS\Util\Url::deviceUrl($arguments); ?>");
 
@@ -95,71 +129,57 @@ class AppServiceProvider extends ServiceProvider
         Blade::directive('signedGraphTag', fn ($vars) => "<?php echo '<img class=\"librenms-graph\" src=\"' . \LibreNMS\Util\Url::forExternalGraph($vars) . '\" />'; ?>");
 
         Blade::directive('graphImage', fn ($vars, $flags = 0) => "<?php echo \LibreNMS\Util\Graph::getImageData($vars, $flags); ?>");
-
-        Blade::directive('vuei18n', fn () => "<?php
-             \$manifest_file = public_path('js/lang/manifest.json');
-             \$manifest = is_readable(\$manifest_file) ? json_decode(file_get_contents(\$manifest_file), true) : [];
-             \$locales = array_unique(['en', app()->getLocale()]);
-             echo implode(PHP_EOL, array_map(fn (\$locale) => '<script src=\"' . asset(\$manifest[\$locale] ?? \"/js/lang/\$locale.js\") . '\"></script>', \$locales));
- ?>");
     }
 
     private function configureMorphAliases(): void
     {
         $sensor_types = [];
-        foreach (\LibreNMS\Enum\Sensor::values() as $sensor_type) {
+        foreach (SensorType::values() as $sensor_type) {
             $sensor_types[$sensor_type] = Sensor::class;
         }
         Relation::morphMap(array_merge([
-            'interface' => \App\Models\Port::class,
+            'interface' => Port::class,
             'sensor' => Sensor::class,
-            'device' => \App\Models\Device::class,
-            'device_group' => \App\Models\DeviceGroup::class,
-            'location' => \App\Models\Location::class,
+            'device' => Device::class,
+            'device_group' => DeviceGroup::class,
+            'location' => Location::class,
+            'bgppeer' => \App\Models\BgpPeer::class,
+            'service' => \App\Models\Service::class,
+            'mempool' => \App\Models\Mempool::class,
+            'processor' => \App\Models\Processor::class,
+            'storage' => \App\Models\Storage::class,
+            'application' => \App\Models\Application::class,
+            'accesspoint' => \App\Models\AccessPoint::class,
+            'bill' => \App\Models\Bill::class,
         ], $sensor_types));
     }
 
     private function registerGeocoder()
     {
-        $this->app->alias(\LibreNMS\Interfaces\Geocoder::class, 'geocoder');
-        $this->app->bind(\LibreNMS\Interfaces\Geocoder::class, function ($app) {
+        $this->app->alias(Geocoder::class, 'geocoder');
+        $this->app->bind(Geocoder::class, function ($app) {
             $engine = LibrenmsConfig::get('geoloc.engine');
 
             switch ($engine) {
                 case 'mapquest':
                     Log::debug('MapQuest geocode engine');
 
-                    return $app->make(\App\ApiClients\MapquestApi::class);
+                    return $app->make(MapquestApi::class);
                 case 'bing':
                     Log::debug('Bing geocode engine');
 
-                    return $app->make(\App\ApiClients\BingApi::class);
+                    return $app->make(BingApi::class);
                 case 'openstreetmap':
                     Log::debug('OpenStreetMap geocode engine');
 
-                    return $app->make(\App\ApiClients\NominatimApi::class);
+                    return $app->make(NominatimApi::class);
                 default:
                 case 'google':
                     Log::debug('Google Maps geocode engine');
 
-                    return $app->make(\App\ApiClients\GoogleMapsApi::class);
+                    return $app->make(GoogleMapsApi::class);
             }
         });
-    }
-
-    private function bootObservers()
-    {
-        \App\Models\Device::observe(\App\Observers\DeviceObserver::class);
-        \App\Models\Mempool::observe(\App\Observers\MempoolObserver::class);
-        \App\Models\Package::observe(\App\Observers\PackageObserver::class);
-        \App\Models\Qos::observe(\App\Observers\QosObserver::class);
-        Sensor::observe(\App\Observers\SensorObserver::class);
-        \App\Models\Service::observe(\App\Observers\ServiceObserver::class);
-        \App\Models\Storage::observe(\App\Observers\StorageObserver::class);
-        \App\Models\Stp::observe(\App\Observers\StpObserver::class);
-        User::observe(\App\Observers\UserObserver::class);
-        \App\Models\Vminfo::observe(\App\Observers\VminfoObserver::class);
-        \App\Models\WirelessSensor::observe(\App\Observers\WirelessSensorObserver::class);
     }
 
     private function bootCustomValidators()
@@ -167,9 +187,12 @@ class AppServiceProvider extends ServiceProvider
         Validator::extend('alpha_space', fn ($attribute, $value) => preg_match('/^[\w\s]+$/u', (string) $value));
 
         Validator::extend('ip_or_hostname', function ($attribute, $value, $parameters, $validator) {
-            $ip = substr($value, 0, strpos($value, '/') ?: strlen($value)); // allow prefixes too
+            // allow prefixes too
+            if (str_contains($value, '/') && preg_match('#^(.+)/\d{1,3}$#', $value, $matches)) {
+                return IP::isValid($matches[1]);
+            }
 
-            return IP::isValid($ip) || Validate::hostname($value);
+            return IP::isValid($value) || Validate::hostname($value);
         });
 
         Validator::extend('is_regex', fn ($attribute, $value) => @preg_match($value, '') !== false);
@@ -221,7 +244,7 @@ class AppServiceProvider extends ServiceProvider
                 return true;
             }
 
-            if (is_string($value) && preg_match('/^[+-]?\d+[hdmwy]$/', $value)) {
+            if (is_string($value) && preg_match('/^[+-]?\d+(mo|[smhdwy])$/', $value)) {
                 return true;
             }
 
@@ -231,29 +254,44 @@ class AppServiceProvider extends ServiceProvider
 
     public function bootAuth(): void
     {
+        Gate::policy(Role::class, RolePolicy::class);
+
         Auth::provider('legacy', fn ($app, array $config) => new LegacyUserProvider());
 
-        Auth::provider('token_provider', fn ($app, array $config) => new TokenUserProvider());
+        Sanctum::getAccessTokenFromRequestUsing(function (Request $request) {
+            if ($request->is('api/v0*')) {
+                return $request->header('X-Auth-Token')
+                    ?? $request->bearerToken()
+                    ?? $request->query('api_token')
+                    ?? $request->input('api_token');
+            }
 
-        Auth::extend('token_driver', function ($app, $name, array $config) {
-            $userProvider = $app->make(TokenUserProvider::class);
-            $request = $app->make('request');
-
-            return new ApiTokenGuard($userProvider, $request);
+            return $request->bearerToken();
         });
 
-        Gate::define('global-admin', fn (User $user) => $user->hasAnyRole('admin', 'demo'));
+        Sanctum::authenticateAccessTokensUsing(function ($accessToken, $isValid) {
+            if (! $isValid) {
+                return false;
+            }
+
+            return (bool) ($accessToken->tokenable->enabled ?? false);
+        });
+
         Gate::define('admin', fn (User $user) => $user->hasRole('admin'));
         Gate::define('global-read', fn (User $user) => $user->hasAnyRole('admin', 'global-read'));
-        Gate::define('device', fn (User $user, $device) => $user->canAccessDevice($device));
+        Gate::define('demo', fn (User $user) => $user->hasRole('demo'));
 
         // define super admin and global read
         Gate::before(function (User $user, string $ability) {
+            if ($ability === 'demo') {
+                return null; // defer to middleware
+            }
+
             if ($user->hasRole('admin')) {
                 return true;  // super admin
             }
 
-            if (in_array($ability, ['view', 'viewAny']) && $user->hasRole('global-read')) {
+            if ($user->hasRole('global-read') && preg_match('/^(\S+\.)?view(All|Any)?$/', $ability)) {
                 return true; // global read access
             }
 

@@ -141,9 +141,7 @@ class Html
     public static function percentageBar($width, $height, $percent, $left_text = '', $right_text = '', $warn = null, $shadow = null, $colors = null)
     {
         $percent = min($percent, 100);
-        if ($colors === null) {
-            $colors = Color::percentage($percent, $warn ?: null);
-        }
+        $colors ??= Color::percentage($percent, $warn ?: null);
         $default = Color::percentage(0);
         $left_text_color = empty($colors['left_text']) ? 'inherit' : '#' . $colors['left_text'];
         $right_text_color = empty($colors['right_text']) ? 'inherit' : '#' . $colors['right_text'];
@@ -186,7 +184,7 @@ class Html
         };
     }
 
-    public static function severityToLabel(Severity $severity, string $text): string
+    public static function severityToLabel(Severity $severity, string $text = '', string $title = '', string $class = 'label'): string
     {
         $state_label = match ($severity) {
             Severity::Ok => 'label-success',
@@ -197,6 +195,10 @@ class Html
             default => 'label-default',
         };
 
-        return "<span class=\"label $state_label\">$text</span>";
+        if ($title) {
+            $title = " title=\"$title\"";
+        }
+
+        return "<span class=\"$class $state_label\"$title>$text</span>";
     }
 }

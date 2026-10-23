@@ -23,8 +23,11 @@
  * @copyright  2016 Tony Murray
  * @author     Tony Murray <murraytony@gmail.com>
  */
+
+use LibreNMS\Enum\SensorType;
+
 $battery_current_oid = '.1.3.6.1.4.1.935.1.1.1.2.2.7.0';
-$battery_current = snmp_get($device, $battery_current_oid, '-Oqv');
+$battery_current = SnmpQuery::get($battery_current_oid)->value();
 
 if (! empty($battery_current) || $battery_current == 0) {
     $type = 'netagent2';
@@ -39,7 +42,7 @@ if (! empty($battery_current) || $battery_current == 0) {
 
     discover_sensor(
         null,
-        'current',
+        SensorType::Current,
         $device,
         $battery_current_oid,
         $index,

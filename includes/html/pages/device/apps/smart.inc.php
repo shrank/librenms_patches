@@ -19,17 +19,39 @@ $driveLinks = [];
 foreach ($disks as $diskName => $diskData) {
     $label = $diskName;
 
-    if (isset($vars['disk']) && $vars['disk'] === $diskName) {
-        $label = "<span class=\"pagemenu-selected\">{$label}</span>";
-    }
-
     $healthStatus = match ($diskData['health_pass'] ?? null) {
         1 => ' (OK)',
         0 => ' (FAIL)',
         default => '',
     };
 
-    $driveLinks[] = generate_link($label, $baseLink, ['disk' => $diskName]) . $healthStatus;
+    $overheatingStatus = match ($diskData['over_temp'] ?? null) {
+        1 => ' (Overheating)',
+        default => '',
+    };
+
+    $pollingerrorStatus = match ($diskData['dev_error'] ?? null) {
+        1 => ' (Polling Error)',
+        default => '',
+    };
+
+    $readfailureStatus = '';
+    if (isset($diskData['read_failure']) && $diskData['read_failure'] > 0) {
+        $readfailureStatus = ' (Read Failure)';
+    }
+
+    $unknownfailureStatus = '';
+    if (isset($diskData['unknown_failure']) && $diskData['unknown_failure'] > 0) {
+        $unknownfailureStatus = ' (Unknown Failure)';
+    }
+
+    $link = generate_link($diskName, $baseLink, ['disk' => $diskName]) . $healthStatus . $overheatingStatus . $pollingerrorStatus . $readfailureStatus . $unknownfailureStatus;
+
+    if (isset($vars['disk']) && $vars['disk'] === $diskName) {
+        $link = "<span class=\"pagemenu-selected\">{$link}</span>";
+    }
+
+    $driveLinks[] = $link;
 }
 
 echo generate_link('All Drives', $baseLink) . ' | drives: ' . implode(', ', $driveLinks);
@@ -52,6 +74,8 @@ if (isset($vars['disk'])) {
             'device_model' => 'Device Model',
             'revision' => 'Revision',
             'fw_version' => 'FW Version',
+            'form_factor' => 'Form Factor',
+            'rpm' => 'RPM',
         ];
 
         foreach ($diskFields as $field => $label) {

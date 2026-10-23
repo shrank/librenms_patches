@@ -24,10 +24,12 @@
  * @author     Lorenzo Zafra<zafra@ualberta.ca>
  */
 
+use LibreNMS\Enum\SensorType;
+
 // temperature
 
-$temperature_unit = trim(snmp_get($device, '.1.3.6.1.4.1.7428.1.2.2.1.1.12.1', '-Oqv'), '" ');
-$temperature = trim(snmp_get($device, '.1.3.6.1.4.1.7428.1.2.2.1.1.11.1', '-Oqv'), '" ');
+$temperature_unit = trim((string) SnmpQuery::get('.1.3.6.1.4.1.7428.1.2.2.1.1.12.1')->value(), '" ');
+$temperature = trim((string) SnmpQuery::get('.1.3.6.1.4.1.7428.1.2.2.1.1.11.1')->value(), '" ');
 
 if (! empty($temperature_unit) && ! empty($temperature)) {
     // If fahrenheit convert to celsius
@@ -44,5 +46,5 @@ if (! empty($temperature_unit) && ! empty($temperature)) {
     $oid = '.1.3.6.1.4.1.7428.1.2.2.1.1.11.1';
     $current_value = $temperature / $divisor;
 
-    discover_sensor(null, 'temperature', $device, $oid, $index, $type, $descr, $divisor, '1', null, null, null, null, $current_value, 'snmp', null, null, $function);
+    discover_sensor(null, SensorType::Temperature, $device, $oid, $index, $type, $descr, $divisor, '1', null, null, null, null, $current_value, 'snmp', null, null, $function);
 }

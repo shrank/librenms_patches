@@ -11578,6 +11578,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Fan1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5912,
@@ -11603,6 +11604,7 @@
                     "sensor_type": "lmsensors",
                     "sensor_descr": "fan1",
                     "group": "lmsensors",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 6026,
@@ -11628,6 +11630,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -11653,6 +11656,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -11678,6 +11682,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Temp1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 41.5,
@@ -11703,6 +11708,7 @@
                     "sensor_type": "lmsensors",
                     "sensor_descr": "ambient temp",
                     "group": "lmsensors",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 41.5,
@@ -12116,6 +12122,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Cumulus Networks",
+                    "entPhysicalMfgDate": "2017-4-19,12:10:41.0",
                     "ifIndex": null
                 },
                 {
@@ -12135,6 +12142,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12154,6 +12162,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12173,6 +12182,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12192,6 +12202,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12211,6 +12222,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12230,6 +12242,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12249,6 +12262,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12268,6 +12282,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12287,6 +12302,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12306,6 +12322,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12325,6 +12342,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12344,6 +12362,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12363,6 +12382,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12382,6 +12402,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12401,6 +12422,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12420,6 +12442,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12439,6 +12462,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12458,6 +12482,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12477,6 +12502,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12496,6 +12522,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12515,6 +12542,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12534,6 +12562,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12553,6 +12582,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12572,6 +12602,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12591,6 +12622,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12610,6 +12642,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12629,6 +12662,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12648,6 +12682,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12667,6 +12702,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12686,6 +12722,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12705,6 +12742,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12724,6 +12762,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12743,6 +12782,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12762,6 +12802,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12781,6 +12822,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12800,6 +12842,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12819,6 +12862,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12838,6 +12882,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12857,6 +12902,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12876,6 +12922,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12895,6 +12942,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12914,6 +12962,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12933,6 +12982,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12952,6 +13002,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12971,6 +13022,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -12990,6 +13042,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13009,6 +13062,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13028,6 +13082,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13047,6 +13102,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13066,6 +13122,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13085,6 +13142,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13104,6 +13162,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13123,6 +13182,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13142,6 +13202,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13161,6 +13222,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -13180,6 +13242,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 }
             ]

@@ -1,19 +1,20 @@
 <?php
 
 use LibreNMS\RRD\RrdDefinition;
+use LibreNMS\Util\ProgressList;
 
 $vp_rows = dbFetchRows('SELECT * FROM `ports` AS P, `juniAtmVp` AS J WHERE P.`device_id` = ? AND J.port_id = P.port_id', [$device['device_id']]);
 
 if (count($vp_rows)) {
     $vp_cache = [];
-    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsInCells', $vp_cache, 'Juniper-UNI-ATM-MIB', 'junose');
-    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsInPackets', $vp_cache, 'Juniper-UNI-ATM-MIB', 'junose');
-    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsInPacketOctets', $vp_cache, 'Juniper-UNI-ATM-MIB', 'junose');
-    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsInPacketErrors', $vp_cache, 'Juniper-UNI-ATM-MIB', 'junose');
-    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsOutCells', $vp_cache, 'Juniper-UNI-ATM-MIB', 'junose');
-    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsOutPackets', $vp_cache, 'Juniper-UNI-ATM-MIB', 'junose');
-    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsOutPacketOctets', $vp_cache, 'Juniper-UNI-ATM-MIB', 'junose');
-    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsOutPacketErrors', $vp_cache, 'Juniper-UNI-ATM-MIB', 'junose');
+    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsInCells', $vp_cache, 'Juniper-UNI-ATM-MIB', 'juniper/junose');
+    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsInPackets', $vp_cache, 'Juniper-UNI-ATM-MIB', 'juniper/junose');
+    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsInPacketOctets', $vp_cache, 'Juniper-UNI-ATM-MIB', 'juniper/junose');
+    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsInPacketErrors', $vp_cache, 'Juniper-UNI-ATM-MIB', 'juniper/junose');
+    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsOutCells', $vp_cache, 'Juniper-UNI-ATM-MIB', 'juniper/junose');
+    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsOutPackets', $vp_cache, 'Juniper-UNI-ATM-MIB', 'juniper/junose');
+    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsOutPacketOctets', $vp_cache, 'Juniper-UNI-ATM-MIB', 'juniper/junose');
+    $vp_cache = snmpwalk_cache_multi_oid($device, 'juniAtmVpStatsOutPacketErrors', $vp_cache, 'Juniper-UNI-ATM-MIB', 'juniper/junose');
 
     $rrd_def = RrdDefinition::make()
         ->addDataset('incells', 'DERIVE', 0, 125000000000)
@@ -25,8 +26,9 @@ if (count($vp_rows)) {
         ->addDataset('inpacketerrors', 'DERIVE', 0, 125000000000)
         ->addDataset('outpacketerrors', 'DERIVE', 0, 125000000000);
 
+    $progress = ProgressList::start('ATM VPs');
     foreach ($vp_rows as $vp) {
-        echo '.';
+        $progress->mark('.');
 
         $ifIndex = $vp['ifIndex'];
         $vp_id = $vp['vp_id'];
@@ -58,7 +60,7 @@ if (count($vp_rows)) {
         app('Datastore')->put($device, 'atm-vp', $tags, $fields);
     }//end foreach
 
-    echo "\n";
+    $progress->end();
 
     unset($vp_cache, $rrd_def);
 }//end if

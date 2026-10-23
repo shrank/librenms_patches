@@ -9642,6 +9642,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "FAN 1 Speed",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5040,
@@ -9667,6 +9668,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "FAN 1 Speed",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 4920,
@@ -9692,6 +9694,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "FAN 1 Speed",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5130,
@@ -9717,6 +9720,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "FAN 1 Speed",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5310,
@@ -9742,6 +9746,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "FAN 1 Speed",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 4860,
@@ -9767,6 +9772,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 1 Temperature  (center)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 29,
@@ -9792,6 +9798,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "MON Temperature  (cpu)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 30,
@@ -9817,6 +9824,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "QAM 1 Temperature  (phy)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 37,
@@ -9842,6 +9850,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "QAM 1 Temperature  (psu)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 32,
@@ -9867,6 +9876,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "QAM 1 Temperature  (rf)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 37,
@@ -9892,6 +9902,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "WAN 7 Temperature  (front)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 35,
@@ -9917,6 +9928,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "WAN 7 Temperature  (middle)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 40,
@@ -9942,6 +9954,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "WAN 7 Temperature  (back)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 35,
@@ -9967,6 +9980,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 1 Voltage  (5.0)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 4.99,
@@ -9992,6 +10006,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 1 Voltage  (9.0)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 9.06,
@@ -10017,6 +10032,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 1 Voltage  (12.0a)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 11.57,
@@ -10042,6 +10058,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 1 Voltage  (12.0b)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 11.86,
@@ -10067,6 +10084,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "MON Voltage  (5.0)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 5.06,
@@ -10092,6 +10110,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "MON Voltage  (3.3)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.26,
@@ -10117,6 +10136,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "MON Voltage  (2.5)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.49,
@@ -10142,6 +10162,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "MON Voltage  (1.2)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.23,
@@ -10167,6 +10188,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "QAM 1 Voltage  (5.0)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 4.99,
@@ -10192,6 +10214,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "QAM 1 Voltage  (3.3a)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.23,
@@ -10217,6 +10240,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "QAM 1 Voltage  (11.0)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 11.18,
@@ -10242,6 +10266,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "QAM 1 Voltage  (9.0)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 9.09,
@@ -10267,6 +10292,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "QAM 1 Voltage  (3.3b)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.26,
@@ -10292,6 +10318,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "QAM 1 Voltage  (2.5)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.49,
@@ -10317,6 +10344,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "QAM 1 Voltage  (3.3d)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.28,
@@ -10342,6 +10370,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "QAM 1 Voltage  (3.3e)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.29,
@@ -10367,6 +10396,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "QAM 1 Voltage  (1.2)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.2,
@@ -10392,6 +10422,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "WAN 7 Voltage  (5.0)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 5.06,
@@ -10417,6 +10448,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "WAN 7 Voltage  (3.3a)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.21,
@@ -10442,6 +10474,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "WAN 7 Voltage  (3.3b)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.32,
@@ -10467,6 +10500,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "WAN 7 Voltage  (3.25)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.29,
@@ -10492,6 +10526,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "WAN 7 Voltage  (2.5)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.53,
@@ -10517,6 +10552,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "WAN 7 Voltage  (1.25)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.25,
@@ -10542,6 +10578,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "WAN 7 Voltage  (1.2)",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.24,
@@ -11155,6 +11192,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "2009-6-18,0:0:0.0,+0:0",
                     "ifIndex": null
                 },
                 {
@@ -11174,6 +11212,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11193,6 +11232,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11212,6 +11252,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11231,6 +11272,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11250,6 +11292,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11269,6 +11312,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11288,6 +11332,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11307,6 +11352,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11326,6 +11372,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11345,6 +11392,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11364,6 +11412,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11383,6 +11432,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11402,6 +11452,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11421,6 +11472,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11440,6 +11492,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11459,6 +11512,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "2009-6-17,0:0:0.0,+0:0",
                     "ifIndex": null
                 },
                 {
@@ -11478,6 +11532,7 @@
                     "entPhysicalContainedIn": 100,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11497,6 +11552,7 @@
                     "entPhysicalContainedIn": 100,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11516,6 +11572,7 @@
                     "entPhysicalContainedIn": 100,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11535,6 +11592,7 @@
                     "entPhysicalContainedIn": 100,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11554,6 +11612,7 @@
                     "entPhysicalContainedIn": 100,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11573,6 +11632,7 @@
                     "entPhysicalContainedIn": 100,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11592,6 +11652,7 @@
                     "entPhysicalContainedIn": 100,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11611,6 +11672,7 @@
                     "entPhysicalContainedIn": 100,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11630,6 +11692,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "2008-12-4,0:0:0.0,+0:0",
                     "ifIndex": null
                 },
                 {
@@ -11649,6 +11712,7 @@
                     "entPhysicalContainedIn": 200,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11668,6 +11732,7 @@
                     "entPhysicalContainedIn": 200,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11687,6 +11752,7 @@
                     "entPhysicalContainedIn": 200,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11706,6 +11772,7 @@
                     "entPhysicalContainedIn": 200,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11725,6 +11792,7 @@
                     "entPhysicalContainedIn": 200,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11744,6 +11812,7 @@
                     "entPhysicalContainedIn": 200,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11763,6 +11832,7 @@
                     "entPhysicalContainedIn": 200,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11782,6 +11852,7 @@
                     "entPhysicalContainedIn": 200,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11801,6 +11872,7 @@
                     "entPhysicalContainedIn": 200,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11820,6 +11892,7 @@
                     "entPhysicalContainedIn": 200,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11839,6 +11912,7 @@
                     "entPhysicalContainedIn": 200,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11858,6 +11932,7 @@
                     "entPhysicalContainedIn": 200,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11877,6 +11952,7 @@
                     "entPhysicalContainedIn": 200,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11896,6 +11972,7 @@
                     "entPhysicalContainedIn": 200,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11915,6 +11992,7 @@
                     "entPhysicalContainedIn": 213,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11934,6 +12012,7 @@
                     "entPhysicalContainedIn": 213,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11953,6 +12032,7 @@
                     "entPhysicalContainedIn": 213,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11972,6 +12052,7 @@
                     "entPhysicalContainedIn": 213,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -11991,6 +12072,7 @@
                     "entPhysicalContainedIn": 214,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12010,6 +12092,7 @@
                     "entPhysicalContainedIn": 214,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12029,6 +12112,7 @@
                     "entPhysicalContainedIn": 214,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12048,6 +12132,7 @@
                     "entPhysicalContainedIn": 214,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12067,6 +12152,7 @@
                     "entPhysicalContainedIn": 9,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "2009-6-1,0:0:0.0,+0:0",
                     "ifIndex": null
                 },
                 {
@@ -12086,6 +12172,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12105,6 +12192,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12124,6 +12212,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12143,6 +12232,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12162,6 +12252,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12181,6 +12272,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12200,6 +12292,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12219,6 +12312,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12238,6 +12332,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12257,6 +12352,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12276,6 +12372,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12295,6 +12392,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12314,6 +12412,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12333,6 +12432,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12352,6 +12452,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12371,6 +12472,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12390,6 +12492,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12409,6 +12512,7 @@
                     "entPhysicalContainedIn": 800,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12428,6 +12532,7 @@
                     "entPhysicalContainedIn": 11,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "2009-6-16,0:0:0.0,+0:0",
                     "ifIndex": null
                 },
                 {
@@ -12447,6 +12552,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12466,6 +12572,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12485,6 +12592,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12504,6 +12612,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12523,6 +12632,7 @@
                     "entPhysicalContainedIn": 1000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12542,6 +12652,7 @@
                     "entPhysicalContainedIn": 13,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12561,6 +12672,7 @@
                     "entPhysicalContainedIn": 1200,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12580,6 +12692,7 @@
                     "entPhysicalContainedIn": 1200,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12599,6 +12712,7 @@
                     "entPhysicalContainedIn": 1200,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12618,6 +12732,7 @@
                     "entPhysicalContainedIn": 1200,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12637,6 +12752,7 @@
                     "entPhysicalContainedIn": 1200,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12656,6 +12772,7 @@
                     "entPhysicalContainedIn": 15,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "ARRIS, Inc.",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 }
             ]

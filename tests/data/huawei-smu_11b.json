@@ -32,6 +32,7 @@
                     "sensor_type": "huawei-smu",
                     "sensor_descr": "Remaining battery capacity",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 100,
@@ -57,6 +58,7 @@
                     "sensor_type": "huawei-smu",
                     "sensor_descr": "Quantity of ACs",
                     "group": "AC",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -82,6 +84,7 @@
                     "sensor_type": "huawei-smu",
                     "sensor_descr": "Quantity of Batteries",
                     "group": "Battery",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -107,6 +110,7 @@
                     "sensor_type": "huawei-smu",
                     "sensor_descr": "Quantity of DCs",
                     "group": "DC",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -132,6 +136,7 @@
                     "sensor_type": "huawei-smu",
                     "sensor_descr": "Quantity of Rectifiers",
                     "group": "Rectifier",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -157,6 +162,7 @@
                     "sensor_type": "huawei-smu",
                     "sensor_descr": "Battery Current",
                     "group": "Battery",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -182,6 +188,7 @@
                     "sensor_type": "huawei-smu",
                     "sensor_descr": "DC Output Current",
                     "group": "DC",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 34,
@@ -207,6 +214,7 @@
                     "sensor_type": "huawei-smu",
                     "sensor_descr": "DC Total Current",
                     "group": "DC",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 34,
@@ -232,6 +240,7 @@
                     "sensor_type": "huawei-smu",
                     "sensor_descr": "Rectifier Current",
                     "group": "Rectifier",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 31,
@@ -257,6 +266,7 @@
                     "sensor_type": "hwBattsChargeStatus",
                     "sensor_descr": "Battery Charge Status",
                     "group": "Battery",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -282,6 +292,7 @@
                     "sensor_type": "hwBattsCurrLimitStatus",
                     "sensor_descr": "Battery Limiting Status",
                     "group": "Battery",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -307,6 +318,7 @@
                     "sensor_type": "hwCtrlRectsAllOnOff",
                     "sensor_descr": "Recirifier Module Status",
                     "group": "Rectifier",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -332,6 +344,7 @@
                     "sensor_type": "hwMonitorOperStatus",
                     "sensor_descr": "Monitor Status",
                     "group": "Site Summary",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -357,6 +370,7 @@
                     "sensor_type": "hwSetMonEquipCtrlState",
                     "sensor_descr": "Monitor Control Status",
                     "group": "Site Summary",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -382,6 +396,7 @@
                     "sensor_type": "hwSetRectsRedundEnable",
                     "sensor_descr": "Sleep Function",
                     "group": "Rectifier",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -407,6 +422,7 @@
                     "sensor_type": "huawei-smu",
                     "sensor_descr": "AC Input (A-Phase)",
                     "group": "AC",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 231.2,
@@ -432,6 +448,7 @@
                     "sensor_type": "huawei-smu",
                     "sensor_descr": "Rectifier Adjusted Voltage",
                     "group": "Rectifier",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 53.4,
@@ -457,6 +474,7 @@
                     "sensor_type": "huawei-smu",
                     "sensor_descr": "DC Output Voltage",
                     "group": "DC",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 53.5,
@@ -482,6 +500,7 @@
                     "sensor_type": "huawei-smu",
                     "sensor_descr": "DC Total Voltage",
                     "group": "DC",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 53.5,
@@ -507,6 +526,7 @@
                     "sensor_type": "huawei-smu",
                     "sensor_descr": "BLVD",
                     "group": "LVD",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 43.2,
@@ -532,6 +552,7 @@
                     "sensor_type": "huawei-smu",
                     "sensor_descr": "Rectifier Rated Voltage",
                     "group": "Rectifier",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 53.5,
@@ -553,154 +574,132 @@
                 {
                     "state_name": "hwBattsChargeStatus",
                     "state_descr": "floatCharge",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hwBattsChargeStatus",
                     "state_descr": "boostCharge",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hwBattsChargeStatus",
                     "state_descr": "disCharge",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hwBattsChargeStatus",
                     "state_descr": "unknown",
-                    "state_draw_graph": 1,
                     "state_value": 255,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hwBattsCurrLimitStatus",
                     "state_descr": "unlimit",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hwBattsCurrLimitStatus",
                     "state_descr": "limit",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hwBattsCurrLimitStatus",
                     "state_descr": "unknown",
-                    "state_draw_graph": 1,
                     "state_value": 255,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hwCtrlRectsAllOnOff",
                     "state_descr": "on",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hwCtrlRectsAllOnOff",
                     "state_descr": "off",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hwCtrlRectsAllOnOff",
                     "state_descr": "nullOper",
-                    "state_draw_graph": 1,
                     "state_value": 255,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hwMonitorOperStatus",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hwMonitorOperStatus",
                     "state_descr": "commRs485Fail",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hwMonitorOperStatus",
                     "state_descr": "commNetFail",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hwMonitorOperStatus",
                     "state_descr": "fault",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hwMonitorOperStatus",
                     "state_descr": "alarmResume",
-                    "state_draw_graph": 1,
                     "state_value": 254,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hwMonitorOperStatus",
                     "state_descr": "other",
-                    "state_draw_graph": 1,
                     "state_value": 255,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hwSetMonEquipCtrlState",
                     "state_descr": "manualMode",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hwSetMonEquipCtrlState",
                     "state_descr": "autoMode",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hwSetMonEquipCtrlState",
                     "state_descr": "unknown",
-                    "state_draw_graph": 1,
                     "state_value": 255,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hwSetRectsRedundEnable",
                     "state_descr": "disable",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hwSetRectsRedundEnable",
                     "state_descr": "enable",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hwSetRectsRedundEnable",
                     "state_descr": "funcNotSuppport",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 3
                 }

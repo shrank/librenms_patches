@@ -27,32 +27,6 @@ use LibreNMS\DB\Eloquent;
 use LibreNMS\Util\Laravel;
 
 /**
- * Performs a query using the given string.
- *
- * @param  string  $sql
- * @param  array  $parameters
- * @return bool if query was successful or not
- *
- * @deprecated Please use Eloquent instead; https://laravel.com/docs/eloquent#building-queries
- * @see https://laravel.com/docs/eloquent#building-queries
- */
-function dbQuery($sql, $parameters = [])
-{
-    try {
-        if (empty($parameters)) {
-            // don't use prepared statements for queries without parameters
-            return Eloquent::DB()->getPdo()->exec($sql) !== false;
-        }
-
-        return Eloquent::DB()->statement($sql, (array) $parameters);
-    } catch (PDOException $pdoe) {
-        dbHandleException(new QueryException('dbFacile', $sql, $parameters, $pdoe));
-
-        return false;
-    }
-}
-
-/**
  * @param  array  $data
  * @param  string  $table
  * @return null|int
@@ -82,49 +56,6 @@ function dbInsert($data, $table): ?int
 }//end dbInsert()
 
 /**
- * Passed an array and a table name, it attempts to insert the data into the table.
- * $data is an array (rows) of key value pairs.  keys are fields.  Rows need to have same fields.
- * Check for boolean false to determine whether insert failed
- *
- * @param  array  $data
- * @param  string  $table
- * @return bool
- *
- * @deprecated Please use Eloquent instead; https://laravel.com/docs/eloquent#inserting-and-updating-models
- * @see https://laravel.com/docs/eloquent#inserting-and-updating-models
- */
-function dbBulkInsert($data, $table)
-{
-    // check that data isn't an empty array
-    if (empty($data)) {
-        return false;
-    }
-
-    // make sure we have fields to insert
-    $fields = array_keys(reset($data));
-    if (empty($fields)) {
-        return false;
-    }
-
-    // Break into managable chunks to prevent situations where insert
-    // fails due to prepared statement having too many placeholders.
-    $data_chunks = array_chunk($data, 10000, true);
-
-    foreach ($data_chunks as $data_chunk) {
-        try {
-            $result = Eloquent::DB()->table($table)->insert((array) $data_chunk);
-
-            return $result;
-        } catch (PDOException $pdoe) {
-            // FIXME query?
-            dbHandleException(new QueryException('dbFacile', "Bulk insert $table", $data_chunk, $pdoe));
-        }
-    }
-
-    return false;
-}//end dbBulkInsert()
-
-/**
  * Passed an array, table name, WHERE clause, and placeholder parameters, it attempts to update a record.
  * Returns the number of affected rows
  *
@@ -145,8 +76,14 @@ function dbUpdate($data, $table, $where = null, $parameters = [])
     foreach ($data as $key => $value) {
         $sql .= '`' . $key . '`=';
         if (is_array($value)) {
-            $sql .= reset($value);
-            unset($data[$key]);
+            $raw = dbRawSqlExpression($value);
+            if ($raw !== null) {
+                $sql .= $raw;
+                unset($data[$key]);
+            } else {
+                $sql .= '?';
+                $data[$key] = null;
+            }
         } else {
             $sql .= '?';
         }
@@ -173,26 +110,6 @@ function dbUpdate($data, $table, $where = null, $parameters = [])
 
     return false;
 }//end dbUpdate()
-
-/**
- * @deprecated Please use Eloquent instead; https://laravel.com/docs/eloquent#deleting-models
- * @see https://laravel.com/docs/eloquent#deleting-models
- */
-function dbDelete($table, $where = null, $parameters = [])
-{
-    $sql = 'DELETE FROM `' . $table . '`';
-    if ($where) {
-        $sql .= ' WHERE ' . $where;
-    }
-
-    try {
-        $result = Eloquent::DB()->delete($sql, (array) $parameters);
-    } catch (PDOException $pdoe) {
-        dbHandleException(new QueryException('dbFacile', $sql, $parameters, $pdoe));
-    }
-
-    return $result;
-}//end dbDelete()
 
 /**
  * Fetches all of the rows (associatively) from the last performed query.
@@ -278,34 +195,6 @@ function dbFetchCell($sql, $parameters = [])
 }//end dbFetchCell()
 
 /**
- * This method is quite different from fetchCell(), actually
- * It fetches one cell from each row and places all the values in 1 array
- *
- * @deprecated Please use Eloquent instead; https://laravel.com/docs/eloquent
- * @see https://laravel.com/docs/eloquent
- */
-function dbFetchColumn($sql, $parameters = [])
-{
-    try {
-        $startTime = microtime(true);
-        $connection = DB::connection();
-
-        $query = $connection->getPdo()->prepare($sql);
-        $query->execute((array) $parameters);
-        $column = $query->fetchAll(PDO::FETCH_COLUMN, 0);
-
-        $executionTime = round((microtime(true) - $startTime) * 1000, 2);
-        Event::dispatch(new QueryExecuted($sql, $parameters, $executionTime, $connection));
-
-        return $column;
-    } catch (PDOException $pdoe) {
-        dbHandleException(new QueryException('dbFacile', $sql, $parameters, $pdoe));
-    }
-
-    return [];
-}//end dbFetchColumn()
-
-/**
  * @deprecated Please use Eloquent instead; https://laravel.com/docs/eloquent
  * @see https://laravel.com/docs/eloquent
  */
@@ -352,10 +241,17 @@ function dbPlaceHolders(&$values)
     $data = [];
     foreach ($values as $key => $value) {
         if (is_array($value)) {
-            // array wrapped values are raw sql
-            $data[] = reset($value);
-            unset($values[$key]);
-        } elseif (is_numeric($key)) {
+            $raw = dbRawSqlExpression($value);
+            if ($raw !== null) {
+                $data[] = $raw;
+                unset($values[$key]);
+                continue;
+            }
+
+            $values[$key] = null; // never splice arbitrary array values into sql
+        }
+
+        if (is_numeric($key)) {
             $data[] = '?';
         } else {
             $data[] = ':' . $key;
@@ -364,6 +260,22 @@ function dbPlaceHolders(&$values)
 
     return $data;
 }//end dbPlaceHolders()
+
+/**
+ * Array wrapped values (ex: ['NOW()']) are treated as raw sql, but only for a fixed list of safe expressions.
+ * Returns the raw sql expression, or null if the value is not an allowed expression.
+ *
+ * @param  array<mixed>  $value
+ *
+ * @deprecated Please use Eloquent instead; https://laravel.com/docs/eloquent
+ * @see https://laravel.com/docs/eloquent
+ */
+function dbRawSqlExpression(array $value): ?string
+{
+    $expression = reset($value);
+
+    return count($value) === 1 && in_array($expression, ['NOW()'], true) ? $expression : null;
+}
 
 /**
  * Generate a string of placeholders to pass to fill in a list
@@ -378,40 +290,4 @@ function dbPlaceHolders(&$values)
 function dbGenPlaceholders($count)
 {
     return '(' . implode(',', array_fill(0, $count, '?')) . ')';
-}
-
-/**
- * Synchronize a relationship to a list of related ids
- *
- * @param  string  $table
- * @param  string  $target_column  column name for the target
- * @param  int  $target  column target id
- * @param  string  $list_column  related column names
- * @param  array  $list  list of related ids
- * @return array [$inserted, $deleted]
- *
- * @deprecated Please use Eloquent instead; https://laravel.com/docs/eloquent
- * @see https://laravel.com/docs/eloquent
- */
-function dbSyncRelationship($table, $target_column = null, $target = null, $list_column = null, $list = null)
-{
-    $inserted = 0;
-
-    $delete_query = "`$target_column`=? AND `$list_column`";
-    $delete_params = [$target];
-    if (! empty($list)) {
-        $delete_query .= ' NOT IN ' . dbGenPlaceholders(count($list));
-        $delete_params = array_merge($delete_params, $list);
-    }
-    $deleted = (int) dbDelete($table, $delete_query, $delete_params);
-
-    $db_list = dbFetchColumn("SELECT `$list_column` FROM `$table` WHERE `$target_column`=?", [$target]);
-    foreach ($list as $item) {
-        if (! in_array($item, $db_list)) {
-            dbInsert([$target_column => $target, $list_column => $item], $table);
-            $inserted++;
-        }
-    }
-
-    return [$inserted, $deleted];
 }

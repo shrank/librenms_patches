@@ -1,7 +1,5 @@
 <?php
 
-$class = 'charge';
-$unit = '%%';
-$unit_long = 'Percent';
+$class = \LibreNMS\Enum\SensorType::Charge;
 
 require 'includes/html/graphs/device/sensor.inc.php';

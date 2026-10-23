@@ -11,15 +11,8 @@ use LibreNMS\Util\IP;
 
 function add_service($device, $type, $desc, $ip = '', $param = '', $ignore = 0, $disabled = 0, $template_id = '', $name = '')
 {
-    $device = DeviceCache::get(is_array($device) ? $device['device_id'] : $device);
-
-    if (empty($ip)) {
-        $ip = $device->pollerTarget();
-    }
-
-    $insert = ['device_id' => $device->device_id, 'service_ip' => $ip, 'service_type' => $type, 'service_desc' => $desc, 'service_param' => $param, 'service_ignore' => $ignore, 'service_status' => 3, 'service_message' => 'Service not yet checked', 'service_ds' => '{}', 'service_disabled' => $disabled, 'service_template_id' => $template_id, 'service_name' => $name];
-
-    return Service::create($insert);
+    // keep legacy signature, delegate to modern implementation
+    return \LibreNMS\Services::addService($device, $type, $desc, $ip, $param, $ignore, $disabled, $template_id, $name);
 }
 
 function service_get($device = null, $service = null)
@@ -56,16 +49,6 @@ function delete_service($service = null)
     return Service::query()->where('service_id', $service)->delete();
 }
 
-function discover_service($device, $service)
-{
-    if (Service::query()->where('service_type', $service)->where('device_id', $device['device_id'])->doesntExist()) {
-        add_service($device, $service, "$service Monitoring (Auto Discovered)", null, null, 0, 0, 0, "AUTO: $service");
-        Eventlog::log('Autodiscovered service: type ' . $service, $device['device_id'], 'service', Severity::Info);
-        echo '+';
-    }
-    echo "$service ";
-}
-
 function poll_service($service)
 {
     $update = [];
@@ -75,9 +58,10 @@ function poll_service($service)
     $service['hostname'] = IP::isValid($service['hostname']) ? $service['hostname'] : Clean::fileName($service['hostname']);
     $service['overwrite_ip'] = IP::isValid($service['overwrite_ip']) ? $service['overwrite_ip'] : Clean::fileName($service['overwrite_ip']);
     $check_cmd = '';
+    $check_parser = null;
 
     // if we have a script for this check, use it.
-    $check_script = LibrenmsConfig::get('install_dir') . '/includes/services/check_' . strtolower((string) $service['service_type']) . '.inc.php';
+    $check_script = \LibreNMS\Services::customCheckPath($service['service_type']);
     if (is_file($check_script)) {
         include $check_script;
     }
@@ -92,7 +76,7 @@ function poll_service($service)
     // Some debugging
     d_echo("\nNagios Service - $service_id\n");
     // the check_service function runs $check_cmd through escapeshellcmd, so
-    [$new_status, $msg, $perf] = check_service($check_cmd);
+    [$new_status, $msg, $perf] = check_service($check_cmd, $check_parser ?? null);
     d_echo("Response: $msg\n");
 
     // If we have performance data we will store it.
@@ -103,7 +87,7 @@ function poll_service($service)
         // Set the DS in the DB if it is blank.
         $DS = [];
         foreach ($perf as $k => $v) {
-            $DS[$k] = $v['uom'];
+            $DS[$k] = ['uom' => $v['uom'], 'full_name' => $v['full_name']];
         }
         d_echo('Service DS: ' . json_encode($DS, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . "\n");
         if (($service['service_ds'] == '{}') || ($service['service_ds'] == '')) {
@@ -153,8 +137,8 @@ function poll_service($service)
         );
 
         // Run alert rules due to status changed
-        $rules = new AlertRules;
-        $rules->runRules($service['device_id']);
+        $rules = new AlertRules($service['device_id']);
+        $rules->run();
     }
 
     if ($service['service_message'] != $msg) {
@@ -169,13 +153,8 @@ function poll_service($service)
     return true;
 }
 
-function check_service($command)
+function check_service($command, ?callable $parser = null)
 {
-    // This array is used to test for valid UOM's to be used for graphing.
-    // Valid values from: https://nagios-plugins.org/doc/guidelines.html#AEN200
-    // Note: This array must be decend from 2 char to 1 char so that the search works correctly.
-    $valid_uom = ['us', 'ms', 'KB', 'MB', 'GB', 'TB', 'c', 's', '%', 'B'];
-
     // Make our command safe.
     $parts = preg_split('~(?:\'[^\']*\'|"[^"]*")(*SKIP)(*F)|\h+~', trim((string) $command));
     $safe_command = implode(' ', array_map(function ($part) {
@@ -195,86 +174,12 @@ function check_service($command)
     // Split out the response and the performance data.
     [$response, $perf] = explode('|', $response_string, 2) + ['', ''];
 
-    // Split performance metrics into an array
-    preg_match_all('/\'[^\']*\'\S*|\S+/', $perf, $perf_arr);
-    // preg_match_all returns a 2D array, we only need the first one
-    $perf_arr = $perf_arr[0];
+    $metrics = \LibreNMS\Services::parsePerfdata($perf);
 
-    // Create an array for our metrics.
-    $metrics = [];
-
-    // Loop through the perf string extracting our metric data
-    foreach ($perf_arr as $string) {
-        // Separate the DS and value: DS=value
-        [$ds,$values] = array_pad(explode('=', trim($string)), 2, '');
-
-        // Keep the first value, discard the others.
-        $value = $values ? explode(';', trim($values)) : [];
-        $value = trim($value[0] ?? '');
-
-        // Set an empty uom
-        $uom = '';
-
-        // is the UOM valid - https://nagios-plugins.org/doc/guidelines.html#AEN200
-        foreach ($valid_uom as $v) {
-            if ((strlen($value) - strlen($v)) === strpos($value, $v)) {
-                // Yes, store and strip it off the value
-                $uom = $v;
-                $value = substr($value, 0, -strlen($v));
-                break;
-            }
-        }
-
-        if ($ds != '') {
-            // Normalize ds for rrd : ds-name must be 1 to 19 characters long in the characters [a-zA-Z0-9_]
-            // http://oss.oetiker.ch/rrdtool/doc/rrdcreate.en.html
-            $normalized_ds = preg_replace('/[^a-zA-Z0-9_]/', '', $ds);
-            // if ds_name is longer than 19 characters, only use the first 19
-            if (strlen((string) $normalized_ds) > 19) {
-                $normalized_ds = substr((string) $normalized_ds, 0, 19);
-                d_echo($ds . ' exceeded 19 characters, renaming to ' . $normalized_ds . "\n");
-            }
-            if ($ds != $normalized_ds) {
-                // ds has changed. check if normalized_ds is already in the array
-                if (isset($metrics[$normalized_ds])) {
-                    d_echo($normalized_ds . " collides with an existing index\n");
-                    $perf_unique = 0;
-                    // Try to generate a unique name
-                    for ($i = 0; $i < 10; $i++) {
-                        $tmp_ds_name = substr((string) $normalized_ds, 0, 18) . $i;
-                        if (! isset($metrics[$tmp_ds_name])) {
-                            d_echo($normalized_ds . " collides with an existing index\n");
-                            $normalized_ds = $tmp_ds_name;
-                            $perf_unique = 1;
-                            break;
-                        }
-                    }
-                    if ($perf_unique == 0) {
-                        // Try harder to generate a unique name
-                        for ($i = 0; $i < 10; $i++) {
-                            for ($j = 0; $j < 10; $j++) {
-                                $tmp_ds_name = substr((string) $normalized_ds, 0, 17) . $j . $i;
-                                if (! isset($perf[$tmp_ds_name])) {
-                                    $normalized_ds = $tmp_ds_name;
-                                    $perf_unique = 1;
-                                    break 2;
-                                }
-                            }
-                        }
-                    }
-                    if ($perf_unique == 0) {
-                        d_echo('could not generate a unique ds-name for ' . $ds . "\n");
-                    }
-                }
-                $ds = $normalized_ds;
-            }
-            // We have a DS. Add an entry to the array.
-            d_echo('Perf Data - DS: ' . $ds . ', Value: ' . $value . ', UOM: ' . $uom . "\n");
-            $metrics[$ds] = ['value' => $value, 'uom' => $uom];
-        } else {
-            // No DS. Don't add an entry to the array.
-            d_echo("Perf Data - None.\n");
-        }
+    if ($parser) {
+        $metrics = $parser($response_string, $metrics);
+    } elseif (empty($metrics)) {
+        $metrics = \LibreNMS\Services::parseStats($response_string);
     }
 
     return [$status, $response, $metrics];

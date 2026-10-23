@@ -2767,6 +2767,7 @@
                     "sensor_type": "rutos-2xx",
                     "sensor_descr": "Number of SIM Slots",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -2792,6 +2793,7 @@
                     "sensor_type": "rutos-2xx",
                     "sensor_descr": "Connection Uptime",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 60,
                     "sensor_multiplier": 1,
                     "sensor_current": 253.48333333333,
@@ -2817,6 +2819,7 @@
                     "sensor_type": "rutos-2xx",
                     "sensor_descr": "Signal Level",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -103,
@@ -2842,6 +2845,7 @@
                     "sensor_type": "ConnectionState",
                     "sensor_descr": "Connection State (Orange SK)",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -2867,6 +2871,7 @@
                     "sensor_type": "ConnectionType",
                     "sensor_descr": "Connection Type (Orange SK)",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 4,
@@ -2892,6 +2897,7 @@
                     "sensor_type": "NetState",
                     "sensor_descr": "Mobile Net State",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -2917,6 +2923,7 @@
                     "sensor_type": "rutos2xx_pinState",
                     "sensor_descr": "Pin State",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -2942,6 +2949,7 @@
                     "sensor_type": "simState",
                     "sensor_descr": "SIM State",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -2967,6 +2975,7 @@
                     "sensor_type": "rutos-2xx",
                     "sensor_descr": "Module Temp",
                     "group": "Modem",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 42,
@@ -2988,147 +2997,126 @@
                 {
                     "state_name": "ConnectionState",
                     "state_descr": "connected",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ConnectionState",
                     "state_descr": "not connected",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ConnectionState",
                     "state_descr": "disconnected",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ConnectionType",
                     "state_descr": "LTE",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ConnectionType",
                     "state_descr": "4G",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ConnectionType",
                     "state_descr": "3G",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "ConnectionType",
                     "state_descr": "2G",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "ConnectionType",
                     "state_descr": "WCDMA",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ConnectionType",
                     "state_descr": "unknown",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "NetState",
                     "state_descr": "searching",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "NetState",
                     "state_descr": "registered (home)",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "NetState",
                     "state_descr": "registered (roaming)",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "NetState",
                     "state_descr": "unknown",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "NetState",
                     "state_descr": "unregistered",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "rutos2xx_pinState",
                     "state_descr": "PIN REQUIRED",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "rutos2xx_pinState",
                     "state_descr": "NOT READY",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "rutos2xx_pinState",
                     "state_descr": "READY",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "rutos2xx_pinState",
                     "state_descr": "unknown",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "simState",
                     "state_descr": "inserted",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "simState",
                     "state_descr": "not inserted",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "simState",
                     "state_descr": "unknown",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 3
                 }
@@ -3145,6 +3133,7 @@
                     "sensor_type": "rutos-2xx",
                     "sensor_descr": "Number of SIM Slots",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -3170,6 +3159,7 @@
                     "sensor_type": "rutos-2xx",
                     "sensor_descr": "Connection Uptime",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 60,
                     "sensor_multiplier": 1,
                     "sensor_current": 253.48333333333,
@@ -3195,6 +3185,7 @@
                     "sensor_type": "rutos-2xx",
                     "sensor_descr": "Signal Level",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -103,
@@ -3220,6 +3211,7 @@
                     "sensor_type": "ConnectionState",
                     "sensor_descr": "Connection State (Orange SK)",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -3245,6 +3237,7 @@
                     "sensor_type": "ConnectionType",
                     "sensor_descr": "Connection Type (Orange SK)",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 4,
@@ -3270,6 +3263,7 @@
                     "sensor_type": "NetState",
                     "sensor_descr": "Mobile Net State",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -3295,6 +3289,7 @@
                     "sensor_type": "rutos2xx_pinState",
                     "sensor_descr": "Pin State",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -3320,6 +3315,7 @@
                     "sensor_type": "simState",
                     "sensor_descr": "SIM State",
                     "group": "Mobile",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -3345,6 +3341,7 @@
                     "sensor_type": "rutos-2xx",
                     "sensor_descr": "Module Temp",
                     "group": "Modem",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 42,
@@ -3366,147 +3363,126 @@
                 {
                     "state_name": "ConnectionState",
                     "state_descr": "connected",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ConnectionState",
                     "state_descr": "not connected",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ConnectionState",
                     "state_descr": "disconnected",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ConnectionType",
                     "state_descr": "LTE",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ConnectionType",
                     "state_descr": "4G",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ConnectionType",
                     "state_descr": "3G",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "ConnectionType",
                     "state_descr": "2G",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "ConnectionType",
                     "state_descr": "WCDMA",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ConnectionType",
                     "state_descr": "unknown",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "NetState",
                     "state_descr": "searching",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "NetState",
                     "state_descr": "registered (home)",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "NetState",
                     "state_descr": "registered (roaming)",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "NetState",
                     "state_descr": "unknown",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "NetState",
                     "state_descr": "unregistered",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "rutos2xx_pinState",
                     "state_descr": "PIN REQUIRED",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "rutos2xx_pinState",
                     "state_descr": "NOT READY",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "rutos2xx_pinState",
                     "state_descr": "READY",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "rutos2xx_pinState",
                     "state_descr": "unknown",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "simState",
                     "state_descr": "inserted",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "simState",
                     "state_descr": "not inserted",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "simState",
                     "state_descr": "unknown",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 3
                 }

@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('qos', function (Blueprint $table) {
+        Schema::create('qos', function (Blueprint $table): void {
             $table->id('qos_id');
             $table->timestamps();
             $table->integer('device_id')->unsigned()->index();
@@ -49,7 +49,7 @@ return new class extends Migration
             $table->decimal('bytes_drop_out_pct', 6, 2)->nullable()->comment('Percentage of output bytes dropped');
             $table->decimal('packets_drop_in_pct', 6, 2)->nullable()->comment('Percentage of input packets dropped');
             $table->decimal('packets_drop_out_pct', 6, 2)->nullable()->comment('Percentage of output packets dropped');
-            $table->foreign('device_id')->references('device_id')->on('devices')->onDelete('CASCADE');
+            $table->foreign('device_id')->references('device_id')->on('devices')->onDelete('cascade');
             $table->foreign('port_id')->references('port_id')->on('ports')->onDelete('set null');
             $table->foreign('parent_id')->references('qos_id')->on('qos')->onDelete('set null');
         });

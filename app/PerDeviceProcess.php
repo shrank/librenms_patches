@@ -26,11 +26,13 @@
 
 namespace App;
 
+use App\Facades\DeviceCache;
 use App\Models\Device;
 use App\Polling\Measure\MeasurementManager;
 use Illuminate\Console\OutputStyle;
 use Illuminate\Contracts\Bus\Dispatcher;
 use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Facade;
 use LibreNMS\Enum\ProcessType;
 use LibreNMS\Polling\Result;
 use LibreNMS\Util\ModuleList;
@@ -46,6 +48,8 @@ class PerDeviceProcess
         private readonly string $job,
         private readonly string $completionEvent,
         private readonly ModuleList $moduleList,
+        private readonly ?string $os = null,
+        private readonly ?string $deviceType = null,
     ) {
         $this->results = new Result;
     }
@@ -62,10 +66,23 @@ class PerDeviceProcess
         });
         $dispatcher = app(Dispatcher::class);
 
-        foreach (Device::whereDeviceSpec($this->deviceSpec)->pluck('device_id') as $device_id) {
+        $query = Device::whereDeviceSpec($this->deviceSpec);
+        if ($this->os) {
+            $query->where('os', $this->os);
+        }
+        if ($this->deviceType) {
+            $query->where('type', $this->deviceType);
+        }
+
+        foreach ($query->pluck('device_id') as $device_id) {
+            // reset like the queue worker does between jobs
+            app()->forgetScopedInstances();
+            Facade::clearResolvedInstances();
+
             $this->current_device_id = $device_id;
             $this->results->markAttempted();
-            $dispatcher->dispatchSync(new $this->job($device_id, $this->moduleList));
+            // dispatchNow skips the sync queue, which would release the unique lock held by a queued job for this device
+            $dispatcher->dispatchNow(new $this->job($device_id, $this->moduleList));
         }
 
         return $this->results;
@@ -105,7 +122,10 @@ class PerDeviceProcess
 
         // attempted some devices, but none were up.
         if ($this->results->hasNoCompleted()) {
-            $output->writeln('<fg=red>' . trans_choice($translation_prefix . '.errors.none_up', $this->results->getAttempted()) . '</>');
+            $reason = $this->current_device_id ? DeviceCache::get($this->current_device_id)->status_reason : null;
+            $output->writeln('<fg=red>' . trans_choice($translation_prefix . '.errors.none_up', $this->results->getAttempted(), [
+                'reason' => $reason ?: __('commands.errors.unknown_reason'),
+            ]) . '</>');
 
             return 6;
         }

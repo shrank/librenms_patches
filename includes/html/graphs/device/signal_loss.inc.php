@@ -1,7 +1,5 @@
 <?php
 
-$class = 'signal_loss';
-$unit = 'dB';
-$unit_long = 'Decibels';
+$class = \LibreNMS\Enum\SensorType::SignalLoss;
 
 require 'includes/html/graphs/device/sensor.inc.php';

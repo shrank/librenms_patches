@@ -1,5 +1,5 @@
 <?php
 
-$class = 'delay';
+$class = \LibreNMS\Enum\SensorType::Delay;
 
 require 'sensors.inc.php';

@@ -2487,6 +2487,7 @@
                     "sensor_type": "oneaccess",
                     "sensor_descr": "CRC Errors Line #201",
                     "group": "SDSL",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 50,
@@ -2512,6 +2513,7 @@
                     "sensor_type": "oneaccess",
                     "sensor_descr": "ES Errors Line #201",
                     "group": "SDSL",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 7,
@@ -2537,6 +2539,7 @@
                     "sensor_type": "oneaccess",
                     "sensor_descr": "HEC Errors Line #201",
                     "group": "SDSL",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 299,
@@ -2562,6 +2565,7 @@
                     "sensor_type": "oneaccess",
                     "sensor_descr": "SES Line #201",
                     "group": "SDSL",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 4,
@@ -2587,6 +2591,7 @@
                     "sensor_type": "oneaccess",
                     "sensor_descr": "Up/Down Line #201",
                     "group": "SDSL",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -2612,6 +2617,7 @@
                     "sensor_type": "oacSysCpuUsedCoreType",
                     "sensor_descr": "Core Type #0",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -2633,28 +2639,24 @@
                 {
                     "state_name": "oacSysCpuUsedCoreType",
                     "state_descr": "controlplane",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "oacSysCpuUsedCoreType",
                     "state_descr": "dataforwarding",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "oacSysCpuUsedCoreType",
                     "state_descr": "application",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "oacSysCpuUsedCoreType",
                     "state_descr": "mixed",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 0
                 }
@@ -2682,6 +2684,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 }
             ]

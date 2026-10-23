@@ -183,7 +183,7 @@ class CiHelper
      */
     public function checkUnit(): int
     {
-        $phpunit_cmd = [$this->checkPhpExec('phpunit'), '--colors=always', '--fail-on-all-issues'];
+        $phpunit_cmd = [$this->checkPhpExec('phpunit'), '--colors=always', '--fail-on-all-issues', '--testdox'];
 
         if ($this->flags['fail-fast']) {
             $phpunit_cmd[] = '--stop-on-defect';
@@ -205,7 +205,7 @@ class CiHelper
             $filter = implode('|', $this->os);
             // include tests that don't have data providers and only data sets that match
             array_push($phpunit_cmd, '--group', 'os');
-            if ($this->flags['os-modules-only']) {
+            if ($this->flags['unit_modules'] || $this->flags['os-modules-only']) {
                 array_push($phpunit_cmd, '--filter', "/::testOS with data set \"($filter)/");
             } else {
                 if ($this->flags['ci']) {
@@ -224,23 +224,24 @@ class CiHelper
         } elseif ($this->flags['unit_svg']) {
             array_push($phpunit_cmd, '--group', 'svg');
         } elseif ($this->flags['unit_modules'] || $this->flags['os-modules-only']) {
-            $phpunit_cmd[] = 'tests/OSModulesTest.php';
+            if ($this->flags['os-modules-only']) {
+                array_push($phpunit_cmd, '--filter', '/::testOS /');
+            }
+            $phpunit_cmd[] = 'tests/Feature/OSModulesTest.php';
         }
 
         return $this->execute('unit', $phpunit_cmd, false, $this->unitEnv);
     }
 
     /**
-     * Runs phpcs --standard=PSR2 against the code base
+     * Runs Pint against the code base
      *
      * @return int the return value from phpcs (0 = success)
      */
     public function checkStyle(): int
     {
         $cs_cmd = [
-            $this->checkPhpExec('php-cs-fixer'),
-            '--config=.php-cs-fixer.php',
-            'fix',
+            $this->checkPhpExec('pint'),
             '-v',
         ];
 
@@ -385,7 +386,7 @@ class CiHelper
     private function execute(string $name, $command, $silence = false, $env = null): int
     {
         $start = microtime(true);
-        $proc = new Process($command, null, $env);
+        $proc = new Process($command, base_path(), $env);
 
         if ($this->flags['commands']) {
             $prefix = '';
@@ -449,8 +450,9 @@ class CiHelper
         if ($this->flags['full'] || $this->flags['ci']) {
             return;
         }
+        $base_dir = base_path();
         $changed_files = trim(getenv('FILES')) ?:
-            exec("git diff --diff-filter=d --name-only master | tr '\n' ' '|sed 's/,*$//g'");
+            exec("cd $base_dir && git diff --diff-filter=d --name-only master | tr '\n' ' '|sed 's/,*$//g'");
 
         $this->flags['full'] = empty($changed_files); // don't disable full if already set
         $files = $changed_files ? explode(' ', $changed_files) : [];
@@ -497,14 +499,15 @@ class CiHelper
      */
     private function checkPhpExec(string $exec): string
     {
-        $path = "vendor/bin/$exec";
+        $path = base_path("vendor/bin/$exec");
 
         if (is_executable($path)) {
             return $path;
         }
 
         echo "Running composer install to install developer dependencies.\n";
-        passthru('scripts/composer_wrapper.php install');
+        passthru(base_path('scripts/composer_wrapper.php') . ' install');
+        clearstatcache(true, $path);
 
         if (is_executable($path)) {
             return $path;
@@ -540,6 +543,7 @@ class CiHelper
 
         echo "Running pip3 install to install developer dependencies.\n";
         passthru("pip3 install --user $exec"); // probably wrong in other cases...
+        clearstatcache(true, $path);
 
         if (is_executable($path)) {
             return $path;

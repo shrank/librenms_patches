@@ -37,12 +37,13 @@ trait CompletesConfigArgument
     public function completeArgument($name, $value, $previous)
     {
         if ($name == 'setting') {
-            return (new DynamicConfig())->all()->keys()->filter(fn ($setting) => Str::startsWith($setting, $value))->toArray();
+            return (new DynamicConfig())->all()->keys()->filter(fn ($setting) => Str::startsWith($setting, $value))->all();
         } elseif ($name == 'value') {
             $config = (new DynamicConfig())->get($previous);
 
             switch ($config->getType()) {
                 case 'select-dynamic':
+                case 'array-dynamic':
                     return $this->suggestionsForSelectDynamic($config, $value);
                 case 'select':
                     return $this->suggestionsForSelect($config, $value);

@@ -25,10 +25,6 @@
 
 use LibreNMS\Alerting\QueryBuilderParser;
 
-if (! Auth::user()->hasGlobalAdmin()) {
-    exit('ERROR: You need to be admin');
-}
-
 ?>
 
 <div class="modal fade" id="search_alert_rule_modal" tabindex="-1" role="dialog" aria-labelledby="search_alert_rule_list" aria-hidden="true">
@@ -57,10 +53,10 @@ if (! Auth::user()->hasGlobalAdmin()) {
                             } else {
                                 $rule_display = QueryBuilderParser::fromJson($rule['builder'])->toSql(false);
                             }
-                            echo "
+                            echo '
                                 <tr>
-                                    <td>" . e(strip_tags((string)$rule['name'])) . "</td>
-                                    <td><i>" . e($rule_display) . "</i></td>
+                                    <td>' . e(strip_tags((string) $rule['name'])) . '</td>
+                                    <td><i>' . e(strip_tags((string) $rule_display)) . "</i></td>
                                     <td>{$rule['severity']}</td>
                                     <td>{$rule['id']}</td>
                                 </tr>
@@ -85,7 +81,7 @@ if (! Auth::user()->hasGlobalAdmin()) {
                                 var alert_rule_id = $(this).data("rule_id");
                                 $.ajax({
                                     type: "GET",
-                                    url: "<?php echo route('alert-rule-template.rule', ':rule_id') ?>".replace(':rule_id', alert_rule_id),
+                                    url: route('alert-rule-template.rule', alert_rule_id),
                                     dataType: "json",
                                     success: function (data) {
                                         if (data.status == 'ok') {
@@ -116,5 +112,11 @@ if (! Auth::user()->hasGlobalAdmin()) {
         $("#alert_rule_id").val('');
         $("#rule_suggest").val('');
         $("#rule_display").html('');
+
+        var $parent = $('#create-alert');
+        if ($parent.hasClass('in')) {
+            $('body').addClass('modal-open');
+            $parent.modal('handleUpdate');
+        }
     });
 </script>

@@ -7,6 +7,8 @@
  *
 */
 
+use LibreNMS\Enum\SensorType;
+
 $oids = [
     0 => [
         'descr' => 'System Software Health',
@@ -50,7 +52,6 @@ $oids = [
     ],
 ];
 
-$class = 'state';
 $type = 'dhcpatriotServiceStatus';
 $divisor = 1;
 $multiplier = 1;
@@ -86,9 +87,9 @@ foreach ($oids as $index => $entry) {
         }
 
         $states = [
-            ['value' => 1, 'generic' => 0, 'graph' => 0, 'descr' => 'serviceUp'],
-            ['value' => 2, 'generic' => 2, 'graph' => 0, 'descr' => 'serviceNotUpdatedWithinLast5Min'],
-            ['value' => 3, 'generic' => 2, 'graph' => 0, 'descr' => 'serviceDown'],
+            ['value' => 1, 'generic' => 0, 'descr' => 'serviceUp'],
+            ['value' => 2, 'generic' => 2, 'descr' => 'serviceNotUpdatedWithinLast5Min'],
+            ['value' => 3, 'generic' => 2, 'descr' => 'serviceDown'],
         ];
     }
 
@@ -97,7 +98,7 @@ foreach ($oids as $index => $entry) {
     if (! empty($current)) {
         discover_sensor(
             null,
-            $class,
+            SensorType::State,
             $device,
             $oid,
             $index,
@@ -119,4 +120,4 @@ foreach ($oids as $index => $entry) {
     }
 }
 
-unset($class, $oid, $index, $type, $descr, $divisor, $multiplier, $low_limit, $low_warn_limit, $warn_limit, $high_limit, $current, $poller_type, $entPhysicalIndex, $entPhysicalIndex_measured, $user_func, $group, $oids, $current_time, $tmp_snmp_multi, $tmp_data, $states);
+unset($oid, $index, $type, $descr, $divisor, $multiplier, $low_limit, $low_warn_limit, $warn_limit, $high_limit, $current, $poller_type, $entPhysicalIndex, $entPhysicalIndex_measured, $user_func, $group, $oids, $current_time, $tmp_snmp_multi, $tmp_data, $states);

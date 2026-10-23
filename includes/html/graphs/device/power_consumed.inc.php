@@ -1,7 +1,5 @@
 <?php
 
-$class = 'power_consumed';
-$unit = 'kWh';
-$unit_long = 'Kilowatt Hour';
+$class = \LibreNMS\Enum\SensorType::PowerConsumed;
 
 require 'includes/html/graphs/device/sensor.inc.php';

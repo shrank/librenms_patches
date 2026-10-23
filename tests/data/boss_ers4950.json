@@ -10469,6 +10469,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Power Supply 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -10494,6 +10495,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Power Supply 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -10519,6 +10521,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Temperature Sensor",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -10544,6 +10547,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -10569,6 +10573,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -10594,6 +10599,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -10619,6 +10625,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -10644,6 +10651,7 @@
                     "sensor_type": "avaya-ers",
                     "sensor_descr": "Unit 1 temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 2,
                     "sensor_multiplier": 1,
                     "sensor_current": 44.5,
@@ -10665,84 +10673,72 @@
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "other",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "notAvail",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "removed",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "disabled",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "normal",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "resetInProg",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "testing",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "warning",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "nonFatalErr",
-                    "state_draw_graph": 0,
                     "state_value": 9,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "fatalErr",
-                    "state_draw_graph": 0,
                     "state_value": 10,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "notConfig",
-                    "state_draw_graph": 0,
                     "state_value": 11,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "obsoleted",
-                    "state_draw_graph": 0,
                     "state_value": 12,
                     "state_generic_value": 3
                 }
@@ -10759,6 +10755,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Power Supply 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -10784,6 +10781,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Power Supply 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -10809,6 +10807,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Temperature Sensor",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -10834,6 +10833,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -10859,6 +10859,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -10884,6 +10885,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -10909,6 +10911,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -10934,6 +10937,7 @@
                     "sensor_type": "avaya-ers",
                     "sensor_descr": "Unit 1 temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 2,
                     "sensor_multiplier": 1,
                     "sensor_current": 44.5,
@@ -10955,84 +10959,72 @@
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "other",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "notAvail",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "removed",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "disabled",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "normal",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "resetInProg",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "testing",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "warning",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "nonFatalErr",
-                    "state_draw_graph": 0,
                     "state_value": 9,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "fatalErr",
-                    "state_draw_graph": 0,
                     "state_value": 10,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "notConfig",
-                    "state_draw_graph": 0,
                     "state_value": 11,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "obsoleted",
-                    "state_draw_graph": 0,
                     "state_value": 12,
                     "state_generic_value": 3
                 }
@@ -11605,6 +11597,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "12848-49-54,45:48:57.45,050",
                     "ifIndex": null
                 },
                 {
@@ -11624,6 +11617,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 1
                 },
                 {
@@ -11643,6 +11637,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 2
                 },
                 {
@@ -11662,6 +11657,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 3
                 },
                 {
@@ -11681,6 +11677,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 4
                 },
                 {
@@ -11700,6 +11697,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 5
                 },
                 {
@@ -11719,6 +11717,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 6
                 },
                 {
@@ -11738,6 +11737,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 7
                 },
                 {
@@ -11757,6 +11757,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 8
                 },
                 {
@@ -11776,6 +11777,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 9
                 },
                 {
@@ -11795,6 +11797,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 10
                 },
                 {
@@ -11814,6 +11817,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 11
                 },
                 {
@@ -11833,6 +11837,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 12
                 },
                 {
@@ -11852,6 +11857,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 13
                 },
                 {
@@ -11871,6 +11877,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 14
                 },
                 {
@@ -11890,6 +11897,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 15
                 },
                 {
@@ -11909,6 +11917,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 16
                 },
                 {
@@ -11928,6 +11937,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 17
                 },
                 {
@@ -11947,6 +11957,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 18
                 },
                 {
@@ -11966,6 +11977,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 19
                 },
                 {
@@ -11985,6 +11997,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 20
                 },
                 {
@@ -12004,6 +12017,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 21
                 },
                 {
@@ -12023,6 +12037,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 22
                 },
                 {
@@ -12042,6 +12057,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 23
                 },
                 {
@@ -12061,6 +12077,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 24
                 },
                 {
@@ -12080,6 +12097,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 25
                 },
                 {
@@ -12099,6 +12117,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 26
                 },
                 {
@@ -12118,6 +12137,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 27,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 27
                 },
                 {
@@ -12137,6 +12157,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 28,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 28
                 },
                 {
@@ -12156,6 +12177,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 29,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 29
                 },
                 {
@@ -12175,6 +12197,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 30,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 30
                 },
                 {
@@ -12194,6 +12217,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 31,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 31
                 },
                 {
@@ -12213,6 +12237,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 32,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 32
                 },
                 {
@@ -12232,6 +12257,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 33,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 33
                 },
                 {
@@ -12251,6 +12277,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 34,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 34
                 },
                 {
@@ -12270,6 +12297,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 35,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 35
                 },
                 {
@@ -12289,6 +12317,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 36,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 36
                 },
                 {
@@ -12308,6 +12337,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 37,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 37
                 },
                 {
@@ -12327,6 +12357,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 38,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 38
                 },
                 {
@@ -12346,6 +12377,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 39,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 39
                 },
                 {
@@ -12365,6 +12397,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 40,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 40
                 },
                 {
@@ -12384,6 +12417,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 41,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 41
                 },
                 {
@@ -12403,6 +12437,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 42,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 42
                 },
                 {
@@ -12422,6 +12457,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 43,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 43
                 },
                 {
@@ -12441,6 +12477,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 44,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 44
                 },
                 {
@@ -12460,6 +12497,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 45,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 45
                 },
                 {
@@ -12479,6 +12517,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 46,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 46
                 },
                 {
@@ -12498,6 +12537,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 47,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 47
                 },
                 {
@@ -12517,6 +12557,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 48,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": 48
                 },
                 {
@@ -12536,6 +12577,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 101,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12555,6 +12597,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 102,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -12574,6 +12617,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 197,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 }
             ]
@@ -12587,7 +12631,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "hole-ap8432-F0B783",
-                    "remote_port": "ge1 (b85001f0b783)",
+                    "remote_port": "ge1",
                     "remote_platform": null,
                     "remote_version": "AP-8432-680B30-US, Version 5.9.3.0-018R",
                     "ifAlias": "Extreme Networks Ethernet Routing Switch 4950GTS-PWR+ Module - Port 2",
@@ -12598,7 +12642,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "cox-base-vsp8k1",
-                    "remote_port": "1/1 (b0adaa434400)",
+                    "remote_port": "1/1",
                     "remote_platform": null,
                     "remote_version": "VSP-8284XSQ (7.1.1.0)",
                     "ifAlias": "fa: uplink",
@@ -12609,7 +12653,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "cox-base-vsp8k2",
-                    "remote_port": "1/1 (b0adaa42fc00)",
+                    "remote_port": "1/1",
                     "remote_platform": null,
                     "remote_version": "VSP-8284XSQ (7.1.1.0)",
                     "ifAlias": "fa: uplink",

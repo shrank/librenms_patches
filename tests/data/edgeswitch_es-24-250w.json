@@ -6687,6 +6687,7 @@
                     "sensor_type": "edgeswitch",
                     "sensor_descr": "Fan 1.0",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -6712,6 +6713,7 @@
                     "sensor_type": "edgeswitch",
                     "sensor_descr": "Fan 1.1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -6737,6 +6739,7 @@
                     "sensor_type": "edgeswitch",
                     "sensor_descr": "Fan 1.2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -6762,6 +6765,7 @@
                     "sensor_type": "edgeswitch",
                     "sensor_descr": "Fan 1.3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -6787,6 +6791,7 @@
                     "sensor_type": "boxServicesFansEntry",
                     "sensor_descr": "Fan 1.0",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -6812,6 +6817,7 @@
                     "sensor_type": "boxServicesFansEntry",
                     "sensor_descr": "Fan 1.1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -6837,6 +6843,7 @@
                     "sensor_type": "boxServicesFansEntry",
                     "sensor_descr": "Fan 1.2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -6862,6 +6869,7 @@
                     "sensor_type": "boxServicesFansEntry",
                     "sensor_descr": "Fan 1.3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -6887,6 +6895,7 @@
                     "sensor_type": "boxServicesTempSensorsEntry",
                     "sensor_descr": "Temp Sensor 1.0",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -6912,6 +6921,7 @@
                     "sensor_type": "boxServicesTempSensorsEntry",
                     "sensor_descr": "Temp Sensor 1.1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -6937,6 +6947,7 @@
                     "sensor_type": "boxServicesTempSensorsEntry",
                     "sensor_descr": "Temp Sensor 1.2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -6962,6 +6973,7 @@
                     "sensor_type": "boxServicesTempSensorsEntry",
                     "sensor_descr": "Temp Sensor 1.3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -6987,6 +6999,7 @@
                     "sensor_type": "boxServicesTempSensorsEntry",
                     "sensor_descr": "Temp Sensor 1.4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -7012,6 +7025,7 @@
                     "sensor_type": "boxServicesTempSensorsEntry",
                     "sensor_descr": "Temp Sensor 1.5",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -7037,6 +7051,7 @@
                     "sensor_type": "boxServicesTempSensorsEntry",
                     "sensor_descr": "Temp Sensor 1.6",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -7062,6 +7077,7 @@
                     "sensor_type": "boxServicesTempSensorsEntry",
                     "sensor_descr": "Temp Sensor 1.7",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -7087,6 +7103,7 @@
                     "sensor_type": "boxServicesTempUnitEntry",
                     "sensor_descr": "Chassis state",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -7112,6 +7129,7 @@
                     "sensor_type": "edgeswitch",
                     "sensor_descr": "Temperature 1.0",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 54,
@@ -7137,6 +7155,7 @@
                     "sensor_type": "edgeswitch",
                     "sensor_descr": "Temperature 1.1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 38,
@@ -7162,6 +7181,7 @@
                     "sensor_type": "edgeswitch",
                     "sensor_descr": "Temperature 1.2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 49,
@@ -7187,6 +7207,7 @@
                     "sensor_type": "edgeswitch",
                     "sensor_descr": "Temperature 1.3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 47,
@@ -7212,6 +7233,7 @@
                     "sensor_type": "edgeswitch",
                     "sensor_descr": "Temperature 1.4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 51,
@@ -7237,6 +7259,7 @@
                     "sensor_type": "edgeswitch",
                     "sensor_descr": "Temperature 1.5",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 45,
@@ -7262,6 +7285,7 @@
                     "sensor_type": "edgeswitch",
                     "sensor_descr": "Temperature 1.6",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 47,
@@ -7287,6 +7311,7 @@
                     "sensor_type": "edgeswitch",
                     "sensor_descr": "Temperature 1.7",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 43,
@@ -7308,147 +7333,126 @@
                 {
                     "state_name": "boxServicesFansEntry",
                     "state_descr": "notpresent",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "boxServicesFansEntry",
                     "state_descr": "operational",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "boxServicesFansEntry",
                     "state_descr": "failed",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "boxServicesFansEntry",
                     "state_descr": "powering",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "boxServicesFansEntry",
                     "state_descr": "nopower",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "boxServicesFansEntry",
                     "state_descr": "notpowering",
-                    "state_draw_graph": 1,
                     "state_value": 6,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "boxServicesFansEntry",
                     "state_descr": "incompatible",
-                    "state_draw_graph": 1,
                     "state_value": 7,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "boxServicesTempSensorsEntry",
                     "state_descr": "low",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "boxServicesTempSensorsEntry",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "boxServicesTempSensorsEntry",
                     "state_descr": "warning",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "boxServicesTempSensorsEntry",
                     "state_descr": "critical",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "boxServicesTempSensorsEntry",
                     "state_descr": "shutdown",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "boxServicesTempSensorsEntry",
                     "state_descr": "notpresent",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "boxServicesTempSensorsEntry",
                     "state_descr": "notoperational",
-                    "state_draw_graph": 1,
                     "state_value": 6,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "boxServicesTempUnitEntry",
                     "state_descr": "low",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "boxServicesTempUnitEntry",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "boxServicesTempUnitEntry",
                     "state_descr": "warning",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "boxServicesTempUnitEntry",
                     "state_descr": "critical",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "boxServicesTempUnitEntry",
                     "state_descr": "shutdown",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "boxServicesTempUnitEntry",
                     "state_descr": "notpresent",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "boxServicesTempUnitEntry",
                     "state_descr": "notoperational",
-                    "state_draw_graph": 1,
                     "state_value": 6,
                     "state_generic_value": 2
                 }
@@ -7476,6 +7480,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7495,6 +7500,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7514,6 +7520,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7533,6 +7540,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7552,6 +7560,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7571,6 +7580,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7590,6 +7600,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7609,6 +7620,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7628,6 +7640,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7647,6 +7660,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7666,6 +7680,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7685,6 +7700,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7704,6 +7720,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7723,6 +7740,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7742,6 +7760,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7761,6 +7780,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7780,6 +7800,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7799,6 +7820,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7818,6 +7840,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7837,6 +7860,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7856,6 +7880,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7875,6 +7900,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7894,6 +7920,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7913,6 +7940,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7932,6 +7960,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7951,6 +7980,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7970,6 +8000,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7989,6 +8020,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 }
             ]

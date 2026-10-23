@@ -1,8 +1,8 @@
 <?php
 
-// Build a dictionary of vlans in database
-use App\Facades\LibrenmsConfig;
+use LibreNMS\Util\ProgressList;
 
+// Build a dictionary of vlans in database
 $vlans_dict = [];
 foreach (dbFetchRows('SELECT `vlan_id`, `vlan_vlan` from `vlans` WHERE `device_id` = ?', [$device['device_id']]) as $vlan_entry) {
     $vlans_dict[$vlan_entry['vlan_vlan']] = $vlan_entry['vlan_id'];
@@ -17,16 +17,16 @@ foreach ($sql_result as $entry) {
 }
 
 $insert = []; // populate $insert with database entries
-if (file_exists(LibrenmsConfig::get('install_dir') . "/includes/discovery/fdb-table/{$device['os']}.inc.php")) {
-    require LibrenmsConfig::get('install_dir') . "/includes/discovery/fdb-table/{$device['os']}.inc.php";
+if (file_exists(base_path("includes/discovery/fdb-table/{$device['os']}.inc.php"))) {
+    require base_path("includes/discovery/fdb-table/{$device['os']}.inc.php");
 } elseif ($device['os'] == 'ios' || $device['os'] == 'iosxe' || $device['os'] == 'nxos') {
     //ios,iosxe,nxos are all Cisco
-    include LibrenmsConfig::get('install_dir') . '/includes/discovery/fdb-table/ios.inc.php';
+    include base_path('includes/discovery/fdb-table/ios.inc.php');
 }
 
 if (empty($insert)) {
     // Check generic Q-BRIDGE-MIB and BRIDGE-MIB
-    include LibrenmsConfig::get('install_dir') . '/includes/discovery/fdb-table/bridge.inc.php';
+    include base_path('includes/discovery/fdb-table/bridge.inc.php');
 }
 
 if (! empty($insert)) {
@@ -35,7 +35,7 @@ if (! empty($insert)) {
     // synchronize with the database
     foreach ($insert as $vlan_id => $mac_address_table) {
         $vlan_name = $vlans_by_id[$vlan_id] ?? $vlan_id;
-        echo " $vlan_name: ";
+        $progress = ProgressList::start((string) $vlan_name);
 
         foreach ($mac_address_table as $mac_address_entry => $entry) {
             if (isset($existing_fdbs[$vlan_id][$mac_address_entry])) {
@@ -51,20 +51,14 @@ if (! empty($insert)) {
                             'port_id' => $new_port,
                             'updated_at' => $now,
                         ]);
-                    echo 'U';
+                    $progress->mark('U');
                 } else {
                     $update_time_only[] = $port_fdb_id;
-                    echo '.';
+                    $progress->mark('.');
                 }
                 unset($existing_fdbs[$vlan_id][$mac_address_entry]);
             } else {
-                if (is_null($entry['port_id'])) {
-                    // fix SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'port_id' cannot be null
-                    // If $entry['port_id'] truly is null then  Illuminate throws a fatal errory and all subsequent processing stops.
-                    // Cisco ISO (and others) may have null ids. We still want them inserted as new
-                    // strings work with DB::table->insert().
-                    $entry['port_id'] = '';
-                }
+                $entry['port_id'] ??= 0;
 
                 DB::table('ports_fdb')->insert([
                     'port_id' => $entry['port_id'],
@@ -74,11 +68,10 @@ if (! empty($insert)) {
                     'created_at' => $now,
                     'updated_at' => $now,
                 ]);
-                echo '+';
+                $progress->mark('+');
             }
         }
-
-        echo PHP_EOL;
+        $progress->end();
     }
 
     DB::table('ports_fdb')->whereIntegerInRaw('ports_fdb_id', $update_time_only)->update(['updated_at' => $now]);

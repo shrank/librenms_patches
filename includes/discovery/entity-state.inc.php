@@ -1,5 +1,8 @@
 <?php
 
+use App\Models\EntityState;
+use LibreNMS\Util\ProgressList;
+
 /**
  * entity-state.inc.php
  *
@@ -29,7 +32,7 @@ $entPhysical = dbFetchRows(
 );
 
 if (! empty($entPhysical)) {
-    echo "\nEntity States: ";
+    $progress = ProgressList::start('Entity States');
 
     $entPhysical = array_column($entPhysical, 'entPhysical_id', 'entPhysicalIndex');
     $state_data = snmpwalk_group($device, 'entStateTable', 'ENTITY-STATE-MIB');
@@ -41,7 +44,7 @@ if (! empty($entPhysical)) {
             $id = $entPhysical[$index];
 
             // format datetime
-            if (empty($state['entStateLastChanged'])) {
+            if (empty($state['entStateLastChanged']) || $state['entStateLastChanged'] === '0-0-0,0:0:0.0,.0:0') {
                 $state['entStateLastChanged'] = null;
             } else {
                 [$date, $time, $tz] = explode(',', (string) $state['entStateLastChanged']);
@@ -68,7 +71,7 @@ if (! empty($entPhysical)) {
                     d_echo('Updating entity state: ', 'U');
                     d_echo($update);
                 } else {
-                    echo '.';
+                    $progress->mark('.');
                 }
 
                 unset($state_data[$index]); // remove so we don't insert later
@@ -85,18 +88,16 @@ if (! empty($entPhysical)) {
     }
 
     if (! empty($state_data)) {
-        dbBulkInsert($state_data, 'entityState');
+        foreach (array_chunk($state_data, 1000) as $chunk) {
+            EntityState::insert($chunk);
+        }
     }
 
     if (! empty($db_states)) {
-        dbDelete(
-            'entityState',
-            'entity_state_id IN ' . dbGenPlaceholders(count($db_states)),
-            array_column($db_states, 'entity_state_id')
-        );
+        \App\Models\EntityState::whereIn('entity_state_id', array_column($db_states, 'entity_state_id'))->delete();
     }
-}
 
-echo PHP_EOL;
+    $progress->end();
+}
 
 unset($entPhysical, $state_data, $db_states, $update);

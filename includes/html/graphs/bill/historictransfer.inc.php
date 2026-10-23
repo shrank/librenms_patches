@@ -7,8 +7,10 @@ use Amenadiel\JpGraph\Plot\LinePlot;
 use LibreNMS\Billing;
 use LibreNMS\Util\Number;
 
-if (is_numeric($vars['bill_hist_id'])) {
-    $graph_data = Billing::getBandwidthGraphData($vars['id'], $vars['bill_hist_id'], null, null, $vars['imgtype']);
+$bill_hist_id = $vars['bill_hist_id'] ?? null;
+
+if (is_numeric($bill_hist_id)) {
+    $graph_data = Billing::getBandwidthGraphData($vars['id'], $bill_hist_id, null, null, $vars['imgtype']);
 } elseif (is_numeric($vars['from'])) {
     $graph_data = Billing::getBandwidthGraphData($vars['id'], null, $vars['from'], $vars['to'], $vars['imgtype']);
 } else {
@@ -57,16 +59,13 @@ $graph->xaxis->SetTickLabels($graph_data['ticklabels']);
 $graph->xgrid->Show(true, true);
 $graph->xgrid->SetColor('#e0e0e0', '#efefef');
 
-function YCallback($value)
-{
-    return Number::formatBase($value, \App\Facades\LibrenmsConfig::get('billing.base'), 1, 0);
-}
+$yCallback = fn ($value) => Number::formatBase($value, \App\Facades\LibrenmsConfig::get('billing.base'), 1, 0);
 
 $graph->yaxis->SetFont(FF_FONT1);
 $graph->yaxis->SetTitleMargin(50);
 $graph->yaxis->title->SetFont(FF_FONT1, FS_NORMAL, 10);
 $graph->yaxis->title->Set('Bytes Transferred');
-$graph->yaxis->SetLabelFormatCallback('YCallback');
+$graph->yaxis->SetLabelFormatCallback($yCallback);
 
 $graph->ygrid->SetFill(true, '#EFEFEF@0.5', '#FFFFFF@0.5');
 

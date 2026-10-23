@@ -2,6 +2,9 @@
 
 namespace LibreNMS;
 
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+
 abstract class Model
 {
     protected static $table;
@@ -71,7 +74,7 @@ abstract class Model
             static::onDelete(static::create($row));
         }
         if (! empty($rows)) {
-            dbDelete($table, $where, $params);
+            DB::table($table)->whereRaw($where, $params)->delete();
         }
     }
 
@@ -174,8 +177,8 @@ abstract class Model
      */
     public static function onDelete($model)
     {
-        if (\App::runningInConsole()) {
-            echo '-';
+        if (app()->runningInConsole()) {
+            Log::info('-', ['nlb' => true]);
         }
     }
 
@@ -184,8 +187,8 @@ abstract class Model
      */
     public static function onCreate($model)
     {
-        if (\App::runningInConsole()) {
-            echo '+';
+        if (app()->runningInConsole()) {
+            Log::info('+', ['nlb' => true]);
         }
     }
 
@@ -194,15 +197,15 @@ abstract class Model
      */
     public static function onUpdate($model)
     {
-        if (\App::runningInConsole()) {
-            echo 'U';
+        if (app()->runningInConsole()) {
+            Log::info('U', ['nlb' => true]);
         }
     }
 
     public static function onNoUpdate()
     {
-        if (\App::runningInConsole()) {
-            echo '.';
+        if (app()->runningInConsole()) {
+            Log::info('.', ['nlb' => true]);
         }
     }
 }

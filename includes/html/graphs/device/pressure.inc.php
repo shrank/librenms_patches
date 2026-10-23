@@ -1,7 +1,5 @@
 <?php
 
-$class = 'pressure';
-$unit = '';
-$unit_long = 'kPa';
+$class = \LibreNMS\Enum\SensorType::Pressure;
 
 require 'includes/html/graphs/device/sensor.inc.php';

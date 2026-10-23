@@ -4176,6 +4176,7 @@
                     "sensor_type": "ftd",
                     "sensor_descr": "Active IPSec sessions",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -4201,6 +4202,7 @@
                     "sensor_type": "ftd",
                     "sensor_descr": "Active LAN to LAN sessions",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -4226,6 +4228,7 @@
                     "sensor_type": "ftd",
                     "sensor_descr": "Active Load Balancing sessions",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -4251,6 +4254,7 @@
                     "sensor_type": "ftd",
                     "sensor_descr": "Active SVC sessions",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 13,
@@ -4276,6 +4280,7 @@
                     "sensor_type": "ftd",
                     "sensor_descr": "Active Webvpn sessions",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -4301,6 +4306,7 @@
                     "sensor_type": "ftd",
                     "sensor_descr": "Current In Use Connections",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 4200,
@@ -4326,6 +4332,7 @@
                     "sensor_type": "ftd",
                     "sensor_descr": "Highest Connections",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 17925,
@@ -4351,6 +4358,7 @@
                     "sensor_type": "cfwHardwareStatus",
                     "sensor_descr": "",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -4376,6 +4384,7 @@
                     "sensor_type": "cfwHardwareStatus",
                     "sensor_descr": "",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 9,
@@ -4401,6 +4410,7 @@
                     "sensor_type": "cfwHardwareStatus",
                     "sensor_descr": "",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 10,
@@ -4422,70 +4432,60 @@
                 {
                     "state_name": "cfwHardwareStatus",
                     "state_descr": "other",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cfwHardwareStatus",
                     "state_descr": "up",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cfwHardwareStatus",
                     "state_descr": "down",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cfwHardwareStatus",
                     "state_descr": "error",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cfwHardwareStatus",
                     "state_descr": "overTemp",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cfwHardwareStatus",
                     "state_descr": "busy",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cfwHardwareStatus",
                     "state_descr": "noMedia",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cfwHardwareStatus",
                     "state_descr": "backup",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "cfwHardwareStatus",
                     "state_descr": "active",
-                    "state_draw_graph": 0,
                     "state_value": 9,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cfwHardwareStatus",
                     "state_descr": "standby",
-                    "state_draw_graph": 0,
                     "state_value": 10,
                     "state_generic_value": 0
                 }

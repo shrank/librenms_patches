@@ -7287,9 +7287,10 @@
                     "sensor_type": "rcChasPowerSupplyOperStatus",
                     "sensor_descr": "VOSS Power Supply 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
-                    "sensor_current": 0,
+                    "sensor_current": 3,
                     "sensor_limit": 4,
                     "sensor_limit_warn": 4,
                     "sensor_limit_low": null,
@@ -7312,9 +7313,10 @@
                     "sensor_type": "rcChasPowerSupplyOperStatus",
                     "sensor_descr": "VOSS Power Supply 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
-                    "sensor_current": 0,
+                    "sensor_current": 3,
                     "sensor_limit": 4,
                     "sensor_limit_warn": 4,
                     "sensor_limit_low": null,
@@ -7337,9 +7339,10 @@
                     "sensor_type": "rcVossSystemFanInfoOperStatus",
                     "sensor_descr": "VOSS Tray 1 Fan 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
-                    "sensor_current": 0,
+                    "sensor_current": 2,
                     "sensor_limit": 3,
                     "sensor_limit_warn": 3,
                     "sensor_limit_low": null,
@@ -7362,9 +7365,10 @@
                     "sensor_type": "rcVossSystemFanInfoOperStatus",
                     "sensor_descr": "VOSS Tray 1 Fan 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
-                    "sensor_current": 0,
+                    "sensor_current": 2,
                     "sensor_limit": 3,
                     "sensor_limit_warn": 3,
                     "sensor_limit_low": null,
@@ -7387,9 +7391,10 @@
                     "sensor_type": "rcVossSystemFanInfoOperStatus",
                     "sensor_descr": "VOSS Tray 2 Fan 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
-                    "sensor_current": 0,
+                    "sensor_current": 2,
                     "sensor_limit": 3,
                     "sensor_limit_warn": 3,
                     "sensor_limit_low": null,
@@ -7412,9 +7417,10 @@
                     "sensor_type": "rcVossSystemFanInfoOperStatus",
                     "sensor_descr": "VOSS Tray 2 Fan 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
-                    "sensor_current": 0,
+                    "sensor_current": 2,
                     "sensor_limit": 3,
                     "sensor_limit_warn": 3,
                     "sensor_limit_low": null,
@@ -7437,9 +7443,10 @@
                     "sensor_type": "rcVossSystemFanInfoOperStatus",
                     "sensor_descr": "VOSS Tray 3 Fan 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
-                    "sensor_current": 0,
+                    "sensor_current": 2,
                     "sensor_limit": 3,
                     "sensor_limit_warn": 3,
                     "sensor_limit_low": null,
@@ -7462,9 +7469,10 @@
                     "sensor_type": "rcVossSystemFanInfoOperStatus",
                     "sensor_descr": "VOSS Tray 3 Fan 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
-                    "sensor_current": 0,
+                    "sensor_current": 2,
                     "sensor_limit": 3,
                     "sensor_limit_warn": 3,
                     "sensor_limit_low": null,
@@ -7487,9 +7495,10 @@
                     "sensor_type": "rcVossSystemFanInfoOperStatus",
                     "sensor_descr": "VOSS Tray 4 Fan 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
-                    "sensor_current": 0,
+                    "sensor_current": 2,
                     "sensor_limit": 3,
                     "sensor_limit_warn": 3,
                     "sensor_limit_low": null,
@@ -7512,9 +7521,10 @@
                     "sensor_type": "rcVossSystemFanInfoOperStatus",
                     "sensor_descr": "VOSS Tray 4 Fan 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
-                    "sensor_current": 0,
+                    "sensor_current": 2,
                     "sensor_limit": 3,
                     "sensor_limit_warn": 3,
                     "sensor_limit_low": null,
@@ -7537,9 +7547,10 @@
                     "sensor_type": "rcVossSystemFanInfoOperStatus",
                     "sensor_descr": "VOSS Tray 5 Fan 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
-                    "sensor_current": 0,
+                    "sensor_current": 2,
                     "sensor_limit": 3,
                     "sensor_limit_warn": 3,
                     "sensor_limit_low": null,
@@ -7562,9 +7573,10 @@
                     "sensor_type": "rcVossSystemFanInfoOperStatus",
                     "sensor_descr": "VOSS Tray 5 Fan 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
-                    "sensor_current": 0,
+                    "sensor_current": 2,
                     "sensor_limit": 3,
                     "sensor_limit_warn": 3,
                     "sensor_limit_low": null,
@@ -7587,9 +7599,10 @@
                     "sensor_type": "rcVossSystemFanInfoOperStatus",
                     "sensor_descr": "VOSS Tray 6 Fan 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
-                    "sensor_current": 0,
+                    "sensor_current": 2,
                     "sensor_limit": 3,
                     "sensor_limit_warn": 3,
                     "sensor_limit_low": null,
@@ -7612,9 +7625,10 @@
                     "sensor_type": "rcVossSystemFanInfoOperStatus",
                     "sensor_descr": "VOSS Tray 6 Fan 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
-                    "sensor_current": 0,
+                    "sensor_current": 2,
                     "sensor_limit": 3,
                     "sensor_limit_warn": 3,
                     "sensor_limit_low": null,
@@ -7637,6 +7651,7 @@
                     "sensor_type": "avaya-vsp",
                     "sensor_descr": "VOSS CPU temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 29,
@@ -7662,6 +7677,7 @@
                     "sensor_type": "avaya-vsp",
                     "sensor_descr": "VOSS MAC temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 34,
@@ -7687,6 +7703,7 @@
                     "sensor_type": "avaya-vsp",
                     "sensor_descr": "VOSS PHY1 temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 28,
@@ -7712,6 +7729,7 @@
                     "sensor_type": "avaya-vsp",
                     "sensor_descr": "VOSS PHY2 temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 28,
@@ -7733,573 +7751,54 @@
                 {
                     "state_name": "rcChasPowerSupplyOperStatus",
                     "state_descr": "unknown",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "rcChasPowerSupplyOperStatus",
                     "state_descr": "empty",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "rcChasPowerSupplyOperStatus",
                     "state_descr": "up",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "rcChasPowerSupplyOperStatus",
                     "state_descr": "down",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "rcVossSystemFanInfoOperStatus",
                     "state_descr": "unknown",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "rcVossSystemFanInfoOperStatus",
                     "state_descr": "up",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "rcVossSystemFanInfoOperStatus",
                     "state_descr": "down",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "rcVossSystemFanInfoOperStatus",
                     "state_descr": "notPresent",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 3
                 }
             ]
         },
-        "poller": {
-            "sensors": [
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "state",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.4.8.1.1.2.1",
-                    "sensor_index": "rcChasPowerSupplyOperStatus.1",
-                    "sensor_type": "rcChasPowerSupplyOperStatus",
-                    "sensor_descr": "VOSS Power Supply 1",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 3,
-                    "sensor_limit": 4,
-                    "sensor_limit_warn": 4,
-                    "sensor_limit_low": null,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": 0,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": "rcChasPowerSupplyOperStatus"
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "state",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.4.8.1.1.2.2",
-                    "sensor_index": "rcChasPowerSupplyOperStatus.2",
-                    "sensor_type": "rcChasPowerSupplyOperStatus",
-                    "sensor_descr": "VOSS Power Supply 2",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 3,
-                    "sensor_limit": 4,
-                    "sensor_limit_warn": 4,
-                    "sensor_limit_low": null,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": 0,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": "rcChasPowerSupplyOperStatus"
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "state",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.101.1.1.4.1.4.1.1",
-                    "sensor_index": "rcVossSystemFanInfoOperStatus.1.1",
-                    "sensor_type": "rcVossSystemFanInfoOperStatus",
-                    "sensor_descr": "VOSS Tray 1 Fan 1",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 2,
-                    "sensor_limit": 3,
-                    "sensor_limit_warn": 3,
-                    "sensor_limit_low": null,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": 0,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": "rcVossSystemFanInfoOperStatus"
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "state",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.101.1.1.4.1.4.1.2",
-                    "sensor_index": "rcVossSystemFanInfoOperStatus.1.2",
-                    "sensor_type": "rcVossSystemFanInfoOperStatus",
-                    "sensor_descr": "VOSS Tray 1 Fan 2",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 2,
-                    "sensor_limit": 3,
-                    "sensor_limit_warn": 3,
-                    "sensor_limit_low": null,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": 0,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": "rcVossSystemFanInfoOperStatus"
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "state",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.101.1.1.4.1.4.2.1",
-                    "sensor_index": "rcVossSystemFanInfoOperStatus.2.1",
-                    "sensor_type": "rcVossSystemFanInfoOperStatus",
-                    "sensor_descr": "VOSS Tray 2 Fan 1",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 2,
-                    "sensor_limit": 3,
-                    "sensor_limit_warn": 3,
-                    "sensor_limit_low": null,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": 0,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": "rcVossSystemFanInfoOperStatus"
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "state",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.101.1.1.4.1.4.2.2",
-                    "sensor_index": "rcVossSystemFanInfoOperStatus.2.2",
-                    "sensor_type": "rcVossSystemFanInfoOperStatus",
-                    "sensor_descr": "VOSS Tray 2 Fan 2",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 2,
-                    "sensor_limit": 3,
-                    "sensor_limit_warn": 3,
-                    "sensor_limit_low": null,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": 0,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": "rcVossSystemFanInfoOperStatus"
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "state",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.101.1.1.4.1.4.3.1",
-                    "sensor_index": "rcVossSystemFanInfoOperStatus.3.1",
-                    "sensor_type": "rcVossSystemFanInfoOperStatus",
-                    "sensor_descr": "VOSS Tray 3 Fan 1",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 2,
-                    "sensor_limit": 3,
-                    "sensor_limit_warn": 3,
-                    "sensor_limit_low": null,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": 0,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": "rcVossSystemFanInfoOperStatus"
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "state",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.101.1.1.4.1.4.3.2",
-                    "sensor_index": "rcVossSystemFanInfoOperStatus.3.2",
-                    "sensor_type": "rcVossSystemFanInfoOperStatus",
-                    "sensor_descr": "VOSS Tray 3 Fan 2",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 2,
-                    "sensor_limit": 3,
-                    "sensor_limit_warn": 3,
-                    "sensor_limit_low": null,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": 0,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": "rcVossSystemFanInfoOperStatus"
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "state",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.101.1.1.4.1.4.4.1",
-                    "sensor_index": "rcVossSystemFanInfoOperStatus.4.1",
-                    "sensor_type": "rcVossSystemFanInfoOperStatus",
-                    "sensor_descr": "VOSS Tray 4 Fan 1",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 2,
-                    "sensor_limit": 3,
-                    "sensor_limit_warn": 3,
-                    "sensor_limit_low": null,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": 0,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": "rcVossSystemFanInfoOperStatus"
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "state",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.101.1.1.4.1.4.4.2",
-                    "sensor_index": "rcVossSystemFanInfoOperStatus.4.2",
-                    "sensor_type": "rcVossSystemFanInfoOperStatus",
-                    "sensor_descr": "VOSS Tray 4 Fan 2",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 2,
-                    "sensor_limit": 3,
-                    "sensor_limit_warn": 3,
-                    "sensor_limit_low": null,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": 0,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": "rcVossSystemFanInfoOperStatus"
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "state",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.101.1.1.4.1.4.5.1",
-                    "sensor_index": "rcVossSystemFanInfoOperStatus.5.1",
-                    "sensor_type": "rcVossSystemFanInfoOperStatus",
-                    "sensor_descr": "VOSS Tray 5 Fan 1",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 2,
-                    "sensor_limit": 3,
-                    "sensor_limit_warn": 3,
-                    "sensor_limit_low": null,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": 0,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": "rcVossSystemFanInfoOperStatus"
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "state",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.101.1.1.4.1.4.5.2",
-                    "sensor_index": "rcVossSystemFanInfoOperStatus.5.2",
-                    "sensor_type": "rcVossSystemFanInfoOperStatus",
-                    "sensor_descr": "VOSS Tray 5 Fan 2",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 2,
-                    "sensor_limit": 3,
-                    "sensor_limit_warn": 3,
-                    "sensor_limit_low": null,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": 0,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": "rcVossSystemFanInfoOperStatus"
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "state",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.101.1.1.4.1.4.6.1",
-                    "sensor_index": "rcVossSystemFanInfoOperStatus.6.1",
-                    "sensor_type": "rcVossSystemFanInfoOperStatus",
-                    "sensor_descr": "VOSS Tray 6 Fan 1",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 2,
-                    "sensor_limit": 3,
-                    "sensor_limit_warn": 3,
-                    "sensor_limit_low": null,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": 0,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": "rcVossSystemFanInfoOperStatus"
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "state",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.101.1.1.4.1.4.6.2",
-                    "sensor_index": "rcVossSystemFanInfoOperStatus.6.2",
-                    "sensor_type": "rcVossSystemFanInfoOperStatus",
-                    "sensor_descr": "VOSS Tray 6 Fan 2",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 2,
-                    "sensor_limit": 3,
-                    "sensor_limit_warn": 3,
-                    "sensor_limit_low": null,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": 0,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": "rcVossSystemFanInfoOperStatus"
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "temperature",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.212.1.0",
-                    "sensor_index": "rcSingleCpSystemCpuTemperature.0",
-                    "sensor_type": "avaya-vsp",
-                    "sensor_descr": "VOSS CPU temperature",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 29,
-                    "sensor_limit": 49,
-                    "sensor_limit_warn": null,
-                    "sensor_limit_low": 19,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": null,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": null
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "temperature",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.212.2.0",
-                    "sensor_index": "rcSingleCpSystemMacTemperature.0",
-                    "sensor_type": "avaya-vsp",
-                    "sensor_descr": "VOSS MAC temperature",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 34,
-                    "sensor_limit": 54,
-                    "sensor_limit_warn": null,
-                    "sensor_limit_low": 24,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": null,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": null
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "temperature",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.212.3.0",
-                    "sensor_index": "rcSingleCpSystemPhy1Temperature.0",
-                    "sensor_type": "avaya-vsp",
-                    "sensor_descr": "VOSS PHY1 temperature",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 28,
-                    "sensor_limit": 48,
-                    "sensor_limit_warn": null,
-                    "sensor_limit_low": 18,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": null,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": null
-                },
-                {
-                    "sensor_deleted": 0,
-                    "sensor_class": "temperature",
-                    "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.2272.1.212.4.0",
-                    "sensor_index": "rcSingleCpSystemPhy2Temperature.0",
-                    "sensor_type": "avaya-vsp",
-                    "sensor_descr": "VOSS PHY2 temperature",
-                    "group": null,
-                    "sensor_divisor": 1,
-                    "sensor_multiplier": 1,
-                    "sensor_current": 28,
-                    "sensor_limit": 48,
-                    "sensor_limit_warn": null,
-                    "sensor_limit_low": 18,
-                    "sensor_limit_low_warn": null,
-                    "sensor_alert": 1,
-                    "sensor_custom": "No",
-                    "entPhysicalIndex": null,
-                    "entPhysicalIndex_measured": null,
-                    "sensor_prev": null,
-                    "user_func": null,
-                    "rrd_type": "GAUGE",
-                    "state_name": null
-                }
-            ],
-            "state_indexes": [
-                {
-                    "state_name": "rcChasPowerSupplyOperStatus",
-                    "state_descr": "unknown",
-                    "state_draw_graph": 0,
-                    "state_value": 1,
-                    "state_generic_value": 3
-                },
-                {
-                    "state_name": "rcChasPowerSupplyOperStatus",
-                    "state_descr": "empty",
-                    "state_draw_graph": 0,
-                    "state_value": 2,
-                    "state_generic_value": 0
-                },
-                {
-                    "state_name": "rcChasPowerSupplyOperStatus",
-                    "state_descr": "up",
-                    "state_draw_graph": 0,
-                    "state_value": 3,
-                    "state_generic_value": 0
-                },
-                {
-                    "state_name": "rcChasPowerSupplyOperStatus",
-                    "state_descr": "down",
-                    "state_draw_graph": 0,
-                    "state_value": 4,
-                    "state_generic_value": 1
-                },
-                {
-                    "state_name": "rcVossSystemFanInfoOperStatus",
-                    "state_descr": "unknown",
-                    "state_draw_graph": 0,
-                    "state_value": 1,
-                    "state_generic_value": 3
-                },
-                {
-                    "state_name": "rcVossSystemFanInfoOperStatus",
-                    "state_descr": "up",
-                    "state_draw_graph": 0,
-                    "state_value": 2,
-                    "state_generic_value": 0
-                },
-                {
-                    "state_name": "rcVossSystemFanInfoOperStatus",
-                    "state_descr": "down",
-                    "state_draw_graph": 0,
-                    "state_value": 3,
-                    "state_generic_value": 1
-                },
-                {
-                    "state_name": "rcVossSystemFanInfoOperStatus",
-                    "state_descr": "notPresent",
-                    "state_draw_graph": 0,
-                    "state_value": 4,
-                    "state_generic_value": 3
-                }
-            ]
-        }
+        "poller": "matches discovery"
     },
     "vlans": {
         "discovery": {
@@ -8661,6 +8160,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "2019-3-12,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8680,6 +8180,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8699,6 +8200,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8718,6 +8220,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8737,6 +8240,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8756,6 +8260,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8775,6 +8280,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8794,6 +8300,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8813,6 +8320,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8832,6 +8340,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8851,6 +8360,7 @@
                     "entPhysicalContainedIn": 17,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "2019-3-12,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8870,6 +8380,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8889,6 +8400,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": 64
                 },
                 {
@@ -8908,6 +8420,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8927,6 +8440,7 @@
                     "entPhysicalContainedIn": 4,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8946,6 +8460,7 @@
                     "entPhysicalContainedIn": 9,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8965,6 +8480,7 @@
                     "entPhysicalContainedIn": 10,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -8984,6 +8500,7 @@
                     "entPhysicalContainedIn": 11,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9003,6 +8520,7 @@
                     "entPhysicalContainedIn": 12,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9022,6 +8540,7 @@
                     "entPhysicalContainedIn": 13,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9041,6 +8560,7 @@
                     "entPhysicalContainedIn": 14,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9060,6 +8580,7 @@
                     "entPhysicalContainedIn": 74,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9079,6 +8600,7 @@
                     "entPhysicalContainedIn": 74,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9098,6 +8620,7 @@
                     "entPhysicalContainedIn": 75,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9117,6 +8640,7 @@
                     "entPhysicalContainedIn": 75,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9136,6 +8660,7 @@
                     "entPhysicalContainedIn": 76,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9155,6 +8680,7 @@
                     "entPhysicalContainedIn": 76,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9174,6 +8700,7 @@
                     "entPhysicalContainedIn": 77,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9193,6 +8720,7 @@
                     "entPhysicalContainedIn": 77,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9212,6 +8740,7 @@
                     "entPhysicalContainedIn": 78,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9231,6 +8760,7 @@
                     "entPhysicalContainedIn": 78,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9250,6 +8780,7 @@
                     "entPhysicalContainedIn": 79,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9269,6 +8800,7 @@
                     "entPhysicalContainedIn": 79,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0",
                     "ifIndex": null
                 },
                 {
@@ -9288,6 +8820,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 192
                 },
                 {
@@ -9307,6 +8840,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 196
                 },
                 {
@@ -9326,6 +8860,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 200
                 },
                 {
@@ -9345,6 +8880,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 204
                 },
                 {
@@ -9364,6 +8900,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 208
                 },
                 {
@@ -9383,6 +8920,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 212
                 },
                 {
@@ -9402,6 +8940,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 216
                 },
                 {
@@ -9421,6 +8960,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 29,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 220
                 },
                 {
@@ -9440,6 +8980,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 33,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 224
                 },
                 {
@@ -9459,6 +9000,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 37,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 228
                 },
                 {
@@ -9478,6 +9020,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 41,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 232
                 },
                 {
@@ -9497,6 +9040,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 45,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 236
                 },
                 {
@@ -9516,6 +9060,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 256
                 },
                 {
@@ -9535,6 +9080,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 260
                 },
                 {
@@ -9554,6 +9100,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 264
                 },
                 {
@@ -9573,6 +9120,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 268
                 },
                 {
@@ -9592,6 +9140,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 272
                 },
                 {
@@ -9611,6 +9160,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 276
                 },
                 {
@@ -9630,6 +9180,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 280
                 },
                 {
@@ -9649,6 +9200,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 29,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 284
                 },
                 {
@@ -9668,6 +9220,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 33,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 288
                 },
                 {
@@ -9687,6 +9240,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 37,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 292
                 },
                 {
@@ -9706,6 +9260,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 38,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 293
                 },
                 {
@@ -9725,6 +9280,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 39,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 294
                 },
                 {
@@ -9744,6 +9300,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 40,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 295
                 },
                 {
@@ -9763,6 +9320,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 41,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 296
                 },
                 {
@@ -9782,6 +9340,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 45,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 300
                 },
                 {
@@ -9801,6 +9360,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 320
                 },
                 {
@@ -9820,6 +9380,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 324
                 },
                 {
@@ -9839,6 +9400,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 328
                 },
                 {
@@ -9858,6 +9420,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 332
                 },
                 {
@@ -9877,6 +9440,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 333
                 },
                 {
@@ -9896,6 +9460,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 337
                 },
                 {
@@ -9915,6 +9480,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 384
                 },
                 {
@@ -9934,6 +9500,7 @@
                     "entPhysicalContainedIn": 37,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Extreme Networks.",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": 385
                 }
             ]
@@ -9947,7 +9514,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "3002C OBM 4850GTS",
-                    "remote_port": "1/49 (bcadabcbac00)",
+                    "remote_port": "1/49",
                     "remote_platform": null,
                     "remote_version": "Ethernet Routing Switch 4850GTS       HW:13       FW:5.8.0.3   SW:v5.12.3.011",
                     "ifAlias": "fa-mlt-lacp-122",
@@ -9958,7 +9525,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "N7K-3002-CORE6",
-                    "remote_port": "1/28 (f46e95a3f800)",
+                    "remote_port": "1/28",
                     "remote_platform": null,
                     "remote_version": "VSP-7432CQ (8.0.5.0)",
                     "ifAlias": "nni",
@@ -9969,7 +9536,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "N7K-3002-CORE5",
-                    "remote_port": "1/29 (f46e95a25800)",
+                    "remote_port": "1/29",
                     "remote_platform": null,
                     "remote_version": "VSP-7432CQ (8.0.5.0)",
                     "ifAlias": "nni",
@@ -9980,7 +9547,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "N7K-3002-CORE4",
-                    "remote_port": "1/28 (f46e95a09800)",
+                    "remote_port": "1/28",
                     "remote_platform": null,
                     "remote_version": "VSP-7432CQ (8.0.5.0)",
                     "ifAlias": "nni",
@@ -9991,7 +9558,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "N7K-3002-CORE2",
-                    "remote_port": "1/30 (f46e95a3c800)",
+                    "remote_port": "1/30",
                     "remote_platform": null,
                     "remote_version": "VSP-7432CQ (8.0.5.0)",
                     "ifAlias": "nni",
@@ -10002,7 +9569,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "N8K-3002-SCH1",
-                    "remote_port": "1/17 (646a52da6400)",
+                    "remote_port": "1/17",
                     "remote_platform": null,
                     "remote_version": "VSP-8404C (7.1.3.0)",
                     "ifAlias": "nni",
@@ -10013,7 +9580,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "N8K-3002-SCH3",
-                    "remote_port": "1/17 (646a52e56800)",
+                    "remote_port": "1/17",
                     "remote_platform": null,
                     "remote_version": "VSP-8404C (7.1.3.0)",
                     "ifAlias": "nni",
@@ -10024,7 +9591,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "N8K-3002-ADMIN1",
-                    "remote_port": "1/18 (646a52dc8c00)",
+                    "remote_port": "1/18",
                     "remote_platform": null,
                     "remote_version": "VSP-8404C (7.1.3.0)",
                     "ifAlias": "nni",

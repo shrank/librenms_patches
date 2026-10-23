@@ -27,18 +27,37 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
+use Illuminate\Support\Facades\Gate;
 
 class Ipv6Network extends Model
 {
+    use HasFactory;
+
     public $timestamps = false;
     protected $primaryKey = 'ipv6_network_id';
     protected $fillable = [
         'ipv6_network',
         'context_name',
     ];
+
+    // ---- Query scopes ----
+
+    /**
+     * Networks containing at least one address the user can access.
+     */
+    protected function scopeHasAccess(Builder $query, User $user): Builder
+    {
+        if (Gate::forUser($user)->allows('viewAll', Port::class)) {
+            return $query;
+        }
+
+        return $query->whereIn($this->qualifyColumn('ipv6_network_id'), Ipv6Address::hasAccess($user)->select('ipv6_network_id'));
+    }
 
     // ---- Define Relationships ----
     /**
@@ -54,6 +73,13 @@ class Ipv6Network extends Model
      */
     public function connectedPorts(): HasManyThrough
     {
-        return $this->hasManyThrough(Port::class, Ipv6Address::class, 'ipv6_network_id', 'port_id', 'ipv6_network_id', 'port_id');
+        return $this->hasManyThrough(
+            Port::class,
+            Ipv6Address::class,
+            'ipv6_network_id',
+            'port_id',
+            'ipv6_network_id',
+            'port_id',
+        );
     }
 }

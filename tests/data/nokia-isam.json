@@ -1489,7 +1489,8 @@
                     "ifStackStatus": "active"
                 }
             ]
-        }
+        },
+        "poller": "matches discovery"
     },
     "entity-physical": {
         "discovery": {
@@ -1511,6 +1512,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "ALCL",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -1530,6 +1532,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "TI",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 },
                 {
@@ -1549,6 +1552,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "TI",
+                    "entPhysicalMfgDate": "",
                     "ifIndex": null
                 }
             ]
@@ -1643,6 +1647,7 @@
                     "sensor_type": "nokia-isam",
                     "sensor_descr": "lt:1/1/1/1 Tx Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 4.94,
@@ -1668,6 +1673,7 @@
                     "sensor_type": "nokia-isam",
                     "sensor_descr": "lt:1/1/1/4 Tx Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 4,
@@ -1693,6 +1699,7 @@
                     "sensor_type": "nokia-isam",
                     "sensor_descr": "lt:1/1/1/5 Tx Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5.72,
@@ -1718,6 +1725,7 @@
                     "sensor_type": "nokia-isam",
                     "sensor_descr": "nt-b:xfp:1 Rx Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -9.36,
@@ -1743,6 +1751,7 @@
                     "sensor_type": "nokia-isam",
                     "sensor_descr": "nt-b:xfp:1 Tx Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -0.34,
@@ -1768,6 +1777,7 @@
                     "sensor_type": "eqptBoardOperError",
                     "sensor_descr": "acu:1/1/ NGFC-E (NGFC-E)",
                     "group": "Shelf: ISAM 7360 (FX-8)",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1793,6 +1803,7 @@
                     "sensor_type": "eqptBoardOperError",
                     "sensor_descr": "nt-a: FANT-H (FANT-H)",
                     "group": "Shelf: ISAM 7360 (FX-8)",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1818,6 +1829,7 @@
                     "sensor_type": "eqptBoardOperError",
                     "sensor_descr": "nt-b: FANT-H (FANT-H)",
                     "group": "Shelf: ISAM 7360 (FX-8)",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1843,6 +1855,7 @@
                     "sensor_type": "eqptBoardOperError",
                     "sensor_descr": "lt:1/1/1/ FWLT-C (FWLT-C)",
                     "group": "Shelf: ISAM 7360 (FX-8)",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1868,6 +1881,7 @@
                     "sensor_type": "fanMode",
                     "sensor_descr": "Fan Mode",
                     "group": "Hardware",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -1893,13 +1907,14 @@
                     "sensor_type": "nokia-isam",
                     "sensor_descr": "nt-a: Sensor 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 43,
                     "sensor_limit": 63,
-                    "sensor_limit_warn": 0,
-                    "sensor_limit_low": -9,
-                    "sensor_limit_low_warn": -8,
+                    "sensor_limit_warn": null,
+                    "sensor_limit_low": 33,
+                    "sensor_limit_low_warn": null,
                     "sensor_alert": 1,
                     "sensor_custom": "No",
                     "entPhysicalIndex": null,
@@ -1918,13 +1933,14 @@
                     "sensor_type": "nokia-isam",
                     "sensor_descr": "nt-a: Sensor 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 53,
                     "sensor_limit": 73,
-                    "sensor_limit_warn": 0,
-                    "sensor_limit_low": -9,
-                    "sensor_limit_low_warn": -8,
+                    "sensor_limit_warn": null,
+                    "sensor_limit_low": 43,
+                    "sensor_limit_low_warn": null,
                     "sensor_alert": 1,
                     "sensor_custom": "No",
                     "entPhysicalIndex": null,
@@ -1939,175 +1955,150 @@
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "no-error",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "type-mismatch",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "board-missing",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "board-installation-missing",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "no-planned-board",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "waiting-for-sw",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "init-boot-failed",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "init-download-failed",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "init-connection-failed",
-                    "state_draw_graph": 0,
                     "state_value": 9,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "init-configuration-failed",
-                    "state_draw_graph": 0,
                     "state_value": 10,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "board-reset-protection",
-                    "state_draw_graph": 0,
                     "state_value": 11,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "invalid-parameter",
-                    "state_draw_graph": 0,
                     "state_value": 12,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "temperature-alarm",
-                    "state_draw_graph": 0,
                     "state_value": 13,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "tempshutdown",
-                    "state_draw_graph": 0,
                     "state_value": 14,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "defense",
-                    "state_draw_graph": 0,
                     "state_value": 15,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "board-not-licensed",
-                    "state_draw_graph": 0,
                     "state_value": 16,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "sem-power-fail",
-                    "state_draw_graph": 0,
                     "state_value": 17,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "sem-ups-fail",
-                    "state_draw_graph": 0,
                     "state_value": 18,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "board-in-incompatible-slot",
-                    "state_draw_graph": 0,
                     "state_value": 19,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "download-ongoing",
-                    "state_draw_graph": 0,
                     "state_value": 21,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "eqptBoardOperError",
                     "state_descr": "unknown-error",
-                    "state_draw_graph": 0,
                     "state_value": 255,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "fanMode",
                     "state_descr": "default",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "fanMode",
                     "state_descr": "eco",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "fanMode",
                     "state_descr": "protect",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "fanMode",
                     "state_descr": "classic",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 0
                 }

@@ -93,17 +93,6 @@ function cleanPort($interface, $device = null)
     return $interface;
 }
 
-function rewrite_generic_hardware($hardware)
-{
-    $rewrite_GenericHW = [
-        ' Computer Corporation' => '',
-        ' Corporation' => '',
-        ' Inc.' => '',
-    ];
-
-    return str_replace(array_keys($rewrite_GenericHW), array_values($rewrite_GenericHW), $hardware);
-}
-
 function short_hrDeviceDescr($dev)
 {
     $rewrite_hrDevice = [
@@ -132,11 +121,6 @@ function short_port_descr($desc)
     $desc = trim($desc);
 
     return $desc;
-}
-
-function rewrite_adslLineType($adslLineType)
-{
-    return \LibreNMS\Util\Rewrite::dslLineType($adslLineType);
 }
 
 function ipmiSensorName($hardwareId, $sensorIpmi)
@@ -206,55 +190,4 @@ function apc_relay_state($state)
             return 2;
             break;
     }
-}
-
-function parse_entity_state($state, $value)
-{
-    $data = [
-        'entStateOper' => [
-            1 => ['text' => 'unavailable', 'color' => 'default'],
-            2 => ['text' => 'disabled', 'color' => 'danger'],
-            3 => ['text' => 'enabled', 'color' => 'success'],
-            4 => ['text' => 'testing', 'color' => 'warning'],
-        ],
-        'entStateUsage' => [
-            1 => ['text' => 'unavailable', 'color' => 'default'],
-            2 => ['text' => 'idle', 'color' => 'info'],
-            3 => ['text' => 'active', 'color' => 'success'],
-            4 => ['text' => 'busy', 'color' => 'success'],
-        ],
-        'entStateStandby' => [
-            1 => ['text' => 'unavailable', 'color' => 'default'],
-            2 => ['text' => 'hotStandby', 'color' => 'info'],
-            3 => ['text' => 'coldStandby', 'color' => 'info'],
-            4 => ['text' => 'providingService', 'color' => 'success'],
-        ],
-        'entStateAdmin' => [
-            1 => ['text' => 'unknown', 'color' => 'default'],
-            2 => ['text' => 'locked', 'color' => 'info'],
-            3 => ['text' => 'shuttingDown', 'color' => 'warning'],
-            4 => ['text' => 'unlocked', 'color' => 'success'],
-        ],
-    ];
-
-    return $data[$state][$value] ?? ['text' => 'na', 'color' => 'default'];
-}
-
-function parse_entity_state_alarm($bits)
-{
-    // not sure if this is correct
-    $data = [
-        0 => ['text' => 'unavailable', 'color' => 'default'],
-        1 => ['text' => 'underRepair', 'color' => 'warning'],
-        2 => ['text' => 'critical', 'color' => 'danger'],
-        3 => ['text' => 'major', 'color' => 'danger'],
-        4 => ['text' => 'minor', 'color' => 'info'],
-        5 => ['text' => 'warning', 'color' => 'warning'],
-        6 => ['text' => 'indeterminate', 'color' => 'default'],
-    ];
-
-    $alarms = str_split(base_convert((string) $bits, 16, 2));
-    $active_alarms = array_filter($alarms);
-
-    return array_intersect_key($data, $active_alarms);
 }

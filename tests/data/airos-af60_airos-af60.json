@@ -1060,6 +1060,7 @@
                     "sensor_type": "airos-af60",
                     "sensor_descr": "Sat tracked",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 9,
@@ -1085,6 +1086,7 @@
                     "sensor_type": "airos-af60",
                     "sensor_descr": "Sat visible",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 12,
@@ -1110,6 +1112,7 @@
                     "sensor_type": "af60GpsFix",
                     "sensor_descr": "GPS fix",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -1135,6 +1138,7 @@
                     "sensor_type": "af60GpsStatus",
                     "sensor_descr": "GPS Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1160,6 +1164,7 @@
                     "sensor_type": "af60Role",
                     "sensor_descr": "Radio Role",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1185,6 +1190,7 @@
                     "sensor_type": "af60StaActiveLink",
                     "sensor_descr": "Active link",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1210,6 +1216,7 @@
                     "sensor_type": "af60StaRxMCS",
                     "sensor_descr": "RX MCS Rate",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 9,
@@ -1235,6 +1242,7 @@
                     "sensor_type": "af60StaTxMCS",
                     "sensor_descr": "TX MCS Rate",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 9,
@@ -1256,203 +1264,174 @@
                 {
                     "state_name": "af60GpsFix",
                     "state_descr": "Unknown",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "af60GpsFix",
                     "state_descr": "Nofix",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "af60GpsFix",
                     "state_descr": "Fix2d",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60GpsFix",
                     "state_descr": "Fix3d",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60GpsStatus",
                     "state_descr": "Absent",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "af60GpsStatus",
                     "state_descr": "Off",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "af60GpsStatus",
                     "state_descr": "On",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60Role",
                     "state_descr": "AP",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60Role",
                     "state_descr": "CPE",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60StaActiveLink",
                     "state_descr": "Main",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60StaActiveLink",
                     "state_descr": "Backup",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "af60StaRxMCS",
                     "state_descr": "1X",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "af60StaRxMCS",
                     "state_descr": "2X",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "af60StaRxMCS",
                     "state_descr": "3X",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "af60StaRxMCS",
                     "state_descr": "4X",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "af60StaRxMCS",
                     "state_descr": "5X",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60StaRxMCS",
                     "state_descr": "6X",
-                    "state_draw_graph": 1,
                     "state_value": 6,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60StaRxMCS",
                     "state_descr": "7X",
-                    "state_draw_graph": 1,
                     "state_value": 7,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60StaRxMCS",
                     "state_descr": "8X",
-                    "state_draw_graph": 1,
                     "state_value": 8,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60StaRxMCS",
                     "state_descr": "9X",
-                    "state_draw_graph": 1,
                     "state_value": 9,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60StaTxMCS",
                     "state_descr": "1X",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "af60StaTxMCS",
                     "state_descr": "2X",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "af60StaTxMCS",
                     "state_descr": "3X",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "af60StaTxMCS",
                     "state_descr": "4X",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "af60StaTxMCS",
                     "state_descr": "5X",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60StaTxMCS",
                     "state_descr": "6X",
-                    "state_draw_graph": 1,
                     "state_value": 6,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60StaTxMCS",
                     "state_descr": "7X",
-                    "state_draw_graph": 1,
                     "state_value": 7,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60StaTxMCS",
                     "state_descr": "8X",
-                    "state_draw_graph": 1,
                     "state_value": 8,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60StaTxMCS",
                     "state_descr": "9X",
-                    "state_draw_graph": 1,
                     "state_value": 9,
                     "state_generic_value": 0
                 }

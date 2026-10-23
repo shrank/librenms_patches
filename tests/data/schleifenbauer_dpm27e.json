@@ -242,6 +242,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "Duplicate Device Addresses",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -267,6 +268,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "New Devices",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -292,6 +294,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -317,6 +320,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel10",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -342,6 +346,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel11",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.94,
@@ -367,6 +372,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel12",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -392,6 +398,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -417,6 +424,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -442,6 +450,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -467,6 +476,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel5",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -492,6 +502,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel6",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -517,6 +528,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel7",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -542,6 +554,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel8",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -567,6 +580,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel9",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -592,6 +606,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "SVNL00655429-L1 RMS Current",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -617,6 +632,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "SVNL00655429-L2 RMS Current",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -642,6 +658,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "SVNL00655429-L3 RMS Current",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -667,6 +684,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -692,6 +710,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel10",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 290,
@@ -717,6 +736,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel11",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 450,
@@ -742,6 +762,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel12",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -767,6 +788,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -792,6 +814,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -817,6 +840,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -842,6 +866,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel5",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -867,6 +892,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel6",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -892,6 +918,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel7",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -917,6 +944,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel8",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -942,6 +970,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel9",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -967,6 +996,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "SVNL00655429-L1 Apparent Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -992,6 +1022,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "SVNL00655429-L2 Apparent Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1017,6 +1048,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "SVNL00655429-L3 Apparent Power",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1042,6 +1074,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1067,6 +1100,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel10",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1092,6 +1126,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel11",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1117,6 +1152,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel12",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1142,6 +1178,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1167,6 +1204,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1192,6 +1230,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 532,
@@ -1217,6 +1256,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel5",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 402,
@@ -1242,6 +1282,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel6",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1267,6 +1308,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel7",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1292,6 +1334,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel8",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1317,6 +1360,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel9",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1342,6 +1386,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "SVNL00655429-L1 Lifetime kWh Total",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1367,6 +1412,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "SVNL00655429-L2 Lifetime kWh Total",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1392,6 +1438,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "SVNL00655429-L3 Lifetime kWh Total",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1417,6 +1464,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1442,6 +1490,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel10",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.0531,
@@ -1467,6 +1516,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel11",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1492,6 +1542,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel12",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1517,6 +1568,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1542,6 +1594,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1567,6 +1620,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1592,6 +1646,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel5",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1617,6 +1672,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel6",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1642,6 +1698,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel7",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1667,6 +1724,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel8",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1692,6 +1750,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel9",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1717,6 +1776,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "SVNL00655429-L1 Power Factor",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1742,6 +1802,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "SVNL00655429-L2 Power Factor",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1767,6 +1828,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "SVNL00655429-L3 Power Factor",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1792,6 +1854,7 @@
                     "sensor_type": "sdbMgmtStsRingState",
                     "sensor_descr": "Databus Ring State",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1817,6 +1880,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 234.33,
@@ -1842,6 +1906,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel10",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 233.09,
@@ -1867,6 +1932,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel11",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 233.39,
@@ -1892,6 +1958,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel12",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 233.2,
@@ -1917,6 +1984,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 234.96,
@@ -1942,6 +2010,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 234.54,
@@ -1967,6 +2036,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 235.51,
@@ -1992,6 +2062,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel5",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 236.68,
@@ -2017,6 +2088,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel6",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 236.53,
@@ -2042,6 +2114,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel7",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 232.97,
@@ -2067,6 +2140,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel8",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 233.68,
@@ -2092,6 +2166,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "channel9",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 233.46,
@@ -2117,6 +2192,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "SVNL00655429-L1 Voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -2142,6 +2218,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "SVNL00655429-L2 Voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -2167,6 +2244,7 @@
                     "sensor_type": "schleifenbauer",
                     "sensor_descr": "SVNL00655429-L3 Voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -2188,14 +2266,12 @@
                 {
                     "state_name": "sdbMgmtStsRingState",
                     "state_descr": "open",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "sdbMgmtStsRingState",
                     "state_descr": "closed",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 }
@@ -2207,7 +2283,7 @@
         "discovery": {
             "entPhysical": [
                 {
-                    "entPhysicalIndex": 10,
+                    "entPhysicalIndex": 20,
                     "entPhysicalDescr": "Schleifenbauer 3-phase, 27-outlet PDU",
                     "entPhysicalClass": "chassis",
                     "entPhysicalName": "Schleifenbauer PDU - SPDM v250",
@@ -2223,6 +2299,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2239,9 +2316,10 @@
                     "entPhysicalModelName": null,
                     "entPhysicalVendorType": null,
                     "entPhysicalSerialNum": null,
-                    "entPhysicalContainedIn": 10,
+                    "entPhysicalContainedIn": 20,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2261,6 +2339,7 @@
                     "entPhysicalContainedIn": 1101000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2280,6 +2359,7 @@
                     "entPhysicalContainedIn": 1101000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2299,6 +2379,7 @@
                     "entPhysicalContainedIn": 1101000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2318,6 +2399,7 @@
                     "entPhysicalContainedIn": 1101000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2337,6 +2419,7 @@
                     "entPhysicalContainedIn": 1101000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2353,9 +2436,10 @@
                     "entPhysicalModelName": null,
                     "entPhysicalVendorType": null,
                     "entPhysicalSerialNum": null,
-                    "entPhysicalContainedIn": 10,
+                    "entPhysicalContainedIn": 20,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2375,6 +2459,7 @@
                     "entPhysicalContainedIn": 1102000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2394,6 +2479,7 @@
                     "entPhysicalContainedIn": 1102000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2413,6 +2499,7 @@
                     "entPhysicalContainedIn": 1102000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2432,6 +2519,7 @@
                     "entPhysicalContainedIn": 1102000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2451,6 +2539,7 @@
                     "entPhysicalContainedIn": 1102000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2467,9 +2556,10 @@
                     "entPhysicalModelName": null,
                     "entPhysicalVendorType": null,
                     "entPhysicalSerialNum": null,
-                    "entPhysicalContainedIn": 10,
+                    "entPhysicalContainedIn": 20,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2489,6 +2579,7 @@
                     "entPhysicalContainedIn": 1103000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2508,6 +2599,7 @@
                     "entPhysicalContainedIn": 1103000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2527,6 +2619,7 @@
                     "entPhysicalContainedIn": 1103000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2546,6 +2639,7 @@
                     "entPhysicalContainedIn": 1103000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2565,6 +2659,7 @@
                     "entPhysicalContainedIn": 1103000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2581,9 +2676,10 @@
                     "entPhysicalModelName": null,
                     "entPhysicalVendorType": null,
                     "entPhysicalSerialNum": null,
-                    "entPhysicalContainedIn": 10,
+                    "entPhysicalContainedIn": 20,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2603,6 +2699,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2622,6 +2719,7 @@
                     "entPhysicalContainedIn": 1201000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2641,6 +2739,7 @@
                     "entPhysicalContainedIn": 1201000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2660,6 +2759,7 @@
                     "entPhysicalContainedIn": 1201000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2679,6 +2779,7 @@
                     "entPhysicalContainedIn": 1201000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2698,6 +2799,7 @@
                     "entPhysicalContainedIn": 1201000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2717,6 +2819,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2736,6 +2839,7 @@
                     "entPhysicalContainedIn": 1202000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2755,6 +2859,7 @@
                     "entPhysicalContainedIn": 1202000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2774,6 +2879,7 @@
                     "entPhysicalContainedIn": 1202000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2793,6 +2899,7 @@
                     "entPhysicalContainedIn": 1202000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2812,6 +2919,7 @@
                     "entPhysicalContainedIn": 1202000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2831,6 +2939,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2850,6 +2959,7 @@
                     "entPhysicalContainedIn": 1203000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2869,6 +2979,7 @@
                     "entPhysicalContainedIn": 1203000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2888,6 +2999,7 @@
                     "entPhysicalContainedIn": 1203000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2907,6 +3019,7 @@
                     "entPhysicalContainedIn": 1203000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2926,6 +3039,7 @@
                     "entPhysicalContainedIn": 1203000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2945,6 +3059,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2964,6 +3079,7 @@
                     "entPhysicalContainedIn": 1204000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2983,6 +3099,7 @@
                     "entPhysicalContainedIn": 1204000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3002,6 +3119,7 @@
                     "entPhysicalContainedIn": 1204000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3021,6 +3139,7 @@
                     "entPhysicalContainedIn": 1204000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3040,6 +3159,7 @@
                     "entPhysicalContainedIn": 1204000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3059,6 +3179,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3078,6 +3199,7 @@
                     "entPhysicalContainedIn": 1205000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3097,6 +3219,7 @@
                     "entPhysicalContainedIn": 1205000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3116,6 +3239,7 @@
                     "entPhysicalContainedIn": 1205000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3135,6 +3259,7 @@
                     "entPhysicalContainedIn": 1205000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3154,6 +3279,7 @@
                     "entPhysicalContainedIn": 1205000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3173,6 +3299,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3192,6 +3319,7 @@
                     "entPhysicalContainedIn": 1206000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3211,6 +3339,7 @@
                     "entPhysicalContainedIn": 1206000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3230,6 +3359,7 @@
                     "entPhysicalContainedIn": 1206000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3249,6 +3379,7 @@
                     "entPhysicalContainedIn": 1206000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3268,6 +3399,7 @@
                     "entPhysicalContainedIn": 1206000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3287,6 +3419,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3306,6 +3439,7 @@
                     "entPhysicalContainedIn": 1207000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3325,6 +3459,7 @@
                     "entPhysicalContainedIn": 1207000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3344,6 +3479,7 @@
                     "entPhysicalContainedIn": 1207000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3363,6 +3499,7 @@
                     "entPhysicalContainedIn": 1207000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3382,6 +3519,7 @@
                     "entPhysicalContainedIn": 1207000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3401,6 +3539,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3420,6 +3559,7 @@
                     "entPhysicalContainedIn": 1208000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3439,6 +3579,7 @@
                     "entPhysicalContainedIn": 1208000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3458,6 +3599,7 @@
                     "entPhysicalContainedIn": 1208000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3477,6 +3619,7 @@
                     "entPhysicalContainedIn": 1208000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3496,6 +3639,7 @@
                     "entPhysicalContainedIn": 1208000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3515,6 +3659,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3534,6 +3679,7 @@
                     "entPhysicalContainedIn": 1209000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3553,6 +3699,7 @@
                     "entPhysicalContainedIn": 1209000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3572,6 +3719,7 @@
                     "entPhysicalContainedIn": 1209000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3591,6 +3739,7 @@
                     "entPhysicalContainedIn": 1209000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3610,6 +3759,7 @@
                     "entPhysicalContainedIn": 1209000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3629,6 +3779,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3648,6 +3799,7 @@
                     "entPhysicalContainedIn": 1210000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3667,6 +3819,7 @@
                     "entPhysicalContainedIn": 1210000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3686,6 +3839,7 @@
                     "entPhysicalContainedIn": 1210000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3705,6 +3859,7 @@
                     "entPhysicalContainedIn": 1210000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3724,6 +3879,7 @@
                     "entPhysicalContainedIn": 1210000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3743,6 +3899,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3762,6 +3919,7 @@
                     "entPhysicalContainedIn": 1211000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3781,6 +3939,7 @@
                     "entPhysicalContainedIn": 1211000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3800,6 +3959,7 @@
                     "entPhysicalContainedIn": 1211000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3819,6 +3979,7 @@
                     "entPhysicalContainedIn": 1211000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3838,6 +3999,7 @@
                     "entPhysicalContainedIn": 1211000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3857,6 +4019,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3876,6 +4039,7 @@
                     "entPhysicalContainedIn": 1212000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3895,6 +4059,7 @@
                     "entPhysicalContainedIn": 1212000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3914,6 +4079,7 @@
                     "entPhysicalContainedIn": 1212000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3933,6 +4099,7 @@
                     "entPhysicalContainedIn": 1212000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3952,6 +4119,7 @@
                     "entPhysicalContainedIn": 1212000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3971,6 +4139,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3990,6 +4159,7 @@
                     "entPhysicalContainedIn": 1213000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4009,6 +4179,7 @@
                     "entPhysicalContainedIn": 1213000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4028,6 +4199,7 @@
                     "entPhysicalContainedIn": 1213000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4047,6 +4219,7 @@
                     "entPhysicalContainedIn": 1213000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4066,6 +4239,7 @@
                     "entPhysicalContainedIn": 1213000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4085,6 +4259,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4104,6 +4279,7 @@
                     "entPhysicalContainedIn": 1214000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4123,6 +4299,7 @@
                     "entPhysicalContainedIn": 1214000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4142,6 +4319,7 @@
                     "entPhysicalContainedIn": 1214000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4161,6 +4339,7 @@
                     "entPhysicalContainedIn": 1214000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4180,6 +4359,7 @@
                     "entPhysicalContainedIn": 1214000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4199,6 +4379,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4218,6 +4399,7 @@
                     "entPhysicalContainedIn": 1215000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4237,6 +4419,7 @@
                     "entPhysicalContainedIn": 1215000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4256,6 +4439,7 @@
                     "entPhysicalContainedIn": 1215000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4275,6 +4459,7 @@
                     "entPhysicalContainedIn": 1215000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4294,6 +4479,7 @@
                     "entPhysicalContainedIn": 1215000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4313,6 +4499,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4332,6 +4519,7 @@
                     "entPhysicalContainedIn": 1216000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4351,6 +4539,7 @@
                     "entPhysicalContainedIn": 1216000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4370,6 +4559,7 @@
                     "entPhysicalContainedIn": 1216000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4389,6 +4579,7 @@
                     "entPhysicalContainedIn": 1216000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4408,6 +4599,7 @@
                     "entPhysicalContainedIn": 1216000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4427,6 +4619,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4446,6 +4639,7 @@
                     "entPhysicalContainedIn": 1217000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4465,6 +4659,7 @@
                     "entPhysicalContainedIn": 1217000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4484,6 +4679,7 @@
                     "entPhysicalContainedIn": 1217000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4503,6 +4699,7 @@
                     "entPhysicalContainedIn": 1217000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4522,6 +4719,7 @@
                     "entPhysicalContainedIn": 1217000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4541,6 +4739,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4560,6 +4759,7 @@
                     "entPhysicalContainedIn": 1218000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4579,6 +4779,7 @@
                     "entPhysicalContainedIn": 1218000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4598,6 +4799,7 @@
                     "entPhysicalContainedIn": 1218000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4617,6 +4819,7 @@
                     "entPhysicalContainedIn": 1218000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4636,6 +4839,7 @@
                     "entPhysicalContainedIn": 1218000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4655,6 +4859,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4674,6 +4879,7 @@
                     "entPhysicalContainedIn": 1219000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4693,6 +4899,7 @@
                     "entPhysicalContainedIn": 1219000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4712,6 +4919,7 @@
                     "entPhysicalContainedIn": 1219000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4731,6 +4939,7 @@
                     "entPhysicalContainedIn": 1219000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4750,6 +4959,7 @@
                     "entPhysicalContainedIn": 1219000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4769,6 +4979,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4788,6 +4999,7 @@
                     "entPhysicalContainedIn": 1220000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4807,6 +5019,7 @@
                     "entPhysicalContainedIn": 1220000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4826,6 +5039,7 @@
                     "entPhysicalContainedIn": 1220000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4845,6 +5059,7 @@
                     "entPhysicalContainedIn": 1220000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4864,6 +5079,7 @@
                     "entPhysicalContainedIn": 1220000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4883,6 +5099,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4902,6 +5119,7 @@
                     "entPhysicalContainedIn": 1221000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4921,6 +5139,7 @@
                     "entPhysicalContainedIn": 1221000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4940,6 +5159,7 @@
                     "entPhysicalContainedIn": 1221000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4959,6 +5179,7 @@
                     "entPhysicalContainedIn": 1221000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4978,6 +5199,7 @@
                     "entPhysicalContainedIn": 1221000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4997,6 +5219,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5016,6 +5239,7 @@
                     "entPhysicalContainedIn": 1222000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5035,6 +5259,7 @@
                     "entPhysicalContainedIn": 1222000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5054,6 +5279,7 @@
                     "entPhysicalContainedIn": 1222000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5073,6 +5299,7 @@
                     "entPhysicalContainedIn": 1222000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5092,6 +5319,7 @@
                     "entPhysicalContainedIn": 1222000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5111,6 +5339,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5130,6 +5359,7 @@
                     "entPhysicalContainedIn": 1223000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5149,6 +5379,7 @@
                     "entPhysicalContainedIn": 1223000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5168,6 +5399,7 @@
                     "entPhysicalContainedIn": 1223000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5187,6 +5419,7 @@
                     "entPhysicalContainedIn": 1223000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5206,6 +5439,7 @@
                     "entPhysicalContainedIn": 1223000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5225,6 +5459,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5244,6 +5479,7 @@
                     "entPhysicalContainedIn": 1224000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5263,6 +5499,7 @@
                     "entPhysicalContainedIn": 1224000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5282,6 +5519,7 @@
                     "entPhysicalContainedIn": 1224000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5301,6 +5539,7 @@
                     "entPhysicalContainedIn": 1224000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5320,6 +5559,7 @@
                     "entPhysicalContainedIn": 1224000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5339,6 +5579,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5358,6 +5599,7 @@
                     "entPhysicalContainedIn": 1225000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5377,6 +5619,7 @@
                     "entPhysicalContainedIn": 1225000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5396,6 +5639,7 @@
                     "entPhysicalContainedIn": 1225000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5415,6 +5659,7 @@
                     "entPhysicalContainedIn": 1225000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5434,6 +5679,7 @@
                     "entPhysicalContainedIn": 1225000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5453,6 +5699,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5472,6 +5719,7 @@
                     "entPhysicalContainedIn": 1226000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5491,6 +5739,7 @@
                     "entPhysicalContainedIn": 1226000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5510,6 +5759,7 @@
                     "entPhysicalContainedIn": 1226000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5529,6 +5779,7 @@
                     "entPhysicalContainedIn": 1226000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5548,6 +5799,7 @@
                     "entPhysicalContainedIn": 1226000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5567,6 +5819,7 @@
                     "entPhysicalContainedIn": 1200000,
                     "entPhysicalParentRelPos": 27,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5586,6 +5839,7 @@
                     "entPhysicalContainedIn": 1227000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5605,6 +5859,7 @@
                     "entPhysicalContainedIn": 1227000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5624,6 +5879,7 @@
                     "entPhysicalContainedIn": 1227000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5643,6 +5899,7 @@
                     "entPhysicalContainedIn": 1227000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5662,6 +5919,7 @@
                     "entPhysicalContainedIn": 1227000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5678,9 +5936,10 @@
                     "entPhysicalModelName": null,
                     "entPhysicalVendorType": null,
                     "entPhysicalSerialNum": null,
-                    "entPhysicalContainedIn": 10,
+                    "entPhysicalContainedIn": 20,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5700,6 +5959,7 @@
                     "entPhysicalContainedIn": 1300000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -5719,6 +5979,7 @@
                     "entPhysicalContainedIn": 1300000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Schleifenbauer Products B.V.",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 }
             ]

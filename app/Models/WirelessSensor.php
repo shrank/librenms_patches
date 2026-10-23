@@ -27,14 +27,16 @@
 namespace App\Models;
 
 use App\Facades\LibrenmsConfig;
-use App\Models\Traits\HasThresholds;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Arr;
+use LibreNMS\Enum\WirelessSensorType;
+use LibreNMS\Interfaces\Models\HasSyncProtectedAttributes;
 use LibreNMS\Interfaces\Models\Keyable;
 use LibreNMS\Util\Number;
 
-class WirelessSensor extends DeviceRelatedModel implements Keyable
+class WirelessSensor extends SensorModel implements HasSyncProtectedAttributes, Keyable
 {
-    use HasThresholds;
+    use HasFactory;
 
     const CREATED_AT = null;
     const UPDATED_AT = 'lastupdate';
@@ -64,37 +66,46 @@ class WirelessSensor extends DeviceRelatedModel implements Keyable
     ];
 
     /**
-     * @return array{sensor_oids: 'array'}
+     * @return array<string, string>
      */
     protected function casts(): array
     {
         return [
+            'sensor_class' => WirelessSensorType::class,
             'sensor_oids' => 'array',
         ];
     }
 
     // ---- Helper Functions ----
 
-    public function classDescr()
+    public function classDescr(): string
     {
-        return __('wireless.' . $this->sensor_class . '.short');
+        return __('wireless.' . $this->sensor_class->value . '.short');
+    }
+
+    public function classDescrLong(): string
+    {
+        return $this->classDescr(); // FIXME stub
     }
 
     public function icon(): string
     {
-        return collect(collect(\LibreNMS\Device\WirelessSensor::getTypes())
-            ->get($this->sensor_class, []))
-            ->get('icon', 'signal');
+        return $this->sensor_class->icon();
     }
 
     public function unit(): string
     {
-        return __('wireless.' . $this->sensor_class . '.unit');
+        return __('wireless.' . $this->sensor_class->value . '.unit');
+    }
+
+    public function unitLong(): string
+    {
+        return $this->unit(); // FIXME stub
     }
 
     public function getGraphType(): string
     {
-        return 'wireless_' . $this->sensor_class;
+        return 'wireless_' . $this->sensor_class->value;
     }
 
     public function formatValue($field = 'sensor_current'): string
@@ -111,17 +122,30 @@ class WirelessSensor extends DeviceRelatedModel implements Keyable
         }
 
         return match ($this->sensor_class) {
-            'power', 'rate' => Number::formatSi($value, 3, 0, $this->unit()),
-            'frequency' => Number::formatSi($value * 1000000, 3, 0, 'Hz'),
-            'distance' => Number::formatSi($value * 1000, 2, 3, 'm'),
-            'dbm' => round($value, 3) . ' ' . $this->unit(),
+            WirelessSensorType::Power, WirelessSensorType::Rate => Number::formatSi($value, 3, 0, $this->unit()),
+            WirelessSensorType::Frequency => Number::formatSi($value * 1000000, 3, 0, 'Hz'),
+            WirelessSensorType::Distance => Number::formatSi($value * 1000, 2, 3, 'm'),
             default => $value . ' ' . $this->unit(),
         };
     }
 
+    /**
+     * Custom limits set by a user are not overwritten by discovery, otherwise discovery only fills empty limits
+     *
+     * @return string[]
+     */
+    public function getSyncProtectedAttributes(): array
+    {
+        if ($this->sensor_custom === 'Yes') {
+            return self::LIMITS;
+        }
+
+        return array_values(array_filter(self::LIMITS, fn (string $limit): bool => $this->getAttribute($limit) !== null));
+    }
+
     public function getCompositeKey(): string
     {
-        return "$this->sensor_class-$this->sensor_type-$this->sensor_index";
+        return "{$this->sensor_class->value}-$this->sensor_type-$this->sensor_index";
     }
 
     public function fillValue(array $values): self

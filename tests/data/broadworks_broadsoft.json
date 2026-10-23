@@ -820,6 +820,7 @@
                     "sensor_type": "broadworks",
                     "sensor_descr": "Active callP session",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -845,6 +846,7 @@
                     "sensor_type": "broadworks",
                     "sensor_descr": "Call per second",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -870,6 +872,7 @@
                     "sensor_type": "broadworks",
                     "sensor_descr": "Emergency Call Attempt Failures",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -895,6 +898,7 @@
                     "sensor_type": "broadworks",
                     "sensor_descr": "Emergency Call Attempt",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -920,6 +924,7 @@
                     "sensor_type": "broadworks",
                     "sensor_descr": "Primary SMTP Server delivery failures",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -945,6 +950,7 @@
                     "sensor_type": "broadworks",
                     "sensor_descr": "Migrated Users",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -970,6 +976,7 @@
                     "sensor_type": "broadworks",
                     "sensor_descr": "Provisioning OCI Connections",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -995,6 +1002,7 @@
                     "sensor_type": "broadworks",
                     "sensor_descr": "Provisioning Critical errors",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1020,6 +1028,7 @@
                     "sensor_type": "broadworks",
                     "sensor_descr": "Provisioning Failed transactions",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1045,6 +1054,7 @@
                     "sensor_type": "bwAdminState",
                     "sensor_descr": "Broadworks lock status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1066,42 +1076,36 @@
                 {
                     "state_name": "bwAdminState",
                     "state_descr": "Lock",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "bwAdminState",
                     "state_descr": "Locking",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "bwAdminState",
                     "state_descr": "Unlock",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "bwAdminState",
                     "state_descr": "ShuttingDown",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "bwAdminState",
                     "state_descr": "Stopped",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "bwAdminState",
                     "state_descr": "Forced Lock",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 1
                 }

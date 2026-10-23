@@ -2069,6 +2069,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Power Supply 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -2094,6 +2095,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Power Supply 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -2119,6 +2121,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Temperature Sensor",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -2144,6 +2147,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -2169,6 +2173,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -2194,6 +2199,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -2219,6 +2225,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -2244,6 +2251,7 @@
                     "sensor_type": "avaya-ers",
                     "sensor_descr": "Unit 1 temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 2,
                     "sensor_multiplier": 1,
                     "sensor_current": 43,
@@ -2265,84 +2273,72 @@
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "other",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "notAvail",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "removed",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "disabled",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "normal",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "resetInProg",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "testing",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "warning",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "nonFatalErr",
-                    "state_draw_graph": 0,
                     "state_value": 9,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "fatalErr",
-                    "state_draw_graph": 0,
                     "state_value": 10,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "notConfig",
-                    "state_draw_graph": 0,
                     "state_value": 11,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "obsoleted",
-                    "state_draw_graph": 0,
                     "state_value": 12,
                     "state_generic_value": 3
                 }
@@ -2359,6 +2355,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Power Supply 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -2384,6 +2381,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Power Supply 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 4,
@@ -2409,6 +2407,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Temperature Sensor",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -2434,6 +2433,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -2459,6 +2459,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -2484,6 +2485,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -2509,6 +2511,7 @@
                     "sensor_type": "s5ChasComOperState",
                     "sensor_descr": "BOSS Unit 1: Internal Fan 4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -2534,6 +2537,7 @@
                     "sensor_type": "avaya-ers",
                     "sensor_descr": "Unit 1 temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 2,
                     "sensor_multiplier": 1,
                     "sensor_current": 43,
@@ -2555,84 +2559,72 @@
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "other",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "notAvail",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "removed",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "disabled",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "normal",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "resetInProg",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "testing",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "warning",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "nonFatalErr",
-                    "state_draw_graph": 0,
                     "state_value": 9,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "fatalErr",
-                    "state_draw_graph": 0,
                     "state_value": 10,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "notConfig",
-                    "state_draw_graph": 0,
                     "state_value": 11,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "s5ChasComOperState",
                     "state_descr": "obsoleted",
-                    "state_draw_graph": 0,
                     "state_value": 12,
                     "state_generic_value": 3
                 }
@@ -2946,6 +2938,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2965,6 +2958,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 1
                 },
                 {
@@ -2984,6 +2978,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2
                 },
                 {
@@ -3003,6 +2998,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 3
                 },
                 {
@@ -3022,6 +3018,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 4
                 },
                 {
@@ -3041,6 +3038,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 5
                 },
                 {
@@ -3060,6 +3058,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 6
                 },
                 {
@@ -3079,6 +3078,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 7
                 },
                 {
@@ -3098,6 +3098,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 8
                 },
                 {
@@ -3117,6 +3118,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 101,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3136,6 +3138,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 102,
                     "entPhysicalMfgName": "Extreme Networks",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 }
             ]
@@ -3149,7 +3152,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "cox-base-vsp4k1",
-                    "remote_port": "1/1 (f81547e32200)",
+                    "remote_port": "1/1",
                     "remote_platform": null,
                     "remote_version": "VSP-4450GSX-PWR+ (7.1.1.0)",
                     "ifAlias": "fap: cox-base-vsp4k1",

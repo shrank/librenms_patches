@@ -12,6 +12,7 @@
         <table class="table table-striped table-bordered table-hover table-condensed">
             <tr>
                 <th>{{ __('Poller Name') }}</th>
+                <th>{{ __('Environment') }}</th>
                 <th>{{ __('Devices Polled') }}</th>
                 <th>{{ __('Total Poll Time') }}</th>
                 <th>{{ __('Last Run') }}</th>
@@ -20,10 +21,17 @@
             @foreach($pollers as $poller)
             <tr class="{{ $poller['row_class'] }}" id="row_{{ $poller['id'] }}">
                 <td>{{ $poller['poller_name'] }}</td>
+                <td>@include('poller.details', ['details' => $poller->poller_details])</td>
                 <td>{{ $poller['devices'] }}</td>
                 <td>{{ $poller['time_taken'] }} Seconds</td>
-                <td>{{ (new Carbon\Carbon($poller['last_polled']))->setTimezone($timezone) }}</td>
-                <td>@if( $poller['long_not_polled'] )<button type='button' class='btn btn-danger btn-sm' aria-label={{ __('Delete') }} data-toggle='modal' data-target='#confirm-delete' data-id='{{ $poller['id'] }}' data-pollertype='delete-poller' name='delete-poller'><i class='fa fa-trash' aria-hidden='true'></i></button>@endif</td>
+                <td>{{ \LibreNMS\Util\Time::format($poller['last_polled'], 'compact') }}</td>
+                <td>
+                    @can('delete', $poller)
+                    @if($poller['long_not_polled'])
+                        <button type='button' class='btn btn-danger btn-sm' aria-label={{ __('Delete') }} data-toggle='modal' data-target='#confirm-delete' data-id='{{ $poller['id'] }}' data-pollertype='delete-poller' name='delete-poller'><i class='fa fa-trash' aria-hidden='true'></i></button>
+                    @endif
+                    @endcan
+                </td>
             </tr>
             @endforeach
         </table>
@@ -39,6 +47,7 @@
                 <th>{{ __('Name') }}</th>
                 <th>{{ __('Node ID') }}</th>
                 <th>{{ __('Version') }}</th>
+                <th>{{ __('Environment') }}</th>
                 <th>{{ __('Groups Served') }}</th>
                 <th>{{ __('Last Checkin') }}</th>
                 <th>{{ __('Cluster Master') }}</th>
@@ -56,8 +65,9 @@
                     <td rowspan="{{ $poller->stats->count() }}">{{ $poller->poller_name }}</td>
                     <td rowspan="{{ $poller->stats->count() }}" @if($poller->node_id == '') class="danger" @endif>{{ $poller->node_id }}</td>
                     <td rowspan="{{ $poller->stats->count() }}">{{ $poller->poller_version }}</td>
+                    <td rowspan="{{ $poller->stats->count() }}">@include('poller.details', ['details' => $poller->poller_details])</td>
                     <td rowspan="{{ $poller->stats->count() }}">{{ $poller->poller_groups }}</td>
-                    <td rowspan="{{ $poller->stats->count() }}">{{ (new Carbon\Carbon($poller->last_report))->setTimezone($timezone) }}</td>
+                    <td rowspan="{{ $poller->stats->count() }}">{{ \LibreNMS\Util\Time::format($poller->last_report, 'compact') }}</td>
                     <td rowspan="{{ $poller->stats->count() }}">{{ __($poller->master ? 'Yes' : 'No') }}</td>
                 @endif
                     <td>{{ $stat->poller_type }}</td>
@@ -80,7 +90,6 @@
 </x-panel>
 @endif
 
-@if(auth()->user()->isAdmin())
 <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="{{ __('Delete') }}" aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
@@ -106,11 +115,9 @@
         </div>
     </div>
 </div>
-@endif
 @endsection
 
 @section('scripts')
-@if(auth()->user()->isAdmin())
 <script>
     $('#confirm-delete').on('show.bs.modal', function (e) {
         id = $(e.relatedTarget).data('id');
@@ -123,10 +130,15 @@
         e.preventDefault();
         var id = $("#id").val();
         var pollertype = $("#pollertype").val();
+        var url;
+        if (pollertype === 'delete-poller') {
+            url = route('poller.destroy', {poller: id});
+        } else {
+            url = route('poller-cluster.destroy', {poller_cluster: id});
+        }
         $.ajax({
-            type: 'POST',
-            url: 'ajax_form.php',
-            data: {type: pollertype, id: id},
+            type: 'DELETE',
+            url: url,
             success: function (result) {
                 if (result.status == 0) {
                     toastr.success(result.message);
@@ -144,5 +156,4 @@
         });
     });
 </script>
-@endif
 @endsection

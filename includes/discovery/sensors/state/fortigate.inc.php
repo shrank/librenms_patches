@@ -25,6 +25,9 @@
  * @copyright  2025 CTNET BV
  * @author     Rudy Broersma <r.broersma@ctnet.nl>
  */
+
+use LibreNMS\Enum\SensorType;
+
 $systemMode = SnmpQuery::enumStrings()->get('FORTINET-FORTIGATE-MIB::fgHaSystemMode.0')->value(0);
 
 // Verify that the device is clustered
@@ -55,8 +58,8 @@ if ($systemMode == 'activePassive' || $systemMode == 'activeActive') {
     $stateName = 'fgHaStatsSyncStatus';
 
     $states = [
-        ['value' => 0, 'generic' => 2, 'graph' => 0, 'descr' => 'Out Of Sync'],
-        ['value' => 1, 'generic' => 0, 'graph' => 1, 'descr' => 'In Sync'],
+        ['value' => 0, 'generic' => 2, 'descr' => 'Out Of Sync'],
+        ['value' => 1, 'generic' => 0, 'descr' => 'In Sync'],
     ];
 
     create_state_index($stateName, $states);
@@ -75,7 +78,7 @@ if ($systemMode == 'activePassive' || $systemMode == 'activeActive') {
 
         discover_sensor(
             null,
-            'state',
+            SensorType::State,
             $device,
             '.1.3.6.1.4.1.12356.101.13.2.1.1.12.' . $index,
             $index,

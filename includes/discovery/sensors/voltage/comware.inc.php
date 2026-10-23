@@ -12,6 +12,9 @@
  *
  * @author     Peca Nesovanovic <peca.nesovanovic@sattrakt.com>
 */
+use LibreNMS\Enum\IfOperStatus;
+use LibreNMS\Enum\SensorType;
+
 echo 'Comware ';
 
 $multiplier = 1;
@@ -21,7 +24,7 @@ $hh3cTransceiverInfoTable = SnmpQuery::cache()->enumStrings()->walk('HH3C-TRANSC
 foreach ($hh3cTransceiverInfoTable as $index => $entry) {
     if (is_numeric($entry['HH3C-TRANSCEIVER-INFO-MIB::hh3cTransceiverVoltage']) && $entry['HH3C-TRANSCEIVER-INFO-MIB::hh3cTransceiverVoltage'] != 2147483647 && isset($entry['HH3C-TRANSCEIVER-INFO-MIB::hh3cTransceiverDiagnostic'])) {
         $port = PortCache::getByIfIndex($index, $device['device_id']);
-        if ($port?->ifAdminStatus != 'up') {
+        if ($port?->ifAdminStatus != IfOperStatus::Up) {
             continue;
         }
 
@@ -35,6 +38,6 @@ foreach ($hh3cTransceiverInfoTable as $index => $entry) {
         $entPhysicalIndex_measured = 'ports';
 
         $descr = $port->getShortLabel() . ' Supply Voltage';
-        discover_sensor(null, 'voltage', $device, $oid, 'volt-' . $index, 'comware', $descr, $divisor, $multiplier, $limit_low, $warn_limit_low, $warn_limit, $limit, $current, 'snmp', $entPhysicalIndex, $entPhysicalIndex_measured, group: 'transceiver');
+        discover_sensor(null, SensorType::Voltage, $device, $oid, 'volt-' . $index, 'comware', $descr, $divisor, $multiplier, $limit_low, $warn_limit_low, $warn_limit, $limit, $current, 'snmp', $entPhysicalIndex, $entPhysicalIndex_measured, group: 'transceiver');
     }
 }

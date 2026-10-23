@@ -1242,6 +1242,7 @@
                     "sensor_type": "adva_fsp150",
                     "sensor_descr": "FSP150CC-GE112 [#1]",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 33,
@@ -1267,6 +1268,7 @@
                     "sensor_type": "adva_fsp150",
                     "sensor_descr": "FSP150CC-GE112 [#1]",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 12,
@@ -1307,6 +1309,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Sanmina",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1326,6 +1329,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Sanmina",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1345,6 +1349,7 @@
                     "entPhysicalContainedIn": 2,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Sanmina",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1364,6 +1369,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1383,6 +1389,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1402,6 +1409,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1421,6 +1429,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1440,6 +1449,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "N/A",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1459,6 +1469,7 @@
                     "entPhysicalContainedIn": 9,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "N/A",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1478,6 +1489,7 @@
                     "entPhysicalContainedIn": 3,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 }
             ]

@@ -242,6 +242,7 @@
                     "sensor_type": "mts-com",
                     "sensor_descr": "Battery Current",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 17,
@@ -267,6 +268,7 @@
                     "sensor_type": "mts-com",
                     "sensor_descr": "Rectifier Output Current",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 4.388,
@@ -292,6 +294,7 @@
                     "sensor_type": "mts-com",
                     "sensor_descr": "System Current",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 8.453,
@@ -317,6 +320,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::acstopflag",
                     "sensor_descr": "AC Input Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -342,6 +346,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::ambientovertemp",
                     "sensor_descr": "Ambient Temperature High",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -367,6 +372,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::ambientundertemp",
                     "sensor_descr": "Ambient Temperature Low",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -392,6 +398,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::batterymode",
                     "sensor_descr": "Battery State",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -417,6 +424,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::batteryprotectflag",
                     "sensor_descr": "Battery Low Voltage Disconnect",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -442,6 +450,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::battfusebreak",
                     "sensor_descr": "Battery Breaker Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -467,6 +476,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::currentsharenotok",
                     "sensor_descr": "Rectifier Current Share Imbalance",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -492,6 +502,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::dcdceepromfault",
                     "sensor_descr": "DC-DC EEPROM Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -517,6 +528,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::dcdcovertemp",
                     "sensor_descr": "DC-DC Over Temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -542,6 +554,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::dcvoltagealarm",
                     "sensor_descr": "DC Output Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -567,6 +580,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::fanisnotrotate",
                     "sensor_descr": "Fan Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -592,6 +606,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::hvsdflag",
                     "sensor_descr": "High Voltage Shutdown - Output over voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -617,6 +632,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::inputundervol",
                     "sensor_descr": "Low Voltage Shutdown - Input under voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -642,6 +658,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::loadfusebreak",
                     "sensor_descr": "Load Breaker Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -667,6 +684,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::outputundervol",
                     "sensor_descr": "Low Voltage Shutdown - Output under voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -692,6 +710,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::pfceepromfault",
                     "sensor_descr": "PFC EEPROM Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -717,6 +736,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::pfcovertemp",
                     "sensor_descr": "PFC Over Temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -742,6 +762,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::powderatedbyacvol",
                     "sensor_descr": "Output power derate by AC voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -767,6 +788,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::powderatedbytemp",
                     "sensor_descr": "Output power derate by Temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -792,6 +814,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::rectopenstate",
                     "sensor_descr": "Rectifier Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -817,6 +840,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::rectpluginnotok",
                     "sensor_descr": "Rectifier Plug-In OK",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -842,6 +866,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::systemstatus",
                     "sensor_descr": "System Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -867,6 +892,7 @@
                     "sensor_type": "mts-com",
                     "sensor_descr": "AC Input Voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 243.904,
@@ -892,6 +918,7 @@
                     "sensor_type": "mts-com",
                     "sensor_descr": "Rectifier AC Input Voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 243.84,
@@ -917,6 +944,7 @@
                     "sensor_type": "mts-com",
                     "sensor_descr": "Rectifier Output Voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 53.476,
@@ -942,6 +970,7 @@
                     "sensor_type": "mts-com",
                     "sensor_descr": "System Voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 53.616,
@@ -963,329 +992,282 @@
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::acstopflag",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::acstopflag",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::ambientovertemp",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::ambientovertemp",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::ambientundertemp",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::ambientundertemp",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::batterymode",
                     "state_descr": "floatcharge",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::batterymode",
                     "state_descr": "floatcharge",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::batterymode",
                     "state_descr": "equalizecharge",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::batteryprotectflag",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::batteryprotectflag",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::battfusebreak",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::battfusebreak",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::currentsharenotok",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::currentsharenotok",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::dcdceepromfault",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::dcdceepromfault",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::dcdcovertemp",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::dcdcovertemp",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::dcvoltagealarm",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::dcvoltagealarm",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::fanisnotrotate",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::fanisnotrotate",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::hvsdflag",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::hvsdflag",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::inputundervol",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::inputundervol",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::loadfusebreak",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::loadfusebreak",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::outputundervol",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::outputundervol",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::pfceepromfault",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::pfceepromfault",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::pfcovertemp",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::pfcovertemp",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::powderatedbyacvol",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::powderatedbyacvol",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::powderatedbytemp",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::powderatedbytemp",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::rectopenstate",
                     "state_descr": "shutdown",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::rectopenstate",
                     "state_descr": "power-on",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::rectpluginnotok",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::rectpluginnotok",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::systemstatus",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::systemstatus",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::systemstatus",
                     "state_descr": "minor",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::systemstatus",
                     "state_descr": "major",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 }
@@ -1302,6 +1284,7 @@
                     "sensor_type": "mts-com",
                     "sensor_descr": "Battery Current",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 17,
@@ -1327,6 +1310,7 @@
                     "sensor_type": "mts-com",
                     "sensor_descr": "Rectifier Output Current",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 4.388,
@@ -1352,6 +1336,7 @@
                     "sensor_type": "mts-com",
                     "sensor_descr": "System Current",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 8.453,
@@ -1377,6 +1362,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::acstopflag",
                     "sensor_descr": "AC Input Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1402,6 +1388,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::ambientovertemp",
                     "sensor_descr": "Ambient Temperature High",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1427,6 +1414,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::ambientundertemp",
                     "sensor_descr": "Ambient Temperature Low",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1452,6 +1440,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::batterymode",
                     "sensor_descr": "Battery State",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1477,6 +1466,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::batteryprotectflag",
                     "sensor_descr": "Battery Low Voltage Disconnect",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1502,6 +1492,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::battfusebreak",
                     "sensor_descr": "Battery Breaker Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1527,6 +1518,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::currentsharenotok",
                     "sensor_descr": "Rectifier Current Share Imbalance",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1552,6 +1544,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::dcdceepromfault",
                     "sensor_descr": "DC-DC EEPROM Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1577,6 +1570,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::dcdcovertemp",
                     "sensor_descr": "DC-DC Over Temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1602,6 +1596,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::dcvoltagealarm",
                     "sensor_descr": "DC Output Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1627,6 +1622,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::fanisnotrotate",
                     "sensor_descr": "Fan Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1652,6 +1648,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::hvsdflag",
                     "sensor_descr": "High Voltage Shutdown - Output over voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1677,6 +1674,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::inputundervol",
                     "sensor_descr": "Low Voltage Shutdown - Input under voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1702,6 +1700,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::loadfusebreak",
                     "sensor_descr": "Load Breaker Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1727,6 +1726,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::outputundervol",
                     "sensor_descr": "Low Voltage Shutdown - Output under voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1752,6 +1752,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::pfceepromfault",
                     "sensor_descr": "PFC EEPROM Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1777,6 +1778,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::pfcovertemp",
                     "sensor_descr": "PFC Over Temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1802,6 +1804,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::powderatedbyacvol",
                     "sensor_descr": "Output power derate by AC voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1827,6 +1830,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::powderatedbytemp",
                     "sensor_descr": "Output power derate by Temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1852,6 +1856,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::rectopenstate",
                     "sensor_descr": "Rectifier Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1877,6 +1882,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::rectpluginnotok",
                     "sensor_descr": "Rectifier Plug-In OK",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1902,6 +1908,7 @@
                     "sensor_type": "ARHANGELSK-GLOBAL-REG::systemstatus",
                     "sensor_descr": "System Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1927,6 +1934,7 @@
                     "sensor_type": "mts-com",
                     "sensor_descr": "AC Input Voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 243.904,
@@ -1952,6 +1960,7 @@
                     "sensor_type": "mts-com",
                     "sensor_descr": "Rectifier AC Input Voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 243.904,
@@ -1977,6 +1986,7 @@
                     "sensor_type": "mts-com",
                     "sensor_descr": "Rectifier Output Voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 53.616,
@@ -2002,6 +2012,7 @@
                     "sensor_type": "mts-com",
                     "sensor_descr": "System Voltage",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 53.616,
@@ -2023,329 +2034,282 @@
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::acstopflag",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::acstopflag",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::ambientovertemp",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::ambientovertemp",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::ambientundertemp",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::ambientundertemp",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::batterymode",
                     "state_descr": "floatcharge",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::batterymode",
                     "state_descr": "floatcharge",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::batterymode",
                     "state_descr": "equalizecharge",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::batteryprotectflag",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::batteryprotectflag",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::battfusebreak",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::battfusebreak",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::currentsharenotok",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::currentsharenotok",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::dcdceepromfault",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::dcdceepromfault",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::dcdcovertemp",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::dcdcovertemp",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::dcvoltagealarm",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::dcvoltagealarm",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::fanisnotrotate",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::fanisnotrotate",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::hvsdflag",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::hvsdflag",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::inputundervol",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::inputundervol",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::loadfusebreak",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::loadfusebreak",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::outputundervol",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::outputundervol",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::pfceepromfault",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::pfceepromfault",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::pfcovertemp",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::pfcovertemp",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::powderatedbyacvol",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::powderatedbyacvol",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::powderatedbytemp",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::powderatedbytemp",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::rectopenstate",
                     "state_descr": "shutdown",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::rectopenstate",
                     "state_descr": "power-on",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::rectpluginnotok",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::rectpluginnotok",
                     "state_descr": "alarm",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::systemstatus",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::systemstatus",
                     "state_descr": "normal",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::systemstatus",
                     "state_descr": "minor",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "ARHANGELSK-GLOBAL-REG::systemstatus",
                     "state_descr": "major",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 }

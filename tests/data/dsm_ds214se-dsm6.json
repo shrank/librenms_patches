@@ -787,6 +787,7 @@
                     "sensor_type": "cpuFanStatusState",
                     "sensor_descr": "FAN - CPU",
                     "group": "System",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -812,6 +813,7 @@
                     "sensor_type": "diskStatusState",
                     "sensor_descr": "",
                     "group": "Disks",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -837,6 +839,7 @@
                     "sensor_type": "diskStatusState",
                     "sensor_descr": "",
                     "group": "Disks",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -862,6 +865,7 @@
                     "sensor_type": "powerStatusState",
                     "sensor_descr": "Power",
                     "group": "System",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -887,6 +891,7 @@
                     "sensor_type": "raidStatusState",
                     "sensor_descr": "Volume 1",
                     "group": "RAIDs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -912,6 +917,7 @@
                     "sensor_type": "systemFanStatusState",
                     "sensor_descr": "FAN - System",
                     "group": "System",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -937,6 +943,7 @@
                     "sensor_type": "systemStatusState",
                     "sensor_descr": "System",
                     "group": "System",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -962,6 +969,7 @@
                     "sensor_type": "upgradeAvailableState",
                     "sensor_descr": "Upgrade Availability",
                     "group": "System",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -987,6 +995,7 @@
                     "sensor_type": "dsm",
                     "sensor_descr": "",
                     "group": "Disks",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 35,
@@ -1012,6 +1021,7 @@
                     "sensor_type": "dsm",
                     "sensor_descr": "",
                     "group": "Disks",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 37,
@@ -1037,6 +1047,7 @@
                     "sensor_type": "dsm",
                     "sensor_descr": "System",
                     "group": "System",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 47,
@@ -1058,273 +1069,234 @@
                 {
                     "state_name": "cpuFanStatusState",
                     "state_descr": "Normal",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "cpuFanStatusState",
                     "state_descr": "Failed",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "diskStatusState",
                     "state_descr": "Normal",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "diskStatusState",
                     "state_descr": "Initialized",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "diskStatusState",
                     "state_descr": "NotInitialized",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "diskStatusState",
                     "state_descr": "SystemPartitionFailed",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "diskStatusState",
                     "state_descr": "Crashed",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "powerStatusState",
                     "state_descr": "Normal",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "powerStatusState",
                     "state_descr": "Failed",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "Normal",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "Repairing",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "Migrating",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "Expanding",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "Deleting",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "Creating",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "RaidSyncing",
-                    "state_draw_graph": 0,
                     "state_value": 7,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "RaidParityChecking",
-                    "state_draw_graph": 0,
                     "state_value": 8,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "RaidAssembling",
-                    "state_draw_graph": 0,
                     "state_value": 9,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "Canceling",
-                    "state_draw_graph": 0,
                     "state_value": 10,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "Degrade",
-                    "state_draw_graph": 0,
                     "state_value": 11,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "Crashed",
-                    "state_draw_graph": 0,
                     "state_value": 12,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "DataScrubbing",
-                    "state_draw_graph": 0,
                     "state_value": 13,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "RaidDeploying",
-                    "state_draw_graph": 0,
                     "state_value": 14,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "RaidUnDeploying",
-                    "state_draw_graph": 0,
                     "state_value": 15,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "RaidMountCache",
-                    "state_draw_graph": 0,
                     "state_value": 16,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "RaidUnmountCache",
-                    "state_draw_graph": 0,
                     "state_value": 17,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "RaidExpandingUnfinishedSHR",
-                    "state_draw_graph": 0,
                     "state_value": 18,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "RaidConvertSHRToPool",
-                    "state_draw_graph": 0,
                     "state_value": 19,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "RaidMigrateSHR1ToSHR2",
-                    "state_draw_graph": 0,
                     "state_value": 20,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "raidStatusState",
                     "state_descr": "RaidUnknownStatus",
-                    "state_draw_graph": 0,
                     "state_value": 21,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "systemFanStatusState",
                     "state_descr": "Normal",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "systemFanStatusState",
                     "state_descr": "Failed",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "systemStatusState",
                     "state_descr": "Normal",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "systemStatusState",
                     "state_descr": "Failed",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "upgradeAvailableState",
                     "state_descr": "Available",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "upgradeAvailableState",
                     "state_descr": "Unavailable",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "upgradeAvailableState",
                     "state_descr": "Connecting",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "upgradeAvailableState",
                     "state_descr": "Disconnected",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "upgradeAvailableState",
                     "state_descr": "Others",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 3
                 }

@@ -27,15 +27,17 @@
  * @author     Mikael Sipilainen <mikael.sipilainen@gmail.com>
  */
 
+use LibreNMS\Enum\SensorType;
+
 // Detect type of UPS (Signle-Phase/3 Phase)
 // Number of input lines
 $upsInputNumLines_oid = '.1.3.6.1.2.1.33.1.3.2.0';
-$in_phaseNum = snmp_get($device, $upsInputNumLines_oid, '-Oqv');
+$in_phaseNum = SnmpQuery::get($upsInputNumLines_oid)->value();
 
 // Single-phase system
 if ($in_phaseNum == '1') {
     $load_oid = '.1.3.6.1.4.1.935.1.1.1.4.2.3.0';
-    $output_load = snmp_get($device, $load_oid, '-Oqv');
+    $output_load = SnmpQuery::get($load_oid)->value();
 
     if (! empty($output_load) || $output_load == 0) {
         $type = 'netagent2';
@@ -50,7 +52,7 @@ if ($in_phaseNum == '1') {
 
         discover_sensor(
             null,
-            'load',
+            SensorType::Load,
             $device,
             $load_oid,
             $index,
@@ -71,7 +73,7 @@ if ($in_phaseNum == '1') {
 if ($in_phaseNum == '3') {
     // Output L1
     $load_oid = '.1.3.6.1.4.1.935.1.1.1.8.3.5.0';
-    $output_load = snmp_get($device, $load_oid, '-Oqv');
+    $output_load = SnmpQuery::get($load_oid)->value();
 
     if (! empty($output_load) || $output_load == 0) {
         $type = 'netagent2';
@@ -86,7 +88,7 @@ if ($in_phaseNum == '3') {
 
         discover_sensor(
             null,
-            'load',
+            SensorType::Load,
             $device,
             $load_oid,
             $index,
@@ -103,7 +105,7 @@ if ($in_phaseNum == '3') {
     }
     // Output L2
     $load_oid = '.1.3.6.1.4.1.935.1.1.1.8.3.6.0';
-    $output_load = snmp_get($device, $load_oid, '-Oqv');
+    $output_load = SnmpQuery::get($load_oid)->value();
 
     if (! empty($output_load) || $output_load == 0) {
         $type = 'netagent2';
@@ -118,7 +120,7 @@ if ($in_phaseNum == '3') {
 
         discover_sensor(
             null,
-            'load',
+            SensorType::Load,
             $device,
             $load_oid,
             $index,
@@ -135,7 +137,7 @@ if ($in_phaseNum == '3') {
     }
     // L3 output
     $load_oid = '.1.3.6.1.4.1.935.1.1.1.8.3.7.0';
-    $output_load = snmp_get($device, $load_oid, '-Oqv');
+    $output_load = SnmpQuery::get($load_oid)->value();
 
     if (! empty($output_load) || $output_load == 0) {
         $type = 'netagent2';
@@ -150,7 +152,7 @@ if ($in_phaseNum == '3') {
 
         discover_sensor(
             null,
-            'load',
+            SensorType::Load,
             $device,
             $load_oid,
             $index,

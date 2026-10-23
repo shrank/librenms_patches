@@ -6029,6 +6029,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "DOM TX Bias  for Ethernet21",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.01656,
@@ -6054,6 +6055,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "DOM TX Bias  for Ethernet22",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.01843,
@@ -6079,6 +6081,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 1 Input",
                     "group": "PSUs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.34,
@@ -6104,6 +6107,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 1 Output",
                     "group": "PSUs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 5.5,
@@ -6129,6 +6133,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 2 Input",
                     "group": "PSUs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.31,
@@ -6154,6 +6159,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 2 Output",
                     "group": "PSUs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 5.25,
@@ -6179,6 +6185,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "DOM TX Power  for Ethernet21",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -6.556,
@@ -6204,6 +6211,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "DOM TX Power  for Ethernet22",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": -6.478,
@@ -6229,6 +6237,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Fan Tray 1 Fan 1  1",
                     "group": "System",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 17460,
@@ -6254,6 +6263,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Fan Tray 2 Fan 1  1",
                     "group": "System",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 17820,
@@ -6279,6 +6289,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Fan Tray 3 Fan 1  1",
                     "group": "System",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 17820,
@@ -6304,6 +6315,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Fan Tray 4 Fan 1  1",
                     "group": "System",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 17820,
@@ -6329,6 +6341,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 1 Fan 1  1",
                     "group": "PSUs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 17820,
@@ -6354,6 +6367,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 2 Fan 1  1",
                     "group": "PSUs",
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 17820,
@@ -6379,6 +6393,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Cpu",
                     "group": "System",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 41.8,
@@ -6404,6 +6419,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rear",
                     "group": "System",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 39,
@@ -6429,6 +6445,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Board",
                     "group": "System",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 38,
@@ -6454,6 +6471,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Front-panel",
                     "group": "System",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 35.9,
@@ -6479,6 +6497,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Board",
                     "group": "System",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 39,
@@ -6504,6 +6523,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "FM6000",
                     "group": "Platform",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 44.1,
@@ -6529,6 +6549,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "DOM Temperature  for Ethernet21",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 41,
@@ -6554,6 +6575,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "DOM Temperature  for Ethernet22",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 44.8,
@@ -6579,6 +6601,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 1",
                     "group": "PSUs",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 35.5,
@@ -6604,6 +6627,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 2",
                     "group": "PSUs",
+                    "category": null,
                     "sensor_divisor": 10,
                     "sensor_multiplier": 1,
                     "sensor_current": 35,
@@ -6629,6 +6653,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail1 12V standby",
                     "group": "Cpucard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 12.33,
@@ -6654,6 +6679,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail2 This rail isn't monitored",
                     "group": "Cpucard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -6679,6 +6705,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail3 5V",
                     "group": "Cpucard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 4.93,
@@ -6704,6 +6731,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail4 3.3V",
                     "group": "Cpucard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.35,
@@ -6729,6 +6757,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail5 2.5V",
                     "group": "Cpucard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.55,
@@ -6754,6 +6783,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail6 1.8V",
                     "group": "Cpucard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.8,
@@ -6779,6 +6809,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail7 1.5V",
                     "group": "Cpucard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.52,
@@ -6804,6 +6835,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail8 1.1V",
                     "group": "Cpucard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.11,
@@ -6829,6 +6861,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail9 0.9V",
                     "group": "Cpucard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.91,
@@ -6854,6 +6887,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail10 0.75V",
                     "group": "Cpucard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.75,
@@ -6879,6 +6913,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail1 POS12V",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 12.2,
@@ -6904,6 +6939,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail2 POS12_STDBY",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 11.96,
@@ -6929,6 +6965,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail3 POS5V_STDBY",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -6954,6 +6991,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail4 POS3V3_STDBY",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.23,
@@ -6979,6 +7017,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail5 POS3V3",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.3,
@@ -7004,6 +7043,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail6 POS2V5",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.49,
@@ -7029,6 +7069,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail7 POS_ALTA_AVDD",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.09,
@@ -7054,6 +7095,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail8 POS1V2",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.19,
@@ -7079,6 +7121,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail9 POS_VDD_ALTA",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.19,
@@ -7104,6 +7147,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail10 POS_VDDS",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.2,
@@ -7129,6 +7173,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail11 POS3V3_VF",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.25,
@@ -7154,6 +7199,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail12 POS1V2_GTP",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.2,
@@ -7179,6 +7225,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail13 POS_GATEDRIVE",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 6.32,
@@ -7204,6 +7251,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail14 POS2V5_156",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.48,
@@ -7229,6 +7277,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail15 POS2V5_125",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 2.48,
@@ -7254,6 +7303,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail16 PSU_OK",
                     "group": "Switchcard",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -7279,6 +7329,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail1 POS_ALTA_AVDD",
                     "group": "Chl822x",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.19,
@@ -7304,6 +7355,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Rail2 POS_VDD_ALTA",
                     "group": "Chl822x",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 1.19,
@@ -7329,6 +7381,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "DOM Voltage  for Ethernet21",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.26,
@@ -7354,6 +7407,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "DOM Voltage  for Ethernet22",
                     "group": "SFPs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.27,
@@ -7379,6 +7433,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 1 Input",
                     "group": "PSUs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 227.5,
@@ -7404,6 +7459,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 1 Output",
                     "group": "PSUs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 12.23,
@@ -7429,6 +7485,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 2 Input",
                     "group": "PSUs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 227.5,
@@ -7454,6 +7511,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "PSU 2 Output",
                     "group": "PSUs",
+                    "category": null,
                     "sensor_divisor": 100,
                     "sensor_multiplier": 1,
                     "sensor_current": 12.2,
@@ -7622,6 +7680,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7641,6 +7700,7 @@
                     "entPhysicalContainedIn": 1100004000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7660,6 +7720,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7679,6 +7740,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7698,6 +7760,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7717,6 +7780,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7736,6 +7800,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7755,6 +7820,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7774,6 +7840,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7793,6 +7860,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7812,6 +7880,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7831,6 +7900,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7850,6 +7920,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7869,6 +7940,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7888,6 +7960,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7907,6 +7980,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7926,6 +8000,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7945,6 +8020,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7964,6 +8040,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -7983,6 +8060,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8002,6 +8080,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8021,6 +8100,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8040,6 +8120,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8059,6 +8140,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8078,6 +8160,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8097,6 +8180,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8116,6 +8200,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8135,6 +8220,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8154,6 +8240,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 27,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8173,6 +8260,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 28,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8192,6 +8280,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 29,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8211,6 +8300,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 30,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8230,6 +8320,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 31,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8249,6 +8340,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 32,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8268,6 +8360,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 33,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8287,6 +8380,7 @@
                     "entPhysicalContainedIn": 1100006000,
                     "entPhysicalParentRelPos": 34,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8306,6 +8400,7 @@
                     "entPhysicalContainedIn": 1100004000,
                     "entPhysicalParentRelPos": 11001,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8325,6 +8420,7 @@
                     "entPhysicalContainedIn": 1100004000,
                     "entPhysicalParentRelPos": 11002,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8344,6 +8440,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8363,6 +8460,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8382,6 +8480,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8401,6 +8500,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8420,6 +8520,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8439,6 +8540,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8458,6 +8560,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8477,6 +8580,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8496,6 +8600,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8515,6 +8620,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8534,6 +8640,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8553,6 +8660,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8572,6 +8680,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8591,6 +8700,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8610,6 +8720,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8629,6 +8740,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8648,6 +8760,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8667,6 +8780,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8686,6 +8800,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8705,6 +8820,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8724,6 +8840,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8743,6 +8860,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8762,6 +8880,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8781,6 +8900,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8800,6 +8920,7 @@
                     "entPhysicalContainedIn": 1100140000,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8819,6 +8940,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8838,6 +8960,7 @@
                     "entPhysicalContainedIn": 100301000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8857,6 +8980,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8876,6 +9000,7 @@
                     "entPhysicalContainedIn": 100302000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8895,6 +9020,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8914,6 +9040,7 @@
                     "entPhysicalContainedIn": 100303000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8933,6 +9060,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8952,6 +9080,7 @@
                     "entPhysicalContainedIn": 100304000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8971,6 +9100,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -8990,6 +9120,7 @@
                     "entPhysicalContainedIn": 100305000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9009,6 +9140,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9028,6 +9160,7 @@
                     "entPhysicalContainedIn": 100306000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9047,6 +9180,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9066,6 +9200,7 @@
                     "entPhysicalContainedIn": 100307000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9085,6 +9220,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9104,6 +9240,7 @@
                     "entPhysicalContainedIn": 100308000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9123,6 +9260,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9142,6 +9280,7 @@
                     "entPhysicalContainedIn": 100309000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9161,6 +9300,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9180,6 +9320,7 @@
                     "entPhysicalContainedIn": 100310000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9199,6 +9340,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9218,6 +9360,7 @@
                     "entPhysicalContainedIn": 100311000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9237,6 +9380,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9256,6 +9400,7 @@
                     "entPhysicalContainedIn": 100312000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9275,6 +9420,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9294,6 +9440,7 @@
                     "entPhysicalContainedIn": 100313000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9313,6 +9460,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9332,6 +9480,7 @@
                     "entPhysicalContainedIn": 100314000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9351,6 +9500,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9370,6 +9520,7 @@
                     "entPhysicalContainedIn": 100315000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9389,6 +9540,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9408,6 +9560,7 @@
                     "entPhysicalContainedIn": 100316000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9427,6 +9580,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9446,6 +9600,7 @@
                     "entPhysicalContainedIn": 100317000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9465,6 +9620,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9484,6 +9640,7 @@
                     "entPhysicalContainedIn": 100318000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9503,6 +9660,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9522,6 +9680,7 @@
                     "entPhysicalContainedIn": 100319000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9541,6 +9700,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9560,6 +9720,7 @@
                     "entPhysicalContainedIn": 100320000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9579,6 +9740,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9598,6 +9760,7 @@
                     "entPhysicalContainedIn": 100321000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9617,6 +9780,7 @@
                     "entPhysicalContainedIn": 100321100,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9636,6 +9800,7 @@
                     "entPhysicalContainedIn": 100321100,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9655,6 +9820,7 @@
                     "entPhysicalContainedIn": 100321100,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9674,6 +9840,7 @@
                     "entPhysicalContainedIn": 100321210,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9693,6 +9860,7 @@
                     "entPhysicalContainedIn": 100321210,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9712,6 +9880,7 @@
                     "entPhysicalContainedIn": 100321210,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9731,6 +9900,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9750,6 +9920,7 @@
                     "entPhysicalContainedIn": 100322000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9769,6 +9940,7 @@
                     "entPhysicalContainedIn": 100322100,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9788,6 +9960,7 @@
                     "entPhysicalContainedIn": 100322100,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9807,6 +9980,7 @@
                     "entPhysicalContainedIn": 100322100,
                     "entPhysicalParentRelPos": 0,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9826,6 +10000,7 @@
                     "entPhysicalContainedIn": 100322210,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9845,6 +10020,7 @@
                     "entPhysicalContainedIn": 100322210,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9864,6 +10040,7 @@
                     "entPhysicalContainedIn": 100322210,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9883,6 +10060,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9902,6 +10080,7 @@
                     "entPhysicalContainedIn": 100323000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9921,6 +10100,7 @@
                     "entPhysicalContainedIn": 1100300000,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9940,6 +10120,7 @@
                     "entPhysicalContainedIn": 100324000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Arista Networks",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9959,6 +10140,7 @@
                     "entPhysicalContainedIn": 1100600000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9978,6 +10160,7 @@
                     "entPhysicalContainedIn": 100601000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -9997,6 +10180,7 @@
                     "entPhysicalContainedIn": 100601100,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10016,6 +10200,7 @@
                     "entPhysicalContainedIn": 100601110,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10035,6 +10220,7 @@
                     "entPhysicalContainedIn": 1100600000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10054,6 +10240,7 @@
                     "entPhysicalContainedIn": 100602000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10073,6 +10260,7 @@
                     "entPhysicalContainedIn": 100602100,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10092,6 +10280,7 @@
                     "entPhysicalContainedIn": 100602110,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10111,6 +10300,7 @@
                     "entPhysicalContainedIn": 1100600000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10130,6 +10320,7 @@
                     "entPhysicalContainedIn": 100603000,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10149,6 +10340,7 @@
                     "entPhysicalContainedIn": 100603100,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10168,6 +10360,7 @@
                     "entPhysicalContainedIn": 100603110,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10187,6 +10380,7 @@
                     "entPhysicalContainedIn": 1100600000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10206,6 +10400,7 @@
                     "entPhysicalContainedIn": 100604000,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10225,6 +10420,7 @@
                     "entPhysicalContainedIn": 100604100,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10244,6 +10440,7 @@
                     "entPhysicalContainedIn": 100604110,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10263,6 +10460,7 @@
                     "entPhysicalContainedIn": 1100700000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10282,6 +10480,7 @@
                     "entPhysicalContainedIn": 100710000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "EMERSON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10301,6 +10500,7 @@
                     "entPhysicalContainedIn": 1100711100,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10320,6 +10520,7 @@
                     "entPhysicalContainedIn": 1100711100,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10339,6 +10540,7 @@
                     "entPhysicalContainedIn": 1100711100,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10358,6 +10560,7 @@
                     "entPhysicalContainedIn": 1100711100,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10377,6 +10580,7 @@
                     "entPhysicalContainedIn": 1100711100,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10396,6 +10600,7 @@
                     "entPhysicalContainedIn": 1100711200,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10415,6 +10620,7 @@
                     "entPhysicalContainedIn": 100711210,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10434,6 +10640,7 @@
                     "entPhysicalContainedIn": 1100700000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10453,6 +10660,7 @@
                     "entPhysicalContainedIn": 100720000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "EMERSON",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10472,6 +10680,7 @@
                     "entPhysicalContainedIn": 1100721100,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10491,6 +10700,7 @@
                     "entPhysicalContainedIn": 1100721100,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10510,6 +10720,7 @@
                     "entPhysicalContainedIn": 1100721100,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10529,6 +10740,7 @@
                     "entPhysicalContainedIn": 1100721100,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10548,6 +10760,7 @@
                     "entPhysicalContainedIn": 1100721100,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10567,6 +10780,7 @@
                     "entPhysicalContainedIn": 1100721200,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10586,6 +10800,7 @@
                     "entPhysicalContainedIn": 100721210,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10605,6 +10820,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10624,6 +10840,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10643,6 +10860,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10662,6 +10880,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10681,6 +10900,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10700,6 +10920,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10719,6 +10940,7 @@
                     "entPhysicalContainedIn": 100711000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10738,6 +10960,7 @@
                     "entPhysicalContainedIn": 100711000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10757,6 +10980,7 @@
                     "entPhysicalContainedIn": 100721000,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 },
                 {
@@ -10776,6 +11000,7 @@
                     "entPhysicalContainedIn": 100721000,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "",
+                    "entPhysicalMfgDate": "0-0-0,0:0:0.0,.0:0",
                     "ifIndex": null
                 }
             ]

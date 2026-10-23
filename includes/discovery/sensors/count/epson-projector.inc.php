@@ -17,11 +17,12 @@
 */
 
 use Illuminate\Support\Str;
+use LibreNMS\Enum\SensorType;
 
 if (Str::startsWith($device['sysObjectID'], '.1.3.6.1.4.1.1248.4.1')) {
     discover_sensor(
         null,
-        'count',
+        SensorType::Count,
         $device,
         '.1.3.6.1.4.1.1248.4.1.1.1.1.0',
         0,
@@ -33,6 +34,6 @@ if (Str::startsWith($device['sysObjectID'], '.1.3.6.1.4.1.1248.4.1')) {
         null,
         null,
         null,
-        snmp_get($device, '.1.3.6.1.4.1.1248.4.1.1.1.1.0', '-Ovq')
+        SnmpQuery::get('.1.3.6.1.4.1.1248.4.1.1.1.1.0')->value()
     );
 }

@@ -29,6 +29,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "49 Bias Current",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 1000000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.00885,
@@ -54,6 +55,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "A1 Bias Current",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 1000000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.020504,
@@ -79,6 +81,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "A2 Bias Current",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 1000000,
                     "sensor_multiplier": 1,
                     "sensor_current": 0.017678,
@@ -104,6 +107,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "A1 Rx Power",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": -3.763,
@@ -129,6 +133,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "A2 Rx Power",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": -4.543,
@@ -154,6 +159,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "49 Tx Power",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": -6.02,
@@ -179,6 +185,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "A1 Tx Power",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": -5.877,
@@ -204,6 +211,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "A2 Tx Power",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": -3.955,
@@ -224,11 +232,38 @@
                     "sensor_deleted": 0,
                     "sensor_class": "power",
                     "poller_type": "snmp",
-                    "sensor_oid": ".1.3.6.1.4.1.11.2.14.11.1.9.1.6.1.5.1001",
+                    "sensor_oid": ".1.3.6.1.4.1.11.2.14.11.1.9.1.6.1.4.1001",
                     "sensor_index": "hpicfPseAvailablePower.1001",
+                    "sensor_type": "procurve",
+                    "sensor_descr": "PoE Power Total",
+                    "group": null,
+                    "category": null,
+                    "sensor_divisor": 1,
+                    "sensor_multiplier": 1,
+                    "sensor_current": 1440,
+                    "sensor_limit": null,
+                    "sensor_limit_warn": null,
+                    "sensor_limit_low": null,
+                    "sensor_limit_low_warn": null,
+                    "sensor_alert": 1,
+                    "sensor_custom": "No",
+                    "entPhysicalIndex": null,
+                    "entPhysicalIndex_measured": null,
+                    "sensor_prev": null,
+                    "user_func": null,
+                    "rrd_type": "GAUGE",
+                    "state_name": null
+                },
+                {
+                    "sensor_deleted": 0,
+                    "sensor_class": "power",
+                    "poller_type": "snmp",
+                    "sensor_oid": ".1.3.6.1.4.1.11.2.14.11.1.9.1.6.1.5.1001",
+                    "sensor_index": "hpicfPseUsedPower.1001",
                     "sensor_type": "procurve",
                     "sensor_descr": "PoE Power Used",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 96,
@@ -254,6 +289,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "Power Supply #1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 48,
@@ -279,6 +315,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "Power Supply #2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 45,
@@ -304,6 +341,7 @@
                     "sensor_type": "entStateOper",
                     "sensor_descr": "Chassis [Aruba JL074A 3810M-48G-PoE+-1-slot Switch]",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -329,6 +367,7 @@
                     "sensor_type": "entStateOper",
                     "sensor_descr": "Backplane [Aruba JL074A Switch backplane]",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -354,6 +393,7 @@
                     "sensor_type": "entStateOper",
                     "sensor_descr": "Switch Management Module [Aruba]",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -379,6 +419,7 @@
                     "sensor_type": "entStateOper",
                     "sensor_descr": "1-24,A [Aruba JL074x Fixed 24p 1GBase-T PoE+ Module]",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -404,6 +445,7 @@
                     "sensor_type": "entStateOper",
                     "sensor_descr": "25-48,A [Aruba JL074y Fixed 24p 1GBase-T PoE+ Module]",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -429,6 +471,7 @@
                     "sensor_type": "entStateOper",
                     "sensor_descr": "A [Aruba JL083A 4SFP+ Module]",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -454,6 +497,7 @@
                     "sensor_type": "hpicfFanState",
                     "sensor_descr": "Fan #1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -479,6 +523,7 @@
                     "sensor_type": "hpicfFanState",
                     "sensor_descr": "Fan #2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -504,6 +549,7 @@
                     "sensor_type": "hpicfFanState",
                     "sensor_descr": "Fan #3",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -529,6 +575,7 @@
                     "sensor_type": "hpicfFanState",
                     "sensor_descr": "Fan #4",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -554,6 +601,7 @@
                     "sensor_type": "hpicfFanState",
                     "sensor_descr": "Fan #5",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -579,6 +627,7 @@
                     "sensor_type": "hpicfFanState",
                     "sensor_descr": "Fan #6",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -604,6 +653,7 @@
                     "sensor_type": "hpicfPsState",
                     "sensor_descr": "Power Supply #1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -629,6 +679,7 @@
                     "sensor_type": "hpicfPsState",
                     "sensor_descr": "Power Supply #2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -654,6 +705,7 @@
                     "sensor_type": "hpStackOperStatus",
                     "sensor_descr": "Stack State",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -679,6 +731,7 @@
                     "sensor_type": "icfFanSensor",
                     "sensor_descr": "Fan Sensor",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 4,
@@ -704,6 +757,7 @@
                     "sensor_type": "icfTemperatureSensor",
                     "sensor_descr": "Chassis Sensor",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 5,
@@ -729,6 +783,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Chassis Temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 20,
@@ -754,6 +809,7 @@
                     "sensor_type": "entity-sensor",
                     "sensor_descr": "Chassis Temperature",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 20,
@@ -779,6 +835,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "Power Supply #1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 27,
@@ -804,6 +861,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "Power Supply #2",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 29,
@@ -829,6 +887,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "49 Temperature",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 45.398,
@@ -854,6 +913,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "A1 Temperature",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 27.453,
@@ -879,6 +939,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "A2 Temperature",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 1000,
                     "sensor_multiplier": 1,
                     "sensor_current": 29.972,
@@ -904,6 +965,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "49 Voltage",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.297,
@@ -929,6 +991,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "A1 Voltage",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.3014,
@@ -954,6 +1017,7 @@
                     "sensor_type": "procurve",
                     "sensor_descr": "A2 Voltage",
                     "group": "transceiver",
+                    "category": null,
                     "sensor_divisor": 10000,
                     "sensor_multiplier": 1,
                     "sensor_current": 3.2966,
@@ -975,217 +1039,186 @@
                 {
                     "state_name": "entStateOper",
                     "state_descr": "notPresent",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "entStateOper",
                     "state_descr": "unknown",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "entStateOper",
                     "state_descr": "ok",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "entStateOper",
                     "state_descr": "failed",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hpicfFanState",
                     "state_descr": "removed",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hpicfFanState",
                     "state_descr": "off",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hpicfFanState",
                     "state_descr": "underspeed",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hpicfFanState",
                     "state_descr": "overspeed",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "hpicfFanState",
                     "state_descr": "ok",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hpicfFanState",
                     "state_descr": "maxstate",
-                    "state_draw_graph": 1,
                     "state_value": 6,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hpicfPsState",
                     "state_descr": "psNotPresent",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hpicfPsState",
                     "state_descr": "psNotPlugged",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hpicfPsState",
                     "state_descr": "psPowered",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hpicfPsState",
                     "state_descr": "psFailed",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hpicfPsState",
                     "state_descr": "psPermFailure",
-                    "state_draw_graph": 1,
                     "state_value": 5,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hpicfPsState",
                     "state_descr": "psMax",
-                    "state_draw_graph": 1,
                     "state_value": 6,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "hpStackOperStatus",
                     "state_descr": "unAvailable",
-                    "state_draw_graph": 1,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hpStackOperStatus",
                     "state_descr": "disabled",
-                    "state_draw_graph": 1,
                     "state_value": 1,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hpStackOperStatus",
                     "state_descr": "active",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "hpStackOperStatus",
                     "state_descr": "fragmentInactive",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "hpStackOperStatus",
                     "state_descr": "fragmentActive",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "icfFanSensor",
                     "state_descr": "unknown",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "icfFanSensor",
                     "state_descr": "bad",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "icfFanSensor",
                     "state_descr": "warning",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "icfFanSensor",
                     "state_descr": "good",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "icfFanSensor",
                     "state_descr": "notPresent",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "icfTemperatureSensor",
                     "state_descr": "unknown",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "icfTemperatureSensor",
                     "state_descr": "bad",
-                    "state_draw_graph": 1,
                     "state_value": 2,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "icfTemperatureSensor",
                     "state_descr": "warning",
-                    "state_draw_graph": 1,
                     "state_value": 3,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "icfTemperatureSensor",
                     "state_descr": "good",
-                    "state_draw_graph": 1,
                     "state_value": 4,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "icfTemperatureSensor",
                     "state_descr": "notPresent",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 3
                 }
@@ -1324,6 +1357,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1343,6 +1377,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1362,6 +1397,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1381,6 +1417,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1400,6 +1437,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1419,6 +1457,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1438,6 +1477,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1457,6 +1497,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1476,6 +1517,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1495,6 +1537,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1514,6 +1557,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1533,6 +1577,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1552,6 +1597,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1571,6 +1617,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1590,6 +1637,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1609,6 +1657,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1628,6 +1677,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1647,6 +1697,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1666,6 +1717,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1685,6 +1737,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1704,6 +1757,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1723,6 +1777,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1742,6 +1797,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1761,6 +1817,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1780,6 +1837,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1799,6 +1857,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1818,6 +1877,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1837,6 +1897,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1856,6 +1917,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1875,6 +1937,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1894,6 +1957,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1913,6 +1977,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1932,6 +1997,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1951,6 +2017,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1970,6 +2037,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -1989,6 +2057,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2008,6 +2077,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2027,6 +2097,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2046,6 +2117,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2065,6 +2137,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2084,6 +2157,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2103,6 +2177,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2122,6 +2197,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2141,6 +2217,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2160,6 +2237,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2179,6 +2257,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2198,6 +2277,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2217,6 +2297,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2236,6 +2317,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2255,6 +2337,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2274,6 +2357,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2293,6 +2377,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2312,6 +2397,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2331,6 +2417,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2350,6 +2437,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2369,6 +2457,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2388,6 +2477,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2407,6 +2497,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2426,6 +2517,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2445,6 +2537,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2464,6 +2557,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2483,6 +2577,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2502,6 +2597,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2521,6 +2617,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2540,6 +2637,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2559,6 +2657,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2578,6 +2677,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2597,6 +2697,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2616,6 +2717,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2635,6 +2737,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2654,6 +2757,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2673,6 +2777,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2692,6 +2797,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2711,6 +2817,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2730,6 +2837,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2749,6 +2857,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2768,6 +2877,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2787,6 +2897,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2806,6 +2917,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2825,6 +2937,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2844,6 +2957,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2863,6 +2977,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2882,6 +2997,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2901,6 +3017,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2920,6 +3037,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2939,6 +3057,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2958,6 +3077,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2977,6 +3097,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -2996,6 +3117,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3015,6 +3137,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3034,6 +3157,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3053,6 +3177,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3072,6 +3197,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3091,6 +3217,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3110,6 +3237,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3129,6 +3257,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3148,6 +3277,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3167,6 +3297,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3186,6 +3317,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3205,6 +3337,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3224,6 +3357,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3243,6 +3377,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3262,6 +3397,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3281,6 +3417,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3300,6 +3437,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3319,6 +3457,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3338,6 +3477,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3357,6 +3497,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3376,6 +3517,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3395,6 +3537,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3414,6 +3557,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3433,6 +3577,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3452,6 +3597,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3471,6 +3617,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3490,6 +3637,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3509,6 +3657,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3528,6 +3677,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3547,6 +3697,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3566,6 +3717,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3585,6 +3737,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3604,6 +3757,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3623,6 +3777,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3642,6 +3797,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3661,6 +3817,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3680,6 +3837,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3699,6 +3857,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3718,6 +3877,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3737,6 +3897,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3756,6 +3917,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3775,6 +3937,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3794,6 +3957,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3813,6 +3977,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3832,6 +3997,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3851,6 +4017,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3870,6 +4037,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3889,6 +4057,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3908,6 +4077,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3927,6 +4097,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3946,6 +4117,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3965,6 +4137,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -3984,6 +4157,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": null,
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4003,6 +4177,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4022,6 +4197,7 @@
                     "entPhysicalContainedIn": 1001,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4041,6 +4217,7 @@
                     "entPhysicalContainedIn": 1001,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4060,6 +4237,7 @@
                     "entPhysicalContainedIn": 1001,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4079,6 +4257,7 @@
                     "entPhysicalContainedIn": 1001,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4098,6 +4277,7 @@
                     "entPhysicalContainedIn": 1001,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4117,6 +4297,7 @@
                     "entPhysicalContainedIn": 1001,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4136,6 +4317,7 @@
                     "entPhysicalContainedIn": 1001,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4155,6 +4337,7 @@
                     "entPhysicalContainedIn": 3001,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4174,6 +4357,7 @@
                     "entPhysicalContainedIn": 3001,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4193,6 +4377,7 @@
                     "entPhysicalContainedIn": 3001,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4212,6 +4397,7 @@
                     "entPhysicalContainedIn": 3001,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4231,6 +4417,7 @@
                     "entPhysicalContainedIn": 3001,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4250,6 +4437,7 @@
                     "entPhysicalContainedIn": 4001,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4269,6 +4457,7 @@
                     "entPhysicalContainedIn": 5001,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4288,6 +4477,7 @@
                     "entPhysicalContainedIn": 5001,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4307,6 +4497,7 @@
                     "entPhysicalContainedIn": 13001,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4326,6 +4517,7 @@
                     "entPhysicalContainedIn": 13002,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4345,6 +4537,7 @@
                     "entPhysicalContainedIn": 6001,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4364,6 +4557,7 @@
                     "entPhysicalContainedIn": 9001,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4383,6 +4577,7 @@
                     "entPhysicalContainedIn": 9001,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4402,6 +4597,7 @@
                     "entPhysicalContainedIn": 10001,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4421,6 +4617,7 @@
                     "entPhysicalContainedIn": 10001,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4440,6 +4637,7 @@
                     "entPhysicalContainedIn": 10001,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4459,6 +4657,7 @@
                     "entPhysicalContainedIn": 17001,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4478,6 +4677,7 @@
                     "entPhysicalContainedIn": 20001,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4497,6 +4697,7 @@
                     "entPhysicalContainedIn": 20002,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4516,6 +4717,7 @@
                     "entPhysicalContainedIn": 21001,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -4535,6 +4737,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 1
                 },
                 {
@@ -4554,6 +4757,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 2
                 },
                 {
@@ -4573,6 +4777,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 3
                 },
                 {
@@ -4592,6 +4797,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 4
                 },
                 {
@@ -4611,6 +4817,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 5
                 },
                 {
@@ -4630,6 +4837,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 6
                 },
                 {
@@ -4649,6 +4857,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 7
                 },
                 {
@@ -4668,6 +4877,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 8
                 },
                 {
@@ -4687,6 +4897,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 9
                 },
                 {
@@ -4706,6 +4917,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 10
                 },
                 {
@@ -4725,6 +4937,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 11
                 },
                 {
@@ -4744,6 +4957,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 12
                 },
                 {
@@ -4763,6 +4977,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 13
                 },
                 {
@@ -4782,6 +4997,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 14
                 },
                 {
@@ -4801,6 +5017,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 15
                 },
                 {
@@ -4820,6 +5037,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 16
                 },
                 {
@@ -4839,6 +5057,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 17
                 },
                 {
@@ -4858,6 +5077,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 18
                 },
                 {
@@ -4877,6 +5097,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 19
                 },
                 {
@@ -4896,6 +5117,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 20
                 },
                 {
@@ -4915,6 +5137,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 21
                 },
                 {
@@ -4934,6 +5157,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 22
                 },
                 {
@@ -4953,6 +5177,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 23
                 },
                 {
@@ -4972,6 +5197,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 24
                 },
                 {
@@ -4991,6 +5217,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 25
                 },
                 {
@@ -5010,6 +5237,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 26
                 },
                 {
@@ -5029,6 +5257,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 27
                 },
                 {
@@ -5048,6 +5277,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 28
                 },
                 {
@@ -5067,6 +5297,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 29
                 },
                 {
@@ -5086,6 +5317,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 30
                 },
                 {
@@ -5105,6 +5337,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 31
                 },
                 {
@@ -5124,6 +5357,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 32
                 },
                 {
@@ -5143,6 +5377,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 33
                 },
                 {
@@ -5162,6 +5397,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 34
                 },
                 {
@@ -5181,6 +5417,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 35
                 },
                 {
@@ -5200,6 +5437,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 36
                 },
                 {
@@ -5219,6 +5457,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 37
                 },
                 {
@@ -5238,6 +5477,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 38
                 },
                 {
@@ -5257,6 +5497,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 39
                 },
                 {
@@ -5276,6 +5517,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 40
                 },
                 {
@@ -5295,6 +5537,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 41
                 },
                 {
@@ -5314,6 +5557,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 42
                 },
                 {
@@ -5333,6 +5577,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 43
                 },
                 {
@@ -5352,6 +5597,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 44
                 },
                 {
@@ -5371,6 +5617,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 45
                 },
                 {
@@ -5390,6 +5637,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 46
                 },
                 {
@@ -5409,6 +5657,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 47
                 },
                 {
@@ -5428,6 +5677,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 48
                 },
                 {
@@ -5447,6 +5697,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 49
                 },
                 {
@@ -5466,6 +5717,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 50
                 },
                 {
@@ -5485,6 +5737,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 27,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 51
                 },
                 {
@@ -5504,6 +5757,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 28,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 52
                 },
                 {
@@ -5523,6 +5777,7 @@
                     "entPhysicalContainedIn": 25001,
                     "entPhysicalParentRelPos": 29,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 53
                 },
                 {
@@ -5542,6 +5797,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 54
                 },
                 {
@@ -5561,6 +5817,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 55
                 },
                 {
@@ -5580,6 +5837,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 27,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 56
                 },
                 {
@@ -5599,6 +5857,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 28,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 57
                 },
                 {
@@ -5618,6 +5877,7 @@
                     "entPhysicalContainedIn": 25002,
                     "entPhysicalParentRelPos": 29,
                     "entPhysicalMfgName": "Aruba",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": 58
                 }
             ]
@@ -5636,7 +5896,7 @@
                     "model": "J4859C",
                     "revision": null,
                     "serial": "<private>",
-                    "date": "2020-06-03",
+                    "date": "180319",
                     "ddm": 1,
                     "encoding": null,
                     "cable": null,
@@ -5655,7 +5915,7 @@
                     "model": "J9151A",
                     "revision": null,
                     "serial": "<private>",
-                    "date": "2010-03-07",
+                    "date": "150709",
                     "ddm": 1,
                     "encoding": null,
                     "cable": null,
@@ -5674,7 +5934,7 @@
                     "model": "J9151A",
                     "revision": null,
                     "serial": "<private>",
-                    "date": "2021-03-07",
+                    "date": "150720",
                     "ddm": 1,
                     "encoding": null,
                     "cable": null,
@@ -21646,7 +21906,8 @@
                     "ifStackStatus": "active"
                 }
             ]
-        }
+        },
+        "poller": "matches discovery"
     },
     "discovery-protocols": {
         "discovery": {
@@ -21655,7 +21916,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "axis",
-                    "remote_port": "B8 A4 4F 1B E2 1D (b8a44f1be21d)",
+                    "remote_port": "b8:a4:4f:1b:e2:1d",
                     "remote_platform": null,
                     "remote_version": "AXIS",
                     "ifAlias": "1234",
@@ -21666,7 +21927,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "axis",
-                    "remote_port": "B8 A4 4F 2B BB 10 (b8a44f2bbb10)",
+                    "remote_port": "b8:a4:4f:2b:bb:10",
                     "remote_platform": null,
                     "remote_version": "AXIS",
                     "ifAlias": "1234",
@@ -21677,7 +21938,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "Polycom SoundPoint IP 335",
-                    "remote_port": "00 04 F2 C6 70 78 (0004f2c67078)",
+                    "remote_port": "00:04:f2:c6:70:78",
                     "remote_platform": null,
                     "remote_version": "Polycom;SoundPointIP",
                     "ifAlias": "1234",
@@ -21688,7 +21949,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "Aruba",
-                    "remote_port": "1/7/18 (ec0273962100)",
+                    "remote_port": "1/7/18",
                     "remote_platform": null,
                     "remote_version": "Aruba",
                     "ifAlias": "A1",
@@ -21699,7 +21960,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "Aruba",
-                    "remote_port": "1/7/18 (ec0273968100)",
+                    "remote_port": "1/7/18",
                     "remote_platform": null,
                     "remote_version": "Aruba",
                     "ifAlias": "A2",
@@ -21710,7 +21971,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "axis",
-                    "remote_port": "B8 A4 4F B9 3D 1A (b8a44fb93d1a)",
+                    "remote_port": "b8:a4:4f:b9:3d:1a",
                     "remote_platform": null,
                     "remote_version": "AXIS",
                     "ifAlias": "S:CAM25",

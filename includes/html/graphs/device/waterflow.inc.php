@@ -1,7 +1,5 @@
 <?php
 
-$class = 'waterflow';
-$unit = 'l/m';
-$unit_long = 'Liter Per Minute';
+$class = \LibreNMS\Enum\SensorType::Waterflow;
 
 require 'includes/html/graphs/device/sensor.inc.php';

@@ -4,34 +4,48 @@ namespace App\Jobs;
 
 use App\Actions\Device\CheckDeviceAvailability;
 use App\Events\DevicePolled;
+use App\Events\ModulePolled;
 use App\Events\PollingDevice;
+use App\Events\PollingModule;
+use App\Exceptions\PollingFailedException;
 use App\Facades\LibrenmsConfig;
+use App\Facades\Rrd;
 use App\Models\Device;
 use App\Models\Eventlog;
 use App\Polling\Measure\Measurement;
 use App\Polling\Measure\MeasurementManager;
 use Carbon\Carbon;
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\Jobs\SyncJob;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
 use LibreNMS\Enum\ProcessType;
 use LibreNMS\Enum\Severity;
+use LibreNMS\Interfaces\SupportsSubmodules;
 use LibreNMS\OS;
 use LibreNMS\Polling\ConnectivityHelper;
+use LibreNMS\Polling\PerDeviceMethodResults;
 use LibreNMS\RRD\RrdDefinition;
+use LibreNMS\RRD\RrdPath;
 use LibreNMS\Util\Dns;
 use LibreNMS\Util\Module;
 use LibreNMS\Util\ModuleList;
 use Throwable;
 
-class PollDevice implements ShouldQueue
+class PollDevice implements ShouldQueue, ShouldBeUnique
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     private ?Device $device = null;
+    public int $tries = 4; // 1 + backoff() steps
+    public int $uniqueFor = 3600; // held across retries
+    public int $timeout = 600; // < queue retry_after
+
     private ?array $deviceArray = null;
     /**
      * @var OS|OS\Generic
@@ -48,23 +62,37 @@ class PollDevice implements ShouldQueue
     ) {
     }
 
+    public function displayName(): string
+    {
+        return "PollDevice:$this->device_id";
+    }
+
+    public function uniqueId(): int
+    {
+        return $this->device_id;
+    }
+
     /**
      * Execute the job.
      */
     public function handle(): void
     {
         $this->initDevice();
+        $methodResults = new PerDeviceMethodResults($this->device);
+        $connectivity = new ConnectivityHelper($this->device, $methodResults);
         $this->initRrdDirectory();
         PollingDevice::dispatch($this->device);
         $this->os = OS::make($this->deviceArray);
+        $this->os->setMethodResults($methodResults);
 
         $measurement = Measurement::start('poll');
         $measurement->manager()->checkpoint(); // don't count previous stats
 
         // check and save status
-        app(CheckDeviceAvailability::class)->execute($this->device, true);
+        app(CheckDeviceAvailability::class)->execute($methodResults, true);
 
-        $this->pollModules();
+        $this->pollModules($connectivity);
+        $methodResults->saveCheckedMethods();
 
         $measurement->end();
 
@@ -74,7 +102,7 @@ class PollDevice implements ShouldQueue
                 $this->recordPerformance($measurement);
             }
 
-            if (ConnectivityHelper::pingIsAllowed($this->device)) {
+            if ($connectivity->icmpIsEnabled()) {
                 $this->os->enableGraph('ping_perf');
             }
 
@@ -94,7 +122,7 @@ class PollDevice implements ShouldQueue
             $measurement->getDuration()));
 
         // add log file line, this is used by the simple python dispatcher watchdog
-        Log::channel('log_file')->alert(sprintf('INFO: device:poll %s (%s) polled in %0.3fs',
+        Log::alert(sprintf('INFO: device:poll %s (%s) polled in %0.3fs',
             $this->device->hostname,
             $this->device->device_id,
             $measurement->getDuration()));
@@ -106,9 +134,20 @@ class PollDevice implements ShouldQueue
         }
 
         DevicePolled::dispatch($this->device);
+
+        // retry down devices, last attempt succeeds so it stays out of failed_jobs
+        if (! $this->device->status && $this->job && ! $this->job instanceof SyncJob && $this->attempts() < $this->tries) {
+            throw new PollingFailedException($this->device);
+        }
     }
 
-    private function pollModules(): void
+    /** @return array<int, int> */
+    public function backoff(): array
+    {
+        return DispatchPollingWork::downRetryBackoff();
+    }
+
+    private function pollModules(ConnectivityHelper $connectivity): void
     {
         // update $device array status
         $this->deviceArray['status'] = $this->device->status;
@@ -122,21 +161,22 @@ class PollDevice implements ShouldQueue
 
         $datastore = app('Datastore');
 
-        foreach ($this->moduleList->modulesWithStatus(ProcessType::poller, $this->device) as $module => $module_status) {
+        foreach ($this->moduleList->modulesWithStatus(ProcessType::Poller, $this->device) as $module => $module_status) {
             $should_poll = false;
             $start_memory = memory_get_usage();
             $module_start = microtime(true);
 
             try {
                 $instance = Module::fromName($module);
-                $should_poll = $instance->shouldPoll($this->os, $module_status);
+                $should_poll = $instance->shouldPoll($this->os, $module_status, $connectivity);
 
                 if ($should_poll) {
+                    PollingModule::dispatch($this->device, $module);
                     Log::info("#### Load poller module $module ####\n");
                     Log::debug($module_status);
 
-                    if ($module_status->hasSubModules()) {
-                        LibrenmsConfig::set('poller_submodules.' . $module, $module_status->submodules);
+                    if ($instance instanceof SupportsSubmodules) {
+                        $instance->setSubmodules($module_status->submodules);
                     }
 
                     $instance->poll($this->os, $datastore);
@@ -148,22 +188,24 @@ class PollDevice implements ShouldQueue
                 }
 
                 // isolate module exceptions so they don't disrupt the polling process
-                Eventlog::log("Error polling $module module. Check log file for more details.", $this->device, 'poller', Severity::Error);
+                Eventlog::log("Error polling $module module: " . class_basename($e) . '. Check log file for more details.', $this->device, 'poller', Severity::Error);
                 report($e);
             }
 
             if ($should_poll) {
                 Log::info('');
                 app(MeasurementManager::class)->printChangedStats();
-                Module::savePerformance($module, ProcessType::poller, $module_start, $start_memory);
+                Module::savePerformance($module, ProcessType::Poller, $module_start, $start_memory);
                 $this->os->enableGraph('poller_modules_perf');
                 Log::info("#### Unload poller module $module ####\n");
+                ModulePolled::dispatch($this->device, $module);
             }
         }
     }
 
     private function initDevice(): void
     {
+        Cache::driver('device')->flush();
         \DeviceCache::setPrimary($this->device_id);
         $this->device = \DeviceCache::getPrimary();
         $this->device->ip = Dns::lookupIp($this->device) ?? $this->device->ip;
@@ -184,15 +226,8 @@ EOH, $this->device->hostname, $os_group ? " ($os_group)" : '', $this->device->de
 
     private function initRrdDirectory(): void
     {
-        $host_rrd = \Rrd::name($this->device->hostname, '', '');
-        if (LibrenmsConfig::get('rrd.enable', true) && ! is_dir($host_rrd)) {
-            try {
-                mkdir($host_rrd);
-                Log::info("Created directory : $host_rrd");
-            } catch (\ErrorException $e) {
-                Eventlog::log("Failed to create rrd directory: $host_rrd", $this->device);
-                Log::error($e);
-            }
+        if (LibrenmsConfig::get('rrd.enable', true)) {
+            Rrd::checkDirExists(RrdPath::make($this->device->hostname));
         }
     }
 

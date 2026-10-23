@@ -11,10 +11,6 @@
  * the source code distribution for details.
  */
 
-if (! Auth::user()->hasGlobalAdmin()) {
-    exit('ERROR: You need to be admin');
-}
-
 ?>
 
 <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="Delete" aria-hidden="true">
@@ -56,7 +52,7 @@ $('#alert-rule-removal').on('click', function(event) {
     var alert_name = $("#alert_name").val();
     $.ajax({
         type: 'DELETE',
-        url: '<?php echo route('alert-rule.destroy', ':alert_id') ?>'.replace(':alert_id', alert_id),
+        url: route('alert-rule.destroy', alert_id),
         success: function(msg) {
             if(msg.status === 200) {
                 $("#rule_id_"+alert_id).remove();

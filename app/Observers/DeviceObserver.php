@@ -2,19 +2,25 @@
 
 namespace App\Observers;
 
-use App;
+use App\Actions\Device\UpdateDeviceOutage;
 use App\ApiClients\Oxidized;
 use App\Facades\LibrenmsConfig;
-use App\Facades\Rrd;
 use App\Models\Device;
 use App\Models\Eventlog;
 use File;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Log;
 use LibreNMS\Enum\Severity;
 use LibreNMS\Exceptions\HostRenameException;
-use Log;
+use LibreNMS\RRD\RrdPath;
 
 class DeviceObserver
 {
+    public function creating(Device $device): void
+    {
+        $device->regenerateDisplayName();
+    }
+
     /**
      * Handle the device "created" event.
      *
@@ -36,12 +42,15 @@ class DeviceObserver
     public function updated(Device $device): void
     {
         // log up/down status changes
-        if ($device->isDirty(['status', 'status_reason'])) {
+        if ($device->isDirty('status')) {
             $type = $device->status ? 'up' : 'down';
             $reason = $device->status ? $device->getOriginal('status_reason') : $device->status_reason;
             $polled_by = LibrenmsConfig::get('distributed_poller') ? (' by ' . \config('librenms.node_id')) : '';
 
             Eventlog::log(sprintf('Device status changed to %s from %s check%s.', ucfirst($type), $reason, $polled_by), $device, $type);
+            Log::debug('Device availability updated for ' . $device->hostname . ' to ' . ($device->status ? 'up' : 'down') . ' due to ' . $device->status_reason);
+
+            app(UpdateDeviceOutage::class)->execute($device);
         }
 
         // key attribute changes
@@ -53,17 +62,31 @@ class DeviceObserver
         if ($device->isDirty('location_id')) {
             Eventlog::log(self::attributeChangedMessage('location', (string) $device->location, null), $device, 'system', Severity::Notice);
         }
+        if ($device->isDirty('type')) {
+            Log::debug("Device type changed to $device->type!");
+        }
     }
 
     public function updating(Device $device): void
     {
+        if ($device->isDirty(['display_template', 'hostname', 'sysName', 'ip', 'overwrite_ip'])) {
+            $device->regenerateDisplayName();
+        }
+
         // handle device renames
         if ($device->isDirty('hostname')) {
             $new_name = $device->hostname;
 
             $old_name = $device->getOriginal('hostname');
-            $new_rrd_dir = Rrd::dirFromHost($new_name);
-            $old_rrd_dir = Rrd::dirFromHost($old_name);
+            $new_rrd_dir = RrdPath::make($new_name)->fullPath();
+            $old_rrd_dir = RrdPath::make($old_name)->fullPath();
+
+            // Fail if another device has the same hostname
+            if (Device::where('hostname', $device->hostname)->whereNot('device_id', $device->device_id)->count() > 0) {
+                $device->hostname = $old_name;
+                Eventlog::log("Renaming of $old_name failed because there is already a device with the hostname $new_name", $device, 'system', Severity::Error);
+                throw new HostRenameException("Renaming of $old_name failed because there is already a device with the hostname $new_name");
+            }
 
             if (is_dir($new_rrd_dir)) {
                 $device->hostname = $old_name;
@@ -78,7 +101,7 @@ class DeviceObserver
                 Eventlog::log("Hostname changed -> $new_name ($source)", $device, 'system', Severity::Notice);
             } else {
                 $device->hostname = $old_name;
-                Eventlog::log("Renaming of $old_name failed", $device, 'system', Severity::Error);
+                Eventlog::log("Renaming of $old_name failed because the RRD directory rename failed", $device, 'system', Severity::Error);
                 throw new HostRenameException("Renaming of $old_name failed");
             }
         }
@@ -89,19 +112,21 @@ class DeviceObserver
      */
     public function deleted(Device $device): void
     {
-        // delete rrd files
-        $host_dir = Rrd::dirFromHost($device->hostname);
-        try {
-            $result = File::deleteDirectory($host_dir);
+        if (! empty($device->hostname)) {
+            // delete rrd files
+            $host_dir = RrdPath::make($device->hostname)->fullPath();
+            try {
+                $result = File::deleteDirectory($host_dir);
 
-            if (! $result) {
-                Log::debug("Could not delete RRD files for: $device->hostname");
+                if (! $result && File::exists($host_dir)) {
+                    Log::debug("Could not delete RRD files for: $device->hostname");
+                }
+            } catch (\Exception $e) {
+                Log::error("Could not delete RRD files for: $device->hostname", [$e]);
             }
-        } catch (\Exception $e) {
-            Log::error("Could not delete RRD files for: $device->hostname", [$e]);
         }
 
-        Eventlog::log("Device $device->hostname has been removed", 0, 'system', Severity::Notice);
+        Eventlog::log('Device ' . ($device->hostname ?: $device->device_id) . ' has been removed', 0, 'system', Severity::Notice);
 
         (new Oxidized)->reloadNodes();
     }
@@ -147,6 +172,8 @@ class DeviceObserver
         $device->ipv4()->delete();
         $device->ipv6()->delete();
         $device->isisAdjacencies()->delete();
+        $device->links()->delete();
+        $device->remoteLinks()->delete();
         $device->macs()->delete();
         $device->mefInfo()->delete();
         $device->mempools()->delete();
@@ -170,6 +197,7 @@ class DeviceObserver
         $device->ospfv3Ports()->delete();
         $device->outages()->delete();
         $device->packages()->delete();
+        $device->pollingMethods()->delete();
         $device->portsFdb()->delete();
         $device->portsNac()->delete();
         \DB::table('ports_stack')->where('device_id', $device->device_id)->delete();

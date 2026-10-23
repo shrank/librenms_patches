@@ -927,6 +927,7 @@
                     "sensor_type": "airos-af60",
                     "sensor_descr": "Sat tracked",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -952,6 +953,7 @@
                     "sensor_type": "airos-af60",
                     "sensor_descr": "Sat visible",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -977,6 +979,7 @@
                     "sensor_type": "af60GpsFix",
                     "sensor_descr": "GPS fix",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 0,
@@ -1002,6 +1005,7 @@
                     "sensor_type": "af60GpsStatus",
                     "sensor_descr": "GPS Status",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 2,
@@ -1027,6 +1031,7 @@
                     "sensor_type": "af60Role",
                     "sensor_descr": "Radio Role",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 1,
@@ -1048,63 +1053,54 @@
                 {
                     "state_name": "af60GpsFix",
                     "state_descr": "Unknown",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "af60GpsFix",
                     "state_descr": "Nofix",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "af60GpsFix",
                     "state_descr": "Fix2d",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60GpsFix",
                     "state_descr": "Fix3d",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60GpsStatus",
                     "state_descr": "Absent",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "af60GpsStatus",
                     "state_descr": "Off",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "af60GpsStatus",
                     "state_descr": "On",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60Role",
                     "state_descr": "AP",
-                    "state_draw_graph": 0,
                     "state_value": 0,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "af60Role",
                     "state_descr": "CPE",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 0
                 }

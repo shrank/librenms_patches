@@ -6660,6 +6660,7 @@
                     "sensor_type": "FS-MIB::switchOperState",
                     "sensor_descr": "Oper State",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 3,
@@ -6685,6 +6686,7 @@
                     "sensor_type": "fs-switch",
                     "sensor_descr": "Temperature Unit 1 sensor 1",
                     "group": null,
+                    "category": null,
                     "sensor_divisor": 1,
                     "sensor_multiplier": 1,
                     "sensor_current": 55,
@@ -6706,42 +6708,36 @@
                 {
                     "state_name": "FS-MIB::switchOperState",
                     "state_descr": "other",
-                    "state_draw_graph": 0,
                     "state_value": 1,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "FS-MIB::switchOperState",
                     "state_descr": "unknown",
-                    "state_draw_graph": 0,
                     "state_value": 2,
                     "state_generic_value": 3
                 },
                 {
                     "state_name": "FS-MIB::switchOperState",
                     "state_descr": "ok",
-                    "state_draw_graph": 0,
                     "state_value": 3,
                     "state_generic_value": 0
                 },
                 {
                     "state_name": "FS-MIB::switchOperState",
                     "state_descr": "noncritical",
-                    "state_draw_graph": 0,
                     "state_value": 4,
                     "state_generic_value": 1
                 },
                 {
                     "state_name": "FS-MIB::switchOperState",
                     "state_descr": "critical",
-                    "state_draw_graph": 0,
                     "state_value": 5,
                     "state_generic_value": 2
                 },
                 {
                     "state_name": "FS-MIB::switchOperState",
                     "state_descr": "unrecoverable",
-                    "state_draw_graph": 0,
                     "state_value": 6,
                     "state_generic_value": 2
                 }
@@ -7482,6 +7478,7 @@
                     "entPhysicalContainedIn": 0,
                     "entPhysicalParentRelPos": -1,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7501,6 +7498,7 @@
                     "entPhysicalContainedIn": 1,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7520,6 +7518,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7539,6 +7538,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 1,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7558,6 +7558,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 2,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7577,6 +7578,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 3,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7596,6 +7598,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 4,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7615,6 +7618,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 5,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7634,6 +7638,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 6,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7653,6 +7658,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 7,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7672,6 +7678,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 8,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7691,6 +7698,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 9,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7710,6 +7718,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 10,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7729,6 +7738,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 11,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7748,6 +7758,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 12,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7767,6 +7778,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 13,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7786,6 +7798,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 14,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7805,6 +7818,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 15,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7824,6 +7838,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 16,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7843,6 +7858,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 17,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7862,6 +7878,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 18,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7881,6 +7898,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 19,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7900,6 +7918,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 20,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7919,6 +7938,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 21,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7938,6 +7958,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 22,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7957,6 +7978,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 23,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7976,6 +7998,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 24,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -7995,6 +8018,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 25,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8014,6 +8038,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 26,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8033,6 +8058,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 27,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 },
                 {
@@ -8052,6 +8078,7 @@
                     "entPhysicalContainedIn": 101,
                     "entPhysicalParentRelPos": 28,
                     "entPhysicalMfgName": "S3900-24T4S",
+                    "entPhysicalMfgDate": null,
                     "ifIndex": null
                 }
             ]
@@ -8065,7 +8092,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "GS1900-ModemSide",
-                    "remote_port": "8 (60319781e864)",
+                    "remote_port": "8",
                     "remote_platform": null,
                     "remote_version": "GS1900-10HP",
                     "ifAlias": "Ethernet Port on unit 1, port 12",
@@ -8076,7 +8103,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "IrvingNH.wyc.local",
-                    "remote_port": "internal6 (906cacb9f31d)",
+                    "remote_port": "internal6",
                     "remote_platform": null,
                     "remote_version": "FortiGate-60E v6.0.7,build0302,191112 (GA)",
                     "ifAlias": "To 60E",
@@ -8087,7 +8114,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "RB450Gx4@Home",
-                    "remote_port": "bridge-Home_19216820/ether1 (cc2de0f329fd)",
+                    "remote_port": "bridge-Home_19216820/ether1",
                     "remote_platform": null,
                     "remote_version": "MikroTik RouterOS 6.45.7 (stable) RB450Gx4",
                     "ifAlias": "To RB450Gx4 eth01",
@@ -8098,7 +8125,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "RB450Gx4@Home",
-                    "remote_port": "bridge-LAN/vlan32 (021557a47f40)",
+                    "remote_port": "bridge-LAN/vlan32",
                     "remote_platform": null,
                     "remote_version": "MikroTik RouterOS 6.45.7 (stable) RB450Gx4",
                     "ifAlias": "To RB450Gx4 eth01",
@@ -8109,7 +8136,7 @@
                     "active": 1,
                     "protocol": "lldp",
                     "remote_hostname": "GS1900-TVSide",
-                    "remote_port": "10 (04bf6d23906b)",
+                    "remote_port": "10",
                     "remote_platform": null,
                     "remote_version": "GS1900-10HP",
                     "ifAlias": "Trunk to TV side",
@@ -8315,6 +8342,7 @@
                     "ifStackStatus": "active"
                 }
             ]
-        }
+        },
+        "poller": "matches discovery"
     }
 }

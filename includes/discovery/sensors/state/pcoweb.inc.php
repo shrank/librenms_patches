@@ -11,6 +11,8 @@
  * the source code distribution for details.
  */
 
+use LibreNMS\Enum\SensorType;
+
 $divisor = '1';
 $type = 'pcoweb';
 $compressors = [
@@ -21,10 +23,10 @@ $compressors = [
 ];
 
 foreach ($compressors as $compressor_oid) {
-    $current = snmp_get($device, $compressor_oid, '-OqvU', 'CAREL-ug40cdz-MIB');
+    $current = SnmpQuery::get($compressor_oid)->value();
     $split_oid = explode('.', $compressor_oid);
     $number = $split_oid[count($split_oid) - 2];
     $index = 'comp_' . $number;
     $descr = 'Compressor ' . $number;
-    discover_sensor(null, 'state', $device, $compressor_oid, $index, $type, $descr, $divisor, '1', null, null, null, null, $current);
+    discover_sensor(null, SensorType::State, $device, $compressor_oid, $index, $type, $descr, $divisor, '1', null, null, null, null, $current);
 }

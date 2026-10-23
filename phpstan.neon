@@ -1,12 +1,15 @@
 includes:
-    - phpstan-baseline.neon
     - vendor/larastan/larastan/extension.neon
     - vendor/phpstan/phpstan-mockery/extension.neon
+    - vendor/phpstan/phpstan-phpunit/extension.neon
+    - vendor/phpstan/phpstan-phpunit/rules.neon
 
 parameters:
     phpVersion:
         min: 80200
         max: 80499
+
+    parseModelCastsMethod: true
 
     paths:
         - app
@@ -19,6 +22,7 @@ parameters:
         - tests
 
     excludePaths:
+        - bootstrap/cache
         - tests/Unit/Data/KafkaDBStoreTest.php
         - LibreNMS/Data/Store/Kafka.php
 
@@ -33,11 +37,12 @@ parameters:
     checkInternalClassCaseSensitivity: true
 
     checkModelProperties: true
+    checkAuthCallsWhenInRequestScope: true
+    checkModelMethodVisibility: true
+    noUnnecessaryEnumerableToArrayCalls: true
 
     ignoreErrors:
         - '#Unsafe usage of new static#'
 
     parallel:
         processTimeout: 300.0
-
-
