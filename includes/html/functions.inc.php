@@ -650,7 +650,7 @@ function get_oxidized_nodes_list()
         <td>' . e($object['name']) . '</td>
         <td>' . e($device->sysName) . '</td>
         <td>' . e($object['status']) . '</td>
-        <td>' . ($last_update === null ? '-' : e(Time::format($last_update, 'compact'))) . '</td>
+        <td>' . e(($last_update === null ? $object['time'] : Time::format($last_update, 'compact'))) . '</td>
         ' . $extra_columns . '
         <td>' . e($object['model']) . '</td>
         <td>' . e($object['group']) . '</td>
